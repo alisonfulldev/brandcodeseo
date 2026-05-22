@@ -59,51 +59,91 @@ const planos = [
   },
 ];
 
+const CHECK_ICON = (
+  <svg className="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+  </svg>
+);
+
 export default function Precos() {
   return (
-    <section className="py-20 bg-[#0A1628]" id="precos">
+    <section className="py-20" id="precos" style={{ background: "#0D1526" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
+          <h2
+            className="font-bold"
+            style={{ fontSize: "2.5rem", letterSpacing: "-0.02em", color: "#F8FAFC" }}
+          >
             Preços claros. Sem surpresas.
           </h2>
-          <p className="mt-4 text-gray-400 text-lg max-w-2xl mx-auto">
+          <div
+            style={{
+              width: 40,
+              height: 3,
+              background: "#3B82F6",
+              borderRadius: 2,
+              margin: "12px auto 0",
+            }}
+          />
+          <p className="mt-6 text-lg max-w-2xl mx-auto" style={{ color: "#94A3B8" }}>
             Invista no seu negócio com segurança. Parcelas disponíveis no cartão.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
           {planos.map((plano) => (
             <div
               key={plano.nome}
-              className={`rounded-2xl p-8 relative ${
+              className="relative rounded-xl p-8 transition-all duration-200"
+              style={
                 plano.destaque
-                  ? "bg-blue-600 ring-2 ring-blue-400 shadow-2xl scale-105"
-                  : "bg-[#0D1E3A] border border-blue-900"
-              }`}
+                  ? {
+                      background: "#111827",
+                      border: "1px solid #3B82F6",
+                      borderRadius: "12px",
+                      boxShadow: "0 0 40px rgba(59,130,246,0.15)",
+                    }
+                  : {
+                      background: "#111827",
+                      border: "1px solid rgba(255,255,255,0.08)",
+                      borderRadius: "12px",
+                    }
+              }
             >
               {plano.destaque && (
-                <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-400 text-[#0A1628] text-xs font-bold px-4 py-1.5 rounded-full">
+                <span
+                  className="absolute -top-3.5 left-1/2 -translate-x-1/2 text-xs font-bold px-4 py-1 rounded-full"
+                  style={{ background: "#3B82F6", color: "#fff" }}
+                >
                   MAIS POPULAR
                 </span>
               )}
 
-              <h3 className="text-white font-bold text-xl mb-1">{plano.nome}</h3>
-              <p className="text-sm text-gray-300 mb-4">{plano.descricao}</p>
+              <h3 className="font-bold text-xl mb-1" style={{ color: "#F8FAFC" }}>
+                {plano.nome}
+              </h3>
+              <p className="text-sm mb-4" style={{ lineHeight: 1.75, color: "#94A3B8" }}>
+                {plano.descricao}
+              </p>
 
               <div className="mb-2">
-                <span className="text-gray-400 text-sm">a partir de</span>
-                <div className="text-4xl font-extrabold text-white">{plano.preco}</div>
+                <span className="text-sm" style={{ color: "#64748B" }}>a partir de</span>
+                <div
+                  className="font-extrabold"
+                  style={{ fontSize: "2.5rem", color: "#F8FAFC", letterSpacing: "-0.02em" }}
+                >
+                  {plano.preco}
+                </div>
               </div>
 
-              <p className="text-xs text-gray-400 mb-6">Prazo: {plano.prazo}</p>
+              <p className="text-xs mb-6" style={{ color: "#64748B" }}>
+                Prazo: {plano.prazo}
+              </p>
 
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-2.5 mb-8">
                 {plano.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2 text-sm text-gray-200">
-                    <svg className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
+                  <li key={f} className="flex items-start gap-2 text-sm" style={{ color: "#94A3B8" }}>
+                    <span style={{ color: "#25D366", marginTop: 2 }}>{CHECK_ICON}</span>
                     {f}
                   </li>
                 ))}
@@ -111,8 +151,8 @@ export default function Precos() {
 
               <WhatsAppButton
                 message={plano.msg}
-                className={`w-full justify-center py-3 text-sm ${
-                  plano.destaque ? "bg-white text-blue-700 hover:bg-gray-100" : ""
+                className={`w-full justify-center py-3 text-sm rounded-lg ${
+                  plano.destaque ? "bg-[#3B82F6] hover:bg-[#60A5FA] text-white" : ""
                 }`}
               >
                 Quero esse plano
@@ -120,7 +160,8 @@ export default function Precos() {
 
               <Link
                 href={plano.href}
-                className="block text-center mt-3 text-xs text-gray-400 hover:text-gray-200 underline transition-colors"
+                className="block text-center mt-3 text-xs transition-colors hover:underline"
+                style={{ color: "#64748B" }}
               >
                 Saiba mais
               </Link>

@@ -44,22 +44,14 @@ export default function WhatsAppButton({
 
   if (fixed) {
     return (
-      // Wrapper com group para o tooltip e posicionamento fixo
       <div className="fixed bottom-6 right-6 z-50 group flex flex-col items-end">
-        {/* Tooltip "Fale agora" — aparece ao hover */}
+        {/* Tooltip "Fale agora" */}
         <span
-          className="
-            mb-3 px-3 py-1.5 rounded-lg text-xs font-semibold text-white
-            bg-[#0A1628] shadow-lg pointer-events-none
-            opacity-0 translate-y-1
-            group-hover:opacity-100 group-hover:translate-y-0
-            transition-all duration-200
-            whitespace-nowrap select-none
-          "
+          className="mb-3 px-3 py-1.5 rounded-lg text-xs font-semibold text-white pointer-events-none opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 whitespace-nowrap select-none"
+          style={{ background: "#0A0F1E", boxShadow: "0 4px 12px rgba(0,0,0,0.4)" }}
           aria-hidden="true"
         >
           Fale agora
-          {/* Seta do tooltip apontando para baixo */}
           <span
             className="absolute left-1/2 top-full -translate-x-1/2"
             style={{
@@ -67,32 +59,25 @@ export default function WhatsAppButton({
               height: 0,
               borderLeft: "6px solid transparent",
               borderRight: "6px solid transparent",
-              borderTop: "6px solid #0A1628",
+              borderTop: "6px solid #0A0F1E",
             }}
           />
         </span>
 
-        {/* Botão com anel de pulso */}
-        <div className="relative flex items-center justify-center w-14 h-14">
-          {/* Anel pulsante — animate-ping do Tailwind */}
-          <span className="absolute inset-0 rounded-full bg-green-500 opacity-60 animate-ping" />
-
-          <a
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Falar com a BrandCode Solutions no WhatsApp — Fale agora"
-            className="
-              relative z-10 flex items-center justify-center
-              w-14 h-14 rounded-full
-              bg-green-500 hover:bg-green-400
-              text-white shadow-2xl
-              transition-colors duration-200
-            "
-          >
-            {WA_ICON}
-          </a>
-        </div>
+        {/* Botão com pulse suave */}
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Falar com a BrandCode Solutions no WhatsApp — Fale agora"
+          className="wa-pulse flex items-center justify-center w-14 h-14 rounded-full text-white transition-all duration-200 hover:brightness-110"
+          style={{
+            background: "#25D366",
+            boxShadow: "0 0 20px rgba(37,211,102,0.3)",
+          }}
+        >
+          {WA_ICON}
+        </a>
       </div>
     );
   }
@@ -104,7 +89,7 @@ export default function WhatsAppButton({
       rel="noopener noreferrer"
       className={`
         inline-flex items-center gap-2
-        bg-green-500 hover:bg-green-400 active:bg-green-600
+        bg-[#25D366] hover:brightness-110
         text-white font-semibold rounded-full
         transition-all duration-200 hover:scale-105
         ${className}
