@@ -1,74 +1,107 @@
-import WhatsAppButton from "@/components/ui/WhatsAppButton";
-import Link from "next/link";
-
-const planos = [
-  {
-    nome: "Landing Page",
-    preco: "R$ 370",
-    descricao: "Ideal para captar leads e divulgar um produto ou serviço específico.",
-    prazo: "Até 5 dias úteis",
-    features: [
-      "Design moderno e responsivo",
-      "SEO técnico completo",
-      "Integração WhatsApp",
-      "Formulário de contato",
-      "1 revisão inclusa",
-      "Hospedagem na Vercel",
-    ],
-    destaque: false,
-    href: "/landing-page",
-    msg: "Quero uma Landing Page. Qual o prazo e próximos passos?",
-  },
-  {
-    nome: "Site Institucional",
-    preco: "R$ 497",
-    descricao: "O site completo para o seu negócio aparecer no Google e vender mais.",
-    prazo: "Até 15 dias úteis",
-    features: [
-      "Até 8 páginas completas",
-      "SEO técnico avançado",
-      "Schema JSON-LD incluso",
-      "Painel administrativo",
-      "Blog integrado",
-      "Integração WhatsApp",
-      "2 revisões inclusas",
-      "Hospedagem na Vercel",
-    ],
-    destaque: true,
-    href: "/criacao-de-sites",
-    msg: "Quero um Site Institucional. Pode me passar mais detalhes?",
-  },
-  {
-    nome: "Loja Virtual",
-    preco: "R$ 697",
-    descricao: "Sua loja online com pagamentos, estoque e SEO para produtos.",
-    prazo: "Até 25 dias úteis",
-    features: [
-      "Catálogo de produtos ilimitado",
-      "Pagamento integrado (Pix/Cartão)",
-      "Painel de gestão completo",
-      "SEO para páginas de produto",
-      "Integração com frete",
-      "WhatsApp + Email marketing",
-      "3 revisões inclusas",
-      "Hospedagem na Vercel",
-    ],
-    destaque: false,
-    href: "/loja-virtual",
-    msg: "Quero uma Loja Virtual. Como funciona o processo?",
-  },
-];
+import { WHATSAPP_URL } from "@/lib/constants";
 
 const CHECK_ICON = (
-  <svg className="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+  <svg
+    className="w-4 h-4 flex-shrink-0 mt-0.5"
+    fill="currentColor"
+    viewBox="0 0 20 20"
+    aria-hidden="true"
+    style={{ color: "#3B82F6" }}
+  >
+    <path
+      fillRule="evenodd"
+      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+      clipRule="evenodd"
+    />
   </svg>
 );
 
+const WA_ICON = (
+  <svg
+    className="w-5 h-5 flex-shrink-0"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+  </svg>
+);
+
+interface Plano {
+  nome: string;
+  preco: string;
+  taxa: string;
+  tag: string | null;
+  descricao: string;
+  features: string[];
+  msg: string;
+  destaque: boolean;
+}
+
+const planos: Plano[] = [
+  {
+    nome: "Presença Digital",
+    preco: "R$ 90/mês",
+    taxa: "R$ 199 (taxa de implementação única)",
+    tag: null,
+    descricao:
+      "Para empresas que precisam de um site profissional e confiável na internet.",
+    features: [
+      "Até 5 páginas profissionais",
+      "Site moderno e responsivo (celular e computador)",
+      "Hospedagem inclusa",
+      "Domínio configurado",
+      "Estrutura profissional pronta para crescer",
+      "Suporte via WhatsApp",
+    ],
+    msg: "Olá! Tenho interesse no Plano Presença Digital. Pode me passar mais detalhes?",
+    destaque: false,
+  },
+  {
+    nome: "Crescimento Digital",
+    preco: "R$ 120/mês",
+    taxa: "R$ 299 (taxa de implementação única)",
+    tag: "Mais escolhido",
+    descricao:
+      "Para empresas que querem aparecer no Google e atrair clientes de forma orgânica.",
+    features: [
+      "Até 20 páginas otimizadas",
+      "SEO técnico configurado",
+      "Google Meu Negócio configurado",
+      "Integração com Google Analytics 4",
+      "Indexação acelerada no Google",
+      "Monitoramento mensal de desempenho",
+      "Ajustes e melhorias periódicas",
+    ],
+    msg: "Olá! Tenho interesse no Plano Crescimento Digital. Pode me passar mais detalhes?",
+    destaque: true,
+  },
+  {
+    nome: "Autoridade Digital",
+    preco: "R$ 180/mês",
+    taxa: "R$ 399 (taxa de implementação única)",
+    tag: null,
+    descricao:
+      "Para empresas que querem dominar o Google e gerar clientes de forma consistente e escalável.",
+    features: [
+      "Páginas ilimitadas por cidade, serviço e nicho",
+      "SEO avançado com Programmatic SEO",
+      "Estrutura focada em geração de leads",
+      "Expansão contínua do site todo mês",
+      "Otimizações frequentes baseadas em dados",
+      "Estratégia de crescimento orgânico de longo prazo",
+      "Relatório mensal de desempenho",
+    ],
+    msg: "Olá! Tenho interesse no Plano Autoridade Digital. Pode me passar mais detalhes?",
+    destaque: false,
+  },
+];
+
 export default function Precos() {
   return (
-    <section className="py-20" id="precos" style={{ background: "#0D1526" }}>
+    <section className="py-20" id="precos" style={{ background: "#0A0F1E" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
         <div className="text-center mb-14">
           <h2
             className="font-bold"
@@ -86,87 +119,212 @@ export default function Precos() {
             }}
           />
           <p className="mt-6 text-lg max-w-2xl mx-auto" style={{ color: "#94A3B8" }}>
-            Invista no seu negócio com segurança. Parcelas disponíveis no cartão.
+            Escolha o plano certo para o tamanho e objetivo do seu negócio.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+        {/* Cards dos planos */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mb-12">
           {planos.map((plano) => (
             <div
               key={plano.nome}
-              className="relative rounded-xl p-8 transition-all duration-200"
+              className="relative rounded-2xl p-8 flex flex-col"
               style={
                 plano.destaque
                   ? {
                       background: "#111827",
-                      border: "1px solid #3B82F6",
-                      borderRadius: "12px",
-                      boxShadow: "0 0 40px rgba(59,130,246,0.15)",
+                      border: "2px solid #3B82F6",
+                      borderRadius: "16px",
+                      boxShadow: "0 0 40px rgba(59,130,246,0.18)",
                     }
                   : {
                       background: "#111827",
                       border: "1px solid rgba(255,255,255,0.08)",
-                      borderRadius: "12px",
+                      borderRadius: "16px",
                     }
               }
             >
-              {plano.destaque && (
+              {plano.tag && (
                 <span
-                  className="absolute -top-3.5 left-1/2 -translate-x-1/2 text-xs font-bold px-4 py-1 rounded-full"
+                  className="absolute -top-4 left-1/2 -translate-x-1/2 text-xs font-bold px-4 py-1.5 rounded-full whitespace-nowrap"
                   style={{ background: "#3B82F6", color: "#fff" }}
                 >
-                  MAIS POPULAR
+                  ★ {plano.tag.toUpperCase()}
                 </span>
               )}
 
-              <h3 className="font-bold text-xl mb-1" style={{ color: "#F8FAFC" }}>
-                {plano.nome}
-              </h3>
-              <p className="text-sm mb-4" style={{ lineHeight: 1.75, color: "#94A3B8" }}>
-                {plano.descricao}
-              </p>
+              <div>
+                <h3 className="font-bold text-xl mb-1" style={{ color: "#F8FAFC" }}>
+                  {plano.nome}
+                </h3>
+                <p className="text-sm mb-5" style={{ color: "#94A3B8", lineHeight: 1.7 }}>
+                  {plano.descricao}
+                </p>
 
-              <div className="mb-2">
-                <span className="text-sm" style={{ color: "#64748B" }}>a partir de</span>
-                <div
-                  className="font-extrabold"
-                  style={{ fontSize: "2.5rem", color: "#F8FAFC", letterSpacing: "-0.02em" }}
-                >
-                  {plano.preco}
+                <div className="mb-2">
+                  <div
+                    className="font-extrabold"
+                    style={{ fontSize: "2.25rem", color: "#F8FAFC", letterSpacing: "-0.02em" }}
+                  >
+                    {plano.preco}
+                  </div>
+                  <p className="text-xs mt-1" style={{ color: "#64748B" }}>
+                    {plano.taxa}
+                  </p>
                 </div>
               </div>
 
-              <p className="text-xs mb-6" style={{ color: "#64748B" }}>
-                Prazo: {plano.prazo}
-              </p>
-
-              <ul className="space-y-2.5 mb-8">
+              <ul className="space-y-3 mt-6 mb-8 flex-1">
                 {plano.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2 text-sm" style={{ color: "#94A3B8" }}>
-                    <span style={{ color: "#25D366", marginTop: 2 }}>{CHECK_ICON}</span>
+                  <li
+                    key={f}
+                    className="flex items-start gap-2 text-sm"
+                    style={{ color: "#CBD5E1" }}
+                  >
+                    {CHECK_ICON}
                     {f}
                   </li>
                 ))}
               </ul>
 
-              <WhatsAppButton
-                message={plano.msg}
-                className={`w-full justify-center py-3 text-sm rounded-lg ${
-                  plano.destaque ? "bg-[#3B82F6] hover:bg-[#60A5FA] text-white" : ""
-                }`}
+              <a
+                href={`${WHATSAPP_URL}?text=${encodeURIComponent(plano.msg)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-flex items-center justify-center gap-2 py-3 px-6 rounded-full font-semibold text-sm transition-all duration-200 hover:opacity-90 active:scale-95"
+                style={
+                  plano.destaque
+                    ? { background: "#3B82F6", color: "#fff" }
+                    : { background: "#25D366", color: "#fff" }
+                }
               >
+                {WA_ICON}
                 Quero esse plano
-              </WhatsAppButton>
-
-              <Link
-                href={plano.href}
-                className="block text-center mt-3 text-xs transition-colors hover:underline"
-                style={{ color: "#64748B" }}
-              >
-                Saiba mais
-              </Link>
+              </a>
             </div>
           ))}
+        </div>
+
+        {/* Seção Google Ads */}
+        <div
+          className="rounded-2xl p-8 mb-12"
+          style={{
+            background: "#0D1526",
+            borderLeft: "3px solid #3B82F6",
+            padding: "2.5rem",
+          }}
+        >
+          <span
+            className="inline-block text-xs font-bold tracking-widest mb-4 px-3 py-1 rounded-full"
+            style={{ background: "rgba(59,130,246,0.15)", color: "#3B82F6" }}
+          >
+            SERVIÇO OPCIONAL
+          </span>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <div>
+              <h3 className="font-bold text-2xl mb-3" style={{ color: "#F8FAFC" }}>
+                Aceleração com Google Ads
+              </h3>
+              <p className="text-base mb-6" style={{ color: "#94A3B8" }}>
+                Para empresas que querem resultados mais rápidos enquanto o SEO evolui
+                organicamente.
+              </p>
+
+              <ul className="space-y-3 mb-6">
+                {[
+                  "Apareça no topo do Google a partir de amanhã",
+                  "Gere visitas qualificadas desde o primeiro dia",
+                  "Acelere a geração de leads enquanto o SEO cresce",
+                  "Combine tráfego pago e orgânico para resultado máximo",
+                ].map((item) => (
+                  <li
+                    key={item}
+                    className="flex items-start gap-2 text-sm"
+                    style={{ color: "#CBD5E1" }}
+                  >
+                    {CHECK_ICON}
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+              <p className="text-xs" style={{ color: "#64748B" }}>
+                O investimento em anúncios é pago diretamente pelo cliente ao Google.
+                Nós cuidamos de toda a estratégia e gestão.
+              </p>
+            </div>
+
+            <div className="flex flex-col justify-between gap-6">
+              <div className="space-y-3">
+                <div
+                  className="rounded-xl p-4"
+                  style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)" }}
+                >
+                  <p className="text-xs font-semibold mb-1" style={{ color: "#64748B" }}>
+                    ATIVAÇÃO E CONFIGURAÇÃO
+                  </p>
+                  <p className="text-2xl font-extrabold" style={{ color: "#F8FAFC" }}>
+                    R$ 197
+                  </p>
+                  <p className="text-xs mt-1" style={{ color: "#64748B" }}>
+                    pagamento único
+                  </p>
+                </div>
+
+                <div
+                  className="rounded-xl p-4"
+                  style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)" }}
+                >
+                  <p className="text-xs font-semibold mb-1" style={{ color: "#64748B" }}>
+                    GESTÃO MENSAL
+                  </p>
+                  <p className="text-2xl font-extrabold" style={{ color: "#F8FAFC" }}>
+                    R$ 300 – R$ 1.000
+                  </p>
+                  <p className="text-xs mt-1" style={{ color: "#64748B" }}>
+                    conforme volume de campanhas
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href={`${WHATSAPP_URL}?text=${encodeURIComponent(
+                  "Olá! Tenho interesse no serviço de Google Ads. Pode me passar mais detalhes?"
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 py-3 px-6 rounded-full font-semibold text-sm transition-all duration-200 hover:opacity-90 active:scale-95"
+                style={{ background: "#3B82F6", color: "#fff" }}
+              >
+                {WA_ICON}
+                Quero acelerar meus resultados
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Frase final */}
+        <div className="text-center py-10">
+          <h3 className="font-bold text-2xl mb-3" style={{ color: "#F8FAFC" }}>
+            Não sabe qual plano escolher?
+          </h3>
+          <p className="text-base mb-8 max-w-xl mx-auto" style={{ color: "#94A3B8" }}>
+            Fale com um especialista agora. Em 5 minutos a gente indica o plano certo
+            para o tamanho e objetivo do seu negócio.
+          </p>
+          <a
+            href={`${WHATSAPP_URL}?text=${encodeURIComponent(
+              "Olá! Não sei qual plano escolher. Pode me ajudar?"
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 py-4 px-8 rounded-full font-bold text-base transition-all duration-200 hover:opacity-90 active:scale-95"
+            style={{ background: "#25D366", color: "#fff" }}
+          >
+            {WA_ICON}
+            Falar com especialista
+          </a>
         </div>
       </div>
     </section>

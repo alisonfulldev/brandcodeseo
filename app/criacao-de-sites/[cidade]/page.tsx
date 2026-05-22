@@ -226,7 +226,7 @@ export default async function CriacaoDeSitesCidadePage({
             {[
               {
                 tipo: "Landing Page",
-                preco: "R$ 370",
+                preco: "Planos a partir de R$ 90/mês",
                 prazo: "5 dias úteis",
                 desc: "Ideal para campanhas de Google Ads, Meta Ads ou captura de leads qualificados.",
                 href: "/landing-page/preco",
@@ -234,7 +234,7 @@ export default async function CriacaoDeSitesCidadePage({
               },
               {
                 tipo: "Site Institucional",
-                preco: "R$ 497",
+                preco: "Planos a partir de R$ 90/mês",
                 prazo: "15 dias úteis",
                 desc: "Site completo com múltiplas páginas, SEO avançado e painel administrativo incluso.",
                 href: "/criacao-de-sites/quanto-custa",
@@ -242,7 +242,7 @@ export default async function CriacaoDeSitesCidadePage({
               },
               {
                 tipo: "Loja Virtual",
-                preco: "R$ 697",
+                preco: "Planos a partir de R$ 90/mês",
                 prazo: "25 dias úteis",
                 desc: "E-commerce completo com pagamento integrado, estoque e gestão de pedidos.",
                 href: "/loja-virtual/preco",

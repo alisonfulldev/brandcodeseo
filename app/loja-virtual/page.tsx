@@ -220,7 +220,7 @@ export default function LojaVirtualPage() {
 
             <div className="bg-white rounded-2xl p-8">
               <span className="text-blue-600 text-xs font-bold tracking-widest">LOJA VIRTUAL</span>
-              <div className="text-5xl font-extrabold text-[#0A1628] mt-3 mb-1">R$ 697</div>
+              <div className="text-5xl font-extrabold text-[#0A1628] mt-3 mb-1">Planos a partir de R$ 90/mês</div>
               <p className="text-gray-400 text-sm mb-7">Ou em até 12x no cartão</p>
               <ul className="space-y-2.5 text-sm text-gray-600 mb-8 border-t border-gray-100 pt-6">
                 {[

@@ -14,7 +14,7 @@ import Link from "next/link";
 export const metadata: Metadata = buildMetadata({
   title: "Criação de Sites que Vendem | SEO Técnico Avançado Incluso",
   description:
-    "Criamos sites que aparecem no Google e convertem visitantes em clientes via WhatsApp. SEO técnico avançado, painel admin e entrega rápida. Site institucional a partir de R$ 497.",
+    "Criamos sites que aparecem no Google e convertem visitantes em clientes via WhatsApp. SEO técnico avançado, painel admin e entrega rápida. Planos a partir de R$ 90/mês.",
   keywords: [
     "criação de sites",
     "agência de sites",
@@ -37,7 +37,7 @@ const homeFaqs = [
   {
     question: "O SEO já vem incluso mesmo no plano mais em conta?",
     answer:
-      "Sim, sem exceção. Configuramos meta tags, sitemap XML, robots.txt, schema JSON-LD, OpenGraph, Core Web Vitals otimizados e velocidade de carregamento em todos os planos — inclusive na Landing Page de R$ 370. SEO não é opcional na BrandCode, é padrão.",
+      "Sim, sem exceção. Configuramos meta tags, sitemap XML, robots.txt, schema JSON-LD, OpenGraph, Core Web Vitals otimizados e velocidade de carregamento em todos os planos — inclusive no plano a partir de R$ 90/mês. SEO não é opcional na BrandCode, é padrão.",
   },
   {
     question: "Posso atualizar o meu site sem precisar de programador?",

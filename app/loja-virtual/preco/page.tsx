@@ -47,7 +47,7 @@ export default function LojaVirtualPrecoPage() {
         <div className="max-w-2xl mx-auto px-4 text-center">
           <div className="bg-[#0A1628] rounded-2xl p-10 text-white">
             <h2 className="text-2xl font-bold mb-2">Loja Virtual Completa</h2>
-            <div className="text-6xl font-extrabold text-blue-400 my-4">R$ 697</div>
+            <div className="text-6xl font-extrabold text-blue-400 my-4">Planos a partir de R$ 90/mês</div>
             <p className="text-gray-400 text-sm mb-6">a partir de — ou parcelado em até 12x</p>
             <ul className="text-left space-y-2 text-sm text-gray-300 mb-8 max-w-sm mx-auto">
               {[

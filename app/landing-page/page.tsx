@@ -8,7 +8,7 @@ import CidadesGrid from "@/components/sections/CidadesGrid";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Criação de Landing Page Profissional que Converte | A partir de R$ 370",
+  title: "Criação de Landing Page Profissional que Converte | Planos a partir de R$ 90/mês",
   description: `Landing pages de alta conversão com SEO e foco em resultado. ${PRICES.landingPage}. Entrega em até 5 dias úteis. Ideal para Google Ads, Meta Ads e captação de leads. Solicite um orçamento.`,
   slug: "landing-page",
   keywords: [
@@ -137,7 +137,7 @@ export default function LandingPagePage() {
             {/* Pricing card */}
             <div className="bg-[#0A1628] rounded-2xl p-8 text-white">
               <span className="text-blue-400 text-xs font-bold tracking-widest">LANDING PAGE</span>
-              <div className="text-5xl font-extrabold text-white mt-3 mb-1">R$ 370</div>
+              <div className="text-5xl font-extrabold text-white mt-3 mb-1">Planos a partir de R$ 90/mês</div>
               <p className="text-gray-400 text-sm mb-7">Ou parcelado em até 12x no cartão</p>
               <ul className="space-y-2.5 text-sm text-gray-300 mb-8 border-t border-white/10 pt-6">
                 {[
