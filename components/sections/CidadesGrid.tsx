@@ -43,14 +43,14 @@ export default function CidadesGrid({
               className="dark-pill px-3 py-2 text-sm text-center font-medium block"
             >
               {cidade.nome}
-              <span className="block text-xs font-normal mt-0.5" style={{ color: "#64748B" }}>
+              <span className="block text-xs font-normal mt-0.5" style={{ color: "#94A3B8" }}>
                 {cidade.estado}
               </span>
             </Link>
           ))}
         </div>
 
-        <p className="text-center mt-6 text-sm" style={{ color: "#64748B" }}>
+        <p className="text-center mt-6 text-sm" style={{ color: "#94A3B8" }}>
           Atendemos mais de 200 cidades em todo o Brasil.{" "}
           <Link
             href="/contato"

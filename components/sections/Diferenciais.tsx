@@ -75,7 +75,7 @@ export default function Diferenciais() {
               margin: "12px auto 0",
             }}
           />
-          <p className="mt-5 text-lg max-w-2xl mx-auto" style={{ color: "#94A3B8" }}>
+          <p className="mt-5 text-lg max-w-2xl mx-auto" style={{ color: "#CBD5E1" }}>
             Mais do que um site bonito — entregamos uma máquina de vendas no ar.
           </p>
         </div>
@@ -92,7 +92,7 @@ export default function Diferenciais() {
               <h3 className="font-bold text-lg mb-2" style={{ color: "#F8FAFC" }}>
                 {d.titulo}
               </h3>
-              <p className="text-sm" style={{ lineHeight: 1.75, color: "#94A3B8" }}>
+              <p className="text-sm" style={{ lineHeight: 1.75, color: "#CBD5E1" }}>
                 {d.descricao}
               </p>
             </div>

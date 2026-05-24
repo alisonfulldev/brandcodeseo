@@ -79,7 +79,7 @@ export default function FAQ({
                   style={{
                     borderTop: "1px solid rgba(255,255,255,0.06)",
                     lineHeight: 1.75,
-                    color: "#94A3B8",
+                    color: "#CBD5E1",
                   }}
                 >
                   <p className="pt-4">{item.answer}</p>

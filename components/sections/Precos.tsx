@@ -118,7 +118,7 @@ export default function Precos() {
               margin: "12px auto 0",
             }}
           />
-          <p className="mt-6 text-lg max-w-2xl mx-auto" style={{ color: "#94A3B8" }}>
+          <p className="mt-6 text-lg max-w-2xl mx-auto" style={{ color: "#CBD5E1" }}>
             Escolha o plano certo para o tamanho e objetivo do seu negócio.
           </p>
         </div>
@@ -157,7 +157,7 @@ export default function Precos() {
                 <h3 className="font-bold text-xl mb-1" style={{ color: "#F8FAFC" }}>
                   {plano.nome}
                 </h3>
-                <p className="text-sm mb-5" style={{ color: "#94A3B8", lineHeight: 1.7 }}>
+                <p className="text-sm mb-5" style={{ color: "#CBD5E1", lineHeight: 1.7 }}>
                   {plano.descricao}
                 </p>
 
@@ -168,7 +168,7 @@ export default function Precos() {
                   >
                     {plano.preco}
                   </div>
-                  <p className="text-xs mt-1" style={{ color: "#64748B" }}>
+                  <p className="text-xs mt-1" style={{ color: "#94A3B8" }}>
                     {plano.taxa}
                   </p>
                 </div>
@@ -210,7 +210,7 @@ export default function Precos() {
           <h3 className="font-bold text-2xl mb-3" style={{ color: "#F8FAFC" }}>
             Não sabe qual plano escolher?
           </h3>
-          <p className="text-base mb-8 max-w-xl mx-auto" style={{ color: "#94A3B8" }}>
+          <p className="text-base mb-8 max-w-xl mx-auto" style={{ color: "#CBD5E1" }}>
             Fale com um especialista agora. Em 5 minutos a gente indica o plano certo
             para o tamanho e objetivo do seu negócio.
           </p>

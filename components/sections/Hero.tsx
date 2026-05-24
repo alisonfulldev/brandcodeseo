@@ -109,7 +109,7 @@ export default function Hero({
 
         <p
           className="mt-6 text-lg sm:text-xl max-w-2xl mx-auto"
-          style={{ lineHeight: 1.75, color: "#94A3B8" }}
+          style={{ lineHeight: 1.75, color: "#CBD5E1" }}
         >
           {subtitulo}
         </p>
@@ -131,7 +131,7 @@ export default function Hero({
             <Link
               href={ctaHref}
               className="text-sm font-medium transition-colors hover:underline underline-offset-4"
-              style={{ color: "#94A3B8" }}
+              style={{ color: "#CBD5E1" }}
             >
               Ver preços e planos
             </Link>
@@ -139,7 +139,7 @@ export default function Hero({
         </div>
 
         {/* Trust signals */}
-        <div className="mt-12 flex flex-wrap justify-center gap-6 text-sm" style={{ color: "#64748B" }}>
+        <div className="mt-12 flex flex-wrap justify-center gap-6 text-sm" style={{ color: "#94A3B8" }}>
           {[
             "SEO técnico incluso",
             "Painel administrativo",

@@ -220,7 +220,7 @@ export default function HomePage() {
                 >
                   {item.valor}
                 </div>
-                <div className="mt-1 text-sm" style={{ color: "#94A3B8" }}>
+                <div className="mt-1 text-sm" style={{ color: "#CBD5E1" }}>
                   {item.label}
                 </div>
               </AnimatedSection>
@@ -240,7 +240,7 @@ export default function HomePage() {
               Reconhece alguma dessas situações?
             </h2>
             <SectionAccent />
-            <p className="mt-5 max-w-2xl mx-auto" style={{ lineHeight: 1.75, color: "#94A3B8" }}>
+            <p className="mt-5 max-w-2xl mx-auto" style={{ lineHeight: 1.75, color: "#CBD5E1" }}>
               São as reclamações mais comuns de quem chegou até nós vindo de outra agência.
             </p>
           </div>
@@ -254,14 +254,14 @@ export default function HomePage() {
                   >
                     {item.icon}
                   </div>
-                  <p className="text-sm italic" style={{ lineHeight: 1.75, color: "#94A3B8" }}>
+                  <p className="text-sm italic" style={{ lineHeight: 1.75, color: "#CBD5E1" }}>
                     {item.texto}
                   </p>
                 </div>
               </AnimatedSection>
             ))}
           </div>
-          <p className="text-center mt-10 text-sm" style={{ color: "#64748B" }}>
+          <p className="text-center mt-10 text-sm" style={{ color: "#94A3B8" }}>
             Se identificou com pelo menos uma dessas situações, você está no lugar certo.
           </p>
         </div>
@@ -278,7 +278,7 @@ export default function HomePage() {
               Como a BrandCode resolve isso
             </h2>
             <SectionAccent />
-            <p className="mt-5 max-w-2xl mx-auto" style={{ lineHeight: 1.75, color: "#94A3B8" }}>
+            <p className="mt-5 max-w-2xl mx-auto" style={{ lineHeight: 1.75, color: "#CBD5E1" }}>
               Não prometemos milagre. Entregamos um site construído do zero para aparecer no
               Google e converter visitante em cliente.
             </p>
@@ -309,7 +309,7 @@ export default function HomePage() {
                   <h3 className="font-bold text-lg mb-3" style={{ color: "#F8FAFC" }}>
                     {item.titulo}
                   </h3>
-                  <p className="text-sm" style={{ lineHeight: 1.75, color: "#94A3B8" }}>
+                  <p className="text-sm" style={{ lineHeight: 1.75, color: "#CBD5E1" }}>
                     {item.desc}
                   </p>
                 </div>
@@ -332,7 +332,7 @@ export default function HomePage() {
               Escolha o tipo de site ideal para o seu negócio
             </h2>
             <SectionAccent />
-            <p className="mt-5 max-w-xl mx-auto" style={{ lineHeight: 1.75, color: "#94A3B8" }}>
+            <p className="mt-5 max-w-xl mx-auto" style={{ lineHeight: 1.75, color: "#CBD5E1" }}>
               Do site simples à loja virtual completa — todos com SEO, painel admin e foco em
               conversão.
             </p>
@@ -361,7 +361,7 @@ export default function HomePage() {
                   <h3 className="font-bold text-xl mb-2" style={{ color: "#F8FAFC" }}>
                     {s.titulo}
                   </h3>
-                  <p className="text-sm mb-4 flex-1" style={{ lineHeight: 1.75, color: "#94A3B8" }}>
+                  <p className="text-sm mb-4 flex-1" style={{ lineHeight: 1.75, color: "#CBD5E1" }}>
                     {s.desc}
                   </p>
                   <span className="text-sm font-bold" style={{ color: "#3B82F6" }}>
@@ -405,10 +405,10 @@ export default function HomePage() {
             >
               Chega de site que não traz cliente.
             </h2>
-            <p className="mb-3 text-lg" style={{ lineHeight: 1.75, color: "#94A3B8" }}>
+            <p className="mb-3 text-lg" style={{ lineHeight: 1.75, color: "#CBD5E1" }}>
               Fale agora pelo WhatsApp e receba um orçamento personalizado em minutos.
             </p>
-            <p className="text-sm mb-10" style={{ color: "#64748B" }}>
+            <p className="text-sm mb-10" style={{ color: "#94A3B8" }}>
               Sem compromisso. Sem enrolação. Só resultado.
             </p>
             <a
@@ -421,7 +421,7 @@ export default function HomePage() {
               <IconWA />
               Quero meu site que vende
             </a>
-            <div className="mt-6 flex flex-wrap justify-center gap-6 text-xs" style={{ color: "#64748B" }}>
+            <div className="mt-6 flex flex-wrap justify-center gap-6 text-xs" style={{ color: "#94A3B8" }}>
               {["Resposta em até 1h", "Orçamento sem compromisso", "Sem enrolação"].map((t) => (
                 <span key={t} className="flex items-center gap-1.5">
                   <span style={{ color: "#3B82F6" }}><IconCheck /></span>

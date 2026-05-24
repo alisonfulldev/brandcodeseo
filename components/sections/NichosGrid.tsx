@@ -21,7 +21,7 @@ export default function NichosGrid() {
               margin: "10px auto 0",
             }}
           />
-          <p className="mt-4 text-sm max-w-xl mx-auto" style={{ color: "#94A3B8" }}>
+          <p className="mt-4 text-sm max-w-xl mx-auto" style={{ color: "#CBD5E1" }}>
             Criamos sites especializados para mais de 50 segmentos. Encontre o seu:
           </p>
         </div>
