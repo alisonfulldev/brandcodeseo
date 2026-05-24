@@ -160,7 +160,7 @@ export default async function LojaVirtualCidadePage({
       <section className="py-20 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-[#0A1628] mb-4 text-center">
-            Por que ter uma loja virtual em {cidade.nome}?
+            Por que vender online para clientes em {cidade.nome}?
           </h2>
           <p className="text-gray-500 text-center mb-12 max-w-2xl mx-auto">
             O comércio eletrônico cresceu mais de 30% nos últimos anos. Negócios

@@ -155,7 +155,7 @@ export default async function LandingPageCidadePage({
       <section className="py-20 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-[#0A1628] mb-4 text-center">
-            Por que {cidade.nome} precisa de uma landing page que converte?
+            Por que negócios em {cidade.nome} precisam de uma landing page que converte?
           </h2>
           <p className="text-gray-500 text-center mb-12 max-w-2xl mx-auto">
             Tráfego pago sem landing page de qualidade é dinheiro jogado fora.
