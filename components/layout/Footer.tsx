@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SITE_NAME, WHATSAPP_LINK, PRICES } from "@/lib/constants";
 
 const servicos = [
@@ -73,11 +74,17 @@ export default function Footer() {
           <div>
             <Link
               href="/"
-              className="inline-flex font-bold text-xl"
+              className="inline-flex"
               aria-label={`${SITE_NAME} — Página Inicial`}
             >
-              <span style={{ color: "#3B82F6" }}>Brand</span>
-              <span style={{ color: "#F8FAFC" }}>Code Solutions</span>
+              <Image
+                src="/logo.png"
+                alt={SITE_NAME}
+                width={95}
+                height={28}
+                className="h-[28px] object-contain"
+                style={{ width: "auto" }}
+              />
             </Link>
 
             <p className="mt-4 text-sm leading-relaxed" style={{ color: "#64748B" }}>
@@ -140,8 +147,6 @@ export default function Footer() {
             <ul className="space-y-2">
               {[
                 { href: "/sobre", label: "Sobre Nós" },
-                { href: "/portfolio", label: "Portfólio" },
-                { href: "/blog", label: "Blog" },
                 { href: "/contato", label: "Contato" },
               ].map((l) => (
                 <li key={l.href}>
@@ -213,8 +218,6 @@ export default function Footer() {
             . Todos os direitos reservados.
           </p>
           <div className="flex items-center gap-4">
-            <Link href="/blog" className="footer-link">Blog</Link>
-            <Link href="/portfolio" className="footer-link">Portfólio</Link>
             <Link href="/contato" className="footer-link">Contato</Link>
             <a
               href={WHATSAPP_LINK}

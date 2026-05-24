@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useRef, useEffect, useCallback } from "react";
 import { WHATSAPP_URL, SITE_NAME, PRICES } from "@/lib/constants";
 
@@ -37,8 +38,6 @@ const servicos = [
 ] as const;
 
 const navLinks = [
-  { href: "/portfolio", label: "Portfólio" },
-  { href: "/blog", label: "Blog" },
   { href: "/sobre", label: "Sobre" },
   { href: "/contato", label: "Contato" },
 ] as const;
@@ -81,31 +80,24 @@ export default function Header() {
   }, []);
 
   return (
-    <header
-      className="fixed top-0 left-0 right-0 z-50 border-b"
-      style={{
-        background: "rgba(10,15,30,0.85)",
-        backdropFilter: "blur(12px)",
-        WebkitBackdropFilter: "blur(12px)",
-        borderColor: "rgba(255,255,255,0.06)",
-      }}
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#0A1628] shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-0.5 font-bold text-xl flex-shrink-0"
+            className="flex items-center flex-shrink-0"
             aria-label={`${SITE_NAME} — Voltar à página inicial`}
           >
-            <span style={{ color: "#3B82F6" }}>Brand</span>
-            <span style={{ color: "#F8FAFC" }}>Code</span>
-            <span
-              className="hidden sm:inline font-normal text-base ml-1"
-              style={{ color: "#94A3B8" }}
-            >
-              Solutions
-            </span>
+            <Image
+              src="/logo.png"
+              alt={SITE_NAME}
+              width={95}
+              height={28}
+              className="h-[28px] object-contain"
+              style={{ width: "auto" }}
+              priority
+            />
           </Link>
 
           {/* Nav desktop */}
@@ -119,10 +111,7 @@ export default function Header() {
                 onClick={() => setServicosOpen((v) => !v)}
                 aria-haspopup="true"
                 aria-expanded={servicosOpen}
-                className="flex items-center gap-1 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-150"
-                style={{ color: "#94A3B8" }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "#F8FAFC")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "#94A3B8")}
+                className="flex items-center gap-1 px-3 py-2 rounded-md text-gray-300 hover:text-white text-sm font-medium transition-colors duration-150"
               >
                 Serviços
                 <svg
@@ -201,10 +190,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-3 py-2 text-sm font-medium transition-colors duration-150 rounded-md"
-                style={{ color: "#94A3B8" }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "#F8FAFC")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "#94A3B8")}
+                className="px-3 py-2 text-gray-300 hover:text-white text-sm font-medium transition-colors duration-150 rounded-md"
               >
                 {link.label}
               </Link>
@@ -217,20 +203,8 @@ export default function Header() {
               href={WA_ORCAMENTO}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-semibold px-5 py-2 rounded-md transition-all duration-200"
-              style={{
-                border: "1px solid #3B82F6",
-                color: "#3B82F6",
-                background: "transparent",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = "#3B82F6";
-                e.currentTarget.style.color = "#fff";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = "transparent";
-                e.currentTarget.style.color = "#3B82F6";
-              }}
+              className="inline-flex items-center gap-2 btn-wa text-white text-sm font-semibold px-5 py-2 rounded-md transition-all duration-200"
+              style={{ background: "#25D366", color: "#fff" }}
             >
               {WA_ICON}
               Solicitar orçamento
@@ -240,8 +214,7 @@ export default function Header() {
           {/* Hamburger mobile */}
           <button
             onClick={() => setMenuOpen((v) => !v)}
-            className="md:hidden p-2 rounded-md transition-colors"
-            style={{ color: "#F8FAFC" }}
+            className="md:hidden text-white p-2 rounded-md hover:bg-blue-900/30 transition-colors"
             aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
             aria-expanded={menuOpen}
           >
@@ -321,12 +294,8 @@ export default function Header() {
                 href={WA_ORCAMENTO}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 w-full text-sm font-bold py-3 rounded-md transition-colors"
-                style={{
-                  border: "1px solid #3B82F6",
-                  color: "#3B82F6",
-                  background: "transparent",
-                }}
+                className="flex items-center justify-center gap-2 w-full btn-wa text-white text-sm font-bold py-3 rounded-md transition-colors"
+                style={{ background: "#25D366", color: "#fff" }}
               >
                 {WA_ICON}
                 Solicitar orçamento
