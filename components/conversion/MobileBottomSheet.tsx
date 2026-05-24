@@ -165,13 +165,8 @@ export default function MobileBottomSheet() {
             href={`${WHATSAPP_URL}?text=${encodeURIComponent(WA_MSG)}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="
-              w-full inline-flex items-center justify-center gap-3
-              bg-[#25D366] hover:bg-[#20bc59] active:bg-[#1aa851]
-              text-white font-bold text-base
-              py-4 px-6 rounded-full
-              shadow-md transition-all duration-150 active:scale-95
-            "
+            className="w-full inline-flex items-center justify-center gap-3 btn-wa font-bold text-base py-4 px-6 rounded-full transition-all duration-150"
+            style={{ background: "#25D366", color: "#fff" }}
           >
             {WA_ICON}
             Abrir WhatsApp

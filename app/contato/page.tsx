@@ -48,7 +48,8 @@ export default function ContatoPage() {
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full bg-green-500 hover:bg-green-400 text-white font-semibold py-3 rounded-full text-sm transition-colors"
+                className="block w-full btn-wa font-semibold py-3 rounded-full text-sm"
+                style={{ background: "#25D366", color: "#fff" }}
               >
                 Abrir WhatsApp
               </a>

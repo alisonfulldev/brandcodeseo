@@ -39,15 +39,8 @@ export default function WhatsAppCTA({
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`${label} — WhatsApp BrandCode Solutions`}
-      className={`
-        inline-flex items-center gap-3
-        bg-[#25D366] hover:bg-[#20bc59] active:bg-[#1aa851]
-        text-white font-semibold
-        px-6 py-3 rounded-full
-        shadow-lg hover:shadow-xl
-        transition-all duration-200 hover:scale-105 active:scale-100
-        ${className}
-      `}
+      className={`inline-flex items-center gap-3 btn-wa font-semibold px-6 py-3 rounded-full transition-all duration-200 ${className}`}
+      style={{ background: "#25D366", color: "#fff" }}
     >
       {WA_ICON}
       {label}

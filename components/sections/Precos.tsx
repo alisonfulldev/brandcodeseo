@@ -191,7 +191,7 @@ export default function Precos() {
                 href={`${WHATSAPP_URL}?text=${encodeURIComponent(plano.msg)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 py-3 px-6 rounded-full font-semibold text-sm transition-all duration-200 hover:opacity-90 active:scale-95"
+                className={`w-full inline-flex items-center justify-center gap-2 py-3 px-6 rounded-full font-semibold text-sm transition-all duration-200 hover:opacity-90 active:scale-95 ${!plano.destaque ? "btn-wa" : ""}`}
                 style={
                   plano.destaque
                     ? { background: "#3B82F6", color: "#fff" }
@@ -203,105 +203,6 @@ export default function Precos() {
               </a>
             </div>
           ))}
-        </div>
-
-        {/* Seção Google Ads */}
-        <div
-          className="rounded-2xl p-8 mb-12"
-          style={{
-            background: "#0D1526",
-            borderLeft: "3px solid #3B82F6",
-            padding: "2.5rem",
-          }}
-        >
-          <span
-            className="inline-block text-xs font-bold tracking-widest mb-4 px-3 py-1 rounded-full"
-            style={{ background: "rgba(59,130,246,0.15)", color: "#3B82F6" }}
-          >
-            SERVIÇO OPCIONAL
-          </span>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-            <div>
-              <h3 className="font-bold text-2xl mb-3" style={{ color: "#F8FAFC" }}>
-                Aceleração com Google Ads
-              </h3>
-              <p className="text-base mb-6" style={{ color: "#94A3B8" }}>
-                Para empresas que querem resultados mais rápidos enquanto o SEO evolui
-                organicamente.
-              </p>
-
-              <ul className="space-y-3 mb-6">
-                {[
-                  "Apareça no topo do Google a partir de amanhã",
-                  "Gere visitas qualificadas desde o primeiro dia",
-                  "Acelere a geração de leads enquanto o SEO cresce",
-                  "Combine tráfego pago e orgânico para resultado máximo",
-                ].map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-start gap-2 text-sm"
-                    style={{ color: "#CBD5E1" }}
-                  >
-                    {CHECK_ICON}
-                    {item}
-                  </li>
-                ))}
-              </ul>
-
-              <p className="text-xs" style={{ color: "#64748B" }}>
-                O investimento em anúncios é pago diretamente pelo cliente ao Google.
-                Nós cuidamos de toda a estratégia e gestão.
-              </p>
-            </div>
-
-            <div className="flex flex-col justify-between gap-6">
-              <div className="space-y-3">
-                <div
-                  className="rounded-xl p-4"
-                  style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)" }}
-                >
-                  <p className="text-xs font-semibold mb-1" style={{ color: "#64748B" }}>
-                    ATIVAÇÃO E CONFIGURAÇÃO
-                  </p>
-                  <p className="text-2xl font-extrabold" style={{ color: "#F8FAFC" }}>
-                    R$ 197
-                  </p>
-                  <p className="text-xs mt-1" style={{ color: "#64748B" }}>
-                    pagamento único
-                  </p>
-                </div>
-
-                <div
-                  className="rounded-xl p-4"
-                  style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)" }}
-                >
-                  <p className="text-xs font-semibold mb-1" style={{ color: "#64748B" }}>
-                    GESTÃO MENSAL
-                  </p>
-                  <p className="text-2xl font-extrabold" style={{ color: "#F8FAFC" }}>
-                    R$ 300 – R$ 1.000
-                  </p>
-                  <p className="text-xs mt-1" style={{ color: "#64748B" }}>
-                    conforme volume de campanhas
-                  </p>
-                </div>
-              </div>
-
-              <a
-                href={`${WHATSAPP_URL}?text=${encodeURIComponent(
-                  "Olá! Tenho interesse no serviço de Google Ads. Pode me passar mais detalhes?"
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 py-3 px-6 rounded-full font-semibold text-sm transition-all duration-200 hover:opacity-90 active:scale-95"
-                style={{ background: "#3B82F6", color: "#fff" }}
-              >
-                {WA_ICON}
-                Quero acelerar meus resultados
-              </a>
-            </div>
-          </div>
         </div>
 
         {/* Frase final */}
@@ -319,7 +220,7 @@ export default function Precos() {
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 py-4 px-8 rounded-full font-bold text-base transition-all duration-200 hover:opacity-90 active:scale-95"
+            className="inline-flex items-center gap-2 btn-wa py-4 px-8 rounded-full font-bold text-base transition-all duration-200 active:scale-95"
             style={{ background: "#25D366", color: "#fff" }}
           >
             {WA_ICON}

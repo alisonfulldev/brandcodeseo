@@ -94,14 +94,8 @@ export default function ExitIntent() {
               href={`${WHATSAPP_URL}?text=${encodeURIComponent(WA_MSG)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="
-                w-full inline-flex items-center justify-center gap-2
-                bg-[#25D366] hover:bg-[#20bc59] active:bg-[#1aa851]
-                text-white font-bold
-                py-3.5 px-6 rounded-full
-                transition-all duration-200 hover:scale-105 active:scale-100
-                shadow-md hover:shadow-lg
-              "
+              className="w-full inline-flex items-center justify-center gap-2 btn-wa font-bold py-3.5 px-6 rounded-full transition-all duration-200"
+              style={{ background: "#25D366", color: "#fff" }}
             >
               {WA_ICON}
               Quero meu orçamento grátis

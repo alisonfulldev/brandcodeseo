@@ -45,12 +45,8 @@ export default function UrgencyBanner() {
             href={`${WHATSAPP_URL}?text=${encodeURIComponent(WA_MSG)}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="
-              bg-[#25D366] hover:bg-[#20bc59]
-              text-white text-xs font-bold
-              px-4 py-1.5 rounded-full
-              transition-colors duration-150 whitespace-nowrap
-            "
+            className="btn-wa text-xs font-bold px-4 py-1.5 rounded-full whitespace-nowrap"
+            style={{ background: "#25D366", color: "#fff" }}
           >
             Garantir vaga
           </a>

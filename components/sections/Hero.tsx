@@ -120,13 +120,8 @@ export default function Hero({
             href={waLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 font-semibold text-base transition-all duration-200 hover:brightness-110 active:scale-95"
-            style={{
-              background: "#25D366",
-              color: "#fff",
-              borderRadius: "8px",
-              padding: "14px 28px",
-            }}
+            className="inline-flex items-center gap-2.5 btn-wa font-semibold text-base transition-all duration-200 active:scale-95"
+            style={{ background: "#25D366", color: "#fff", borderRadius: "8px", padding: "14px 28px" }}
           >
             {WA_ICON}
             {cta}

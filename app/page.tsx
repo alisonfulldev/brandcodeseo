@@ -415,13 +415,8 @@ export default function HomePage() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 font-bold text-lg text-white transition-all duration-200 hover:brightness-110 active:scale-95"
-              style={{
-                background: "#25D366",
-                borderRadius: "8px",
-                padding: "14px 32px",
-                boxShadow: "0 0 30px rgba(37,211,102,0.2)",
-              }}
+              className="inline-flex items-center gap-3 btn-wa font-bold text-lg transition-all duration-200 active:scale-95"
+              style={{ background: "#25D366", color: "#fff", borderRadius: "8px", padding: "14px 32px" }}
             >
               <IconWA />
               Quero meu site que vende
