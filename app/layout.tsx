@@ -201,7 +201,6 @@ export default function RootLayout({
                 gtag('config', '${GA_ID}', {
                   page_path: window.location.pathname,
                   anonymize_ip: true,
-                  send_page_view: false,
                 });
               `}
             </Script>
