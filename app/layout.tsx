@@ -26,7 +26,7 @@ const sora = Sora({
 
 // ─── Google Analytics 4 ───────────────────────────────────────────────────────
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "";
+const GA_ID = "G-SSYB2EDFJY";
 
 // ─── Schema.org LocalBusiness (raiz = cobertura nacional) ────────────────────
 
