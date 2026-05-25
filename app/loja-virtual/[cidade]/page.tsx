@@ -224,7 +224,7 @@ export default async function LojaVirtualCidadePage({
             Investimento para sua loja virtual em {cidade.nome}
           </h2>
           <p className="text-gray-500 text-center mb-12">
-            Mesmo preço para todo o Brasil. Sem mensalidade. Sem surpresas.
+            Mesmo preço para todo o Brasil. Entre em contato para saber mais.
           </p>
           <div className="bg-[#0A1628] rounded-2xl p-10 text-white text-center shadow-xl">
             <p className="text-blue-300 text-xs font-bold uppercase tracking-widest mb-3">

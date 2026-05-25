@@ -69,7 +69,7 @@ export default async function CriacaoDeSitesCidadePage({
     },
     {
       question: `Quanto custa criar um site profissional em ${cidade.nome}?`,
-      answer: `Site Institucional ${PRICES.institucional}, Landing Page ${PRICES.landingPage} e Loja Virtual ${PRICES.lojaVirtual}. Mesmo preço para todo o Brasil — sem taxa extra por ser de ${cidade.nome}. Nada de mensalidade ou cobrança de manutenção.`,
+      answer: `Site Institucional ${PRICES.institucional}, Landing Page ${PRICES.landingPage} e Loja Virtual ${PRICES.lojaVirtual}. Mesmo preço para todo o Brasil — sem taxa extra por ser de ${cidade.nome}. Entre em contato para saber mais sobre os planos disponíveis.`,
     },
     {
       question: `Meu site vai aparecer nas buscas de "${cidade.nome}" no Google?`,
@@ -226,7 +226,7 @@ export default async function CriacaoDeSitesCidadePage({
             {[
               {
                 tipo: "Landing Page",
-                preco: "Planos a partir de R$ 90/mês",
+                preco: "R$ 199",
                 prazo: "5 dias úteis",
                 desc: "Ideal para campanhas de Google Ads, Meta Ads ou captura de leads qualificados.",
                 href: "/landing-page/preco",
@@ -234,7 +234,7 @@ export default async function CriacaoDeSitesCidadePage({
               },
               {
                 tipo: "Site Institucional",
-                preco: "Planos a partir de R$ 90/mês",
+                preco: "R$ 299",
                 prazo: "15 dias úteis",
                 desc: "Site completo com múltiplas páginas, SEO avançado e painel administrativo incluso.",
                 href: "/criacao-de-sites/quanto-custa",
@@ -242,7 +242,7 @@ export default async function CriacaoDeSitesCidadePage({
               },
               {
                 tipo: "Loja Virtual",
-                preco: "Planos a partir de R$ 90/mês",
+                preco: "R$ 399",
                 prazo: "25 dias úteis",
                 desc: "E-commerce completo com pagamento integrado, estoque e gestão de pedidos.",
                 href: "/loja-virtual/preco",
@@ -269,7 +269,14 @@ export default async function CriacaoDeSitesCidadePage({
                     plano.destaque ? "text-white" : "text-[#0A1628]"
                   }`}
                 >
-                  a partir de {plano.preco}
+                  {plano.preco}
+                </p>
+                <p
+                  className={`text-xs mb-1 ${
+                    plano.destaque ? "text-blue-300" : "text-blue-600"
+                  }`}
+                >
+                  taxa de implementação
                 </p>
                 <p
                   className={`text-xs mb-5 ${

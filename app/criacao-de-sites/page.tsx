@@ -148,9 +148,9 @@ export default function CriacaoDeSitesPage() {
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-blue-400 text-xs font-bold tracking-widest">SITE INSTITUCIONAL</span>
               </div>
-              <div className="text-5xl font-extrabold text-white mb-1">Planos a partir de R$ 90/mês</div>
+              <div className="text-5xl font-extrabold text-white mb-1">R$ 299</div>
               <p className="text-gray-400 text-sm mb-6">
-                Ou em até 12x no cartão — sem juros
+                taxa de implementação única
               </p>
               <ul className="space-y-2.5 text-sm text-gray-300 mb-8 border-t border-white/10 pt-6">
                 <li className="flex items-center gap-2">
