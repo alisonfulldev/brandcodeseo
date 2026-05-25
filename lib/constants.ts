@@ -10,9 +10,9 @@ export const WHATSAPP_MSG_DEFAULT = encodeURIComponent(
 export const WHATSAPP_LINK = `${WHATSAPP_URL}?text=${WHATSAPP_MSG_DEFAULT}`;
 
 export const PRICES = {
-  institucional: "Planos a partir de R$ 90/mês",
-  lojaVirtual: "Planos a partir de R$ 90/mês",
-  landingPage: "Planos a partir de R$ 90/mês",
+  institucional: "taxa de implementação de R$ 299",
+  lojaVirtual: "taxa de implementação de R$ 399",
+  landingPage: "taxa de implementação de R$ 199",
 } as const;
 
 export const COLORS = {

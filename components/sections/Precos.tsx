@@ -30,7 +30,6 @@ const WA_ICON = (
 interface Plano {
   nome: string;
   preco: string;
-  taxa: string;
   tag: string | null;
   descricao: string;
   features: string[];
@@ -41,8 +40,7 @@ interface Plano {
 const planos: Plano[] = [
   {
     nome: "Presença Digital",
-    preco: "R$ 90/mês",
-    taxa: "R$ 199 (taxa de implementação única)",
+    preco: "R$ 199",
     tag: null,
     descricao:
       "Para empresas que precisam de um site profissional e confiável na internet.",
@@ -59,8 +57,7 @@ const planos: Plano[] = [
   },
   {
     nome: "Crescimento Digital",
-    preco: "R$ 120/mês",
-    taxa: "R$ 299 (taxa de implementação única)",
+    preco: "R$ 299",
     tag: "Mais escolhido",
     descricao:
       "Para empresas que querem aparecer no Google e atrair clientes de forma orgânica.",
@@ -78,8 +75,7 @@ const planos: Plano[] = [
   },
   {
     nome: "Autoridade Digital",
-    preco: "R$ 180/mês",
-    taxa: "R$ 399 (taxa de implementação única)",
+    preco: "R$ 399",
     tag: null,
     descricao:
       "Para empresas que querem dominar o Google e gerar clientes de forma consistente e escalável.",
@@ -169,7 +165,7 @@ export default function Precos() {
                     {plano.preco}
                   </div>
                   <p className="text-xs mt-1" style={{ color: "#94A3B8" }}>
-                    {plano.taxa}
+                    taxa de implementação única
                   </p>
                 </div>
               </div>

@@ -39,7 +39,7 @@ interface Plano {
 const planos: Plano[] = [
   {
     nome: "Landing Page",
-    preco: "Planos a partir de R$ 90/mês",
+    preco: "R$ 199",
     tag: null,
     descricao: "Ideal para captar leads e divulgar um serviço específico.",
     features: [
@@ -54,7 +54,7 @@ const planos: Plano[] = [
   },
   {
     nome: "Site Institucional",
-    preco: "Planos a partir de R$ 90/mês",
+    preco: "R$ 299",
     tag: "Mais escolhido",
     descricao: "O site completo para seu negócio aparecer no Google e vender.",
     features: [
@@ -69,7 +69,7 @@ const planos: Plano[] = [
   },
   {
     nome: "Loja Virtual",
-    preco: "Planos a partir de R$ 90/mês",
+    preco: "R$ 399",
     tag: null,
     descricao: "Sua loja online com pagamentos, estoque e SEO para produtos.",
     features: [
@@ -93,8 +93,7 @@ export default function PricingTable() {
             Preços claros. Sem surpresas.
           </h2>
           <p className="mt-4 text-gray-400 text-lg max-w-2xl mx-auto">
-            Escolha o plano ideal para o seu negócio. Parcelas disponíveis no
-            cartão.
+            Escolha o plano ideal para o seu negócio. Entre em contato para saber mais.
           </p>
         </div>
 
@@ -121,10 +120,10 @@ export default function PricingTable() {
                 <p className="text-sm text-gray-300 mb-5">{plano.descricao}</p>
 
                 <div className="mb-6">
-                  <span className="text-gray-400 text-sm block">a partir de</span>
                   <span className="text-4xl font-extrabold text-white">
                     {plano.preco}
                   </span>
+                  <span className="text-gray-400 text-sm block mt-1">taxa de implementação única</span>
                 </div>
               </div>
 

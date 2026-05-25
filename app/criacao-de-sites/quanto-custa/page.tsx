@@ -29,8 +29,8 @@ const faqs = [
     answer: "Design responsivo, SEO técnico avançado, schema JSON-LD, painel administrativo, integração WhatsApp, hospedagem na Vercel e suporte pós-entrega.",
   },
   {
-    question: "Tem algum custo mensal?",
-    answer: "Não cobramos mensalidade. O único custo recorrente é o domínio (a partir de R$40/ano). A hospedagem na Vercel é gratuita para nossos projetos.",
+    question: "Tem algum custo após a implementação?",
+    answer: "O investimento inicial é a taxa de implementação. Após entrar em contato, apresentamos as opções de plano de manutenção disponíveis para manter seu projeto atualizado e com suporte contínuo.",
   },
   {
     question: "Parcela no cartão?",
