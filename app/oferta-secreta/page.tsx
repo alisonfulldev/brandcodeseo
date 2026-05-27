@@ -72,105 +72,77 @@ export default function OfertaSecreta() {
         </div>
       </section>
 
-      {/* Portfólio */}
-      <section className="section" id="portfolio">
+      {/* Proposta de valor R$97 */}
+      <section className="section">
         <div className="container">
-          <div className="section-tag">Portfólio recente</div>
-          <h2 className="section-title">Mini Sites que entregamos essa semana</h2>
+          <div className="section-tag">A oferta mais direta do mercado</div>
+          <h2 className="section-title">
+            R$ 97. Uma vez só. Seu site no ar pra sempre.
+          </h2>
           <p className="section-desc">
-            Cada site foi feito do zero, exclusivo para o negócio do cliente — sem template genérico.
+            Sem mensalidade, sem contrato, sem surpresa no boleto. Você paga uma vez e tem um site
+            profissional que trabalha por você todos os dias — capturando clientes enquanto você dorme.
           </p>
-          <div className="portfolio-grid">
-            {/* Personal Trainer */}
-            <div className="port-card">
-              <div className="port-browser">
-                <div className="port-dots"><span /><span /><span /></div>
-                <div className="port-url">carlafit.com.br</div>
-              </div>
-              <div className="port-preview theme-fitness">
-                <div className="mock-nav">
-                  <div className="mock-logo" />
-                  <div className="mock-nav-links"><span /><span /><span /></div>
-                </div>
-                <div className="mock-hero">
-                  <div className="mock-h1" /><div className="mock-h2" /><div className="mock-cta-btn" />
-                </div>
-                <div className="mock-sections">
-                  <span style={{ height: 18 }} /><span style={{ height: 14 }} /><span style={{ height: 20 }} />
-                </div>
-              </div>
-              <div className="port-info">
-                <div className="port-tag">Personal Trainer</div>
-                <div className="port-name">Carla Fit — Academia & Treinos</div>
-                <div className="port-desc">3 seções: Hero de impacto, serviços e contato com WhatsApp direto.</div>
-                <div className="port-footer">
-                  <span className="port-badge">Entregue em 3 dias</span>
-                  <a href={waLink("Quero um Mini Site igual ao da Personal Trainer!")} target="_blank" rel="noopener noreferrer" className="port-cta-link">Quero igual →</a>
-                </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 24, marginBottom: 56 }}>
+            <div className="benefit-card" style={{ background: "rgba(245,158,11,0.06)", border: "1px solid rgba(245,158,11,0.18)", borderRadius: 14, padding: 28, display: "flex", gap: 18, alignItems: "flex-start" }}>
+              <span style={{ fontSize: "2rem", flexShrink: 0 }}>💰</span>
+              <div>
+                <strong style={{ display: "block", color: "var(--white)", fontSize: "1rem", marginBottom: 6 }}>Pagamento único, sem mensalidade</strong>
+                <p style={{ fontSize: "0.9rem", color: "var(--muted)", lineHeight: 1.6 }}>
+                  Enquanto outros cobram R$ 80, R$ 150 por mês todo mês, você paga R$ 97 uma única vez e pronto. O site é seu.
+                </p>
               </div>
             </div>
-            {/* Estética */}
-            <div className="port-card">
-              <div className="port-browser">
-                <div className="port-dots"><span /><span /><span /></div>
-                <div className="port-url">estudiobelavida.com.br</div>
-              </div>
-              <div className="port-preview theme-beauty">
-                <div className="mock-nav">
-                  <div className="mock-logo" />
-                  <div className="mock-nav-links"><span /><span /><span /></div>
-                </div>
-                <div className="mock-hero">
-                  <div className="mock-h1" /><div className="mock-h2" /><div className="mock-cta-btn" />
-                </div>
-                <div className="mock-sections">
-                  <span style={{ height: 16 }} /><span style={{ height: 22 }} /><span style={{ height: 14 }} />
-                </div>
-              </div>
-              <div className="port-info">
-                <div className="port-tag">Estética & Beleza</div>
-                <div className="port-name">Estúdio Bela Vida</div>
-                <div className="port-desc">Apresentação de serviços, fotos dos resultados e agendamento pelo WhatsApp.</div>
-                <div className="port-footer">
-                  <span className="port-badge">Entregue em 4 dias</span>
-                  <a href={waLink("Quero um Mini Site igual ao do Estúdio de Estética!")} target="_blank" rel="noopener noreferrer" className="port-cta-link">Quero igual →</a>
-                </div>
+            <div className="benefit-card" style={{ background: "rgba(245,158,11,0.06)", border: "1px solid rgba(245,158,11,0.18)", borderRadius: 14, padding: 28, display: "flex", gap: 18, alignItems: "flex-start" }}>
+              <span style={{ fontSize: "2rem", flexShrink: 0 }}>🎯</span>
+              <div>
+                <strong style={{ display: "block", color: "var(--white)", fontSize: "1rem", marginBottom: 6 }}>Feito pra converter, não só pra existir</strong>
+                <p style={{ fontSize: "0.9rem", color: "var(--muted)", lineHeight: 1.6 }}>
+                  Não é um site bonito que fica parado. Cada seção é pensada pra transformar visitante em cliente — e cliente em indicação.
+                </p>
               </div>
             </div>
-            {/* Restaurante */}
-            <div className="port-card">
-              <div className="port-browser">
-                <div className="port-dots"><span /><span /><span /></div>
-                <div className="port-url">pizzariadozinho.com.br</div>
-              </div>
-              <div className="port-preview theme-food">
-                <div className="mock-nav">
-                  <div className="mock-logo" />
-                  <div className="mock-nav-links"><span /><span /><span /></div>
-                </div>
-                <div className="mock-hero">
-                  <div className="mock-h1" /><div className="mock-h2" /><div className="mock-cta-btn" />
-                </div>
-                <div className="mock-sections">
-                  <span style={{ height: 20 }} /><span style={{ height: 14 }} /><span style={{ height: 18 }} />
-                </div>
-              </div>
-              <div className="port-info">
-                <div className="port-tag">Alimentação & Delivery</div>
-                <div className="port-name">Pizzaria do Zinho</div>
-                <div className="port-desc">Cardápio resumido, horários e botão de pedido direto no WhatsApp.</div>
-                <div className="port-footer">
-                  <span className="port-badge">Entregue em 2 dias</span>
-                  <a href={waLink("Quero um Mini Site igual ao da Pizzaria!")} target="_blank" rel="noopener noreferrer" className="port-cta-link">Quero igual →</a>
-                </div>
+            <div className="benefit-card" style={{ background: "rgba(245,158,11,0.06)", border: "1px solid rgba(245,158,11,0.18)", borderRadius: 14, padding: 28, display: "flex", gap: 18, alignItems: "flex-start" }}>
+              <span style={{ fontSize: "2rem", flexShrink: 0 }}>⚡</span>
+              <div>
+                <strong style={{ display: "block", color: "var(--white)", fontSize: "1rem", marginBottom: 6 }}>No ar em até 5 dias úteis</strong>
+                <p style={{ fontSize: "0.9rem", color: "var(--muted)", lineHeight: 1.6 }}>
+                  Sem esperar semanas. Você me manda as informações hoje, e em poucos dias seu negócio já aparece no Google.
+                </p>
               </div>
             </div>
           </div>
-          <div className="portfolio-cta-wrap">
-            <p>O seu negócio pode ser o próximo. Comece hoje por apenas <strong style={{ color: "var(--white)" }}>R$ 97</strong>.</p>
-            <a href={waLink("Quero meu Mini Site por R$ 97!")} target="_blank" rel="noopener noreferrer" className="cta-big" style={{ fontSize: "1rem", padding: "16px 36px" }}>
+
+          {/* Bloco destaque */}
+          <div style={{
+            background: "linear-gradient(135deg, rgba(245,158,11,0.1) 0%, rgba(249,115,22,0.08) 100%)",
+            border: "1px solid rgba(245,158,11,0.3)",
+            borderRadius: 20,
+            padding: "48px 40px",
+            textAlign: "center",
+            maxWidth: 680,
+            margin: "0 auto",
+          }}>
+            <p style={{ fontSize: "0.85rem", color: "var(--accent)", fontWeight: 700, letterSpacing: "1.5px", textTransform: "uppercase", marginBottom: 16 }}>
+              Pensa assim
+            </p>
+            <p style={{ fontSize: "clamp(1.2rem, 3vw, 1.6rem)", color: "var(--white)", fontWeight: 800, lineHeight: 1.4, marginBottom: 20 }}>
+              Se o seu site trouxer <em style={{ fontStyle: "normal", color: "var(--accent)" }}>1 cliente a mais por mês</em>,
+              ele já se paga — e você ainda fica com o lucro.
+            </p>
+            <p style={{ fontSize: "0.95rem", color: "var(--muted)", marginBottom: 36, lineHeight: 1.7 }}>
+              A maioria dos nossos clientes recupera o investimento na primeira semana. O resto é lucro puro.
+            </p>
+            <a
+              href={waLink("Quero meu Mini Site por R$ 97, pagamento único!")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-big"
+              style={{ fontSize: "1rem", padding: "16px 36px" }}
+            >
               <WaSvg size={22} />
-              Quero meu Mini Site agora
+              Quero garantir meu site agora
             </a>
           </div>
         </div>
