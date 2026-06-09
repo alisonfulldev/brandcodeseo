@@ -1,524 +1,272 @@
 [
   {
-    "slug": "medico",
-    "nome": "Médico",
-    "nomeCompleto": "Médicos e Clínicas Médicas",
-    "descricao": "Sites profissionais para médicos e clínicas médicas que desejam atrair mais pacientes pela internet.",
-    "palavrasChave": ["site para médico", "site médico", "site clínica médica", "criação de site para médico"],
-    "dores": ["Perder pacientes para concorrentes com site", "Não aparecer no Google", "Falta de credibilidade online"],
-    "beneficios": ["Aparecer no Google para pacientes locais", "Transmitir credibilidade e autoridade", "Receber consultas via WhatsApp", "Mostrar especialidades e convênios"]
-  },
-  {
-    "slug": "advogado",
-    "nome": "Advogado",
-    "nomeCompleto": "Advogados e Escritórios de Advocacia",
-    "descricao": "Sites institucionais para advogados e escritórios que precisam atrair clientes com autoridade e credibilidade.",
-    "palavrasChave": ["site para advogado", "site advocacia", "site escritório de advocacia", "criação de site advogado"],
-    "dores": ["Falta de presença digital profissional", "Clientes não encontram o escritório online", "Imagem desatualizada"],
-    "beneficios": ["Captar clientes 24h pelo site", "Transmitir autoridade jurídica", "Apresentar áreas de atuação", "Depoimentos e casos de sucesso"]
-  },
-  {
-    "slug": "dentista",
-    "nome": "Dentista",
-    "nomeCompleto": "Dentistas e Clínicas Odontológicas",
-    "descricao": "Sites para dentistas e clínicas odontológicas que querem lotar a agenda com novos pacientes.",
-    "palavrasChave": ["site para dentista", "site odontológico", "site clínica odontológica", "criação de site dentista"],
-    "dores": ["Agenda vazia", "Pacientes não encontram a clínica online", "Sem diferencial competitivo"],
-    "beneficios": ["Agenda sempre cheia", "Aparecer no Google Maps", "Mostrar procedimentos e diferenciais", "Depoimentos de pacientes satisfeitos"]
-  },
-  {
-    "slug": "engenheiro",
-    "nome": "Engenheiro",
-    "nomeCompleto": "Engenheiros e Empresas de Engenharia",
-    "descricao": "Sites profissionais para engenheiros civis, elétricos, mecânicos e demais especialidades que querem mais contratos.",
-    "palavrasChave": ["site para engenheiro", "site engenharia", "site empresa de engenharia"],
-    "dores": ["Sem presença digital profissional", "Dificuldade em apresentar portfólio", "Perder contratos para concorrentes"],
-    "beneficios": ["Portfólio de obras em destaque", "Captação de leads para projetos", "Credibilidade com clientes corporativos"]
-  },
-  {
-    "slug": "arquiteto",
-    "nome": "Arquiteto",
-    "nomeCompleto": "Arquitetos e Escritórios de Arquitetura",
-    "descricao": "Sites visuais e sofisticados para arquitetos e escritórios que querem exibir projetos e atrair clientes de alto padrão.",
-    "palavrasChave": ["site para arquiteto", "site arquitetura", "portfólio arquiteto", "criação de site arquiteto"],
-    "dores": ["Portfólio desorganizado", "Falta de visibilidade online", "Dificuldade em atrair clientes premium"],
-    "beneficios": ["Galeria de projetos impactante", "Captação de clientes premium", "Diferencial visual no mercado"]
-  },
-  {
-    "slug": "psicologo",
-    "nome": "Psicólogo",
-    "nomeCompleto": "Psicólogos e Clínicas de Psicologia",
-    "descricao": "Sites acolhedores e profissionais para psicólogos que querem captar pacientes e humanizar sua presença digital.",
-    "palavrasChave": ["site para psicólogo", "site psicologia", "site terapeuta", "criação de site psicólogo"],
-    "dores": ["Sem presença online", "Dificuldade em ser encontrado", "Falta de confiança transmitida digitalmente"],
-    "beneficios": ["Agendamento online facilitado", "Transmitir acolhimento e profissionalismo", "Aparecer para buscas de psicólogo na cidade"]
-  },
-  {
-    "slug": "nutricionista",
-    "nome": "Nutricionista",
-    "nomeCompleto": "Nutricionistas e Clínicas de Nutrição",
-    "descricao": "Sites para nutricionistas que querem atrair pacientes, divulgar consultas e construir autoridade na área.",
-    "palavrasChave": ["site para nutricionista", "site nutrição", "criação de site nutricionista"],
-    "dores": ["Falta de visibilidade profissional", "Agenda não preenchida", "Sem diferencial online"],
-    "beneficios": ["Captação de pacientes online", "Apresentação de serviços e abordagens", "Agendamento integrado ao WhatsApp"]
+    "slug": "restaurante",
+    "nome": "Restaurante",
+    "nomeCompleto": "Restaurantes e Bares",
+    "descricao": "Sistemas e softwares para restaurantes: PDV, cardápio digital, controle de mesas, delivery próprio e integração com iFood.",
+    "palavrasChave": ["sistema para restaurante", "software restaurante", "pdv restaurante", "sistema delivery restaurante"],
+    "dores": ["Comanda em papel gerando erros", "Alto percentual do iFood", "Sem controle de estoque de ingredientes"],
+    "beneficios": ["PDV integrado com cozinha", "Delivery próprio sem comissão", "Controle de estoque por receita", "Cardápio digital pelo QR Code"]
   },
   {
     "slug": "clinica",
     "nome": "Clínica",
-    "nomeCompleto": "Clínicas de Saúde e Bem-Estar",
-    "descricao": "Sites completos para clínicas multidisciplinares, centros médicos e espaços de saúde que precisam de presença digital forte.",
-    "palavrasChave": ["site para clínica", "site clínica de saúde", "criação de site clínica médica"],
-    "dores": ["Dificuldade em apresentar todos os serviços", "Falta de agendamento online", "Sem visibilidade local"],
-    "beneficios": ["Apresentação completa da equipe e especialidades", "Agendamento online integrado", "SEO local para aparecer no Google"]
+    "nomeCompleto": "Clínicas e Consultórios de Saúde",
+    "descricao": "Sistemas para clínicas médicas, odontológicas e de estética: agendamento online, prontuário eletrônico e gestão financeira.",
+    "palavrasChave": ["sistema para clínica", "software clinica medica", "sistema agendamento clínica", "prontuário eletrônico"],
+    "dores": ["Agenda por telefone sem automação", "Prontuário em papel", "Faltas sem lembretes automáticos"],
+    "beneficios": ["Agendamento online 24h", "Prontuário eletrônico completo", "Lembrete automático por WhatsApp", "Gestão financeira integrada"]
   },
   {
     "slug": "academia",
     "nome": "Academia",
-    "nomeCompleto": "Academias e Espaços Fitness",
-    "descricao": "Sites modernos para academias, crossfit, pilates e estúdios fitness que querem captar alunos e reduzir cancelamentos.",
-    "palavrasChave": ["site para academia", "site fitness", "site crossfit", "criação de site academia"],
-    "dores": ["Alta taxa de cancelamento", "Dificuldade em captar novos alunos", "Sem presença digital"],
-    "beneficios": ["Showcase de modalidades e horários", "Captação de alunos via WhatsApp", "Depoimentos de alunos em destaque"]
+    "nomeCompleto": "Academias e Studios de Fitness",
+    "descricao": "Software completo para academias: controle de mensalidades, planos, frequência, avaliação física e comunicação com alunos.",
+    "palavrasChave": ["sistema para academia", "software academia", "gestão academia", "controle mensalidades academia"],
+    "dores": ["Inadimplência sem cobrança automática", "Frequência controlada em planilha", "Sem ficha de avaliação digital"],
+    "beneficios": ["Cobrança recorrente automática", "Controle de frequência por biometria ou QR", "Avaliação física digital", "Comunicação automática com alunos"]
   },
   {
-    "slug": "restaurante",
-    "nome": "Restaurante",
-    "nomeCompleto": "Restaurantes, Bares e Lanchonetes",
-    "descricao": "Sites com cardápio digital, reservas e integração com delivery para restaurantes que querem mais clientes.",
-    "palavrasChave": ["site para restaurante", "site restaurante", "cardápio online", "criação de site restaurante"],
-    "dores": ["Sem presença online", "Cardápio desatualizado", "Perder pedidos de delivery"],
-    "beneficios": ["Cardápio digital atualizado", "Reservas e pedidos via WhatsApp", "Aparecer no Google para restaurantes locais"]
-  },
-  {
-    "slug": "hotel",
-    "nome": "Hotel",
-    "nomeCompleto": "Hotéis, Pousadas e Hospedagens",
-    "descricao": "Sites com galeria, disponibilidade e reservas diretas para hotéis e pousadas que querem reduzir comissões de OTAs.",
-    "palavrasChave": ["site para hotel", "site pousada", "site hospedagem", "reserva direta hotel"],
-    "dores": ["Alta dependência de plataformas de terceiros", "Sem reservas diretas", "Falta de visibilidade orgânica"],
-    "beneficios": ["Reservas diretas sem comissão", "Galeria de acomodações atraente", "SEO para turistas da região"]
+    "slug": "escola",
+    "nome": "Escola",
+    "nomeCompleto": "Escolas e Instituições de Ensino",
+    "descricao": "Sistema escolar completo com matrícula online, notas, frequência, comunicados e financeiro para escolas e cursos.",
+    "palavrasChave": ["sistema para escola", "software escolar", "gestão escolar digital", "sistema de matrículas"],
+    "dores": ["Matrícula presencial demorada", "Notas e frequência em papel", "Comunicados enviados por bilhete"],
+    "beneficios": ["Matrícula 100% online", "Portal do aluno e responsável", "Comunicados por WhatsApp", "Financeiro integrado"]
   },
   {
     "slug": "imobiliaria",
     "nome": "Imobiliária",
-    "nomeCompleto": "Imobiliárias e Corretores de Imóveis",
-    "descricao": "Sites com catálogo de imóveis, filtros de busca e captação de leads para imobiliárias e corretores autônomos.",
-    "palavrasChave": ["site para imobiliária", "site imobiliário", "site corretor de imóveis", "criação de site imobiliária"],
-    "dores": ["Dificuldade em apresentar imóveis online", "Falta de captação de leads qualificados", "Dependência de portais"],
-    "beneficios": ["Catálogo de imóveis com filtros avançados", "Leads diretos pelo WhatsApp", "Independência de portais pagos"]
-  },
-  {
-    "slug": "construtora",
-    "nome": "Construtora",
-    "nomeCompleto": "Construtoras e Incorporadoras",
-    "descricao": "Sites institucionais e de lançamentos para construtoras que precisam transmitir credibilidade e gerar leads qualificados.",
-    "palavrasChave": ["site para construtora", "site incorporadora", "site construção civil"],
-    "dores": ["Falta de credibilidade online", "Dificuldade em apresentar empreendimentos", "Sem captação de leads online"],
-    "beneficios": ["Apresentação de empreendimentos com galeria", "Captação de compradores interessados", "Transmissão de credibilidade e segurança"]
-  },
-  {
-    "slug": "contabilidade",
-    "nome": "Contabilidade",
-    "nomeCompleto": "Escritórios de Contabilidade e Contadores",
-    "descricao": "Sites para escritórios contábeis e contadores autônomos que precisam atrair novos clientes empresariais.",
-    "palavrasChave": ["site para contador", "site contabilidade", "site escritório contábil"],
-    "dores": ["Falta de presença digital", "Dificuldade em se diferenciar da concorrência", "Sem captação de clientes online"],
-    "beneficios": ["Apresentação de serviços e planos", "Captação de empresas via WhatsApp", "Credibilidade com selos e certificações"]
-  },
-  {
-    "slug": "fotografo",
-    "nome": "Fotógrafo",
-    "nomeCompleto": "Fotógrafos e Estúdios de Fotografia",
-    "descricao": "Portfólios online impactantes para fotógrafos que querem vender mais sessões e eventos.",
-    "palavrasChave": ["site para fotógrafo", "portfólio fotógrafo", "site estúdio fotografia"],
-    "dores": ["Portfólio espalhado em redes sociais", "Falta de captação de clientes qualificados", "Sem diferencial online"],
-    "beneficios": ["Portfólio profissional centralizado", "Captação de eventos e sessões", "Diferencial visual forte"]
-  },
-  {
-    "slug": "estetica",
-    "nome": "Estética",
-    "nomeCompleto": "Clínicas de Estética e Beleza",
-    "descricao": "Sites para clínicas de estética, estética facial e corporal que querem atrair mais clientes na região.",
-    "palavrasChave": ["site para estética", "site clínica estética", "site estética facial"],
-    "dores": ["Agenda vazia", "Falta de visibilidade local", "Concorrência acirrada"],
-    "beneficios": ["Apresentação de procedimentos com fotos de antes e depois", "Agendamento pelo WhatsApp", "SEO local para aparecer em buscas próximas"]
+    "nomeCompleto": "Imobiliárias e Corretores",
+    "descricao": "CRM e sistema imobiliário para gestão de imóveis, clientes, propostas e contratos com integração nos portais.",
+    "palavrasChave": ["sistema para imobiliária", "crm imobiliário", "software imobiliária", "gestão imóveis software"],
+    "dores": ["Imóveis e clientes em planilhas", "Sem integração com portais imobiliários", "Leads perdidos por falta de follow-up"],
+    "beneficios": ["Gestão completa de imóveis e clientes", "Integração com portais", "Follow-up automático de leads", "Contratos digitais"]
   },
   {
     "slug": "salao-de-beleza",
     "nome": "Salão de Beleza",
     "nomeCompleto": "Salões de Beleza e Barbearias",
-    "descricao": "Sites modernos para salões de beleza, barbearias e nail designers que querem atrair clientes e lotar a agenda.",
-    "palavrasChave": ["site para salão de beleza", "site barbearia", "site salão", "criação de site salão"],
-    "dores": ["Agenda vazia", "Dependência de redes sociais", "Sem presença no Google"],
-    "beneficios": ["Agendamento online integrado", "Galeria de trabalhos realizados", "Aparecer no Google para buscas locais"]
+    "descricao": "Sistema completo para salão: agendamento online, controle de comissões, estoque de produtos e fidelidade de clientes.",
+    "palavrasChave": ["sistema salão de beleza", "software salão", "agendamento salão online", "sistema barbearia"],
+    "dores": ["Agenda no papel ou WhatsApp", "Comissões calculadas manualmente", "Clientes sem programa de fidelidade"],
+    "beneficios": ["Agendamento online 24h", "Comissões calculadas automaticamente", "Programa de fidelidade digital", "Confirmação por WhatsApp"]
   },
   {
     "slug": "pet-shop",
     "nome": "Pet Shop",
     "nomeCompleto": "Pet Shops e Clínicas Veterinárias",
-    "descricao": "Sites para pet shops, banho e tosa, e clínicas veterinárias que querem captar donos de pets online.",
-    "palavrasChave": ["site para pet shop", "site pet", "site banho e tosa", "criação de site pet shop"],
-    "dores": ["Falta de visibilidade online", "Dificuldade em divulgar serviços e produtos", "Sem agendamento online"],
-    "beneficios": ["Apresentação de serviços e produtos", "Agendamento de banho e tosa pelo WhatsApp", "SEO local para donos de pets"]
-  },
-  {
-    "slug": "escola",
-    "nome": "Escola",
-    "nomeCompleto": "Escolas, Colégios e Cursos",
-    "descricao": "Sites institucionais para escolas, colégios, cursos livres e cursinhos que precisam captar alunos e transmitir confiança.",
-    "palavrasChave": ["site para escola", "site colégio", "site curso", "criação de site educacional"],
-    "dores": ["Falta de matrículas online", "Dificuldade em apresentar diferenciais pedagógicos", "Sem presença digital profissional"],
-    "beneficios": ["Captação de matrículas online", "Apresentação do projeto pedagógico", "Depoimentos de pais e alunos"]
-  },
-  {
-    "slug": "pastor-e-igreja",
-    "nome": "Pastor e Igreja",
-    "nomeCompleto": "Igrejas, Pastores e Ministérios",
-    "descricao": "Sites para igrejas e ministérios que querem ampliar sua presença digital, transmitir cultos e captar novos membros.",
-    "palavrasChave": ["site para igreja", "site pastor", "site ministério", "criação de site igrejа"],
-    "dores": ["Sem presença digital", "Dificuldade em divulgar eventos e cultos", "Membros dispersos sem canal de comunicação"],
-    "beneficios": ["Transmissão ao vivo integrada", "Agenda de eventos e cultos", "Canal de doações e dízimos online"]
-  },
-  {
-    "slug": "ong",
-    "nome": "ONG",
-    "nomeCompleto": "ONGs e Organizações Sem Fins Lucrativos",
-    "descricao": "Sites para ONGs e instituições que precisam captar doadores, voluntários e divulgar seus projetos sociais.",
-    "palavrasChave": ["site para ONG", "site organização social", "site sem fins lucrativos"],
-    "dores": ["Falta de captação de doadores online", "Dificuldade em divulgar projetos", "Sem credibilidade digital"],
-    "beneficios": ["Captação de doações online", "Apresentação de projetos e impacto social", "Transparência com relatórios e resultados"]
+    "descricao": "Sistema para pet shops com agendamento de banho e tosa, controle de estoque, prontuário animal e vendas.",
+    "palavrasChave": ["sistema para pet shop", "software pet shop", "sistema veterinário", "agendamento banho e tosa"],
+    "dores": ["Agenda de serviços por telefone", "Prontuário do animal em papel", "Sem controle de produto vendido"],
+    "beneficios": ["Agendamento online de banho e tosa", "Prontuário digital do pet", "Controle de estoque de ração e produtos", "Lembrete de vacinas automático"]
   },
   {
     "slug": "farmacia",
     "nome": "Farmácia",
     "nomeCompleto": "Farmácias e Drogarias",
-    "descricao": "Sites para farmácias independentes e redes que querem divulgar promoções, medicamentos e captar clientes locais.",
-    "palavrasChave": ["site para farmácia", "site drogaria", "farmácia online"],
-    "dores": ["Competição com grandes redes", "Falta de presença digital local", "Sem divulgação de promoções online"],
-    "beneficios": ["Divulgação de promoções semanais", "SEO local para farmácias próximas", "Pedidos via WhatsApp"]
+    "descricao": "Sistema para farmácias com PDV, controle de estoque de medicamentos, validade, SNGPC e gestão financeira.",
+    "palavrasChave": ["sistema para farmácia", "software farmácia", "pdv farmácia", "sistema drogaria"],
+    "dores": ["Controle de validade manual", "SNGPC sem automação", "Estoque de medicamentos desatualizado"],
+    "beneficios": ["PDV com controle de receitas", "SNGPC integrado e automatizado", "Alerta de vencimento de medicamentos", "Controle de estoque em tempo real"]
   },
   {
-    "slug": "clinica-veterinaria",
-    "nome": "Clínica Veterinária",
-    "nomeCompleto": "Clínicas Veterinárias e Veterinários",
-    "descricao": "Sites para clínicas veterinárias e veterinários autônomos que querem atrair donos de animais na região.",
-    "palavrasChave": ["site para clínica veterinária", "site veterinário", "site pet clínica"],
-    "dores": ["Falta de agendamento online", "Sem visibilidade para emergências", "Concorrência sem diferencial"],
-    "beneficios": ["Agendamento de consultas online", "Apresentação de especialidades veterinárias", "SEO para donos de pets locais"]
-  },
-  {
-    "slug": "personal-trainer",
-    "nome": "Personal Trainer",
-    "nomeCompleto": "Personal Trainers e Coaches de Fitness",
-    "descricao": "Sites para personal trainers que querem captar alunos online e transmitir autoridade na área fitness.",
-    "palavrasChave": ["site para personal trainer", "site personal", "site coach fitness"],
-    "dores": ["Captação de alunos via redes sociais apenas", "Sem presença no Google", "Dificuldade em transmitir credibilidade"],
-    "beneficios": ["Apresentação de metodologia e resultados", "Captação de alunos qualificados", "Depoimentos e transformações em destaque"]
-  },
-  {
-    "slug": "coach",
-    "nome": "Coach",
-    "nomeCompleto": "Coaches e Mentores",
-    "descricao": "Sites de alta conversão para coaches de vida, carreira, negócios e finanças que vendem mentorias e programas.",
-    "palavrasChave": ["site para coach", "site mentor", "site coaching", "criação de site coach"],
-    "dores": ["Dependência de redes sociais", "Dificuldade em vender programas online", "Falta de posicionamento de autoridade"],
-    "beneficios": ["Página de vendas de mentorias integrada", "Captação de leads qualificados", "Posicionamento de autoridade no nicho"]
-  },
-  {
-    "slug": "infoprodutor",
-    "nome": "Infoprodutor",
-    "nomeCompleto": "Infoprodutores e Criadores de Conteúdo",
-    "descricao": "Sites e landing pages de alta conversão para infoprodutores que vendem cursos, ebooks e assinaturas online.",
-    "palavrasChave": ["site para infoprodutor", "site curso online", "landing page infoprodutor"],
-    "dores": ["Baixa conversão em vendas", "Dependência de plataformas de terceiros", "Falta de tráfego orgânico"],
-    "beneficios": ["Landing pages de alta conversão", "Integração com plataformas de venda", "SEO para captar alunos organicamente"]
-  },
-  {
-    "slug": "e-commerce",
-    "nome": "E-commerce",
-    "nomeCompleto": "Lojas Virtuais e E-commerces",
-    "descricao": "Lojas virtuais completas e otimizadas para SEO que vendem 24 horas por dia com integração de pagamento e logística.",
-    "palavrasChave": ["site para e-commerce", "loja virtual", "criar loja online", "site de vendas"],
-    "dores": ["Baixo tráfego orgânico", "Alta taxa de abandono de carrinho", "Sem diferencial frente a grandes marketplaces"],
-    "beneficios": ["SEO técnico avançado para produtos", "Integração com pagamento e frete", "Painel admin completo para gestão"]
-  },
-  {
-    "slug": "advocacia-trabalhista",
-    "nome": "Advocacia Trabalhista",
-    "nomeCompleto": "Advogados Trabalhistas",
-    "descricao": "Sites especializados para advogados trabalhistas que querem atrair clientes com causas trabalhistas.",
-    "palavrasChave": ["site advogado trabalhista", "site advocacia trabalhista", "advogado CLT"],
-    "dores": ["Falta de clientes qualificados", "Sem presença digital especializada"],
-    "beneficios": ["Captação de clientes com causas trabalhistas", "Autoridade na área trabalhista"]
-  },
-  {
-    "slug": "advocacia-criminal",
-    "nome": "Advocacia Criminal",
-    "nomeCompleto": "Advogados Criminalistas",
-    "descricao": "Sites para advogados criminalistas que precisam transmitir seriedade e atrair clientes em situações urgentes.",
-    "palavrasChave": ["site advogado criminal", "site criminalista", "advogado defesa criminal"],
-    "dores": ["Urgência na captação de clientes", "Necessidade de transmitir credibilidade imediata"],
-    "beneficios": ["Contato imediato via WhatsApp", "Transmissão de seriedade e competência", "Aparecimento em buscas urgentes"]
-  },
-  {
-    "slug": "fisioterapeuta",
-    "nome": "Fisioterapeuta",
-    "nomeCompleto": "Fisioterapeutas e Clínicas de Fisioterapia",
-    "descricao": "Sites para fisioterapeutas autônomos e clínicas de fisioterapia que querem lotar a agenda com novos pacientes.",
-    "palavrasChave": ["site para fisioterapeuta", "site fisioterapia", "clínica de fisioterapia"],
-    "dores": ["Agenda com horários vazios", "Sem presença digital profissional"],
-    "beneficios": ["Agendamento via WhatsApp", "Apresentação de especialidades e técnicas", "SEO local para fisioterapia"]
-  },
-  {
-    "slug": "fonoaudiologo",
-    "nome": "Fonoaudiólogo",
-    "nomeCompleto": "Fonoaudiólogos e Clínicas de Fonoaudiologia",
-    "descricao": "Sites para fonoaudiólogos que atendem adultos e crianças e precisam de mais visibilidade online.",
-    "palavrasChave": ["site para fonoaudiólogo", "site fonoaudiologia", "clínica de fonoaudiologia"],
-    "dores": ["Baixa visibilidade online", "Dificuldade em explicar os serviços"],
-    "beneficios": ["Apresentação de especialidades e públicos atendidos", "Agendamento simplificado"]
-  },
-  {
-    "slug": "terapeuta",
-    "nome": "Terapeuta",
-    "nomeCompleto": "Terapeutas Holísticos e Alternativos",
-    "descricao": "Sites acolhedores para terapeutas holísticos, reikianos, consteladores e outros profissionais de terapias alternativas.",
-    "palavrasChave": ["site para terapeuta", "site terapia holística", "site reiki"],
-    "dores": ["Dificuldade em ser encontrado online", "Necessidade de transmitir confiança e acolhimento"],
-    "beneficios": ["Apresentação de modalidades terapêuticas", "Captação de clientes abertos a terapias alternativas"]
-  },
-  {
-    "slug": "consultorio-medico",
-    "nome": "Consultório Médico",
-    "nomeCompleto": "Consultórios Médicos Particulares",
-    "descricao": "Sites para médicos com consultório particular que querem atrair pacientes sem depender de planos de saúde.",
-    "palavrasChave": ["site consultório médico", "site médico particular", "consulta particular"],
-    "dores": ["Dependência de planos de saúde", "Falta de pacientes particulares"],
-    "beneficios": ["Captação de pacientes particulares", "Apresentação de especialidade e diferenciais"]
-  },
-  {
-    "slug": "corretor-de-seguros",
-    "nome": "Corretor de Seguros",
-    "nomeCompleto": "Corretores de Seguros e Seguradoras",
-    "descricao": "Sites para corretores de seguros que vendem planos de saúde, vida, auto e outros produtos de seguros.",
-    "palavrasChave": ["site para corretor de seguros", "site corretora de seguros", "planos de saúde"],
-    "dores": ["Dependência de indicações", "Sem presença digital profissional"],
-    "beneficios": ["Captação de leads qualificados", "Apresentação de produtos e diferenciais", "SEO para buscas de seguros"]
-  },
-  {
-    "slug": "sindico-profissional",
-    "nome": "Síndico Profissional",
-    "nomeCompleto": "Síndicos Profissionais e Administradoras de Condomínio",
-    "descricao": "Sites para síndicos profissionais e administradoras de condomínios que buscam mais contratos.",
-    "palavrasChave": ["site síndico profissional", "site administradora de condomínio", "gestão de condomínio"],
-    "dores": ["Baixa visibilidade no mercado", "Falta de diferencial competitivo"],
-    "beneficios": ["Apresentação de serviços e cases de sucesso", "Captação de condomínios interessados"]
-  },
-  {
-    "slug": "limpeza-e-conservacao",
-    "nome": "Limpeza e Conservação",
-    "nomeCompleto": "Empresas de Limpeza e Conservação",
-    "descricao": "Sites para empresas de limpeza residencial, comercial e industrial que querem mais contratos.",
-    "palavrasChave": ["site empresa de limpeza", "site limpeza comercial", "site limpeza residencial"],
-    "dores": ["Dependência de indicações", "Sem presença digital"],
-    "beneficios": ["Captação de contratos corporativos", "Apresentação de serviços e certificações"]
-  },
-  {
-    "slug": "dedetizadora",
-    "nome": "Dedetizadora",
-    "nomeCompleto": "Empresas de Dedetização e Controle de Pragas",
-    "descricao": "Sites para dedetizadoras e empresas de controle de pragas que querem aparecer no Google quando o cliente mais precisa.",
-    "palavrasChave": ["site dedetizadora", "site controle de pragas", "dedetização"],
-    "dores": ["Concorrência acirrada", "Clientes buscam urgência e não encontram"],
-    "beneficios": ["Aparecimento em buscas de emergência", "Captação local de clientes", "Transmissão de credibilidade"]
-  },
-  {
-    "slug": "designer-grafico",
-    "nome": "Designer Gráfico",
-    "nomeCompleto": "Designers Gráficos e Estúdios de Design",
-    "descricao": "Portfólios e sites institucionais para designers gráficos e estúdios criativos que querem mais clientes.",
-    "palavrasChave": ["site designer gráfico", "portfólio designer", "site estúdio de design"],
-    "dores": ["Portfólio desorganizado em redes sociais", "Dificuldade em mostrar trabalhos online"],
-    "beneficios": ["Portfólio visual impactante", "Captação de projetos e orçamentos", "Diferencial criativo online"]
-  },
-  {
-    "slug": "agencia-de-viagens",
-    "nome": "Agência de Viagens",
-    "nomeCompleto": "Agências de Viagens e Turismo",
-    "descricao": "Sites para agências de viagens que vendem pacotes, cruzeiros e roteiros personalizados.",
-    "palavrasChave": ["site agência de viagens", "site turismo", "site pacotes de viagem"],
-    "dores": ["Concorrência com plataformas como Decolar", "Sem captação orgânica de clientes"],
-    "beneficios": ["Apresentação de pacotes e destinos", "Captação de leads por WhatsApp", "SEO para viagens específicas"]
-  },
-  {
-    "slug": "sorveteria",
-    "nome": "Sorveteria",
-    "nomeCompleto": "Sorveterias e Gelaterias",
-    "descricao": "Sites modernos para sorveterias e gelaterias que querem atrair clientes locais e divulgar sabores e promoções.",
-    "palavrasChave": ["site sorveteria", "site gelateria", "sorveteria cardápio online"],
-    "dores": ["Falta de presença digital", "Sem divulgação de sabores e promoções"],
-    "beneficios": ["Cardápio digital atualizado", "Divulgação de promoções sazonais", "SEO local"]
-  },
-  {
-    "slug": "padaria",
-    "nome": "Padaria",
-    "nomeCompleto": "Padarias e Confeitarias",
-    "descricao": "Sites para padarias, confeitarias e cafés que querem atrair mais clientes e divulgar produtos online.",
-    "palavrasChave": ["site padaria", "site confeitaria", "site café"],
-    "dores": ["Sem presença digital", "Concorrência de grandes redes"],
-    "beneficios": ["Cardápio digital", "Pedidos pelo WhatsApp", "Divulgação de produtos especiais"]
-  },
-  {
-    "slug": "oficina-mecanica",
-    "nome": "Oficina Mecânica",
-    "nomeCompleto": "Oficinas Mecânicas e Auto Centers",
-    "descricao": "Sites para oficinas mecânicas e auto centers que querem atrair clientes na região e transmitir confiança.",
-    "palavrasChave": ["site oficina mecânica", "site auto center", "mecânico site"],
-    "dores": ["Falta de credibilidade online", "Sem diferencial frente à concorrência local"],
-    "beneficios": ["Apresentação de serviços e especialidades", "Depoimentos de clientes satisfeitos", "SEO local para mecânicas"]
+    "slug": "construtora",
+    "nome": "Construtora",
+    "nomeCompleto": "Construtoras e Engenharia Civil",
+    "descricao": "Sistema de gestão de obras para construtoras: orçamentos, cronograma, materiais, equipes e relatórios de progresso.",
+    "palavrasChave": ["sistema para construtora", "software gestão de obras", "sistema construtora", "gestão de projetos engenharia"],
+    "dores": ["Obras sem visibilidade de cronograma", "Orçamentos em planilha sem controle", "Falta de controle de materiais e equipe"],
+    "beneficios": ["Cronograma e custo em tempo real", "Controle de materiais por etapa", "App para equipe em campo", "Relatórios automáticos para clientes"]
   },
   {
     "slug": "transportadora",
     "nome": "Transportadora",
-    "nomeCompleto": "Transportadoras e Empresas de Logística",
-    "descricao": "Sites para transportadoras e empresas de logística que querem captar novos contratos e transmitir profissionalismo.",
-    "palavrasChave": ["site transportadora", "site logística", "site frete"],
-    "dores": ["Falta de captação de clientes corporativos", "Sem presença digital profissional"],
-    "beneficios": ["Apresentação de rotas e capacidades", "Captação de contratos B2B", "Credibilidade com certificações"]
+    "nomeCompleto": "Transportadoras e Logística",
+    "descricao": "Sistema logístico para transportadoras com rastreamento, roteirização, gestão de frota, CTe e faturamento automático.",
+    "palavrasChave": ["sistema para transportadora", "software logística", "gestão de frota transportadora", "sistema rastreamento"],
+    "dores": ["Entregas sem rastreamento em tempo real", "Roteirização manual ineficiente", "CTe e faturamento manuais"],
+    "beneficios": ["Rastreamento em tempo real", "Roteirização automática", "Emissão de CTe integrada", "Faturamento automático por entrega"]
   },
   {
-    "slug": "clinica-estetica-corporal",
-    "nome": "Clínica Estética Corporal",
-    "nomeCompleto": "Clínicas de Estética Corporal e Emagrecimento",
-    "descricao": "Sites para clínicas de estética corporal, emagrecimento e tratamentos corporais que querem lotar a agenda.",
-    "palavrasChave": ["site clínica estética corporal", "site emagrecimento", "tratamentos corporais"],
-    "dores": ["Agenda com horários vagos", "Concorrência acirrada no segmento"],
-    "beneficios": ["Apresentação de tratamentos com resultados", "Agendamento via WhatsApp", "SEO para estética na cidade"]
-  },
-  {
-    "slug": "buffet",
-    "nome": "Buffet",
-    "nomeCompleto": "Buffets e Espaços de Eventos",
-    "descricao": "Sites para buffets, espaços de eventos e festas que querem atrair noivas, aniversariantes e clientes corporativos.",
-    "palavrasChave": ["site buffet", "site espaço de eventos", "site para casamentos"],
-    "dores": ["Alta sazonalidade", "Dificuldade em mostrar o espaço online"],
-    "beneficios": ["Galeria do espaço e eventos realizados", "Captação de orçamentos via WhatsApp", "SEO para eventos e casamentos"]
-  },
-  {
-    "slug": "escola-de-idiomas",
-    "nome": "Escola de Idiomas",
-    "nomeCompleto": "Escolas de Idiomas e Cursos de Línguas",
-    "descricao": "Sites para escolas de idiomas, professores de inglês e cursos de línguas que querem mais matrículas.",
-    "palavrasChave": ["site escola de idiomas", "site curso de inglês", "site aulas de idiomas"],
-    "dores": ["Competição com aplicativos de idiomas", "Falta de captação de alunos locais"],
-    "beneficios": ["Apresentação de metodologia e níveis", "Captação de matrículas online", "Depoimentos de alunos fluentes"]
-  },
-  {
-    "slug": "studio-de-pilates",
-    "nome": "Studio de Pilates",
-    "nomeCompleto": "Studios de Pilates e Yoga",
-    "descricao": "Sites para studios de pilates, yoga e meditação que querem atrair alunos e fidelizar membros.",
-    "palavrasChave": ["site pilates", "site studio pilates", "site yoga"],
-    "dores": ["Alta rotatividade de alunos", "Sem presença digital profissional"],
-    "beneficios": ["Apresentação de modalidades e professores", "Agendamento de aulas experimentais", "SEO para pilates na cidade"]
+    "slug": "contabilidade",
+    "nome": "Contabilidade",
+    "nomeCompleto": "Escritórios de Contabilidade",
+    "descricao": "Sistema para escritórios contábeis com gestão de clientes, obrigações fiscais, documentos e automação de processos contábeis.",
+    "palavrasChave": ["sistema para contabilidade", "software escritório contábil", "gestão contabilidade", "automação contábil"],
+    "dores": ["Obrigações fiscais controladas em planilha", "Documentos de clientes sem organização", "Retrabalho no lançamento de dados"],
+    "beneficios": ["Gestão de obrigações por cliente", "Vault digital de documentos", "Automação de lançamentos repetitivos", "Portal do cliente contábil"]
   },
   {
     "slug": "clinica-odontologica",
     "nome": "Clínica Odontológica",
-    "nomeCompleto": "Clínicas Odontológicas e Odontologia Estética",
-    "descricao": "Sites para clínicas odontológicas com foco em odontologia estética, implantes e alinhadores.",
-    "palavrasChave": ["site clínica odontológica", "site odontologia estética", "site implante dentário"],
-    "dores": ["Alta concorrência no setor", "Dificuldade em comunicar tratamentos estéticos"],
-    "beneficios": ["Apresentação de tratamentos com fotos de antes e depois", "Captação de pacientes para odontologia estética"]
+    "nomeCompleto": "Clínicas Odontológicas e Dentistas",
+    "descricao": "Sistema odontológico com prontuário digital, ficha clínica, agendamento online, orçamentos e gestão financeira.",
+    "palavrasChave": ["sistema para dentista", "software odontológico", "prontuário odontológico", "sistema clínica odontológica"],
+    "dores": ["Ficha do paciente em papel", "Agenda lotada sem visibilidade", "Orçamentos sem controle"],
+    "beneficios": ["Ficha clínica digital com odontograma", "Agendamento online com confirmação automática", "Orçamento digital enviado por WhatsApp", "Gestão financeira por paciente"]
   },
   {
-    "slug": "joalheria",
-    "nome": "Joalheria",
-    "nomeCompleto": "Joalherias e Relojoarias",
-    "descricao": "Sites sofisticados para joalherias e relojoarias que vendem presencialmente e querem expandir para o digital.",
-    "palavrasChave": ["site joalheria", "site relojoaria", "joias online"],
-    "dores": ["Limitação ao público presencial", "Falta de presença digital premium"],
-    "beneficios": ["Catálogo de produtos sofisticado", "Vendas via WhatsApp", "Transmissão de exclusividade e luxo"]
+    "slug": "advocacia",
+    "nome": "Advocacia",
+    "nomeCompleto": "Escritórios de Advocacia",
+    "descricao": "Sistema jurídico para escritórios de advocacia com gestão de processos, clientes, prazos, honorários e documentos.",
+    "palavrasChave": ["sistema para advocacia", "software jurídico", "gestão escritório advocacia", "sistema advogado"],
+    "dores": ["Processos e prazos controlados em planilha", "Sem automação de atualizações processuais", "Documentos desorganizados"],
+    "beneficios": ["Gestão de processos com alertas de prazo", "Atualização automática do tribunal", "Gestão de honorários e acordos", "Documentos organizados por processo"]
   },
   {
-    "slug": "clinica-de-reabilitacao",
-    "nome": "Clínica de Reabilitação",
-    "nomeCompleto": "Clínicas de Reabilitação e Recuperação",
-    "descricao": "Sites para clínicas de reabilitação química, álcool e drogas que precisam captar familiares em momento de crise.",
-    "palavrasChave": ["site clínica de reabilitação", "site clínica recuperação", "reabilitação dependência química"],
-    "dores": ["Captar pacientes em momento de urgência", "Transmitir confiança e acolhimento"],
-    "beneficios": ["Captação de familiares por busca orgânica", "Canal direto pelo WhatsApp", "Transmissão de segurança e credibilidade"]
+    "slug": "loja-de-varejo",
+    "nome": "Loja de Varejo",
+    "nomeCompleto": "Lojas de Varejo e Comércio",
+    "descricao": "Sistema para lojas de varejo com PDV, controle de estoque, emissão de NF, programa de fidelidade e relatórios de venda.",
+    "palavrasChave": ["sistema para loja", "software loja de varejo", "pdv loja", "sistema comercio"],
+    "dores": ["PDV lento ou sem integração com estoque", "Falta de controle de estoque em tempo real", "Sem programa de fidelidade para clientes"],
+    "beneficios": ["PDV com controle de estoque em tempo real", "Emissão de NF-e automática", "Programa de fidelidade digital", "Relatórios de venda por produto"]
   },
   {
-    "slug": "distribuidora",
-    "nome": "Distribuidora",
-    "nomeCompleto": "Distribuidoras e Atacados",
-    "descricao": "Sites para distribuidoras, atacadistas e representantes comerciais que querem captar lojistas e revendedores.",
-    "palavrasChave": ["site distribuidora", "site atacado", "site representante comercial"],
-    "dores": ["Falta de captação de novos lojistas", "Sem presença digital B2B"],
-    "beneficios": ["Apresentação de produtos e tabelas", "Captação de revendedores por região", "Credibilidade corporativa online"]
+    "slug": "industria",
+    "nome": "Indústria",
+    "nomeCompleto": "Indústrias e Manufatura",
+    "descricao": "Sistema industrial com controle de produção, ordens de fabricação, estoque de insumos, qualidade e rastreabilidade.",
+    "palavrasChave": ["sistema para indústria", "software industrial", "controle de produção", "mrp personalizado"],
+    "dores": ["Produção sem visibilidade de progresso", "Estoque de insumos desatualizado", "Ordens de fabricação em papel"],
+    "beneficios": ["Controle de ordens de fabricação em tempo real", "Estoque de insumos com reposição automática", "Rastreabilidade de produto por lote", "Controle de qualidade integrado"]
   },
   {
-    "slug": "clinica-de-emagrecimento",
-    "nome": "Clínica de Emagrecimento",
-    "nomeCompleto": "Clínicas de Emagrecimento e Medicina Estética",
-    "descricao": "Sites para clínicas de emagrecimento, medicina estética e tratamentos para emagrecer que querem mais pacientes.",
-    "palavrasChave": ["site clínica emagrecimento", "site medicina estética", "emagrecer com saúde"],
-    "dores": ["Alta concorrência no segmento", "Necessidade de mostrar resultados"],
-    "beneficios": ["Apresentação de resultados reais com fotos", "Captação de pacientes interessados", "SEO para emagrecimento na cidade"]
+    "slug": "clinica-estetica",
+    "nome": "Clínica Estética",
+    "nomeCompleto": "Clínicas de Estética e Beleza",
+    "descricao": "Sistema para clínicas estéticas com agendamento online, prontuário de procedimentos, fotos de evolução e financeiro.",
+    "palavrasChave": ["sistema clínica estética", "software estética", "agendamento clínica estética", "sistema para esteticista"],
+    "dores": ["Agenda por WhatsApp sem organização", "Prontuário de procedimentos em papel", "Sem controle de retornos"],
+    "beneficios": ["Agendamento online com confirmação automática", "Prontuário com fotos de evolução", "Alertas de retorno e manutenção", "Gestão financeira por procedimento"]
   },
   {
-    "slug": "eletricista",
-    "nome": "Eletricista",
-    "nomeCompleto": "Eletricistas e Empresas de Instalações Elétricas",
-    "descricao": "Sites para eletricistas autônomos e empresas de instalações elétricas que querem captar mais clientes na região.",
-    "palavrasChave": ["site eletricista", "site instalações elétricas", "eletricista residencial"],
-    "dores": ["Dependência de indicações", "Falta de presença online profissional"],
-    "beneficios": ["Captação de clientes por busca orgânica", "Transmissão de credibilidade", "Contato direto pelo WhatsApp"]
+    "slug": "agencia-de-marketing",
+    "nome": "Agência de Marketing",
+    "nomeCompleto": "Agências de Marketing e Publicidade",
+    "descricao": "Sistema para agências com gestão de clientes, projetos, tarefas, aprovações, relatórios e faturamento.",
+    "palavrasChave": ["sistema para agência", "software agência de marketing", "gestão de projetos agência", "crm agência"],
+    "dores": ["Projetos sem visibilidade de andamento", "Aprovações por e-mail sem controle", "Relatórios de entrega manual"],
+    "beneficios": ["Gestão de projetos com timeline", "Portal de aprovação para clientes", "Relatórios de performance automáticos", "Faturamento integrado ao projeto"]
   },
   {
-    "slug": "encanador",
-    "nome": "Encanador",
-    "nomeCompleto": "Encanadores e Hidráulicos",
-    "descricao": "Sites para encanadores e hidráulicos que querem aparecer no Google quando clientes precisam de atendimento urgente.",
-    "palavrasChave": ["site encanador", "site hidráulico", "encanador emergência"],
-    "dores": ["Clientes buscam urgência", "Concorrência informal"],
-    "beneficios": ["Aparecimento em buscas de emergência", "Captação 24h pelo WhatsApp", "Transmissão de profissionalismo"]
+    "slug": "hospital",
+    "nome": "Hospital",
+    "nomeCompleto": "Hospitais e Unidades de Saúde",
+    "descricao": "Sistema hospitalar com gestão de leitos, internações, prontuário eletrônico, farmácia interna e faturamento de convênios.",
+    "palavrasChave": ["sistema hospitalar", "software hospital", "gestão hospitalar", "prontuário hospitalar"],
+    "dores": ["Gestão de leitos sem visibilidade em tempo real", "Faturamento de convênios manual", "Prontuário eletrônico descentralizado"],
+    "beneficios": ["Gestão de leitos em tempo real", "Faturamento automático de convênios", "Prontuário único por paciente", "Farmácia integrada ao prontuário"]
   },
   {
-    "slug": "pintor",
-    "nome": "Pintor",
-    "nomeCompleto": "Pintores e Empresas de Pintura",
-    "descricao": "Sites para pintores residenciais e comerciais que querem mais trabalhos e sair da dependência de indicações.",
-    "palavrasChave": ["site pintor", "site pintura residencial", "pintor site"],
-    "dores": ["Dependência de indicações", "Sazonalidade na captação de clientes"],
-    "beneficios": ["Captação constante de clientes", "Apresentação de trabalhos realizados", "SEO local para pintores"]
+    "slug": "eventos",
+    "nome": "Eventos",
+    "nomeCompleto": "Empresas de Eventos e Entretenimento",
+    "descricao": "Sistema para empresas de eventos com venda de ingressos, controle de credenciamento, gestão de fornecedores e financeiro do evento.",
+    "palavrasChave": ["sistema para eventos", "software eventos", "sistema venda ingressos", "gestão de eventos"],
+    "dores": ["Venda de ingressos por plataforma genérica com alta taxa", "Credenciamento manual na entrada", "Gestão de fornecedores em planilha"],
+    "beneficios": ["Venda de ingressos com checkout próprio", "Credenciamento por QR Code", "Gestão de fornecedores e contratos", "Relatório financeiro do evento"]
   },
   {
-    "slug": "assistencia-tecnica",
-    "nome": "Assistência Técnica",
-    "nomeCompleto": "Assistências Técnicas e Conserto de Eletrônicos",
-    "descricao": "Sites para assistências técnicas de celulares, computadores e eletrodomésticos que querem mais clientes.",
-    "palavrasChave": ["site assistência técnica", "site conserto celular", "site manutenção eletrônicos"],
-    "dores": ["Alta concorrência local", "Sem presença digital"],
-    "beneficios": ["Aparecimento em buscas de conserto local", "Captação por SEO local", "Apresentação de serviços e garantias"]
+    "slug": "franquia",
+    "nome": "Franquia",
+    "nomeCompleto": "Redes de Franquias",
+    "descricao": "Sistema para redes de franquias com controle de unidades, royalties, treinamentos, comunicados e padronização de processos.",
+    "palavrasChave": ["sistema para franquia", "software franquia", "gestão rede de franquias", "sistema franqueados"],
+    "dores": ["Sem visibilidade do desempenho de cada unidade", "Royalties calculados manualmente", "Treinamentos sem controle"],
+    "beneficios": ["Dashboard de performance por unidade", "Cálculo automático de royalties", "Treinamentos na plataforma EAD", "Comunicados e manuais centralizados"]
   },
   {
-    "slug": "marketing-digital",
-    "nome": "Marketing Digital",
-    "nomeCompleto": "Agências e Profissionais de Marketing Digital",
-    "descricao": "Sites institucionais para agências e profissionais de marketing digital que precisam captar clientes empresariais.",
-    "palavrasChave": ["site agência marketing digital", "site profissional marketing", "criação de site agência"],
-    "dores": ["Alta concorrência no setor", "Necessidade de transmitir resultados concretos"],
-    "beneficios": ["Cases e resultados em destaque", "Captação de clientes B2B", "Portfólio de campanhas gerenciadas"]
+    "slug": "e-commerce",
+    "nome": "E-commerce",
+    "nomeCompleto": "Lojas Virtuais e E-commerce",
+    "descricao": "Desenvolvimento de e-commerce personalizado ou integração e automação de lojas existentes com ERPs e marketplaces.",
+    "palavrasChave": ["sistema e-commerce", "software loja virtual", "integração e-commerce", "automação loja virtual"],
+    "dores": ["Plataforma genérica com limitações e alta taxa", "Estoque desatualizado no marketplace", "Pedidos importados manualmente para o ERP"],
+    "beneficios": ["E-commerce 100% personalizado", "Integração automática com marketplaces", "Estoque sincronizado em todos os canais", "Checkout otimizado para conversão"]
   },
   {
-    "slug": "desenvolvedor-de-software",
-    "nome": "Desenvolvedor de Software",
-    "nomeCompleto": "Desenvolvedores e Empresas de Software",
-    "descricao": "Portfólios e sites institucionais para desenvolvedores freelancers e softwarehouses que querem mais projetos.",
-    "palavrasChave": ["site desenvolvedor", "site softwarehouse", "portfólio desenvolvedor"],
-    "dores": ["Dependência de plataformas de freelance", "Sem captação orgânica de projetos"],
-    "beneficios": ["Portfólio de projetos realizado", "Captação direta de clientes", "Posicionamento de autoridade técnica"]
+    "slug": "financeiro",
+    "nome": "Financeiro",
+    "nomeCompleto": "Empresas Financeiras e Fintechs",
+    "descricao": "Sistemas financeiros, fintechs e plataformas de crédito com Open Finance, análise de risco, conciliação e compliance.",
+    "palavrasChave": ["sistema financeiro personalizado", "fintech desenvolvimento", "plataforma crédito", "open finance"],
+    "dores": ["Sistemas legados sem integração", "Compliance manual sem automação", "Falta de análise de risco automatizada"],
+    "beneficios": ["Integração com Open Finance", "Análise de risco automatizada", "Compliance e auditoria automatizados", "API para parceiros e integrações"]
+  },
+  {
+    "slug": "consultoria",
+    "nome": "Consultoria",
+    "nomeCompleto": "Empresas de Consultoria",
+    "descricao": "Sistema para consultorias com gestão de projetos, clientes, horas trabalhadas, entregas e faturamento por projeto.",
+    "palavrasChave": ["sistema para consultoria", "software consultoria", "gestão projetos consultoria", "controle horas consultoria"],
+    "dores": ["Horas trabalhadas sem registro preciso", "Projetos sem visibilidade para o cliente", "Faturamento manual por projeto"],
+    "beneficios": ["Controle de horas por projeto", "Portal do cliente com andamento", "Faturamento automático por milestone", "Relatório de lucratividade por projeto"]
+  },
+  {
+    "slug": "supermercado",
+    "nome": "Supermercado",
+    "nomeCompleto": "Supermercados e Mercearias",
+    "descricao": "Sistema para supermercados com PDV, controle de estoque, gestão de fornecedores, validade de produtos e fidelidade.",
+    "palavrasChave": ["sistema para supermercado", "software supermercado", "pdv supermercado", "sistema mercearia"],
+    "dores": ["PDV sem integração com estoque", "Controle de validade manual", "Falta de programa de fidelidade"],
+    "beneficios": ["PDV com estoque em tempo real", "Alertas de validade automáticos", "Programa de fidelidade digital", "Integração com balanças e leitores"]
+  },
+  {
+    "slug": "psicologo",
+    "nome": "Psicólogo",
+    "nomeCompleto": "Psicólogos e Terapeutas",
+    "descricao": "Sistema para psicólogos com agendamento online, prontuário digital, teleconsulta e gestão de pagamentos.",
+    "palavrasChave": ["sistema para psicólogo", "software psicologo", "prontuário psicólogo", "agendamento psicologo"],
+    "dores": ["Agenda por telefone ou WhatsApp", "Prontuário em papel", "Sem teleconsulta integrada"],
+    "beneficios": ["Agendamento online com confirmação", "Prontuário digital seguro e protegido", "Teleconsulta integrada", "Cobrança automática por sessão"]
+  },
+  {
+    "slug": "oficina-mecanica",
+    "nome": "Oficina Mecânica",
+    "nomeCompleto": "Oficinas Mecânicas e Autopeças",
+    "descricao": "Sistema para oficinas com ordem de serviço digital, controle de peças, histórico do veículo e gestão financeira.",
+    "palavrasChave": ["sistema para oficina mecânica", "software oficina", "ordem de serviço digital", "gestão oficina mecânica"],
+    "dores": ["Ordem de serviço em papel", "Sem histórico de serviços por veículo", "Controle de peças sem rastreabilidade"],
+    "beneficios": ["OS digital com aprovação pelo cliente", "Histórico completo por veículo e placa", "Controle de estoque de peças", "Envio de orçamento por WhatsApp"]
+  },
+  {
+    "slug": "hotel",
+    "nome": "Hotel",
+    "nomeCompleto": "Hotéis e Pousadas",
+    "descricao": "Sistema hoteleiro com reservas online, gestão de quartos, check-in, governança e financeiro integrado.",
+    "palavrasChave": ["sistema para hotel", "software hoteleiro", "pms hotel personalizado", "sistema reservas hotel"],
+    "dores": ["Reservas sem sincronização entre canais", "Check-in manual demorado", "Governança sem controle digital"],
+    "beneficios": ["Reservas sincronizadas com Booking e Airbnb", "Check-in digital pelo celular", "Governança com checklist digital", "Relatórios de ocupação em tempo real"]
+  },
+  {
+    "slug": "clinica-psiquiatrica",
+    "nome": "Clínica Psiquiátrica",
+    "nomeCompleto": "Clínicas Psiquiátricas e de Saúde Mental",
+    "descricao": "Sistema para clínicas psiquiátricas com prontuário eletrônico especializado, controle de medicação, internação e equipe multidisciplinar.",
+    "palavrasChave": ["sistema clínica psiquiátrica", "software saúde mental", "prontuário psiquiátrico", "gestão clínica saúde mental"],
+    "dores": ["Prontuário em papel com risco de perda", "Controle de medicação manual", "Equipe multidisciplinar sem comunicação integrada"],
+    "beneficios": ["Prontuário eletrônico especializado", "Controle de medicação e prescrição digital", "Comunicação entre equipe multidisciplinar", "Conformidade com LGPD e CFM"]
+  },
+  {
+    "slug": "nutricionista",
+    "nome": "Nutricionista",
+    "nomeCompleto": "Nutricionistas e Clínicas de Nutrição",
+    "descricao": "Sistema para nutricionistas com anamnese digital, plano alimentar, acompanhamento de evolução e teleconsulta.",
+    "palavrasChave": ["sistema para nutricionista", "software nutrição", "plano alimentar digital", "sistema nutricionista"],
+    "dores": ["Anamnese e plano alimentar em papel", "Sem acompanhamento de evolução digital", "Consultas sem teleconsulta integrada"],
+    "beneficios": ["Anamnese digital na consulta", "Plano alimentar gerado automaticamente", "Acompanhamento de evolução com gráficos", "Teleconsulta integrada"]
+  },
+  {
+    "slug": "coworking",
+    "nome": "Coworking",
+    "nomeCompleto": "Espaços de Coworking",
+    "descricao": "Sistema para coworkings com reserva de salas e estações, controle de acesso, planos de assinatura e faturamento recorrente.",
+    "palavrasChave": ["sistema para coworking", "software coworking", "reserva salas coworking", "gestão coworking"],
+    "dores": ["Reservas por WhatsApp sem controle", "Acesso sem controle automatizado", "Faturamento manual de assinaturas"],
+    "beneficios": ["Reserva online de salas e estações", "Controle de acesso automatizado", "Faturamento recorrente automático", "App para membros"]
   }
 ]

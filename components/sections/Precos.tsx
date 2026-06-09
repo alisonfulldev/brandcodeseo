@@ -30,6 +30,7 @@ const WA_ICON = (
 interface Plano {
   nome: string;
   preco: string;
+  precoDetalhe: string;
   tag: string | null;
   descricao: string;
   features: string[];
@@ -39,56 +40,59 @@ interface Plano {
 
 const planos: Plano[] = [
   {
-    nome: "Presença Digital",
-    preco: "R$ 199",
+    nome: "Automação e IA",
+    preco: "a partir de R$ 997",
+    precoDetalhe: "projeto único",
     tag: null,
     descricao:
-      "Para empresas que precisam de um site profissional e confiável na internet.",
+      "Para empresas que querem automatizar atendimento, processos repetitivos ou integrar sistemas existentes.",
     features: [
-      "Até 5 páginas profissionais",
-      "Site moderno e responsivo (celular e computador)",
-      "Hospedagem inclusa",
-      "Domínio configurado",
-      "Estrutura profissional pronta para crescer",
+      "Chatbot com IA para WhatsApp ou site",
+      "Automação de processos com N8N ou RPA",
+      "Integração entre sistemas via API",
+      "Relatórios e notificações automáticos",
+      "Entrega em até 15 dias úteis",
       "Suporte via WhatsApp",
     ],
-    msg: "Olá! Tenho interesse no Plano Presença Digital. Pode me passar mais detalhes?",
+    msg: "Olá! Tenho interesse em automação ou IA para minha empresa. Pode me passar mais detalhes?",
     destaque: false,
   },
   {
-    nome: "Crescimento Digital",
-    preco: "R$ 299",
-    tag: "Mais escolhido",
+    nome: "Sistema Web",
+    preco: "a partir de R$ 2.997",
+    precoDetalhe: "projeto único",
+    tag: "Mais contratado",
     descricao:
-      "Para empresas que querem aparecer no Google e atrair clientes de forma orgânica.",
+      "Para empresas que precisam de um sistema de gestão, ERP, CRM ou plataforma web personalizada.",
     features: [
-      "Até 20 páginas otimizadas",
-      "SEO técnico configurado",
-      "Google Meu Negócio configurado",
-      "Integração com Google Analytics 4",
-      "Indexação acelerada no Google",
-      "Monitoramento mensal de desempenho",
-      "Ajustes e melhorias periódicas",
+      "Sistema web 100% sob medida",
+      "Painel administrativo completo",
+      "Banco de dados e API próprios",
+      "Autenticação e controle de usuários",
+      "Relatórios e dashboards integrados",
+      "Suporte e manutenção incluso por 3 meses",
+      "Documentação técnica entregue",
     ],
-    msg: "Olá! Tenho interesse no Plano Crescimento Digital. Pode me passar mais detalhes?",
+    msg: "Olá! Tenho interesse no desenvolvimento de um sistema web. Pode me passar mais detalhes?",
     destaque: true,
   },
   {
-    nome: "Autoridade Digital",
-    preco: "R$ 399",
+    nome: "App Mobile + Sistema",
+    preco: "a partir de R$ 4.997",
+    precoDetalhe: "projeto único",
     tag: null,
     descricao:
-      "Para empresas que querem dominar o Google e gerar clientes de forma consistente e escalável.",
+      "Para negócios que precisam de app mobile (iOS e Android) integrado a um sistema backend robusto.",
     features: [
-      "Páginas ilimitadas por cidade, serviço e nicho",
-      "SEO avançado com Programmatic SEO",
-      "Estrutura focada em geração de leads",
-      "Expansão contínua do site todo mês",
-      "Otimizações frequentes baseadas em dados",
-      "Estratégia de crescimento orgânico de longo prazo",
-      "Relatório mensal de desempenho",
+      "App mobile iOS e Android (React Native)",
+      "Backend e API completos",
+      "Publicação na App Store e Google Play",
+      "Notificações push e recursos offline",
+      "Painel web de administração",
+      "Suporte e manutenção incluso por 3 meses",
+      "Código-fonte entregue",
     ],
-    msg: "Olá! Tenho interesse no Plano Autoridade Digital. Pode me passar mais detalhes?",
+    msg: "Olá! Tenho interesse em desenvolvimento de app mobile. Pode me passar mais detalhes?",
     destaque: false,
   },
 ];
@@ -115,7 +119,7 @@ export default function Precos() {
             }}
           />
           <p className="mt-6 text-lg max-w-2xl mx-auto" style={{ color: "#CBD5E1" }}>
-            Escolha o plano certo para o tamanho e objetivo do seu negócio.
+            Orçamento personalizado após entender seu projeto. Os valores abaixo são referência de entrada.
           </p>
         </div>
 
@@ -160,12 +164,12 @@ export default function Precos() {
                 <div className="mb-2">
                   <div
                     className="font-extrabold"
-                    style={{ fontSize: "2.25rem", color: "#F8FAFC", letterSpacing: "-0.02em" }}
+                    style={{ fontSize: "1.75rem", color: "#F8FAFC", letterSpacing: "-0.02em" }}
                   >
                     {plano.preco}
                   </div>
                   <p className="text-xs mt-1" style={{ color: "#94A3B8" }}>
-                    taxa de implementação única
+                    {plano.precoDetalhe} · orçamento personalizado
                   </p>
                 </div>
               </div>
@@ -195,7 +199,7 @@ export default function Precos() {
                 }
               >
                 {WA_ICON}
-                Quero esse plano
+                Quero um orçamento
               </a>
             </div>
           ))}
@@ -204,15 +208,14 @@ export default function Precos() {
         {/* Frase final */}
         <div className="text-center py-10">
           <h3 className="font-bold text-2xl mb-3" style={{ color: "#F8FAFC" }}>
-            Não sabe qual plano escolher?
+            Não sabe por onde começar?
           </h3>
           <p className="text-base mb-8 max-w-xl mx-auto" style={{ color: "#CBD5E1" }}>
-            Fale com um especialista agora. Em 5 minutos a gente indica o plano certo
-            para o tamanho e objetivo do seu negócio.
+            Fale com um especialista. Em 10 minutos a gente entende seu problema e indica a solução técnica certa.
           </p>
           <a
             href={`${WHATSAPP_URL}?text=${encodeURIComponent(
-              "Olá! Não sei qual plano escolher. Pode me ajudar?"
+              "Olá! Preciso de ajuda para entender qual solução de software é certa para minha empresa."
             )}`}
             target="_blank"
             rel="noopener noreferrer"

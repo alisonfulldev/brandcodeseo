@@ -1,18 +1,19 @@
 export const SITE_URL = "https://brandcodesolutions.com.br";
 export const SITE_NAME = "BrandCode Solutions";
 export const SITE_DESCRIPTION =
-  "Agência digital especializada em criação de sites que vendem. SEO técnico avançado, painel administrativo incluso e foco em conversão real.";
+  "Software house especializada em desenvolvimento de sistemas, apps, automações e soluções com IA. Desenvolvemos o software que seu negócio precisa para crescer e automatizar processos.";
 export const WHATSAPP_NUMBER = "5518996742364";
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 export const WHATSAPP_MSG_DEFAULT = encodeURIComponent(
-  "Olá! Quero um orçamento para o meu site."
+  "Olá! Quero um orçamento para desenvolvimento de software."
 );
 export const WHATSAPP_LINK = `${WHATSAPP_URL}?text=${WHATSAPP_MSG_DEFAULT}`;
 
 export const PRICES = {
-  institucional: "taxa de implementação de R$ 299",
-  lojaVirtual: "taxa de implementação de R$ 399",
-  landingPage: "taxa de implementação de R$ 199",
+  sistemaWeb: "a partir de R$ 2.997",
+  appMobile: "a partir de R$ 4.997",
+  automacao: "a partir de R$ 997",
+  ia: "a partir de R$ 1.997",
 } as const;
 
 export const COLORS = {

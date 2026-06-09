@@ -10,7 +10,7 @@ export default function NichosGrid() {
             className="font-bold"
             style={{ fontSize: "1.75rem", letterSpacing: "-0.02em", color: "#F8FAFC" }}
           >
-            Sites para Cada Segmento
+            Software para Cada Segmento
           </h2>
           <div
             style={{
@@ -22,7 +22,7 @@ export default function NichosGrid() {
             }}
           />
           <p className="mt-4 text-sm max-w-xl mx-auto" style={{ color: "#CBD5E1" }}>
-            Criamos sites especializados para mais de 50 segmentos. Encontre o seu:
+            Desenvolvemos sistemas para mais de 30 segmentos. Encontre o seu:
           </p>
         </div>
 
@@ -30,7 +30,7 @@ export default function NichosGrid() {
           {nichos.map((nicho) => (
             <Link
               key={nicho.slug}
-              href={`/site-para-${nicho.slug}`}
+              href={`/sistema-para/${nicho.slug}`}
               className="dark-pill px-3 py-2.5 text-sm text-center font-medium block"
             >
               {nicho.nome}

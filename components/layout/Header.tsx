@@ -6,34 +6,40 @@ import { useState, useRef, useEffect, useCallback } from "react";
 import { WHATSAPP_URL, SITE_NAME, PRICES } from "@/lib/constants";
 
 const WA_MSG_ORCAMENTO = encodeURIComponent(
-  "Olá! Quero solicitar um orçamento para o meu site. Pode me ajudar?"
+  "Olá! Quero solicitar um orçamento para desenvolvimento de software. Pode me ajudar?"
 );
 const WA_ORCAMENTO = `${WHATSAPP_URL}?text=${WA_MSG_ORCAMENTO}`;
 
 const servicos = [
   {
-    href: "/criacao-de-sites",
-    label: "Site Institucional",
-    desc: "Site profissional que aparece no Google",
-    preco: PRICES.institucional,
-  },
-  {
-    href: "/loja-virtual",
-    label: "Loja Virtual",
-    desc: "E-commerce otimizado e fácil de gerenciar",
-    preco: PRICES.lojaVirtual,
-  },
-  {
-    href: "/landing-page",
-    label: "Landing Page",
-    desc: "Página de alta conversão focada em leads",
-    preco: PRICES.landingPage,
-  },
-  {
     href: "/software-sob-medida",
     label: "Software Sob Medida",
-    desc: "Sistemas e aplicativos personalizados",
-    preco: "Sob consulta",
+    desc: "Sistemas web, apps e plataformas personalizadas",
+    preco: PRICES.sistemaWeb,
+  },
+  {
+    href: "/desenvolvimento-de/app-mobile",
+    label: "App Mobile",
+    desc: "Aplicativos iOS e Android sob medida",
+    preco: PRICES.appMobile,
+  },
+  {
+    href: "/automacao-de/chatbot-whatsapp",
+    label: "Automação de Atendimento",
+    desc: "Chatbot e automação de WhatsApp com IA",
+    preco: PRICES.automacao,
+  },
+  {
+    href: "/desenvolvimento-de/ia-para-negocios",
+    label: "Inteligência Artificial",
+    desc: "Agentes, chatbots e automações com IA",
+    preco: PRICES.ia,
+  },
+  {
+    href: "/automacao-de/automacao-de-processos",
+    label: "Automação de Processos",
+    desc: "RPA, N8N e integração entre sistemas",
+    preco: PRICES.automacao,
   },
 ] as const;
 
@@ -171,7 +177,7 @@ export default function Header() {
                     style={{ borderTop: "1px solid rgba(59,130,246,0.15)" }}
                   >
                     <Link
-                      href="/criacao-de-sites/quanto-custa"
+                      href="/quanto-custa/sistema-de-gestao"
                       role="menuitem"
                       onClick={closeDropdown}
                       className="block text-xs py-1 transition-colors"
@@ -179,7 +185,7 @@ export default function Header() {
                       onMouseEnter={(e) => (e.currentTarget.style.color = "#F8FAFC")}
                       onMouseLeave={(e) => (e.currentTarget.style.color = "#94A3B8")}
                     >
-                      Quanto custa um site?
+                      Quanto custa um software?
                     </Link>
                   </div>
                 </div>

@@ -45,20 +45,17 @@ const nextConfig: NextConfig = {
 
   async redirects() {
     return [
-      { source: "/site", destination: "/criacao-de-sites", permanent: true },
-      { source: "/loja", destination: "/loja-virtual", permanent: true },
-      { source: "/landing", destination: "/landing-page", permanent: true },
-      {
-        source: "/criacao-de-sites/preco",
-        destination: "/criacao-de-sites/quanto-custa",
-        permanent: false,
-      },
-      {
-        source: "/orcamento",
-        destination: "/criacao-de-sites/orcamento",
-        permanent: true,
-      },
+      { source: "/site", destination: "/software-sob-medida", permanent: true },
+      { source: "/loja", destination: "/desenvolvimento-de/e-commerce", permanent: true },
+      { source: "/landing", destination: "/software-sob-medida", permanent: true },
+      { source: "/orcamento", destination: "/contato", permanent: true },
       { source: "/contato-form", destination: "/contato", permanent: true },
+      { source: "/criacao-de-sites", destination: "/software-sob-medida", permanent: true },
+      { source: "/criacao-de-sites/:path*", destination: "/software-sob-medida", permanent: true },
+      { source: "/loja-virtual", destination: "/desenvolvimento-de/e-commerce", permanent: true },
+      { source: "/loja-virtual/:path*", destination: "/desenvolvimento-de/e-commerce", permanent: true },
+      { source: "/landing-page", destination: "/software-sob-medida", permanent: true },
+      { source: "/landing-page/:path*", destination: "/software-sob-medida", permanent: true },
     ];
   },
 };

@@ -1,0 +1,382 @@
+[
+  {
+    "slug": "sistema-de-gestao",
+    "nome": "Sistema de Gestão",
+    "nomeCompleto": "Sistema de Gestão Empresarial (ERP)",
+    "categoria": "gestao",
+    "descricao": "Sistema integrado que centraliza financeiro, estoque, vendas, compras e relatórios em uma única plataforma personalizada para o seu negócio.",
+    "palavrasChave": ["sistema de gestão", "erp personalizado", "sistema empresarial", "software de gestão empresarial"],
+    "dores": ["Processos em planilhas desconectadas", "Falta de visibilidade do negócio em tempo real", "Erros manuais por retrabalho", "Dificuldade de escalar sem tecnologia"],
+    "beneficios": ["Gestão centralizada em um único sistema", "Relatórios em tempo real", "Eliminação de retrabalho manual", "Escalabilidade conforme o negócio cresce"]
+  },
+  {
+    "slug": "erp",
+    "nome": "ERP",
+    "nomeCompleto": "ERP Personalizado (Enterprise Resource Planning)",
+    "categoria": "gestao",
+    "descricao": "Desenvolvimento de ERP sob medida que integra todos os departamentos da empresa: financeiro, RH, estoque, compras, vendas e produção.",
+    "palavrasChave": ["erp sob medida", "desenvolvimento de erp", "erp personalizado", "sistema erp"],
+    "dores": ["ERP genérico que não atende o processo real", "Múltiplos sistemas desconectados", "Alto custo de licenças de ERP pronto", "Falta de módulos específicos do setor"],
+    "beneficios": ["ERP 100% adaptado ao seu processo", "Integração total entre departamentos", "Sem mensalidade de licença", "Suporte especializado e evoluções contínuas"]
+  },
+  {
+    "slug": "crm",
+    "nome": "CRM",
+    "nomeCompleto": "CRM Personalizado (Customer Relationship Management)",
+    "categoria": "gestao",
+    "descricao": "CRM desenvolvido sob medida para gerenciar leads, clientes e funil de vendas do jeito exato que sua equipe comercial trabalha.",
+    "palavrasChave": ["crm personalizado", "desenvolvimento de crm", "crm sob medida", "sistema crm"],
+    "dores": ["CRM genérico com funcionalidades que não usa", "Equipe de vendas sem visibilidade do funil", "Leads perdidos por falta de acompanhamento", "Dificuldade de integrar com WhatsApp"],
+    "beneficios": ["Funil de vendas exatamente como você trabalha", "Integração com WhatsApp e e-mail", "Automação de follow-up", "Relatórios de conversão em tempo real"]
+  },
+  {
+    "slug": "app-mobile",
+    "nome": "App Mobile",
+    "nomeCompleto": "Aplicativo Mobile (iOS e Android)",
+    "categoria": "mobile",
+    "descricao": "Desenvolvimento de aplicativos mobile nativos e híbridos para iOS e Android, desde apps de gestão internos até produtos digitais voltados ao consumidor final.",
+    "palavrasChave": ["desenvolvimento de app mobile", "app para ios e android", "criar aplicativo", "app sob medida"],
+    "dores": ["Processo que só funciona no computador", "Clientes sem acesso fácil ao seu serviço", "App de concorrente ganhando mercado", "Dependência de planilhas no celular"],
+    "beneficios": ["App na mão do cliente 24h", "Notificações push para retenção", "Funciona offline", "Publicado na App Store e Google Play"]
+  },
+  {
+    "slug": "app-android",
+    "nome": "App Android",
+    "nomeCompleto": "Aplicativo Android Personalizado",
+    "categoria": "mobile",
+    "descricao": "Aplicativo Android desenvolvido sob medida para o seu negócio, com design moderno, alta performance e publicação na Google Play Store.",
+    "palavrasChave": ["desenvolvimento app android", "criar app android", "aplicativo android personalizado", "app android sob medida"],
+    "dores": ["Processo manual que poderia ser no celular", "Falta de acesso móvel para a equipe", "App genérico que não atende seu fluxo"],
+    "beneficios": ["App Android nativo de alta performance", "Publicação na Google Play", "Integração com APIs e sistemas existentes", "Suporte e evolução contínua"]
+  },
+  {
+    "slug": "sistema-de-agendamento",
+    "nome": "Sistema de Agendamento",
+    "nomeCompleto": "Sistema de Agendamento Online",
+    "categoria": "gestao",
+    "descricao": "Sistema de agendamento online que permite que seus clientes marquem horários 24h pelo celular, com confirmação automática e gestão da agenda em tempo real.",
+    "palavrasChave": ["sistema de agendamento online", "software de agendamento", "agenda online", "criar sistema de agendamento"],
+    "dores": ["Agenda controlada no papel ou WhatsApp", "Clientes ligando para marcar horário", "Horários duplicados e confusão de agenda", "Funcionários sem visibilidade da agenda"],
+    "beneficios": ["Clientes agendam sozinhos 24h", "Confirmação e lembrete automático por WhatsApp", "Gestão de múltiplos profissionais", "Redução de faltas com lembretes automáticos"]
+  },
+  {
+    "slug": "chatbot-com-ia",
+    "nome": "Chatbot com IA",
+    "nomeCompleto": "Chatbot com Inteligência Artificial",
+    "categoria": "ia",
+    "descricao": "Chatbot inteligente com IA (GPT/Claude) que responde clientes automaticamente, qualifica leads e agenda reuniões sem intervenção humana.",
+    "palavrasChave": ["chatbot com ia", "chatbot inteligente", "bot com inteligência artificial", "chatbot para empresa"],
+    "dores": ["Atendimento manual sobrecarregado", "Clientes sem resposta fora do horário comercial", "Leads perdidos por demora no primeiro contato", "Equipe respondendo perguntas repetitivas"],
+    "beneficios": ["Atendimento automático 24h/7 dias", "Qualificação de leads sem esforço humano", "Respostas inteligentes baseadas no seu conteúdo", "Integração com WhatsApp e site"]
+  },
+  {
+    "slug": "chatbot-whatsapp",
+    "nome": "Chatbot WhatsApp",
+    "nomeCompleto": "Chatbot e Automação de Atendimento no WhatsApp",
+    "categoria": "automacao",
+    "descricao": "Automação completa do atendimento via WhatsApp com chatbot inteligente, fluxos personalizados, integração com CRM e transferência para humano quando necessário.",
+    "palavrasChave": ["chatbot whatsapp", "bot whatsapp", "automação whatsapp", "atendimento automatico whatsapp"],
+    "dores": ["Equipe sobrecarregada respondendo WhatsApp", "Clientes sem resposta fora do expediente", "Mensagens perdidas no volume alto", "Sem controle de atendimentos por WhatsApp"],
+    "beneficios": ["Atendimento automático 24h no WhatsApp", "Fluxos personalizados por tipo de cliente", "Histórico de conversas centralizado", "Transferência inteligente para humano"]
+  },
+  {
+    "slug": "automacao-de-processos",
+    "nome": "Automação de Processos",
+    "nomeCompleto": "Automação de Processos Empresariais (RPA)",
+    "categoria": "automacao",
+    "descricao": "Automatizamos processos manuais e repetitivos da sua empresa: emissão de documentos, envio de e-mails, atualização de planilhas, relatórios e muito mais.",
+    "palavrasChave": ["automação de processos", "rpa empresarial", "automação empresarial", "eliminar processos manuais"],
+    "dores": ["Funcionários perdendo tempo em tarefas repetitivas", "Erros frequentes em processos manuais", "Lentidão operacional por falta de automação", "Alto custo de mão de obra para tarefas simples"],
+    "beneficios": ["Processos executados automaticamente", "Zero erros em tarefas repetitivas", "Equipe focada em atividades estratégicas", "Redução de custo operacional"]
+  },
+  {
+    "slug": "automacao-whatsapp",
+    "nome": "Automação WhatsApp",
+    "nomeCompleto": "Automação de Atendimento e Marketing no WhatsApp",
+    "categoria": "automacao",
+    "descricao": "Automatize todo o ciclo de atendimento pelo WhatsApp: boas-vindas, qualificação, agendamento, follow-up e pós-venda com fluxos inteligentes.",
+    "palavrasChave": ["automação de atendimento whatsapp", "marketing whatsapp automatizado", "whatsapp business automatizado", "bot de atendimento whatsapp"],
+    "dores": ["Perda de leads por demora no atendimento", "Equipe esgotada com volume de mensagens", "Falta de padronização no atendimento", "Sem follow-up automático pós-atendimento"],
+    "beneficios": ["Atendimento imediato a qualquer hora", "Follow-up automático para leads", "Disparo de mensagens segmentadas", "Integração com sistemas de gestão"]
+  },
+  {
+    "slug": "sistema-pdv",
+    "nome": "Sistema PDV",
+    "nomeCompleto": "Sistema de Ponto de Venda (PDV)",
+    "categoria": "gestao",
+    "descricao": "Sistema PDV completo com controle de caixa, estoque em tempo real, emissão de NFC-e, relatórios de vendas e integração com meios de pagamento.",
+    "palavrasChave": ["sistema pdv", "software pdv", "sistema ponto de venda", "pdv para restaurante"],
+    "dores": ["PDV lento ou sem funcionalidades específicas", "Falta de controle de estoque integrado", "Dificuldade de emissão fiscal", "Sem relatórios de vendas automatizados"],
+    "beneficios": ["PDV rápido e personalizável", "Estoque atualizado em tempo real", "Emissão automática de NFC-e", "Relatórios de vendas por produto e período"]
+  },
+  {
+    "slug": "plataforma-ead",
+    "nome": "Plataforma EAD",
+    "nomeCompleto": "Plataforma de Ensino a Distância (EAD/LMS)",
+    "categoria": "educacao",
+    "descricao": "Plataforma EAD personalizada para venda e distribuição de cursos online, treinamentos corporativos e certificações, com área de membros completa.",
+    "palavrasChave": ["plataforma ead personalizada", "lms sob medida", "criar plataforma de cursos", "sistema de cursos online"],
+    "dores": ["Alto custo de mensalidade em plataformas prontas", "Sem identidade visual da empresa", "Limitações de personalização", "Sem controle total dos alunos e dados"],
+    "beneficios": ["Plataforma 100% com sua marca", "Sem mensalidade por aluno", "Controle total dos dados e alunos", "Certificados automáticos personalizados"]
+  },
+  {
+    "slug": "e-commerce",
+    "nome": "E-commerce",
+    "nomeCompleto": "E-commerce Personalizado",
+    "categoria": "ecommerce",
+    "descricao": "Desenvolvimento de loja virtual personalizada com checkout otimizado, integração com gateways de pagamento, gestão de estoque e SEO avançado.",
+    "palavrasChave": ["desenvolvimento de e-commerce", "loja virtual personalizada", "criar loja online", "e-commerce sob medida"],
+    "dores": ["Plataforma genérica com limitações", "Alto custo de comissão por venda", "Falta de personalização no checkout", "SEO fraco nas páginas de produto"],
+    "beneficios": ["Checkout otimizado para conversão", "Integração com qualquer gateway de pagamento", "SEO técnico em cada produto", "Sem comissão por venda"]
+  },
+  {
+    "slug": "marketplace",
+    "nome": "Marketplace",
+    "nomeCompleto": "Marketplace Digital Personalizado",
+    "categoria": "ecommerce",
+    "descricao": "Desenvolvimento de marketplace com múltiplos vendedores, gestão de comissões, painel do vendedor, sistema de pagamento split e avaliações.",
+    "palavrasChave": ["desenvolvimento de marketplace", "criar marketplace", "marketplace personalizado", "plataforma marketplace"],
+    "dores": ["Alto custo de marketplace existente", "Falta de controle sobre vendedores e comissões", "Sem personalização para o nicho específico"],
+    "beneficios": ["Controle total de comissões e vendedores", "Painel do vendedor personalizado", "Pagamento automático split entre partes", "Escalabilidade para milhares de vendedores"]
+  },
+  {
+    "slug": "sistema-de-assinaturas",
+    "nome": "Sistema de Assinaturas",
+    "nomeCompleto": "Sistema de Assinaturas Recorrentes",
+    "categoria": "ecommerce",
+    "descricao": "Plataforma de assinaturas com cobrança recorrente automática, gestão de planos, churn, controle de acesso e relatórios de receita recorrente (MRR).",
+    "palavrasChave": ["sistema de assinaturas", "cobrança recorrente", "plataforma de assinaturas", "subscription software"],
+    "dores": ["Cobrança manual de clientes mensalmente", "Falta de controle de assinantes ativos", "Sem automação de renovação e cancelamento"],
+    "beneficios": ["Cobrança automática no cartão", "Controle de MRR e churn em tempo real", "Acesso automático conforme plano", "Régua de comunicação automática"]
+  },
+  {
+    "slug": "api-e-integracoes",
+    "nome": "API e Integrações",
+    "nomeCompleto": "Desenvolvimento de APIs e Integração de Sistemas",
+    "categoria": "integracao",
+    "descricao": "Desenvolvemos APIs REST, webhooks e integrações para conectar seus sistemas, ERPs, e-commerces, marketplaces e ferramentas de marketing em um fluxo único.",
+    "palavrasChave": ["desenvolvimento de api", "integração de sistemas", "api rest personalizada", "webhook personalizado"],
+    "dores": ["Sistemas que não conversam entre si", "Importação e exportação manual de dados", "Informações duplicadas em vários sistemas", "Falta de automação entre ferramentas"],
+    "beneficios": ["Sistemas integrados em fluxo único", "Dados sincronizados em tempo real", "Elimina importação manual", "Escalabilidade e manutenção simplificadas"]
+  },
+  {
+    "slug": "integracao-erp-ecommerce",
+    "nome": "Integração ERP E-commerce",
+    "nomeCompleto": "Integração ERP com E-commerce e Marketplaces",
+    "categoria": "integracao",
+    "descricao": "Integramos seu ERP com lojas virtuais (Shopify, VTEX, WooCommerce) e marketplaces (Mercado Livre, Shopee, Amazon) para sincronização automática de estoque, pedidos e preços.",
+    "palavrasChave": ["integração erp e-commerce", "erp mercado livre", "integração shopify erp", "sincronização estoque marketplace"],
+    "dores": ["Estoque desatualizado no marketplace", "Pedidos manuais do marketplace para o ERP", "Preços diferentes em cada canal", "Retrabalho entre sistemas"],
+    "beneficios": ["Estoque sincronizado em todos os canais", "Pedidos importados automaticamente", "Preços atualizados em massa", "Relatórios unificados de todos os canais"]
+  },
+  {
+    "slug": "dashboard-bi",
+    "nome": "Dashboard e BI",
+    "nomeCompleto": "Dashboard Executivo e Business Intelligence",
+    "categoria": "dados",
+    "descricao": "Criamos dashboards executivos e painéis de BI que consolidam dados de múltiplas fontes para decisões baseadas em dados reais em tempo real.",
+    "palavrasChave": ["dashboard empresarial", "business intelligence personalizado", "painel de indicadores", "kpi dashboard"],
+    "dores": ["Dados espalhados em vários sistemas sem visão unificada", "Relatórios manuais que levam horas para montar", "Tomada de decisão sem dados concretos", "Falta de KPIs e metas visíveis"],
+    "beneficios": ["Visão 360° do negócio em tempo real", "Relatórios automáticos sem esforço manual", "Indicadores de desempenho sempre visíveis", "Tomada de decisão baseada em dados"]
+  },
+  {
+    "slug": "ia-para-negocios",
+    "nome": "IA para Negócios",
+    "nomeCompleto": "Soluções de Inteligência Artificial para Empresas",
+    "categoria": "ia",
+    "descricao": "Implementamos IA generativa, agentes autônomos e modelos de machine learning para automatizar atendimento, análise de dados, geração de conteúdo e processos decisórios.",
+    "palavrasChave": ["ia para empresas", "inteligência artificial para negócios", "automação com ia", "agente de ia"],
+    "dores": ["Processos que exigem análise humana constante", "Alto custo de equipe para tarefas que IA resolve", "Concorrentes usando IA e ganhando vantagem", "Falta de personalização em escala"],
+    "beneficios": ["Automação de tarefas que exigem inteligência", "Atendimento personalizado em escala", "Análise de dados sem analista humano", "Vantagem competitiva com tecnologia de ponta"]
+  },
+  {
+    "slug": "agente-de-ia",
+    "nome": "Agente de IA",
+    "nomeCompleto": "Agente de Inteligência Artificial Autônomo",
+    "categoria": "ia",
+    "descricao": "Desenvolvemos agentes de IA autônomos que executam tarefas complexas: pesquisar, analisar, tomar decisões e agir em sistemas sem intervenção humana.",
+    "palavrasChave": ["agente de ia", "ai agent", "agente autônomo inteligência artificial", "automação com agente ia"],
+    "dores": ["Tarefas complexas que exigem análise e ação contínua", "Alto custo humano para processos analíticos", "Falta de escala em processos que exigem julgamento"],
+    "beneficios": ["Executa tarefas complexas automaticamente", "Opera 24h sem intervenção humana", "Aprende e melhora com o tempo", "Integra com qualquer sistema via API"]
+  },
+  {
+    "slug": "rag-base-conhecimento",
+    "nome": "RAG e Base de Conhecimento",
+    "nomeCompleto": "RAG — IA com Base de Conhecimento Proprietária",
+    "categoria": "ia",
+    "descricao": "Implementamos RAG (Retrieval-Augmented Generation) para criar chatbots e assistentes que respondem com base no conteúdo da sua empresa: documentos, PDFs, FAQs e manuais.",
+    "palavrasChave": ["rag inteligência artificial", "base de conhecimento ia", "chatbot com documentos da empresa", "ia com conteúdo próprio"],
+    "dores": ["Equipe perdendo tempo respondendo dúvidas repetitivas", "Documentos da empresa não consultados por ninguém", "Onboarding lento de novos funcionários"],
+    "beneficios": ["IA que responde com seu conteúdo e dados", "Respostas precisas baseadas nos seus documentos", "Onboarding automatizado de funcionários", "Atualização da base de conhecimento em tempo real"]
+  },
+  {
+    "slug": "automacao-n8n",
+    "nome": "Automação com N8N",
+    "nomeCompleto": "Automação de Processos com N8N",
+    "categoria": "automacao",
+    "descricao": "Criamos fluxos de automação poderosos com N8N conectando WhatsApp, e-mail, CRM, ERP, planilhas, APIs e dezenas de outras ferramentas sem código complexo.",
+    "palavrasChave": ["automação n8n", "n8n personalizado", "fluxo automação n8n", "integração n8n"],
+    "dores": ["Processos manuais entre ferramentas diferentes", "Custo alto de ferramentas como Zapier", "Falta de flexibilidade nas automações prontas"],
+    "beneficios": ["Automações ilimitadas sem custo por execução", "Conecta qualquer ferramenta via API", "Fluxos visuais fáceis de manter", "Self-hosted para privacidade dos dados"]
+  },
+  {
+    "slug": "sistema-financeiro",
+    "nome": "Sistema Financeiro",
+    "nomeCompleto": "Sistema de Gestão Financeira",
+    "categoria": "gestao",
+    "descricao": "Sistema financeiro personalizado com controle de fluxo de caixa, contas a pagar e receber, conciliação bancária, DRE e relatórios gerenciais em tempo real.",
+    "palavrasChave": ["sistema financeiro empresarial", "software controle financeiro", "sistema fluxo de caixa", "gestão financeira software"],
+    "dores": ["Financeiro controlado em planilhas sem segurança", "Falta de visibilidade de fluxo de caixa futuro", "Conciliação bancária manual demorada"],
+    "beneficios": ["Fluxo de caixa em tempo real", "Conciliação bancária automática", "DRE e relatórios gerenciais automáticos", "Previsão financeira baseada em histórico"]
+  },
+  {
+    "slug": "controle-de-estoque",
+    "nome": "Controle de Estoque",
+    "nomeCompleto": "Sistema de Controle de Estoque",
+    "categoria": "gestao",
+    "descricao": "Sistema de controle de estoque com entrada e saída em tempo real, alertas de estoque mínimo, rastreabilidade por lote e relatórios de giro de produtos.",
+    "palavrasChave": ["sistema de controle de estoque", "software estoque", "gestão de estoque", "sistema inventário"],
+    "dores": ["Produtos em falta sem aviso prévio", "Estoque fantasma por falta de controle", "Dificuldade de rastrear validade e lotes"],
+    "beneficios": ["Alerta automático de estoque mínimo", "Rastreabilidade completa por lote e validade", "Inventário em tempo real", "Relatórios de giro e produtos parados"]
+  },
+  {
+    "slug": "sistema-de-delivery",
+    "nome": "Sistema de Delivery",
+    "nomeCompleto": "Sistema de Delivery Próprio",
+    "categoria": "gestao",
+    "descricao": "Sistema de delivery completo com cardápio digital, pedidos online, rastreamento em tempo real, gestão de entregadores e integração com iFood e Rappi.",
+    "palavrasChave": ["sistema de delivery próprio", "software delivery", "app delivery personalizado", "sistema pedidos online"],
+    "dores": ["Alto percentual de comissão para iFood e Rappi", "Falta de dados dos clientes que pedem pelo app", "Sem identidade própria nos pedidos online"],
+    "beneficios": ["Pedidos diretos sem comissão de marketplace", "Base de clientes própria", "App com sua marca", "Integração opcional com iFood e Rappi"]
+  },
+  {
+    "slug": "prontuario-eletronico",
+    "nome": "Prontuário Eletrônico",
+    "nomeCompleto": "Prontuário Eletrônico (PEP)",
+    "categoria": "saude",
+    "descricao": "Sistema de prontuário eletrônico personalizado para clínicas e consultórios com registro completo do paciente, histórico de atendimentos, exames e prescrições digitais.",
+    "palavrasChave": ["prontuário eletrônico", "sistema prontuário", "pep personalizado", "software clinica medica"],
+    "dores": ["Prontuários em papel ou planilhas", "Histórico de paciente difícil de acessar", "Perda de informações clínicas importantes"],
+    "beneficios": ["Prontuário digital acessível de qualquer lugar", "Histórico completo do paciente", "Prescrição digital integrada", "Conformidade com CFM e LGPD"]
+  },
+  {
+    "slug": "sistema-de-gestao-de-obras",
+    "nome": "Gestão de Obras",
+    "nomeCompleto": "Sistema de Gestão de Obras e Projetos",
+    "categoria": "construcao",
+    "descricao": "Sistema para construtoras e engenheiros gerenciarem obras em tempo real: cronograma, orçamentos, materiais, equipes, medições e relatórios de progresso.",
+    "palavrasChave": ["sistema gestão de obras", "software construtora", "gestão de projetos construção", "sistema de obras"],
+    "dores": ["Obras sem visibilidade de cronograma e custo", "Planilhas desatualizadas de obra", "Falta de controle de materiais e equipes em campo"],
+    "beneficios": ["Cronograma e custos em tempo real", "Controle de materiais por etapa", "Relatórios automáticos para clientes", "App para equipe em campo"]
+  },
+  {
+    "slug": "sistema-imobiliario",
+    "nome": "Sistema Imobiliário",
+    "nomeCompleto": "Sistema de Gestão Imobiliária",
+    "categoria": "imobiliario",
+    "descricao": "CRM e sistema imobiliário personalizado com gestão de imóveis, carteira de clientes, captação, propostas, contratos e portais de integração.",
+    "palavrasChave": ["sistema imobiliário", "crm imobiliário", "software para imobiliária", "gestão imobiliária"],
+    "dores": ["Imóveis e clientes em planilhas desatualizadas", "Perda de leads por falta de follow-up", "Sem integração com portais imobiliários"],
+    "beneficios": ["Gestão completa de imóveis e clientes", "Follow-up automático de leads", "Integração com Zap Imóveis, OLX e Viva Real", "Contratos e documentação digital"]
+  },
+  {
+    "slug": "sistema-de-rh",
+    "nome": "Sistema de RH",
+    "nomeCompleto": "Sistema de Recursos Humanos e Folha de Pagamento",
+    "categoria": "gestao",
+    "descricao": "Sistema de RH completo com controle de ponto, férias, banco de horas, admissão, demissão e folha de pagamento integrada.",
+    "palavrasChave": ["sistema de rh", "software rh", "sistema folha de pagamento", "controle de ponto digital"],
+    "dores": ["Controle de ponto em papel ou planilha", "Folha de pagamento manual com erros", "Dificuldade de gerenciar férias e banco de horas"],
+    "beneficios": ["Ponto digital via app ou biometria", "Folha de pagamento automatizada", "Gestão de férias e banco de horas", "Conformidade com CLT e eSocial"]
+  },
+  {
+    "slug": "saas",
+    "nome": "SaaS",
+    "nomeCompleto": "Desenvolvimento de SaaS (Software as a Service)",
+    "categoria": "produto",
+    "descricao": "Desenvolvemos produtos SaaS completos: da arquitetura multi-tenant ao painel de assinaturas, onboarding automatizado, métricas de produto e escalabilidade.",
+    "palavrasChave": ["desenvolvimento saas", "criar produto saas", "software as a service personalizado", "startup saas"],
+    "dores": ["Ideia de produto sem equipe técnica para executar", "SaaS existente com dívida técnica", "Falta de arquitetura multi-tenant escalável"],
+    "beneficios": ["Arquitetura multi-tenant desde o início", "Painel de métricas de produto (MRR, churn)", "Onboarding automatizado de novos clientes", "Escalabilidade para milhares de usuários"]
+  },
+  {
+    "slug": "portal-do-cliente",
+    "nome": "Portal do Cliente",
+    "nomeCompleto": "Portal do Cliente Personalizado",
+    "categoria": "produto",
+    "descricao": "Portal web personalizado onde seus clientes acessam contratos, documentos, faturas, chamados de suporte, acompanhamento de projetos e comunicação centralizada.",
+    "palavrasChave": ["portal do cliente", "área do cliente", "extranet para clientes", "portal web personalizado"],
+    "dores": ["Clientes pedindo informações por WhatsApp o tempo todo", "Documentos enviados por e-mail sem organização", "Falta de transparência no andamento dos projetos"],
+    "beneficios": ["Cliente acessa tudo de forma autônoma", "Comunicação centralizada e organizada", "Acompanhamento de projetos em tempo real", "Redução de demandas no suporte"]
+  },
+  {
+    "slug": "automacao-de-marketing",
+    "nome": "Automação de Marketing",
+    "nomeCompleto": "Automação de Marketing Digital",
+    "categoria": "automacao",
+    "descricao": "Criamos fluxos de automação de marketing com e-mail, WhatsApp e SMS: boas-vindas, nutrição de leads, recuperação de carrinho, pós-venda e reativação de clientes.",
+    "palavrasChave": ["automação de marketing", "marketing automation personalizado", "fluxo de nutrição leads", "automação email whatsapp"],
+    "dores": ["Leads que entram e não convertem por falta de follow-up", "Carrinho abandonado sem recuperação automática", "Base de clientes sem régua de relacionamento"],
+    "beneficios": ["Nutrição automática de leads até a venda", "Recuperação de carrinho abandonado", "Reativação de clientes inativos", "Comunicação personalizada em escala"]
+  },
+  {
+    "slug": "sistema-de-gestao-escolar",
+    "nome": "Sistema Escolar",
+    "nomeCompleto": "Sistema de Gestão Escolar",
+    "categoria": "educacao",
+    "descricao": "Sistema de gestão escolar completo com matrícula online, controle de frequência, lançamento de notas, comunicados, financeiro e portal do aluno e responsável.",
+    "palavrasChave": ["sistema de gestão escolar", "software escola", "sistema educacional", "gestão escolar digital"],
+    "dores": ["Processos escolares em papel e planilhas", "Pais sem acesso digital ao desempenho do filho", "Matrícula presencial demorada e burocrática"],
+    "beneficios": ["Matrícula 100% online", "Portal do aluno e responsável", "Frequência e notas em tempo real", "Comunicados automáticos por WhatsApp"]
+  },
+  {
+    "slug": "sistema-de-gestao-de-frota",
+    "nome": "Gestão de Frota",
+    "nomeCompleto": "Sistema de Gestão de Frota",
+    "categoria": "logistica",
+    "descricao": "Sistema de gestão de frota com rastreamento em tempo real, controle de manutenção preventiva, abastecimento, motoristas, viagens e relatórios de custo por veículo.",
+    "palavrasChave": ["sistema gestão de frota", "software frota", "controle de frota", "rastreamento veículos"],
+    "dores": ["Frota sem controle de manutenção preventiva", "Alto custo por falta de gestão de combustível", "Sem visibilidade de localização dos veículos"],
+    "beneficios": ["Rastreamento em tempo real", "Alertas de manutenção preventiva", "Controle de abastecimento e custos", "Relatório de custo por veículo"]
+  },
+  {
+    "slug": "sistema-de-ticketing",
+    "nome": "Sistema de Suporte",
+    "nomeCompleto": "Sistema de Suporte e Tickets (Helpdesk)",
+    "categoria": "atendimento",
+    "descricao": "Sistema de helpdesk personalizado com abertura de chamados, SLA, fila de atendimento, base de conhecimento, relatórios e integração com WhatsApp e e-mail.",
+    "palavrasChave": ["sistema de tickets", "helpdesk personalizado", "software suporte", "sistema chamados"],
+    "dores": ["Suporte por WhatsApp sem controle e histórico", "Sem SLA e prazo de atendimento definidos", "Falta de visibilidade de chamados abertos"],
+    "beneficios": ["Chamados organizados com SLA", "Histórico completo de cada atendimento", "Base de conhecimento para auto-atendimento", "Relatórios de desempenho do suporte"]
+  },
+  {
+    "slug": "assinatura-digital",
+    "nome": "Assinatura Digital",
+    "nomeCompleto": "Sistema de Assinatura Digital de Documentos",
+    "categoria": "gestao",
+    "descricao": "Plataforma de assinatura digital integrada aos seus sistemas, para contratos, propostas e documentos serem assinados eletronicamente com validade jurídica.",
+    "palavrasChave": ["sistema de assinatura digital", "assinatura eletrônica documentos", "plataforma assinatura digital", "contratos digitais"],
+    "dores": ["Contratos impressos e assinados fisicamente", "Atraso em processos por falta de assinatura", "Alto custo de cartório e reconhecimento de firma"],
+    "beneficios": ["Assinatura em segundos pelo celular", "Validade jurídica conforme ICP-Brasil", "Auditoria completa de cada assinatura", "Integração com CRM e ERP"]
+  },
+  {
+    "slug": "sistema-de-relatorios",
+    "nome": "Relatórios Automatizados",
+    "nomeCompleto": "Sistema de Geração de Relatórios Automatizados",
+    "categoria": "dados",
+    "descricao": "Desenvolvemos sistemas que geram relatórios automáticos periódicos em PDF, Excel ou dashboards, enviados por e-mail ou WhatsApp para gestores e clientes.",
+    "palavrasChave": ["relatórios automáticos", "geração de relatório automático", "sistema relatórios empresariais", "automação de relatórios"],
+    "dores": ["Horas perdidas montando relatórios manualmente", "Relatórios enviados com atraso", "Dados desatualizados nos relatórios"],
+    "beneficios": ["Relatórios gerados e enviados automaticamente", "Dados sempre atualizados e precisos", "Formatação profissional e padronizada", "Libera equipe para atividades estratégicas"]
+  },
+  {
+    "slug": "reconhecimento-de-imagem",
+    "nome": "Reconhecimento de Imagem",
+    "nomeCompleto": "Reconhecimento de Imagem com Inteligência Artificial",
+    "categoria": "ia",
+    "descricao": "Soluções de visão computacional para identificação de produtos, leitura de documentos (OCR), controle de qualidade visual e reconhecimento facial.",
+    "palavrasChave": ["reconhecimento de imagem ia", "visão computacional", "ocr inteligente", "análise de imagem ia"],
+    "dores": ["Inspeção visual manual cara e sujeita a erros", "Leitura manual de documentos e notas fiscais", "Falta de controle de qualidade automatizado"],
+    "beneficios": ["Inspeção automática 24h sem cansaço", "Leitura de documentos em segundos", "Redução de erros em controle de qualidade", "Integração com linha de produção"]
+  }
+]

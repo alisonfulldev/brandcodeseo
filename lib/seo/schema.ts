@@ -104,7 +104,7 @@ export function localBusinessSchema({
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: `${SITE_NAME} — Criação de Sites em ${cidade}`,
+    name: `${SITE_NAME} — Desenvolvimento de Software em ${cidade}`,
     url: SITE_URL,
     telephone: `+${WHATSAPP_NUMBER}`,
     address: {
@@ -113,7 +113,7 @@ export function localBusinessSchema({
       addressRegion: estado,
       addressCountry: "BR",
     },
-    description: `Criação de sites profissionais em ${cidade}, ${estado}. Sites institucionais, lojas virtuais e landing pages com SEO técnico avançado.`,
+    description: `Software house com desenvolvimento de sistemas, apps mobile e automações em ${cidade}, ${estado}. Software sob medida para empresas de todos os segmentos.`,
     priceRange: "$$",
     currenciesAccepted: "BRL",
     paymentAccepted: "PIX, Cartão de Crédito, Boleto",
@@ -153,27 +153,27 @@ export function breadcrumbSchema(
 
 export const defaultFaqs = [
   {
-    question: "Quanto custa criar um site profissional?",
-    answer: `Na BrandCode Solutions, os preços são: Site Institucional ${PRICES.institucional}, Loja Virtual ${PRICES.lojaVirtual}, Landing Page ${PRICES.landingPage}. Entre em contato pelo WhatsApp para um orçamento personalizado.`,
+    question: "Quanto custa desenvolver um software sob medida?",
+    answer: `Na BrandCode Solutions, automações e chatbots com IA partem de ${PRICES.automacao}, sistemas web e ERPs partem de ${PRICES.sistemaWeb} e apps mobile partem de ${PRICES.appMobile}. Orçamento personalizado após entender seu projeto.`,
   },
   {
-    question: "O site vem com SEO incluso?",
+    question: "Qual o prazo de entrega de um sistema?",
     answer:
-      "Sim! Todos os nossos sites são entregues com SEO técnico avançado já configurado: meta tags, schema markup, sitemap, robots.txt, performance otimizada e muito mais.",
+      "Automações simples: 5 a 15 dias. Sistemas web: 30 a 90 dias. Apps mobile: 60 a 120 dias. Trabalhamos com entregas incrementais para que você já veja valor antes da entrega final.",
   },
   {
-    question: "Posso gerenciar o meu próprio site?",
+    question: "Vocês entregam o código-fonte?",
     answer:
-      "Sim. Todos os nossos sites incluem um painel administrativo completo para que você possa atualizar textos, imagens e produtos sem precisar de um programador.",
+      "Sim. Todo o código-fonte é seu. Você recebe o repositório completo e documentação técnica. Sem dependência de fornecedor.",
   },
   {
-    question: "Qual é o prazo de entrega?",
+    question: "Posso integrar com os sistemas que já uso?",
     answer:
-      "Landing pages em até 5 dias úteis, sites institucionais em até 15 dias úteis e lojas virtuais em até 25 dias úteis. Prazos definidos no contrato.",
+      "Sim. Integramos com qualquer sistema via API: ERPs, CRMs, WhatsApp, marketplaces, gateways de pagamento, sistemas fiscais e muito mais.",
   },
   {
-    question: "Vocês fazem sites para qual tipo de negócio?",
+    question: "A BrandCode atende qual tipo de empresa?",
     answer:
-      "Atendemos todos os segmentos: médicos, advogados, dentistas, clínicas, academias, restaurantes, imobiliárias, e-commerces, profissionais liberais e muito mais.",
+      "Atendemos empresas de todos os portes: restaurantes, clínicas, academias, indústrias, fintechs, startups SaaS, e-commerces e qualquer negócio que precise automatizar ou digitalizar processos.",
   },
 ];

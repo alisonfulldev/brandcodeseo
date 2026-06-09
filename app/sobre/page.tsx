@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbSchema } from "@/lib/seo/schema";
-import { SITE_URL, SITE_NAME, WHATSAPP_LINK, PRICES } from "@/lib/constants";
+import { SITE_URL, SITE_NAME, PRICES } from "@/lib/constants";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Sobre a BrandCode Solutions",
+  title: "Sobre a BrandCode Solutions | Software House",
   description:
-    "Conheça a BrandCode Solutions, agência digital especializada em criação de sites que vendem. SEO técnico avançado, painel administrativo e foco em conversão real.",
+    "Somos uma software house especializada em sistemas sob medida, apps mobile, automações com IA e integrações. Código-fonte entregue, sem mensalidade de licença.",
   slug: "sobre",
 });
 
@@ -32,7 +32,7 @@ export default function SobrePage() {
             Sobre a {SITE_NAME}
           </h1>
           <p className="mt-6 text-gray-300 text-lg leading-relaxed">
-            Somos uma agência digital especializada em criação de sites que vendem. Nossa missão é simples: fazer seu negócio aparecer no Google e converter visitantes em clientes.
+            Software house especializada em sistemas sob medida, apps mobile, automações com IA e integrações. Construímos o software que seu negócio precisa para automatizar processos e escalar.
           </p>
         </div>
       </section>
@@ -42,7 +42,7 @@ export default function SobrePage() {
           <div>
             <h2 className="text-2xl font-extrabold text-[#0A1628] mb-4">Nossa missão</h2>
             <p className="text-gray-600 leading-relaxed">
-              Acreditamos que todo negócio merece uma presença digital profissional, acessível e que realmente funcione. Não fazemos sites por fazer — entregamos ferramentas de vendas com SEO técnico avançado incluso em todos os projetos.
+              Acreditamos que toda empresa merece tecnologia de qualidade, sem depender de plataformas genéricas com mensalidades crescentes. Desenvolvemos software sob medida que funciona exatamente no seu processo, com código-fonte entregue e sem lock-in de fornecedor.
             </p>
           </div>
 
@@ -50,9 +50,9 @@ export default function SobrePage() {
             <h2 className="text-2xl font-extrabold text-[#0A1628] mb-4">O que nos diferencia</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               {[
-                { num: "01", titulo: "Sites que se vendem sozinhos", desc: "SEO técnico avançado configurado desde o primeiro dia." },
-                { num: "02", titulo: "Painel admin incluso", desc: "Você gerencia seu próprio site sem depender de nós." },
-                { num: "03", titulo: "Foco em conversão", desc: "Cada elemento pensado para transformar visitante em cliente." },
+                { num: "01", titulo: "Código-fonte é seu", desc: "Você recebe o repositório completo. Pode evoluir com qualquer time no futuro." },
+                { num: "02", titulo: "IA integrada", desc: "Chatbots, automações e agentes de IA já na arquitetura base de todos os projetos." },
+                { num: "03", titulo: "Entregas incrementais", desc: "Você começa a usar o sistema antes da entrega final. Sem meses de espera." },
               ].map((d) => (
                 <div key={d.num} className="bg-gray-50 rounded-2xl p-6">
                   <div className="text-3xl font-extrabold text-blue-200 mb-2">{d.num}</div>
@@ -68,16 +68,16 @@ export default function SobrePage() {
             <div className="bg-[#0A1628] rounded-2xl p-8 text-white">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
                 <div>
-                  <div className="text-sm text-gray-400 mb-1">Landing Page</div>
-                  <div className="text-2xl font-bold text-blue-400">{PRICES.landingPage}</div>
+                  <div className="text-sm text-gray-400 mb-1">Automação e IA</div>
+                  <div className="text-2xl font-bold text-blue-400">{PRICES.automacao}</div>
                 </div>
                 <div className="sm:border-x border-blue-900">
-                  <div className="text-sm text-gray-400 mb-1">Site Institucional</div>
-                  <div className="text-2xl font-bold text-blue-400">{PRICES.institucional}</div>
+                  <div className="text-sm text-gray-400 mb-1">Sistema Web / ERP</div>
+                  <div className="text-2xl font-bold text-blue-400">{PRICES.sistemaWeb}</div>
                 </div>
                 <div>
-                  <div className="text-sm text-gray-400 mb-1">Loja Virtual</div>
-                  <div className="text-2xl font-bold text-blue-400">{PRICES.lojaVirtual}</div>
+                  <div className="text-sm text-gray-400 mb-1">App Mobile</div>
+                  <div className="text-2xl font-bold text-blue-400">{PRICES.appMobile}</div>
                 </div>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function SobrePage() {
           <div className="text-center">
             <h2 className="text-2xl font-extrabold text-[#0A1628] mb-4">Vamos trabalhar juntos?</h2>
             <WhatsAppButton
-              message="Olá! Vi o site da BrandCode e quero um orçamento."
+              message="Olá! Vi o site da BrandCode e quero um orçamento de software."
               className="px-8 py-4 text-base"
             >
               Falar no WhatsApp

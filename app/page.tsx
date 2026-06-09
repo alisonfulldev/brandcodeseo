@@ -12,110 +12,88 @@ import AnimatedSection from "@/components/ui/AnimatedSection";
 import Link from "next/link";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Criação de Sites que Vendem | SEO Técnico Avançado Incluso",
+  title: "Software House | Sistemas, Apps, Automações e IA Sob Medida",
   description:
-    "Criamos sites que aparecem no Google e convertem visitantes em clientes via WhatsApp. SEO técnico avançado, painel admin e entrega rápida. Taxa de implementação a partir de R$ 199.",
+    "Desenvolvemos sistemas web, apps mobile, chatbots com IA e automações para empresas que querem crescer com tecnologia. Software 100% sob medida, entrega ágil e suporte real.",
   keywords: [
-    "criação de sites",
-    "agência de sites",
-    "site profissional",
-    "site com SEO",
-    "site que vende",
-    "criar site empresarial",
-    "desenvolvimento de sites",
-    "agência digital",
-    "site que aparece no Google",
-    "criação de sites com SEO",
+    "software house",
+    "desenvolvimento de software",
+    "sistema sob medida",
+    "app mobile",
+    "chatbot com ia",
+    "automação de processos",
+    "erp personalizado",
+    "crm sob medida",
+    "automação whatsapp",
+    "inteligência artificial para empresas",
   ],
 });
 
 const homeFaqs = [
   {
-    question: "Quanto custa criar um site profissional com a BrandCode?",
-    answer: `Trabalhamos com três planos: Site Institucional ${PRICES.institucional}, Landing Page ${PRICES.landingPage} e Loja Virtual ${PRICES.lojaVirtual}. Todos os planos incluem SEO técnico avançado, painel administrativo e hospedagem na Vercel. Parcelamos em até 12x no cartão. Solicite um orçamento personalizado pelo WhatsApp.`,
+    question: "Quanto custa desenvolver um software sob medida?",
+    answer: `Os valores variam conforme a complexidade. Automações e chatbots com IA partem de ${PRICES.automacao}. Sistemas web e ERPs partem de ${PRICES.sistemaWeb}. Apps mobile partem de ${PRICES.appMobile}. Todos com orçamento personalizado após entender seu projeto. Fale pelo WhatsApp para receber uma proposta.`,
   },
   {
-    question: "O SEO já vem incluso mesmo no plano mais em conta?",
+    question: "Qual o prazo de entrega de um sistema?",
     answer:
-      "Sim, sem exceção. Configuramos meta tags, sitemap XML, robots.txt, schema JSON-LD, OpenGraph, Core Web Vitals otimizados e velocidade de carregamento em todos os planos — inclusive no plano mais em conta. SEO não é opcional na BrandCode, é padrão.",
+      "Automações e integrações simples: 5 a 15 dias úteis. Sistemas web: 30 a 90 dias. Apps mobile: 60 a 120 dias. O prazo é definido em contrato após levantamento de requisitos. Trabalhamos com entregas incrementais para que você já veja valor antes da entrega final.",
   },
   {
-    question: "Posso atualizar o meu site sem precisar de programador?",
+    question: "Vocês entregam o código-fonte?",
     answer:
-      "Sim. Todo site entregue pela BrandCode inclui um painel administrativo completo. Você atualiza textos, imagens, produtos, preços e páginas inteiras sem escrever uma linha de código. Isso é autonomia de verdade.",
+      "Sim. Todo o código-fonte é seu. Você recebe o repositório completo, documentação técnica e pode contratar outro desenvolvedor no futuro se quiser. Não criamos dependência.",
   },
   {
-    question: "Qual é o prazo de entrega de cada tipo de site?",
+    question: "Posso integrar com os sistemas que já uso?",
     answer:
-      "Landing pages: até 5 dias úteis. Sites institucionais: até 15 dias úteis. Lojas virtuais: até 25 dias úteis. Os prazos são definidos em contrato e começam a contar após aprovação do briefing e pagamento da entrada.",
+      "Sim. Integramos com praticamente qualquer sistema via API: ERPs, CRMs, WhatsApp Business API, marketplaces, gateways de pagamento, sistemas fiscais, planilhas e muito mais. Se tem API, a gente conecta.",
   },
   {
-    question: "A BrandCode atende qual tipo de negócio?",
+    question: "Vocês desenvolvem chatbot com IA para WhatsApp?",
     answer:
-      "Atendemos médicos, dentistas, advogados, clínicas, academias, restaurantes, imobiliárias, coaches, infoprodutores, e-commerces, prestadores de serviço e qualquer empresa que precise de presença digital profissional. Se você tem um negócio, temos um site que funciona para ele.",
+      "Sim. Desenvolvemos chatbots com IA (GPT/Claude) integrados ao WhatsApp com fluxos personalizados, transferência para humano, integração com CRM e base de conhecimento da sua empresa. O bot responde com base no seu conteúdo, não com respostas genéricas.",
   },
   {
-    question: "Que tecnologia vocês usam para criar os sites?",
+    question: "O que é automação de processos com N8N?",
     answer:
-      "Usamos Next.js com App Router e hospedagem na Vercel — a mesma infraestrutura usada por empresas como TikTok e Twitch. Isso garante velocidade máxima de carregamento, 99.9% de uptime e Lighthouse 95+ em todos os sites entregues.",
+      "N8N é uma plataforma de automação que conecta ferramentas e automatiza processos sem código manual. Usamos N8N para criar fluxos como: novo lead no CRM → enviar WhatsApp → criar tarefa no Trello → notificar no Slack. Qualquer processo repetitivo pode ser automatizado.",
   },
   {
-    question: "Como funciona o suporte após a entrega do site?",
+    question: "Como funciona o suporte após a entrega?",
     answer:
-      "Suporte direto via WhatsApp, sem ticket, sem chatbot. Você fala com quem construiu o seu site. Oferecemos suporte pós-entrega incluso e planos de manutenção mensal para quem precisa de atualização frequente de conteúdo.",
+      "Suporte direto pelo WhatsApp com quem desenvolveu o seu sistema. Sem ticket, sem atendimento terceirizado. Todos os projetos incluem 3 meses de suporte pós-entrega. Oferecemos também planos de manutenção e evolução contínua mensais.",
   },
   {
-    question: "Por que o SEO da BrandCode é diferente de outras agências?",
+    question: "A BrandCode atende qual tipo de empresa?",
     answer:
-      "Na maioria das agências, SEO é um extra pago à parte — e entregue de forma superficial. Na BrandCode, SEO técnico avançado é o ponto de partida: configuramos schema markup, otimizamos Core Web Vitals, geramos sitemaps dinâmicos e implementamos marcação estruturada JSON-LD para rich snippets no Google.",
+      "Atendemos empresas de todos os portes que precisam de tecnologia sob medida: restaurantes que querem delivery próprio, clínicas que precisam de sistema de agendamento, indústrias que querem ERP personalizado, fintechs, startups SaaS, e-commerces e qualquer negócio que precise automatizar ou digitalizar processos.",
   },
 ];
 
-// SVG icons (Lucide style)
-const IconSearch = () => (
-  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-  </svg>
-);
-const IconTrendingDown = () => (
-  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6L9 12.75l4.286-4.286a11.948 11.948 0 014.306 6.43l.776 2.898m0 0l3.182-5.511m-3.182 5.511l-5.511-3.182" />
-  </svg>
-);
-const IconLock = () => (
-  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
-  </svg>
-);
-const IconUsers = () => (
-  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
-  </svg>
-);
-const IconDollar = () => (
-  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-  </svg>
-);
-const IconZap = () => (
-  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-  </svg>
-);
-const IconGlobe = () => (
+const IconCode = () => (
   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
   </svg>
 );
-const IconCart = () => (
+const IconMobile = () => (
   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18h3" />
   </svg>
 );
-const IconTarget = () => (
+const IconBot = () => (
   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 9.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 0v2.25M12 21v-2.25M3 12h2.25M21 12h-2.25" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z" />
+  </svg>
+);
+const IconGear = () => (
+  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.41-.513m14.095-5.13l1.41-.513M5.106 17.785l1.15-.964m11.49-9.642l1.149-.964M7.501 19.795l.75-1.3M15.75 4.505l-.75 1.3M5.507 4.507l1.149.964m11.49 9.642l1.149.964M13.5 20.507l-.75-1.301M10.5 3.493l.75 1.301" />
+  </svg>
+);
+const IconAPI = () => (
+  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
   </svg>
 );
 const IconWA = () => (
@@ -130,49 +108,57 @@ const IconCheck = () => (
 );
 
 const SectionAccent = () => (
-  <div
-    style={{
-      width: 40,
-      height: 3,
-      background: "#3B82F6",
-      borderRadius: 2,
-      margin: "12px auto 0",
-    }}
-  />
+  <div style={{ width: 40, height: 3, background: "#3B82F6", borderRadius: 2, margin: "12px auto 0" }} />
 );
 
 const painPoints = [
-  { icon: <IconSearch />, texto: '"Paguei R$ 2.000 por um site que não aparece nem quando digito o nome da empresa no Google."' },
-  { icon: <IconTrendingDown />, texto: '"Meu site recebe visitas, mas nunca tocou o telefone. Nem um cliente veio de lá."' },
-  { icon: <IconLock />, texto: '"Preciso pagar o programador toda vez que quero mudar o preço ou trocar uma foto."' },
-  { icon: <IconUsers />, texto: '"Meu concorrente, que abriu depois de mim, aparece na primeira página do Google. Eu não apareço em lugar nenhum."' },
-  { icon: <IconDollar />, texto: '"Gasto todo mês com Google Ads porque sem anúncio meu site some completamente."' },
-  { icon: <IconZap />, texto: '"O site abre tão devagar no celular que os clientes saem antes de ver qualquer coisa."' },
+  { texto: '"Estou perdendo tempo com planilhas e processos manuais que poderiam ser automáticos."' },
+  { texto: '"Meu concorrente já tem app e sistema próprio. Eu ainda dependo de ferramentas genéricas."' },
+  { texto: '"Pago caro por plataformas prontas que não fazem tudo que eu preciso."' },
+  { texto: '"Minha equipe gasta horas respondendo as mesmas perguntas no WhatsApp todo dia."' },
+  { texto: '"Não tenho visibilidade do meu negócio — sem relatórios, sem dados, sem controle real."' },
+  { texto: '"Quero lançar um produto digital mas não sei por onde começar e com quem confiar."' },
 ];
 
 const servicos = [
   {
-    href: "/criacao-de-sites",
-    titulo: "Site Institucional",
-    preco: PRICES.institucional,
-    desc: "Presença digital completa com autoridade. Até 8 páginas, blog, formulário e SEO avançado para aparecer no Google.",
-    icon: <IconGlobe />,
+    href: "/software-sob-medida",
+    titulo: "Sistema Web e ERP",
+    preco: PRICES.sistemaWeb,
+    desc: "Sistemas de gestão, ERPs, CRMs e plataformas web 100% personalizadas. Seu processo, sua regra, seu sistema.",
+    icon: <IconCode />,
     destaque: false,
   },
   {
-    href: "/loja-virtual",
-    titulo: "Loja Virtual",
-    preco: PRICES.lojaVirtual,
-    desc: "Venda online 24h. Pagamento integrado (PIX, cartão, boleto), gestão de produtos e SEO para cada item do catálogo.",
-    icon: <IconCart />,
+    href: "/desenvolvimento-de-app-mobile",
+    titulo: "App Mobile",
+    preco: PRICES.appMobile,
+    desc: "Aplicativos iOS e Android sob medida. Do app de gestão interno ao produto digital voltado ao consumidor final.",
+    icon: <IconMobile />,
     destaque: true,
   },
   {
-    href: "/landing-page",
-    titulo: "Landing Page",
-    preco: PRICES.landingPage,
-    desc: "Uma página. Uma missão. Converter. Ideal para campanhas de Google Ads, Meta Ads e captação de leads.",
-    icon: <IconTarget />,
+    href: "/chatbot-whatsapp",
+    titulo: "Chatbot e IA",
+    preco: PRICES.automacao,
+    desc: "Chatbot com IA para WhatsApp, atendimento automatizado 24h e agentes inteligentes que resolvem sem humano.",
+    icon: <IconBot />,
+    destaque: false,
+  },
+  {
+    href: "/automacao-de-processos",
+    titulo: "Automação",
+    preco: PRICES.automacao,
+    desc: "Elimine processos manuais com N8N, RPA e integrações. Conectamos qualquer ferramenta que você já usa.",
+    icon: <IconGear />,
+    destaque: false,
+  },
+  {
+    href: "/api-e-integracoes",
+    titulo: "APIs e Integrações",
+    preco: PRICES.automacao,
+    desc: "Conectamos seus sistemas, ERPs, marketplaces e ferramentas com APIs robustas. Zero importação manual.",
+    icon: <IconAPI />,
     destaque: false,
   },
 ];
@@ -192,12 +178,12 @@ export default function HomePage() {
       />
 
       <Hero
-        titulo="Seu concorrente está no topo do Google. E você?"
-        subtitulo="Criamos sites que geram tráfego orgânico do Google e convertem visitantes em clientes via WhatsApp. SEO técnico avançado incluso em todos os planos e painel administrativo."
-        whatsappMsg="Olá! Vim pelo site e quero um orçamento para criação de site."
-        ctaHref="/criacao-de-sites/quanto-custa"
-        badge="⚡ SEO Técnico Avançado Incluso"
-        highlight="Google"
+        titulo="Seu negócio precisa de software. A gente constrói."
+        subtitulo="Desenvolvemos sistemas web, apps mobile, chatbots com IA e automações sob medida para empresas que querem crescer com tecnologia de verdade."
+        whatsappMsg="Olá! Vim pelo site e quero um orçamento para desenvolvimento de software."
+        ctaHref="/software-sob-medida"
+        badge="⚡ Software 100% Sob Medida"
+        highlight="software"
       />
 
       {/* Prova social */}
@@ -205,8 +191,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             {[
-              { valor: "+200", label: "Sites entregues com resultado" },
-              { valor: "100%", label: "Com SEO técnico avançado incluso" },
+              { valor: "+80", label: "Sistemas entregues com sucesso" },
+              { valor: "100%", label: "Código-fonte entregue ao cliente" },
               { valor: "4.9★", label: "Avaliação média dos nossos clientes" },
             ].map((item, i) => (
               <AnimatedSection
@@ -241,7 +227,7 @@ export default function HomePage() {
             </h2>
             <SectionAccent />
             <p className="mt-5 max-w-2xl mx-auto" style={{ lineHeight: 1.75, color: "#CBD5E1" }}>
-              São as reclamações mais comuns de quem chegou até nós vindo de outra agência.
+              São os problemas mais comuns que resolvemos para nossos clientes.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -249,11 +235,9 @@ export default function HomePage() {
               <AnimatedSection key={i} delay={i * 100}>
                 <div className="dark-card flex items-start gap-4 p-5 h-full">
                   <div
-                    className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
-                    style={{ background: "rgba(59,130,246,0.1)", color: "#3B82F6" }}
-                  >
-                    {item.icon}
-                  </div>
+                    className="w-2 h-2 rounded-full flex-shrink-0 mt-2"
+                    style={{ background: "#3B82F6" }}
+                  />
                   <p className="text-sm italic" style={{ lineHeight: 1.75, color: "#CBD5E1" }}>
                     {item.texto}
                   </p>
@@ -262,12 +246,12 @@ export default function HomePage() {
             ))}
           </div>
           <p className="text-center mt-10 text-sm" style={{ color: "#94A3B8" }}>
-            Se identificou com pelo menos uma dessas situações, você está no lugar certo.
+            Se identificou com pelo menos uma — você está no lugar certo.
           </p>
         </div>
       </section>
 
-      {/* Seção de Solução */}
+      {/* Como resolvemos */}
       <section className="py-20" style={{ background: "#0D1526" }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
@@ -279,26 +263,25 @@ export default function HomePage() {
             </h2>
             <SectionAccent />
             <p className="mt-5 max-w-2xl mx-auto" style={{ lineHeight: 1.75, color: "#CBD5E1" }}>
-              Não prometemos milagre. Entregamos um site construído do zero para aparecer no
-              Google e converter visitante em cliente.
+              Não vendemos tecnologia pela tecnologia. Resolvemos o problema real do seu negócio com o software certo.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
                 numero: "01",
-                titulo: "SEO configurado antes de ir ao ar",
-                desc: "Meta tags, sitemap, robots.txt, schema JSON-LD e Core Web Vitals otimizados desde o primeiro commit. Seu site já nasce pronto para o Google indexar.",
+                titulo: "Levantamento do problema real",
+                desc: "Antes de escrever uma linha de código, entendemos seu processo, suas dores e o que precisa ser automatizado ou construído. O diagnóstico é gratuito.",
               },
               {
                 numero: "02",
-                titulo: "Conversão em cada elemento",
-                desc: "Botão fixo de WhatsApp, CTAs estratégicos em cada seção, formulário de contato, copy orientado à ação. Visitante entra — cliente sai.",
+                titulo: "Desenvolvimento ágil com entregas visíveis",
+                desc: "Trabalhamos em sprints curtos. Você acompanha o progresso em tempo real e já usa partes do sistema antes da entrega final.",
               },
               {
                 numero: "03",
-                titulo: "Você no controle, sem depender de ninguém",
-                desc: "Painel administrativo completo entregue com o site. Você atualiza, adiciona páginas e gerencia conteúdo sem precisar de programador.",
+                titulo: "Entrega, suporte e evolução contínua",
+                desc: "Código-fonte entregue, documentação completa, 3 meses de suporte incluso e possibilidade de continuar evoluindo o sistema com a gente.",
               },
             ].map((item, i) => (
               <AnimatedSection key={item.numero} delay={i * 100}>
@@ -329,15 +312,14 @@ export default function HomePage() {
               className="font-bold"
               style={{ fontSize: "2.5rem", letterSpacing: "-0.02em", color: "#F8FAFC" }}
             >
-              Escolha o tipo de site ideal para o seu negócio
+              O que desenvolvemos
             </h2>
             <SectionAccent />
             <p className="mt-5 max-w-xl mx-auto" style={{ lineHeight: 1.75, color: "#CBD5E1" }}>
-              Do site simples à loja virtual completa — todos com SEO, painel admin e foco em
-              conversão.
+              Do chatbot de IA ao ERP completo — entregamos o software que seu negócio precisa.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {servicos.map((s, i) => (
               <AnimatedSection key={s.href} delay={i * 100}>
                 <Link
@@ -349,7 +331,7 @@ export default function HomePage() {
                       className="absolute -top-3.5 left-1/2 -translate-x-1/2 text-xs font-bold px-3 py-1 rounded-full"
                       style={{ background: "#3B82F6", color: "#fff" }}
                     >
-                      Mais popular
+                      Mais contratado
                     </span>
                   )}
                   <div
@@ -378,7 +360,10 @@ export default function HomePage() {
 
       <NichosGrid />
 
-      <CidadesGrid />
+      <CidadesGrid
+        prefixo="desenvolvimento-de-software-em"
+        titulo="Desenvolvimento de Software por Cidade"
+      />
 
       <FAQ items={homeFaqs} title="Perguntas Frequentes" />
 
@@ -403,10 +388,10 @@ export default function HomePage() {
               className="font-bold mb-4"
               style={{ fontSize: "2.5rem", letterSpacing: "-0.02em", color: "#F8FAFC" }}
             >
-              Chega de site que não traz cliente.
+              Chega de processo manual. Vamos automatizar.
             </h2>
             <p className="mb-3 text-lg" style={{ lineHeight: 1.75, color: "#CBD5E1" }}>
-              Fale agora pelo WhatsApp e receba um orçamento personalizado em minutos.
+              Fale agora pelo WhatsApp e receba um diagnóstico gratuito em minutos.
             </p>
             <p className="text-sm mb-10" style={{ color: "#94A3B8" }}>
               Sem compromisso. Sem enrolação. Só resultado.
@@ -419,10 +404,10 @@ export default function HomePage() {
               style={{ background: "#25D366", color: "#fff", borderRadius: "8px", padding: "14px 32px" }}
             >
               <IconWA />
-              Quero meu site que vende
+              Quero um diagnóstico gratuito
             </a>
             <div className="mt-6 flex flex-wrap justify-center gap-6 text-xs" style={{ color: "#94A3B8" }}>
-              {["Resposta em até 1h", "Orçamento sem compromisso", "Sem enrolação"].map((t) => (
+              {["Resposta em até 1h", "Diagnóstico sem compromisso", "Código-fonte seu"].map((t) => (
                 <span key={t} className="flex items-center gap-1.5">
                   <span style={{ color: "#3B82F6" }}><IconCheck /></span>
                   {t}

@@ -11,8 +11,8 @@ interface CidadesGridProps {
 }
 
 export default function CidadesGrid({
-  prefixo = "criacao-de-sites",
-  titulo = "Criação de Sites por Cidade",
+  prefixo = "desenvolvimento-de-software-em",
+  titulo = "Desenvolvimento de Software por Cidade",
 }: CidadesGridProps) {
   return (
     <section className="py-16" style={{ background: "#0A0F1E" }}>

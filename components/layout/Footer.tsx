@@ -3,53 +3,55 @@ import Image from "next/image";
 import { SITE_NAME, WHATSAPP_LINK, PRICES } from "@/lib/constants";
 
 const servicos = [
-  { href: "/criacao-de-sites", label: "Criação de Sites" },
-  { href: "/loja-virtual", label: "Loja Virtual" },
-  { href: "/landing-page", label: "Landing Page" },
   { href: "/software-sob-medida", label: "Software Sob Medida" },
-  { href: "/criacao-de-sites/quanto-custa", label: "Quanto Custa um Site?" },
-  { href: "/criacao-de-sites/orcamento", label: "Solicitar Orçamento" },
+  { href: "/desenvolvimento-de/app-mobile", label: "App Mobile" },
+  { href: "/automacao-de/chatbot-whatsapp", label: "Chatbot e Automação WhatsApp" },
+  { href: "/desenvolvimento-de/ia-para-negocios", label: "Inteligência Artificial" },
+  { href: "/automacao-de/automacao-de-processos", label: "Automação de Processos" },
+  { href: "/desenvolvimento-de/erp", label: "Desenvolvimento de ERP" },
+  { href: "/desenvolvimento-de/crm", label: "Desenvolvimento de CRM" },
+  { href: "/quanto-custa/sistema-de-gestao", label: "Quanto custa um software?" },
 ] as const;
 
-const top15Nichos = [
-  { href: "/site-para-medico", label: "Site para Médico" },
-  { href: "/site-para-advogado", label: "Site para Advogado" },
-  { href: "/site-para-dentista", label: "Site para Dentista" },
-  { href: "/site-para-restaurante", label: "Site para Restaurante" },
-  { href: "/site-para-imobiliaria", label: "Site para Imobiliária" },
-  { href: "/site-para-academia", label: "Site para Academia" },
-  { href: "/site-para-salao-de-beleza", label: "Site para Salão de Beleza" },
-  { href: "/site-para-pet-shop", label: "Site para Pet Shop" },
-  { href: "/site-para-escola", label: "Site para Escola" },
-  { href: "/site-para-psicologo", label: "Site para Psicólogo" },
-  { href: "/site-para-nutricionista", label: "Site para Nutricionista" },
-  { href: "/site-para-construtora", label: "Site para Construtora" },
-  { href: "/site-para-contabilidade", label: "Site para Contabilidade" },
-  { href: "/site-para-oficina-mecanica", label: "Site para Oficina Mecânica" },
-  { href: "/site-para-e-commerce", label: "Site para E-commerce" },
+const top15Segmentos = [
+  { href: "/sistema-para/restaurante", label: "Sistema para Restaurante" },
+  { href: "/sistema-para/clinica", label: "Sistema para Clínica" },
+  { href: "/sistema-para/academia", label: "Sistema para Academia" },
+  { href: "/sistema-para/escola", label: "Sistema para Escola" },
+  { href: "/sistema-para/imobiliaria", label: "Sistema para Imobiliária" },
+  { href: "/sistema-para/salao-de-beleza", label: "Sistema para Salão" },
+  { href: "/sistema-para/farmacia", label: "Sistema para Farmácia" },
+  { href: "/sistema-para/construtora", label: "Sistema para Construtora" },
+  { href: "/sistema-para/hotel", label: "Sistema para Hotel" },
+  { href: "/sistema-para/advocacia", label: "Sistema para Advocacia" },
+  { href: "/sistema-para/contabilidade", label: "Sistema para Contabilidade" },
+  { href: "/sistema-para/oficina-mecanica", label: "Sistema para Oficina" },
+  { href: "/sistema-para/industria", label: "Sistema para Indústria" },
+  { href: "/sistema-para/transportadora", label: "Sistema para Transportadora" },
+  { href: "/sistema-para/pet-shop", label: "Sistema para Pet Shop" },
 ] as const;
 
 const top20Cidades = [
-  { href: "/criacao-de-sites/sao-paulo", label: "São Paulo", title: "Criação de Sites em São Paulo" },
-  { href: "/criacao-de-sites/rio-de-janeiro", label: "Rio de Janeiro", title: "Criação de Sites no Rio de Janeiro" },
-  { href: "/criacao-de-sites/brasilia", label: "Brasília", title: "Criação de Sites em Brasília" },
-  { href: "/criacao-de-sites/salvador", label: "Salvador", title: "Criação de Sites em Salvador" },
-  { href: "/criacao-de-sites/fortaleza", label: "Fortaleza", title: "Criação de Sites em Fortaleza" },
-  { href: "/criacao-de-sites/belo-horizonte", label: "Belo Horizonte", title: "Criação de Sites em Belo Horizonte" },
-  { href: "/criacao-de-sites/manaus", label: "Manaus", title: "Criação de Sites em Manaus" },
-  { href: "/criacao-de-sites/curitiba", label: "Curitiba", title: "Criação de Sites em Curitiba" },
-  { href: "/criacao-de-sites/recife", label: "Recife", title: "Criação de Sites em Recife" },
-  { href: "/criacao-de-sites/goiania", label: "Goiânia", title: "Criação de Sites em Goiânia" },
-  { href: "/criacao-de-sites/belem", label: "Belém", title: "Criação de Sites em Belém" },
-  { href: "/criacao-de-sites/porto-alegre", label: "Porto Alegre", title: "Criação de Sites em Porto Alegre" },
-  { href: "/criacao-de-sites/guarulhos", label: "Guarulhos", title: "Criação de Sites em Guarulhos" },
-  { href: "/criacao-de-sites/campinas", label: "Campinas", title: "Criação de Sites em Campinas" },
-  { href: "/criacao-de-sites/sao-luis", label: "São Luís", title: "Criação de Sites em São Luís" },
-  { href: "/criacao-de-sites/sao-goncalo", label: "São Gonçalo", title: "Criação de Sites em São Gonçalo" },
-  { href: "/criacao-de-sites/maceio", label: "Maceió", title: "Criação de Sites em Maceió" },
-  { href: "/criacao-de-sites/natal", label: "Natal", title: "Criação de Sites em Natal" },
-  { href: "/criacao-de-sites/teresina", label: "Teresina", title: "Criação de Sites em Teresina" },
-  { href: "/criacao-de-sites/campo-grande", label: "Campo Grande", title: "Criação de Sites em Campo Grande" },
+  { href: "/desenvolvimento-de-software-em/sao-paulo", label: "São Paulo" },
+  { href: "/desenvolvimento-de-software-em/rio-de-janeiro", label: "Rio de Janeiro" },
+  { href: "/desenvolvimento-de-software-em/brasilia", label: "Brasília" },
+  { href: "/desenvolvimento-de-software-em/belo-horizonte", label: "Belo Horizonte" },
+  { href: "/desenvolvimento-de-software-em/curitiba", label: "Curitiba" },
+  { href: "/desenvolvimento-de-software-em/fortaleza", label: "Fortaleza" },
+  { href: "/desenvolvimento-de-software-em/salvador", label: "Salvador" },
+  { href: "/desenvolvimento-de-software-em/recife", label: "Recife" },
+  { href: "/desenvolvimento-de-software-em/manaus", label: "Manaus" },
+  { href: "/desenvolvimento-de-software-em/porto-alegre", label: "Porto Alegre" },
+  { href: "/desenvolvimento-de-software-em/goiania", label: "Goiânia" },
+  { href: "/desenvolvimento-de-software-em/belem", label: "Belém" },
+  { href: "/desenvolvimento-de-software-em/campinas", label: "Campinas" },
+  { href: "/desenvolvimento-de-software-em/guarulhos", label: "Guarulhos" },
+  { href: "/desenvolvimento-de-software-em/natal", label: "Natal" },
+  { href: "/desenvolvimento-de-software-em/maceio", label: "Maceió" },
+  { href: "/desenvolvimento-de-software-em/teresina", label: "Teresina" },
+  { href: "/desenvolvimento-de-software-em/campo-grande", label: "Campo Grande" },
+  { href: "/desenvolvimento-de-software-em/sao-luis", label: "São Luís" },
+  { href: "/desenvolvimento-de-software-em/joao-pessoa", label: "João Pessoa" },
 ] as const;
 
 const WA_ICON = (
@@ -88,23 +90,23 @@ export default function Footer() {
             </Link>
 
             <p className="mt-4 text-sm leading-relaxed" style={{ color: "#64748B" }}>
-              Agência digital especializada em{" "}
-              <strong style={{ color: "#94A3B8" }}>sites que vendem sozinhos</strong>.
-              SEO técnico avançado e painel administrativo inclusos em todos os projetos.
+              Software house especializada em{" "}
+              <strong style={{ color: "#94A3B8" }}>desenvolvimento de sistemas, apps e automações</strong>{" "}
+              sob medida para empresas que querem crescer com tecnologia.
             </p>
 
             <div className="mt-4 space-y-1 text-sm" style={{ color: "#64748B" }}>
               <p>
-                Site Institucional:{" "}
-                <span style={{ color: "#94A3B8", fontWeight: 500 }}>{PRICES.institucional}</span>
+                Sistema Web:{" "}
+                <span style={{ color: "#94A3B8", fontWeight: 500 }}>{PRICES.sistemaWeb}</span>
               </p>
               <p>
-                Loja Virtual:{" "}
-                <span style={{ color: "#94A3B8", fontWeight: 500 }}>{PRICES.lojaVirtual}</span>
+                App Mobile:{" "}
+                <span style={{ color: "#94A3B8", fontWeight: 500 }}>{PRICES.appMobile}</span>
               </p>
               <p>
-                Landing Page:{" "}
-                <span style={{ color: "#94A3B8", fontWeight: 500 }}>{PRICES.landingPage}</span>
+                Automação / IA:{" "}
+                <span style={{ color: "#94A3B8", fontWeight: 500 }}>{PRICES.automacao}</span>
               </p>
             </div>
 
@@ -148,6 +150,7 @@ export default function Footer() {
               {[
                 { href: "/sobre", label: "Sobre Nós" },
                 { href: "/contato", label: "Contato" },
+                { href: "/portfolio", label: "Portfólio" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link href={l.href} className="footer-link">
@@ -158,16 +161,16 @@ export default function Footer() {
             </ul>
           </nav>
 
-          {/* Coluna 3 — Sites por Nicho */}
-          <nav aria-label="Sites por segmento de negócio">
+          {/* Coluna 3 — Software por Segmento */}
+          <nav aria-label="Software por segmento de negócio">
             <h3
               className="font-semibold text-sm uppercase tracking-wider mb-4"
               style={{ color: "#94A3B8" }}
             >
-              Sites por Nicho
+              Software por Segmento
             </h3>
             <ul className="space-y-2">
-              {top15Nichos.map((n) => (
+              {top15Segmentos.map((n) => (
                 <li key={n.href}>
                   <Link href={n.href} className="footer-link">
                     {n.label}
@@ -178,7 +181,7 @@ export default function Footer() {
           </nav>
 
           {/* Coluna 4 — Cidades Atendidas */}
-          <nav aria-label="Criação de sites por cidade">
+          <nav aria-label="Desenvolvimento de software por cidade">
             <h3
               className="font-semibold text-sm uppercase tracking-wider mb-4"
               style={{ color: "#94A3B8" }}
@@ -188,7 +191,7 @@ export default function Footer() {
             <ul className="grid grid-cols-2 gap-x-3 gap-y-2">
               {top20Cidades.map((c) => (
                 <li key={c.href}>
-                  <Link href={c.href} title={c.title} className="footer-link block">
+                  <Link href={c.href} className="footer-link block">
                     {c.label}
                   </Link>
                 </li>

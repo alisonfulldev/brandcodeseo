@@ -51,21 +51,20 @@ const localBusinessSchema = {
   },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
-    name: "Serviços de Criação de Sites",
+    name: "Serviços de Desenvolvimento de Software",
     itemListElement: [
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Site Institucional",
-          description:
-            "Site profissional com SEO técnico avançado e painel administrativo completo",
+          name: "Sistema Web e ERP Sob Medida",
+          description: "Desenvolvimento de sistemas web, ERPs e CRMs personalizados para empresas",
         },
         priceCurrency: "BRL",
-        price: "497",
+        price: "2997",
         priceSpecification: {
           "@type": "PriceSpecification",
-          minPrice: 497,
+          minPrice: 2997,
           priceCurrency: "BRL",
         },
         availability: "https://schema.org/InStock",
@@ -74,14 +73,14 @@ const localBusinessSchema = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Loja Virtual",
-          description: "E-commerce completo com integração de pagamentos, SEO e painel admin",
+          name: "App Mobile iOS e Android",
+          description: "Aplicativos mobile nativos e híbridos para iOS e Android",
         },
         priceCurrency: "BRL",
-        price: "697",
+        price: "4997",
         priceSpecification: {
           "@type": "PriceSpecification",
-          minPrice: 697,
+          minPrice: 4997,
           priceCurrency: "BRL",
         },
         availability: "https://schema.org/InStock",
@@ -90,14 +89,14 @@ const localBusinessSchema = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Landing Page",
-          description: "Página de alta conversão focada em captação de leads e vendas",
+          name: "Automação com IA e Chatbot WhatsApp",
+          description: "Chatbots com IA, automação de atendimento e processos empresariais",
         },
         priceCurrency: "BRL",
-        price: "370",
+        price: "997",
         priceSpecification: {
           "@type": "PriceSpecification",
-          minPrice: 370,
+          minPrice: 997,
           priceCurrency: "BRL",
         },
         availability: "https://schema.org/InStock",
@@ -114,12 +113,12 @@ const localBusinessSchema = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — Sites que vendem sozinhos`,
+    default: `${SITE_NAME} — Software House | Sistemas, Apps e Automações`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
   keywords:
-    "criação de sites, agência digital, site profissional, SEO, loja virtual, landing page, site que vende, desenvolvimento web",
+    "desenvolvimento de software, software sob medida, sistema web, app mobile, automação de processos, chatbot whatsapp, inteligência artificial, erp personalizado, crm sob medida, software house",
   authors: [{ name: SITE_NAME, url: SITE_URL }],
   creator: SITE_NAME,
   publisher: SITE_NAME,
@@ -139,7 +138,7 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: `${SITE_NAME} — Sites que vendem sozinhos`,
+    title: `${SITE_NAME} — Software House | Sistemas, Apps e Automações`,
     description: SITE_DESCRIPTION,
     images: [
       {
@@ -152,7 +151,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} — Sites que vendem sozinhos`,
+    title: `${SITE_NAME} — Software House | Sistemas, Apps e Automações`,
     description: SITE_DESCRIPTION,
     images: [OG_IMAGE],
     creator: "@brandcodesol",
