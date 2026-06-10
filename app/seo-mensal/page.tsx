@@ -19,7 +19,7 @@ const WaSvg = ({ size = 24 }: { size?: number }) => (
 );
 
 const WA_MSG = waLink("Oi, quero saber mais sobre o SEO mensal para o meu site!");
-const WA_MSG_CONTRATAR = waLink("Oi, quero contratar o SEO mensal de R$370/mês para o meu site!");
+const WA_MSG_CONTRATAR = waLink("Oi, quero contratar o SEO para o meu site! Vi a página sobre o setup e a mensalidade.");
 
 export default function SeoMensalPage() {
   return (
@@ -64,8 +64,8 @@ export default function SeoMensalPage() {
           <span>Dos usuários não passam da 1ª página</span>
         </div>
         <div className="proof-item">
-          <strong>R$ 370</strong>
-          <span>Por site / por mês</span>
+          <strong>Top 3</strong>
+          <span>Posição alvo no Google</span>
         </div>
       </div>
 
@@ -360,40 +360,79 @@ export default function SeoMensalPage() {
           <div className="section-tag">Investimento</div>
           <h2 className="section-title">Simples, transparente e justo</h2>
           <p className="section-desc">
-            Um único plano com tudo que seu site precisa para crescer no Google todo mês.
+            Dois passos: um setup completo para colocar tudo no lugar, depois uma mensalidade
+            acessível para manter o crescimento todo mês.
           </p>
 
-          <div className="price-card">
-            <div className="price-ribbon">✦ Plano SEO Mensal</div>
-            <div className="price-icon">📈</div>
-            <h3>SEO Mensal Profissional</h3>
-            <p className="subtitle">Por site — cobrado mensalmente — sem fidelidade mínima</p>
+          <div className="pricing-cols">
+            {/* Card Setup */}
+            <div className="price-card setup">
+              <div className="price-ribbon">⚡ Passo 1 — Setup inicial</div>
+              <div className="price-icon">🔧</div>
+              <div className="price-tag-once">Pagamento único</div>
+              <h3>Setup Completo de SEO</h3>
+              <p className="subtitle">Tudo configurado e otimizado do zero</p>
 
-            <div className="price-display">
-              <div className="amount">
-                <span className="currency">R$</span>
-                <span className="value">370</span>
-                <span className="period">/mês</span>
+              <div className="price-display">
+                <div className="amount">
+                  <span className="currency">R$</span>
+                  <span className="value">370</span>
+                </div>
+                <p className="note">Uma vez só. Sem recorrência nesta etapa.</p>
               </div>
-              <p className="note">Por site. Cancele quando quiser.</p>
+
+              <ul className="price-features">
+                <li><span className="ck">✓</span> Auditoria técnica completa do site</li>
+                <li><span className="ck">✓</span> Configuração do Google Search Console</li>
+                <li><span className="ck">✓</span> Configuração do Google Analytics</li>
+                <li><span className="ck">✓</span> Pesquisa e mapeamento de palavras-chave</li>
+                <li><span className="ck">✓</span> Otimização técnica inicial (velocidade, erros, indexação)</li>
+                <li><span className="ck">✓</span> Implementação de Schema Markup</li>
+                <li><span className="ck">✓</span> Configuração do Google Business Profile</li>
+                <li><span className="ck">✓</span> Otimização das páginas principais</li>
+              </ul>
+
+              <a href={WA_MSG_CONTRATAR} target="_blank" rel="noopener noreferrer" className="price-btn">
+                <WaSvg size={20} />
+                Contratar setup — R$ 370
+              </a>
+              <p className="price-guarantee">🔒 Pagamento único · Sem recorrência</p>
             </div>
 
-            <ul className="price-features">
-              <li><span className="ck">✓</span> Relatório mensal de posições e evolução</li>
-              <li><span className="ck">✓</span> Monitoramento contínuo do Google Search Console</li>
-              <li><span className="ck">✓</span> Otimização técnica mensal (velocidade, erros, indexação)</li>
-              <li><span className="ck">✓</span> Otimização de palavras-chave e conteúdo</li>
-              <li><span className="ck">✓</span> Link building e construção de autoridade</li>
-              <li><span className="ck">✓</span> Otimização do Google Business / Maps</li>
-              <li><span className="ck">✓</span> Atualização de Schema Markup</li>
-              <li><span className="ck">✓</span> Suporte direto via WhatsApp</li>
-            </ul>
+            {/* Card Mensalidade */}
+            <div className="price-card">
+              <div className="price-ribbon">📅 Passo 2 — Manutenção mensal</div>
+              <div className="price-icon">📈</div>
+              <div className="price-tag-recur">Recorrente · cancele quando quiser</div>
+              <h3>SEO Mensal Contínuo</h3>
+              <p className="subtitle">Crescimento consistente todo mês</p>
 
-            <a href={WA_MSG_CONTRATAR} target="_blank" rel="noopener noreferrer" className="price-btn">
-              <WaSvg size={20} />
-              Quero contratar — R$ 370/mês
-            </a>
-            <p className="price-guarantee">🔒 Sem taxa de adesão · Cancele quando quiser</p>
+              <div className="price-display">
+                <div className="amount">
+                  <span className="currency">R$</span>
+                  <span className="value">150</span>
+                  <span className="period">/mês</span>
+                </div>
+                <p className="note">Por site. Cancele quando quiser.</p>
+              </div>
+
+              <ul className="price-features">
+                <li><span className="ck">✓</span> Relatório mensal de posições e evolução</li>
+                <li><span className="ck">✓</span> Monitoramento contínuo do Search Console</li>
+                <li><span className="ck">✓</span> Ajustes técnicos e de conteúdo mensais</li>
+                <li><span className="ck">✓</span> Link building e construção de autoridade</li>
+                <li><span className="ck">✓</span> Análise de concorrentes e oportunidades</li>
+                <li><span className="ck">✓</span> Otimização contínua do Google Business</li>
+                <li><span className="ck">✓</span> Acompanhamento de métricas e tráfego</li>
+                <li><span className="ck">✓</span> Suporte direto via WhatsApp</li>
+              </ul>
+
+              <a href={WA_MSG_CONTRATAR} target="_blank" rel="noopener noreferrer" className="price-btn">
+                <WaSvg size={20} />
+                Contratar mensalidade — R$ 150/mês
+              </a>
+              <p className="price-guarantee">🔒 Sem fidelidade · Cancele quando quiser</p>
+            </div>
           </div>
         </div>
       </section>
@@ -427,7 +466,7 @@ export default function SeoMensalPage() {
             </div>
             <div className="faq-item">
               <h4><span className="q">Q</span> Posso contratar para mais de um site?</h4>
-              <p>Sim. O valor é de R$ 370 por site por mês. Se tiver mais de um site, cada um tem sua estratégia e relatório separado. Entre em contato para conversarmos sobre condições para múltiplos sites.</p>
+              <p>Sim. O setup de R$ 370 e a mensalidade de R$ 150 são por site. Cada site tem sua estratégia e relatório separado. Entre em contato para conversarmos sobre condições para múltiplos sites.</p>
             </div>
           </div>
         </div>
@@ -447,7 +486,7 @@ export default function SeoMensalPage() {
           <WaSvg size={26} />
           Começar meu SEO mensal agora
         </a>
-        <p className="cta-note">R$ 370/mês · Sem contrato · Cancele quando quiser</p>
+        <p className="cta-note">Setup R$ 370 · Mensalidade R$ 150/mês · Cancele quando quiser</p>
       </section>
 
       {/* ── Footer ── */}
