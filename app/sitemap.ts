@@ -20,15 +20,10 @@ const processosAutomacao = tiposSoftware.filter(
 const staticRoutes: MetadataRoute.Sitemap = [
   { url: SITE_URL, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
   { url: `${SITE_URL}/software-sob-medida`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
-  { url: `${SITE_URL}/automacao-de-processos`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
-  { url: `${SITE_URL}/chatbot-whatsapp`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
-  { url: `${SITE_URL}/ia-para-negocios`, lastModified: now, changeFrequency: "weekly", priority: 0.95 },
-  { url: `${SITE_URL}/desenvolvimento-de-app-mobile`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-  { url: `${SITE_URL}/quanto-custa/sistema-de-gestao`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+  { url: `${SITE_URL}/blog`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
+  { url: `${SITE_URL}/portfolio`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
   { url: `${SITE_URL}/sobre`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
   { url: `${SITE_URL}/contato`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-  { url: `${SITE_URL}/portfolio`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-  { url: `${SITE_URL}/blog`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
 ];
 
 // /sistema-para/[segmento] — 30 pages

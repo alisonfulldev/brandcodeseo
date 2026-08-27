@@ -2,7 +2,7 @@ export const SITE_URL = "https://brandcodesolutions.com.br";
 export const SITE_NAME = "BrandCode Solutions";
 export const SITE_DESCRIPTION =
   "Software house especializada em desenvolvimento de sistemas, apps, automações e soluções com IA. Desenvolvemos o software que seu negócio precisa para crescer e automatizar processos.";
-export const WHATSAPP_NUMBER = "5518996742364";
+export const WHATSAPP_NUMBER = "5518997330574";
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 export const WHATSAPP_MSG_DEFAULT = encodeURIComponent(
   "Olá! Quero um orçamento para desenvolvimento de software."

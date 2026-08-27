@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-const WA = "5518996742364";
+const WA = "5518997330574";
 
 const WaSvg = ({ size = 24 }: { size?: number }) => (
   <svg viewBox="0 0 24 24" fill="currentColor" style={{ width: size, height: size }}>

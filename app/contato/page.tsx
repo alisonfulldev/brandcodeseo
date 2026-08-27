@@ -53,7 +53,7 @@ export default function ContatoPage() {
               >
                 Abrir WhatsApp
               </a>
-              <p className="mt-3 text-xs text-gray-500">(18) 9 9674-2364</p>
+              <p className="mt-3 text-xs text-gray-500">(18) 9 9733-0574</p>
             </div>
 
             <div className="bg-gray-50 rounded-2xl p-8 text-center border border-gray-200">

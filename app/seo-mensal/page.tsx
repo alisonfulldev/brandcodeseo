@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-const WA = "5518996742364";
+const WA = "5518997330574";
 
 function waLink(text: string) {
   return `https://wa.me/${WA}?text=${encodeURIComponent(text)}`;
