@@ -7,6 +7,7 @@ import nichos from "@/data/nichos.json";
 import Hero from "@/components/sections/Hero";
 import FAQ from "@/components/sections/FAQ";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import RelatedLinksSection from "@/components/seo/RelatedLinksSection";
 
 type Params = { segmento: string };
 
@@ -65,6 +66,24 @@ export default async function IaParaSegmentoPage({ params }: { params: Promise<P
 
   const whatsappMsg = `Olá! Quero implementar IA na minha empresa de ${nicho.nome.toLowerCase()}. Pode me ajudar?`;
 
+  const outrosNichosIA = nichos.filter((n) => n.slug !== nicho.slug).slice(0, 8);
+  const relatedGroups = [
+    {
+      titulo: "IA para outros segmentos",
+      links: outrosNichosIA.map((n) => ({ href: `/ia-para/${n.slug}`, label: `IA para ${n.nome}` })),
+    },
+    {
+      titulo: `Outras soluções para ${nicho.nome}`,
+      links: [
+        { href: `/chatbot-para/${nicho.slug}`, label: `Chatbot para ${nicho.nome}` },
+        { href: `/sistema-para/${nicho.slug}`, label: `Sistema para ${nicho.nome}` },
+        { href: `/segmentos/${nicho.slug}`, label: `Hub: ${nicho.nome}` },
+        { href: `/segmentos`, label: "Todos os segmentos" },
+        { href: `/tipos-de-software`, label: "Tipos de software" },
+      ],
+    },
+  ];
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema({ name: `IA para ${nicho.nome}`, description: `Inteligência artificial personalizada para ${nicho.nomeCompleto}`, price: "1997", slug: `ia-para/${nicho.slug}` })) }} />
@@ -101,6 +120,7 @@ export default async function IaParaSegmentoPage({ params }: { params: Promise<P
       </section>
 
       <FAQ items={faqs} title={`Dúvidas sobre IA para ${nicho.nome}`} />
+      <RelatedLinksSection groups={relatedGroups} />
     </>
   );
 }

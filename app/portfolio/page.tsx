@@ -64,7 +64,7 @@ export default function PortfolioPage() {
           <div className="mt-16 text-center bg-[#0A1628] rounded-2xl p-10">
             <h2 className="text-2xl font-bold text-white mb-4">Quer um site assim para o seu negócio?</h2>
             <WhatsAppButton
-              message="Vi o portfólio de vocês e quero criar um site para meu negócio."
+              message="Vi o portfólio de vocês e quero um orçamento para desenvolvimento de software."
               className="px-8 py-4 text-base"
             >
               Solicitar orçamento

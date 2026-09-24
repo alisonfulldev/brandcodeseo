@@ -5,10 +5,12 @@ import { serviceSchema, faqSchema, breadcrumbSchema, localBusinessSchema } from 
 import { SITE_URL, PRICES } from "@/lib/constants";
 import cidades from "@/data/cidades.json";
 import nichos from "@/data/nichos.json";
+import tiposSoftware from "@/data/tipos-software.json";
 import Hero from "@/components/sections/Hero";
 import FAQ from "@/components/sections/FAQ";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import Link from "next/link";
+import RelatedLinksSection from "@/components/seo/RelatedLinksSection";
 
 type Params = { cidade: string };
 
@@ -70,6 +72,28 @@ export default async function DesenvolvimentoSoftwareCidadePage({ params }: { pa
 
   const whatsappMsg = `Olá! Sou de ${cidade.nome} e preciso de desenvolvimento de software. Pode me ajudar?`;
 
+  const cidadesDaRegiao = cidades
+    .filter((c) => c.regiao === cidade.regiao && c.slug !== cidade.slug)
+    .sort((a, b) => b.populacao - a.populacao)
+    .slice(0, 8);
+  const tiposDestaque = tiposSoftware.slice(0, 6);
+  const relatedGroups = [
+    {
+      titulo: `Outras cidades na região ${cidade.regiao}`,
+      links: cidadesDaRegiao.map((c) => ({
+        href: `/desenvolvimento-de-software-em/${c.slug}`,
+        label: c.nome,
+      })),
+    },
+    {
+      titulo: `Tipos de software em ${cidade.nome}`,
+      links: tiposDestaque.map((t) => ({
+        href: `/desenvolvimento-de/${t.slug}/${cidade.slug}`,
+        label: t.nome,
+      })),
+    },
+  ];
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema({ name: `Desenvolvimento de Software em ${cidade.nome}`, description: `Software house para empresas em ${cidade.nome}`, price: "2997", slug: `desenvolvimento-de-software-em/${cidade.slug}` })) }} />
@@ -124,6 +148,7 @@ export default async function DesenvolvimentoSoftwareCidadePage({ params }: { pa
       </section>
 
       <FAQ items={faqs} title={`Dúvidas sobre desenvolvimento de software em ${cidade.nome}`} />
+      <RelatedLinksSection groups={relatedGroups} />
     </>
   );
 }

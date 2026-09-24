@@ -7,6 +7,7 @@ import tiposSoftware from "@/data/tipos-software.json";
 import Hero from "@/components/sections/Hero";
 import FAQ from "@/components/sections/FAQ";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import RelatedLinksSection from "@/components/seo/RelatedLinksSection";
 
 type Params = { tipo: string };
 
@@ -80,6 +81,29 @@ export default async function TipoSobMedidaPage({ params }: { params: Promise<Pa
 
   const whatsappMsg = `Olá! Tenho interesse em ${software.nome.toLowerCase()} sob medida. Pode me passar mais detalhes?`;
 
+  const outrosSobMedida = tiposSoftware
+    .filter((t) => slugsSobMedida.includes(t.slug) && t.slug !== software.slug)
+    .slice(0, 8);
+  const relatedGroups = [
+    {
+      titulo: `Saiba mais sobre ${software.nome}`,
+      links: [
+        { href: `/desenvolvimento-de/${software.slug}`, label: `Desenvolvimento de ${software.nome}` },
+        { href: `/quanto-custa/${software.slug}`, label: `Quanto custa ${software.nome}?` },
+        { href: `/tipos-de-software`, label: "Todos os tipos de software" },
+        { href: `/software-sob-medida`, label: "Software Sob Medida" },
+        { href: `/contato`, label: "Solicitar orçamento" },
+      ],
+    },
+    {
+      titulo: "Outros sistemas sob medida",
+      links: outrosSobMedida.map((t) => ({
+        href: `/sob-medida/${t.slug}`,
+        label: `${t.nome} Sob Medida`,
+      })),
+    },
+  ];
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema({ name: `${software.nome} Sob Medida`, description: software.descricao, price: preco.replace(/\D/g, "") || "2997", slug: `sob-medida/${software.slug}` })) }} />
@@ -147,6 +171,7 @@ export default async function TipoSobMedidaPage({ params }: { params: Promise<Pa
       </section>
 
       <FAQ items={faqs} title={`Dúvidas sobre ${software.nome} sob medida`} />
+      <RelatedLinksSection groups={relatedGroups} />
     </>
   );
 }

@@ -8,6 +8,7 @@ import cidades from "@/data/cidades.json";
 import Hero from "@/components/sections/Hero";
 import FAQ from "@/components/sections/FAQ";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import RelatedLinksSection from "@/components/seo/RelatedLinksSection";
 
 type Params = { segmento: string; cidade: string };
 
@@ -65,6 +66,28 @@ export default async function SoftwarePorSegmentoECidadePage({ params }: { param
 
   const whatsappMsg = `Olá! Preciso de um software para ${nicho.nome.toLowerCase()} em ${cidade.nome}. Pode me passar um orçamento?`;
 
+  const outrasCidadesSeg = [...cidades]
+    .sort((a, b) => b.populacao - a.populacao)
+    .filter((c) => c.slug !== cidade.slug)
+    .slice(0, 8);
+  const outrosNichosCidade = nichos.filter((n) => n.slug !== nicho.slug).slice(0, 8);
+  const relatedGroups = [
+    {
+      titulo: `Software para ${nicho.nome} em outras cidades`,
+      links: outrasCidadesSeg.map((c) => ({
+        href: `/software-para/${nicho.slug}/${c.slug}`,
+        label: c.nome,
+      })),
+    },
+    {
+      titulo: `Outros sistemas em ${cidade.nome}`,
+      links: outrosNichosCidade.map((n) => ({
+        href: `/software-para/${n.slug}/${cidade.slug}`,
+        label: n.nome,
+      })),
+    },
+  ];
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema({ name: `Software para ${nicho.nome} em ${cidade.nome}`, description: nicho.descricao, price: "2997", slug: `software-para/${nicho.slug}/${cidade.slug}` })) }} />
@@ -121,6 +144,7 @@ export default async function SoftwarePorSegmentoECidadePage({ params }: { param
       </section>
 
       <FAQ items={faqs} title={`Dúvidas sobre software para ${nicho.nome} em ${cidade.nome}`} />
+      <RelatedLinksSection groups={relatedGroups} />
     </>
   );
 }

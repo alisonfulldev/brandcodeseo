@@ -8,6 +8,7 @@ import cidades from "@/data/cidades.json";
 import Hero from "@/components/sections/Hero";
 import FAQ from "@/components/sections/FAQ";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import RelatedLinksSection from "@/components/seo/RelatedLinksSection";
 
 type Params = { tipo: string; cidade: string };
 
@@ -69,6 +70,28 @@ export default async function DesenvolvimentoTipoCidadePage({ params }: { params
 
   const whatsappMsg = `Olá! Preciso de ${software.nome.toLowerCase()} em ${cidade.nome}. Pode me passar um orçamento?`;
 
+  const outrasCidadesTipo = [...cidades]
+    .sort((a, b) => b.populacao - a.populacao)
+    .filter((c) => c.slug !== cidade.slug)
+    .slice(0, 8);
+  const outrosTiposCidade = tiposSoftware.filter((t) => t.slug !== software.slug).slice(0, 6);
+  const relatedGroups = [
+    {
+      titulo: `${software.nome} em outras cidades`,
+      links: outrasCidadesTipo.map((c) => ({
+        href: `/desenvolvimento-de/${software.slug}/${c.slug}`,
+        label: c.nome,
+      })),
+    },
+    {
+      titulo: `Outros softwares em ${cidade.nome}`,
+      links: outrosTiposCidade.map((t) => ({
+        href: `/desenvolvimento-de/${t.slug}/${cidade.slug}`,
+        label: t.nome,
+      })),
+    },
+  ];
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema({ name: `Desenvolvimento de ${software.nome} em ${cidade.nome}`, description: software.descricao, price: preco.replace(/\D/g, "") || "2997", slug: `desenvolvimento-de/${software.slug}/${cidade.slug}` })) }} />
@@ -125,6 +148,7 @@ export default async function DesenvolvimentoTipoCidadePage({ params }: { params
       </section>
 
       <FAQ items={faqs} title={`Dúvidas sobre ${software.nome} em ${cidade.nome}`} />
+      <RelatedLinksSection groups={relatedGroups} />
     </>
   );
 }

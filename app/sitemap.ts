@@ -24,7 +24,20 @@ const staticRoutes: MetadataRoute.Sitemap = [
   { url: `${SITE_URL}/portfolio`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
   { url: `${SITE_URL}/sobre`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
   { url: `${SITE_URL}/contato`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+  // Hubs de navegação
+  { url: `${SITE_URL}/segmentos`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+  { url: `${SITE_URL}/tipos-de-software`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+  { url: `${SITE_URL}/cidades`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+  { url: `${SITE_URL}/mapa-do-site`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
 ];
+
+// /segmentos/[segmento] — 30 per-nicho hubs
+const segmentoHubRoutes: MetadataRoute.Sitemap = nichos.map((nicho) => ({
+  url: `${SITE_URL}/segmentos/${nicho.slug}`,
+  lastModified: now,
+  changeFrequency: "monthly" as const,
+  priority: 0.7,
+}));
 
 // /sistema-para/[segmento] — 30 pages
 const sistemaSegmentoRoutes: MetadataRoute.Sitemap = nichos.map((nicho) => ({
@@ -122,6 +135,7 @@ const desenvolvimentoTipoCidadeRoutes: MetadataRoute.Sitemap = topTipos.flatMap(
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticRoutes,
+    ...segmentoHubRoutes,
     ...sistemaSegmentoRoutes,
     ...iaSegmentoRoutes,
     ...chatbotSegmentoRoutes,

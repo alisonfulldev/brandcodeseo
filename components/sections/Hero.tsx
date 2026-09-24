@@ -44,7 +44,7 @@ export default function Hero({
   subtitulo,
   cta = "Quero um orçamento",
   ctaHref,
-  whatsappMsg = "Olá! Vim pelo site e quero um orçamento de software.",
+  whatsappMsg = "Olá! Vim pelo site e quero um orçamento para desenvolvimento de software.",
   badge,
   highlight,
 }: HeroProps) {

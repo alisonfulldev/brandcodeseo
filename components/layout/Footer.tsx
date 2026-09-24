@@ -221,6 +221,7 @@ export default function Footer() {
             . Todos os direitos reservados.
           </p>
           <div className="flex items-center gap-4">
+            <Link href="/mapa-do-site" className="footer-link">Mapa do Site</Link>
             <Link href="/contato" className="footer-link">Contato</Link>
             <a
               href={WHATSAPP_LINK}

@@ -32,7 +32,7 @@ interface WhatsAppButtonProps {
 }
 
 const DEFAULT_MESSAGE =
-  "Olá! Quero um site que vende sozinho. Pode me ajudar?";
+  "Olá! Quero um orçamento para desenvolvimento de software. Pode me ajudar?";
 
 export default function WhatsAppButton({
   message = DEFAULT_MESSAGE,

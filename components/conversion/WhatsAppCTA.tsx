@@ -12,7 +12,7 @@ const WA_ICON = (
 );
 
 const COPY: Record<"A" | "B" | "C", string> = {
-  A: "Quero meu site agora →",
+  A: "Quero meu software agora →",
   B: "Solicitar orçamento grátis →",
   C: "Falar com especialista →",
 };
@@ -23,7 +23,7 @@ interface WhatsAppCTAProps {
   className?: string;
 }
 
-const DEFAULT_MESSAGE = "Olá! Quero um orçamento para o meu site.";
+const DEFAULT_MESSAGE = "Olá! Quero um orçamento para desenvolvimento de software.";
 
 export default function WhatsAppCTA({
   variant = "A",

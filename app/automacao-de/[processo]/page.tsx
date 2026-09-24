@@ -7,6 +7,7 @@ import tiposSoftware from "@/data/tipos-software.json";
 import Hero from "@/components/sections/Hero";
 import FAQ from "@/components/sections/FAQ";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import RelatedLinksSection from "@/components/seo/RelatedLinksSection";
 
 type Params = { processo: string };
 
@@ -71,6 +72,24 @@ export default async function AutomacaoDeProcessoPage({ params }: { params: Prom
   ];
 
   const whatsappMsg = `Olá! Quero automatizar ${software.nome.toLowerCase()} na minha empresa. Pode me ajudar?`;
+
+  const outrosProcessos = processosAutomacao.filter((t) => t.slug !== software.slug);
+  const relatedGroups = [
+    {
+      titulo: "Outros processos de automação",
+      links: outrosProcessos.map((t) => ({ href: `/automacao-de/${t.slug}`, label: t.nome })),
+    },
+    {
+      titulo: "Ver também",
+      links: [
+        { href: `/desenvolvimento-de/${software.slug}`, label: `Desenvolvimento: ${software.nome}` },
+        { href: `/quanto-custa/${software.slug}`, label: `Quanto custa ${software.nome}?` },
+        { href: `/tipos-de-software`, label: "Todos os tipos de software" },
+        { href: `/desenvolvimento-de/erp`, label: "Desenvolvimento de ERP" },
+        { href: `/desenvolvimento-de/crm`, label: "Desenvolvimento de CRM" },
+      ],
+    },
+  ];
 
   return (
     <>
@@ -143,6 +162,7 @@ export default async function AutomacaoDeProcessoPage({ params }: { params: Prom
       </section>
 
       <FAQ items={faqs} title={`Dúvidas sobre ${software.nome.toLowerCase()}`} />
+      <RelatedLinksSection groups={relatedGroups} />
     </>
   );
 }

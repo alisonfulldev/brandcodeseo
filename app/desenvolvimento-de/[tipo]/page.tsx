@@ -9,6 +9,7 @@ import Hero from "@/components/sections/Hero";
 import FAQ from "@/components/sections/FAQ";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import Link from "next/link";
+import RelatedLinksSection from "@/components/seo/RelatedLinksSection";
 
 type Params = { tipo: string };
 
@@ -68,6 +69,27 @@ export default async function DesenvolvimentoDeTipoPage({ params }: { params: Pr
   ];
 
   const whatsappMsg = `Olá! Preciso de desenvolvimento de ${software.nome.toLowerCase()}. Pode me passar um orçamento?`;
+
+  const tiposRelacionados = tiposSoftware
+    .filter((t) => t.slug !== software.slug && t.categoria === software.categoria)
+    .slice(0, 8);
+  const grupoTipos = tiposRelacionados.length >= 3
+    ? tiposRelacionados
+    : tiposSoftware.filter((t) => t.slug !== software.slug).slice(0, 8);
+  const outrosTiposQC = tiposSoftware.filter((t) => t.slug !== software.slug).slice(0, 5);
+  const relatedGroups = [
+    {
+      titulo: "Tipos relacionados de software",
+      links: grupoTipos.map((t) => ({ href: `/desenvolvimento-de/${t.slug}`, label: t.nome })),
+    },
+    {
+      titulo: "Preços e custo de desenvolvimento",
+      links: [
+        { href: `/quanto-custa/${software.slug}`, label: `Quanto custa ${software.nome}?` },
+        ...outrosTiposQC.map((t) => ({ href: `/quanto-custa/${t.slug}`, label: `Preço: ${t.nome}` })),
+      ],
+    },
+  ];
 
   return (
     <>
@@ -144,6 +166,7 @@ export default async function DesenvolvimentoDeTipoPage({ params }: { params: Pr
       </section>
 
       <FAQ items={faqs} title={`Dúvidas sobre desenvolvimento de ${software.nome}`} />
+      <RelatedLinksSection groups={relatedGroups} />
     </>
   );
 }

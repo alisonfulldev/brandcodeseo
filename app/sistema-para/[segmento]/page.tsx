@@ -9,6 +9,7 @@ import Hero from "@/components/sections/Hero";
 import FAQ from "@/components/sections/FAQ";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import Link from "next/link";
+import RelatedLinksSection from "@/components/seo/RelatedLinksSection";
 
 type Params = { segmento: string };
 
@@ -67,6 +68,24 @@ export default async function SistemaParaSegmentoPage({ params }: { params: Prom
   ];
 
   const whatsappMsg = `Olá! Preciso de um sistema para ${nicho.nome.toLowerCase()}. Pode me passar um orçamento?`;
+
+  const outrosNichos = nichos.filter((n) => n.slug !== nicho.slug).slice(0, 8);
+  const relatedGroups = [
+    {
+      titulo: `Outras soluções para ${nicho.nome}`,
+      links: [
+        { href: `/ia-para/${nicho.slug}`, label: `IA para ${nicho.nome}` },
+        { href: `/chatbot-para/${nicho.slug}`, label: `Chatbot para ${nicho.nome}` },
+        { href: `/segmentos/${nicho.slug}`, label: `Hub: ${nicho.nome}` },
+        { href: `/quanto-custa/sistema-de-gestao`, label: "Quanto custa um sistema?" },
+        { href: `/software-sob-medida`, label: "Software Sob Medida" },
+      ],
+    },
+    {
+      titulo: "Outros segmentos atendidos",
+      links: outrosNichos.map((n) => ({ href: `/sistema-para/${n.slug}`, label: n.nome })),
+    },
+  ];
 
   return (
     <>
@@ -143,6 +162,7 @@ export default async function SistemaParaSegmentoPage({ params }: { params: Prom
       </section>
 
       <FAQ items={faqs} title={`Dúvidas sobre sistema para ${nicho.nome}`} />
+      <RelatedLinksSection groups={relatedGroups} />
     </>
   );
 }

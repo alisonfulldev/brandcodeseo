@@ -7,6 +7,7 @@ import tiposSoftware from "@/data/tipos-software.json";
 import Hero from "@/components/sections/Hero";
 import FAQ from "@/components/sections/FAQ";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import RelatedLinksSection from "@/components/seo/RelatedLinksSection";
 
 type Params = { tipo: string };
 
@@ -89,6 +90,32 @@ export default async function QuantoCustaTipoPage({ params }: { params: Promise<
 
   const whatsappMsg = `Olá! Quero saber o preço para desenvolver ${software.nome.toLowerCase()}. Pode me ajudar?`;
 
+  const outrosTiposQCPage = tiposSoftware.filter((t) => t.slug !== software.slug).slice(0, 6);
+  const slugsSobMedidaList = ["erp", "crm", "sistema-de-gestao", "app-mobile", "sistema-de-agendamento",
+    "chatbot-com-ia", "plataforma-ead", "e-commerce", "marketplace",
+    "sistema-de-assinaturas", "dashboard-bi", "saas", "portal-do-cliente",
+    "sistema-financeiro", "controle-de-estoque"];
+  const isSobMedida = slugsSobMedidaList.includes(software.slug);
+  const relatedGroups = [
+    {
+      titulo: `Ver desenvolvimento de ${software.nome}`,
+      links: [
+        { href: `/desenvolvimento-de/${software.slug}`, label: `Desenvolver ${software.nome}` },
+        ...(isSobMedida ? [{ href: `/sob-medida/${software.slug}`, label: `${software.nome} Sob Medida` }] : []),
+        { href: `/tipos-de-software`, label: "Todos os tipos de software" },
+        { href: `/software-sob-medida`, label: "Software Sob Medida" },
+        { href: `/contato`, label: "Solicitar orçamento" },
+      ],
+    },
+    {
+      titulo: "Preços de outros softwares",
+      links: outrosTiposQCPage.map((t) => ({
+        href: `/quanto-custa/${t.slug}`,
+        label: `Preço: ${t.nome}`,
+      })),
+    },
+  ];
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: "Início", url: SITE_URL }, { name: `Quanto Custa ${software.nome}`, url: `${SITE_URL}/quanto-custa/${software.slug}` }])) }} />
@@ -150,6 +177,7 @@ export default async function QuantoCustaTipoPage({ params }: { params: Promise<
       </section>
 
       <FAQ items={faqs} title={`Dúvidas sobre preço de ${software.nome}`} />
+      <RelatedLinksSection groups={relatedGroups} />
     </>
   );
 }

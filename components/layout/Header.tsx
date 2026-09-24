@@ -44,6 +44,7 @@ const servicos = [
 ] as const;
 
 const navLinks = [
+  { href: "/tipos-de-software", label: "Soluções" },
   { href: "/sobre", label: "Sobre" },
   { href: "/contato", label: "Contato" },
 ] as const;
