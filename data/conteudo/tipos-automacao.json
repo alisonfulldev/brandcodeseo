@@ -1,0 +1,219 @@
+{
+  "chatbot-whatsapp": {
+    "intro": [
+      "Um chatbot para WhatsApp atende seus clientes 24 horas no canal que eles já usam, responde dúvidas frequentes, qualifica pedidos e transfere para um atendente humano quando necessário. Ele acaba com a fila de mensagens sem resposta no fim de semana e com a equipe digitando as mesmas informações dezenas de vezes por dia.",
+      "Trabalhamos com a API oficial do WhatsApp Business, da Meta, o que evita o risco de banimento do número que acontece com ferramentas não oficiais. O chatbot pode seguir um menu de opções, entender texto livre com inteligência artificial ou combinar os dois."
+    ],
+    "funcionalidades": [
+      { "titulo": "API oficial do WhatsApp", "desc": "Número verificado, selo de empresa e sem risco de bloqueio por uso de ferramentas não autorizadas." },
+      { "titulo": "Respostas com inteligência artificial", "desc": "O bot entende perguntas escritas de qualquer forma e responde com base nas informações da sua empresa." },
+      { "titulo": "Transferência para humano", "desc": "Quando o assunto é complexo, a conversa passa para a equipe com todo o histórico, na hora certa." },
+      { "titulo": "Vários atendentes, um número", "desc": "Painel onde a equipe inteira atende pelo mesmo número, com filas por setor e etiquetas." },
+      { "titulo": "Ações no seu sistema", "desc": "O bot consulta pedidos, emite segunda via, marca horários e registra leads direto no CRM." },
+      { "titulo": "Mensagens ativas", "desc": "Confirmações, lembretes e campanhas por modelos aprovados pela Meta para quem aceitou receber." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: loja de materiais de construção",
+      "texto": "Uma loja recebe centenas de mensagens por dia perguntando preço, estoque, horário e status de entrega. O chatbot responde horário e endereço na hora, consulta o estoque e o preço no sistema da loja, informa o status do pedido pelo CPF e só passa para o vendedor quando o cliente quer fechar um orçamento maior — já com a lista de produtos anotada."
+    },
+    "integracoes": ["WhatsApp Business Platform (Cloud API)", "OpenAI e Anthropic Claude", "CRMs (RD, Pipedrive, HubSpot ou próprio)", "ERP e sistema de pedidos", "Google Agenda", "Instagram Direct"],
+    "precos": [
+      { "label": "Chatbot de menu", "valor": "R$ 997 – R$ 2.997", "desc": "Fluxo de opções, respostas prontas e transferência para atendente." },
+      { "label": "Chatbot com IA", "valor": "R$ 3.000 – R$ 7.997", "desc": "Entende texto livre, responde com base na sua documentação e registra leads." },
+      { "label": "Atendimento integrado", "valor": "R$ 8.000+", "desc": "Consulta e ações no seu ERP ou CRM, painel multiatendente e relatórios." }
+    ],
+    "prazo": "7 a 30 dias.",
+    "faqs": [
+      { "question": "Meu número pode ser bloqueado?", "answer": "Com a API oficial da Meta, não por usar automação. O bloqueio acontece com ferramentas não oficiais que simulam o WhatsApp Web. Seguimos as políticas da Meta, inclusive sobre mensagens ativas." },
+      { "question": "Posso usar o número que já tenho?", "answer": "Sim, desde que ele seja migrado para a API. Durante a migração, o número deixa de funcionar no aplicativo comum do celular e passa a ser usado pelo painel de atendimento." },
+      { "question": "Existe custo por mensagem?", "answer": "A Meta cobra por conversa iniciada pela empresa e por algumas categorias de mensagem. Respostas a clientes dentro da janela de atendimento têm custo reduzido ou nulo. Estimamos esse valor antes do projeto." },
+      { "question": "O chatbot com IA pode inventar respostas?", "answer": "Configuramos a IA para responder apenas com base nas informações fornecidas pela sua empresa e para transferir para um humano quando não souber. Também revisamos as conversas nas primeiras semanas para ajustar." }
+    ]
+  },
+  "automacao-de-processos": {
+    "intro": [
+      "Automação de processos é tirar da mão da equipe as tarefas repetitivas que um sistema pode fazer sozinho: copiar dados de um sistema para outro, conferir planilhas, emitir documentos, enviar relatórios e cobrar pendências. O resultado é menos erro, mais velocidade e pessoas qualificadas fazendo trabalho que exige raciocínio.",
+      "Começamos mapeando o processo e medindo quanto tempo cada etapa consome. Assim, priorizamos as automações com maior retorno e você sabe, antes de investir, quantas horas por mês serão liberadas."
+    ],
+    "funcionalidades": [
+      { "titulo": "Mapeamento do processo", "desc": "Levantamento das etapas, sistemas envolvidos e gargalos, com estimativa de horas economizadas." },
+      { "titulo": "Integração entre sistemas", "desc": "Dados que passam automaticamente do CRM para o ERP, do e-commerce para o financeiro, e assim por diante." },
+      { "titulo": "Leitura de documentos", "desc": "Extração de dados de notas fiscais, boletos, comprovantes e PDFs com inteligência artificial." },
+      { "titulo": "Robôs para sistemas sem API", "desc": "Automação de telas (RPA) quando o sistema não oferece integração, como portais de governo e bancos." },
+      { "titulo": "Aprovações e notificações", "desc": "Fluxos com aprovação por WhatsApp ou e-mail e alertas quando algo sai do padrão." },
+      { "titulo": "Monitoramento", "desc": "Painel com execuções, falhas e tempo economizado, com aviso imediato se algo parar." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: departamento financeiro de uma distribuidora",
+      "texto": "Todo dia, uma analista baixa as notas fiscais de fornecedores, digita os dados no ERP, agenda os boletos e confere o extrato. A automação lê as notas recebidas por e-mail, lança no ERP, cadastra o pagamento na data certa e concilia o extrato no dia seguinte. A analista passa a revisar só as exceções e cuida da análise de custos."
+    },
+    "integracoes": ["ERPs (Omie, Bling, TOTVS, SAP)", "Google Workspace e Microsoft 365", "APIs bancárias", "Portais da SEFAZ e prefeituras", "N8N, Make e Zapier", "OpenAI e Claude"],
+    "precos": [
+      { "label": "Automação pontual", "valor": "R$ 997 – R$ 3.997", "desc": "Um fluxo entre dois ou três sistemas, com monitoramento." },
+      { "label": "Automação de área", "valor": "R$ 4.000 – R$ 12.000", "desc": "Vários fluxos de um departamento, leitura de documentos e aprovações." },
+      { "label": "Transformação de processos", "valor": "R$ 12.000+", "desc": "Automação de ponta a ponta entre departamentos, RPA e IA." }
+    ],
+    "prazo": "5 a 45 dias, conforme o número de fluxos.",
+    "faqs": [
+      { "question": "Quais processos valem a pena automatizar?", "answer": "Os que são repetitivos, seguem regras claras e consomem muitas horas: lançamentos, conferências, cópia de dados, relatórios e cobranças. No diagnóstico, estimamos o retorno de cada um." },
+      { "question": "E se meu sistema não tiver API?", "answer": "Usamos robôs que operam a interface do sistema como uma pessoa faria (RPA), ou leitura de arquivos exportados. É menos elegante que uma API, mas funciona." },
+      { "question": "A automação vai substituir funcionários?", "answer": "Na prática, ela libera a equipe de tarefas mecânicas para trabalhos de análise e atendimento. A maioria dos clientes cresce sem precisar contratar para tarefas operacionais." },
+      { "question": "O que acontece se a automação falhar?", "answer": "Cada fluxo tem monitoramento e alerta. Se um sistema externo mudar ou sair do ar, você é avisado e a tarefa entra em fila para ser reprocessada." }
+    ]
+  },
+  "automacao-whatsapp": {
+    "intro": [
+      "Automação de WhatsApp é usar o canal para comunicação ativa e automática com clientes: confirmações de pedido, lembretes de consulta, avisos de vencimento, pesquisas de satisfação e campanhas para quem aceitou receber. Diferente do chatbot, que responde quem chama, aqui a empresa inicia a conversa no momento certo.",
+      "Tudo é disparado a partir de eventos nos seus sistemas — um pedido faturado, uma consulta marcada, um boleto a vencer — usando modelos de mensagem aprovados pela Meta, o que garante entrega e protege o número de bloqueios."
+    ],
+    "funcionalidades": [
+      { "titulo": "Mensagens por evento", "desc": "Pedido confirmado, enviado, entregue; consulta marcada; pagamento recebido — cada evento dispara sua mensagem." },
+      { "titulo": "Lembretes com confirmação", "desc": "Lembrete de compromisso com botões para confirmar, remarcar ou cancelar, atualizando o sistema automaticamente." },
+      { "titulo": "Régua de cobrança", "desc": "Avisos antes e depois do vencimento, com link de pagamento Pix e tom de mensagem ajustado a cada etapa." },
+      { "titulo": "Campanhas segmentadas", "desc": "Envios para listas filtradas por comportamento, com opção de descadastro respeitada automaticamente." },
+      { "titulo": "Pesquisa de satisfação", "desc": "NPS após atendimento ou entrega, com alerta para respostas negativas." },
+      { "titulo": "Relatórios de entrega", "desc": "Mensagens enviadas, entregues, lidas e respondidas, por campanha e por tipo." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: clínica odontológica com alto índice de faltas",
+      "texto": "Uma clínica perde muitos horários por pacientes que esquecem a consulta. A automação envia um lembrete no dia anterior com botões de confirmar ou remarcar. Quem confirma fica marcado na agenda; quem pede para remarcar recebe opções de horário; quem não responde recebe uma segunda mensagem pela manhã e a recepção liga só para esses."
+    },
+    "integracoes": ["WhatsApp Business Platform", "Sistemas de agenda", "ERP e e-commerce", "Gateways de pagamento (links Pix)", "CRMs", "N8N"],
+    "precos": [
+      { "label": "Notificações", "valor": "R$ 997 – R$ 2.997", "desc": "Até cinco tipos de mensagem automática disparadas pelo seu sistema." },
+      { "label": "Régua completa", "valor": "R$ 3.000 – R$ 7.997", "desc": "Lembretes com resposta, cobrança, pesquisas e relatórios." },
+      { "label": "Plataforma de comunicação", "valor": "R$ 8.000+", "desc": "Campanhas segmentadas, painel próprio e integração com vários sistemas." }
+    ],
+    "prazo": "7 a 30 dias.",
+    "faqs": [
+      { "question": "Posso mandar mensagem para qualquer contato?", "answer": "Não. A política do WhatsApp exige que o cliente tenha aceitado receber mensagens da empresa. O sistema registra esse consentimento e respeita pedidos de descadastro, o que também atende à LGPD." },
+      { "question": "Qual a diferença para disparo em massa com ferramentas baratas?", "answer": "Ferramentas não oficiais usam o WhatsApp Web e frequentemente levam ao bloqueio do número. Com a API oficial, as mensagens têm entrega garantida e o número fica protegido." },
+      { "question": "Quanto custa cada mensagem?", "answer": "A Meta cobra por conversa conforme a categoria: utilidade, como confirmações, é mais barata que marketing. Estimamos o custo mensal com base no seu volume." },
+      { "question": "O cliente pode responder a mensagem?", "answer": "Sim. As respostas podem ser tratadas por um chatbot ou encaminhadas para a equipe no painel de atendimento." }
+    ]
+  },
+  "api-e-integracoes": {
+    "intro": [
+      "Desenvolvemos APIs e integrações para fazer seus sistemas conversarem: o site com o ERP, o ERP com o banco, o CRM com o WhatsApp, a sua plataforma com a de parceiros. Quando os dados não fluem sozinhos, alguém copia e cola — e cada cópia é uma chance de erro e atraso.",
+      "Também criamos APIs próprias para empresas que querem abrir seus serviços a clientes e parceiros, com autenticação, documentação e controle de uso, transformando o seu sistema em uma plataforma."
+    ],
+    "funcionalidades": [
+      { "titulo": "Integração entre sistemas", "desc": "Sincronização de clientes, pedidos, estoque e financeiro entre ferramentas que hoje não conversam." },
+      { "titulo": "APIs REST documentadas", "desc": "Endpoints com documentação interativa para que outros times e parceiros integrem sem depender de você." },
+      { "titulo": "Webhooks", "desc": "Notificação em tempo real para outros sistemas quando algo acontece, em vez de consultas repetidas." },
+      { "titulo": "Autenticação e segurança", "desc": "Chaves de API, OAuth, limites de uso por cliente e criptografia de ponta a ponta." },
+      { "titulo": "Filas e reprocessamento", "desc": "Se um sistema cair, as mensagens ficam em fila e são reenviadas automaticamente quando ele voltar." },
+      { "titulo": "Logs e monitoramento", "desc": "Registro de cada chamada, erros e tempo de resposta, com alertas quando algo sai do normal." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: indústria que vende por representantes e distribuidores",
+      "texto": "Distribuidores de uma indústria enviam pedidos por planilha e e-mail, que alguém redigita no ERP. Criamos uma API de pedidos: os sistemas dos distribuidores enviam os pedidos diretamente, a API valida preço e estoque, registra no ERP e devolve o status e a nota fiscal automaticamente."
+    },
+    "integracoes": ["ERPs (TOTVS, SAP, Omie, Bling, Sankhya)", "Bancos e gateways de pagamento", "Marketplaces", "Governo (SEFAZ, Receita, prefeituras)", "CRMs e plataformas de marketing", "Sistemas legados via banco de dados"],
+    "precos": [
+      { "label": "Integração pontual", "valor": "R$ 1.997 – R$ 4.997", "desc": "Conexão entre dois sistemas com sincronização de um tipo de dado." },
+      { "label": "Camada de integração", "valor": "R$ 5.000 – R$ 15.000", "desc": "Vários sistemas, filas, reprocessamento e monitoramento." },
+      { "label": "API pública", "valor": "R$ 15.000+", "desc": "API para parceiros com autenticação, documentação e portal de desenvolvedores." }
+    ],
+    "prazo": "10 a 60 dias.",
+    "faqs": [
+      { "question": "Meu sistema antigo pode ser integrado?", "answer": "Quase sempre. Se não houver API, integramos pelo banco de dados, por arquivos exportados ou por automação de tela. Avaliamos a opção mais estável no diagnóstico." },
+      { "question": "Por que não usar Zapier ou Make?", "answer": "São ótimas para integrações simples e de baixo volume. Para volumes altos, regras complexas ou dados sensíveis, uma integração própria é mais barata a longo prazo, mais confiável e fica sob seu controle." },
+      { "question": "O que acontece se um dos sistemas sair do ar?", "answer": "As informações ficam em fila e são enviadas quando o sistema voltar. Nada se perde e você é avisado do problema." },
+      { "question": "A API fica documentada?", "answer": "Sim. Entregamos documentação no padrão OpenAPI, com exemplos, para que qualquer desenvolvedor consiga usar." }
+    ]
+  },
+  "integracao-erp-ecommerce": {
+    "intro": [
+      "A integração entre ERP e e-commerce sincroniza produtos, preços, estoque, pedidos e notas fiscais entre a loja virtual, os marketplaces e o sistema de gestão. Sem ela, alguém digita cada pedido no ERP, o estoque fica desatualizado e a loja vende produtos que já acabaram.",
+      "Integrações prontas funcionam para casos simples, mas falham com kits, grades, múltiplos depósitos, tabelas de preço por canal e regras fiscais específicas. Uma integração sob medida trata essas regras e mostra claramente quando algo não sincronizou."
+    ],
+    "funcionalidades": [
+      { "titulo": "Estoque em tempo quase real", "desc": "Cada venda em qualquer canal atualiza o saldo nos demais em poucos minutos." },
+      { "titulo": "Pedidos direto no ERP", "desc": "Pedidos da loja e dos marketplaces entram no ERP com cliente, frete e pagamento, prontos para faturar." },
+      { "titulo": "Preço por canal", "desc": "Tabelas diferentes para loja própria, Mercado Livre, Shopee e Amazon, calculadas a partir do ERP." },
+      { "titulo": "Nota e rastreio de volta", "desc": "A nota emitida no ERP e o código de rastreio voltam automaticamente para o canal de venda." },
+      { "titulo": "Cadastro de produtos centralizado", "desc": "Produto cadastrado uma vez no ERP e publicado nos canais com fotos e descrições." },
+      { "titulo": "Painel de divergências", "desc": "Lista de itens com erro de sincronização e motivo, para correção rápida." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: loja de roupas em quatro canais",
+      "texto": "Uma marca de roupas vende no site, no Mercado Livre, na Shopee e na loja física, e passa horas por dia ajustando estoque manualmente. Com a integração, cada tamanho e cor tem saldo único no ERP, as vendas de todos os canais entram como pedidos, a nota é emitida em lote e o rastreio chega ao comprador sem ninguém copiar código."
+    },
+    "integracoes": ["Bling, Tiny, Omie, TOTVS, Sankhya", "Shopify, Nuvemshop, VTEX, WooCommerce", "Mercado Livre, Shopee, Amazon, Magalu", "Melhor Envio e transportadoras", "SEFAZ"],
+    "precos": [
+      { "label": "Um canal", "valor": "R$ 1.997 – R$ 4.997", "desc": "ERP com uma loja virtual: produtos, estoque e pedidos." },
+      { "label": "Multicanal", "valor": "R$ 5.000 – R$ 12.000", "desc": "ERP com loja e marketplaces, preço por canal e nota de volta." },
+      { "label": "Hub de integração", "valor": "R$ 12.000+", "desc": "Vários depósitos, kits, regras fiscais complexas e alto volume." }
+    ],
+    "prazo": "15 a 45 dias.",
+    "faqs": [
+      { "question": "Com que frequência o estoque é atualizado?", "answer": "Depende das APIs dos canais, mas normalmente em poucos minutos. Em canais que aceitam webhooks, a atualização é praticamente imediata." },
+      { "question": "Funciona com kits e produtos compostos?", "answer": "Sim. O saldo do kit é calculado a partir dos componentes e cada venda baixa os itens individuais no ERP." },
+      { "question": "Meu ERP não está na lista. Dá para integrar?", "answer": "Provavelmente sim. Avaliamos a API ou o banco de dados do seu ERP no diagnóstico e confirmamos a viabilidade antes do orçamento." },
+      { "question": "Já uso um integrador pronto. Vale trocar?", "answer": "Vale quando ele não trata suas regras, gera muitos erros ou cobra por pedido de um jeito que pesa com o volume. Se o integrador atual funciona bem, dizemos isso." }
+    ]
+  },
+  "automacao-n8n": {
+    "intro": [
+      "O N8N é uma ferramenta de automação de código aberto que conecta centenas de aplicativos com fluxos visuais, como Zapier e Make, mas pode ser instalada no seu próprio servidor. Isso significa execuções ilimitadas sem custo por tarefa e dados que não passam por empresas terceiras.",
+      "Implantamos o N8N na sua infraestrutura, construímos os fluxos que a sua operação precisa — inclusive com agentes de inteligência artificial — e treinamos a equipe para ajustar e criar novas automações sem depender de desenvolvedores."
+    ],
+    "funcionalidades": [
+      { "titulo": "Instalação self-hosted", "desc": "N8N instalado em servidor próprio ou em nuvem, com backup, atualizações e domínio da empresa." },
+      { "titulo": "Fluxos sob medida", "desc": "Automações entre CRM, planilhas, e-mail, WhatsApp, ERP e qualquer API." },
+      { "titulo": "Agentes de IA no fluxo", "desc": "Etapas com OpenAI ou Claude para classificar, resumir, extrair dados e responder." },
+      { "titulo": "Migração do Zapier ou Make", "desc": "Recriação dos fluxos existentes no N8N para eliminar custos por execução." },
+      { "titulo": "Tratamento de erros", "desc": "Fluxos de erro com alertas e reprocessamento, para nenhuma execução falhar em silêncio." },
+      { "titulo": "Treinamento da equipe", "desc": "Capacitação prática para que o seu time mantenha e crie automações." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: agência que gastava muito com Zapier",
+      "texto": "Uma agência de marketing roda dezenas de automações no Zapier para capturar leads, alimentar planilhas de clientes e gerar relatórios, e a fatura cresce a cada novo cliente. Migramos os fluxos para um N8N próprio, adicionamos uma etapa de IA que classifica e resume cada lead antes de enviá-lo ao cliente e o custo passa a ser apenas o do servidor."
+    },
+    "integracoes": ["Google Workspace e Microsoft 365", "WhatsApp, Telegram e e-mail", "CRMs e ERPs", "OpenAI, Anthropic e modelos locais", "Bancos de dados SQL", "Qualquer API REST"],
+    "precos": [
+      { "label": "Implantação N8N", "valor": "R$ 997 – R$ 2.997", "desc": "Instalação, configuração e até três fluxos simples." },
+      { "label": "Automações com IA", "valor": "R$ 3.000 – R$ 8.000", "desc": "Fluxos complexos, agentes de IA e migração do Zapier ou Make." },
+      { "label": "Operação automatizada", "valor": "R$ 8.000+", "desc": "Dezenas de fluxos entre departamentos, monitoramento e treinamento." }
+    ],
+    "prazo": "5 a 30 dias.",
+    "faqs": [
+      { "question": "Qual a diferença entre N8N, Zapier e Make?", "answer": "Os três conectam aplicativos com fluxos visuais. O N8N pode ser instalado no seu servidor, sem cobrança por execução, e permite código personalizado quando necessário. Para volumes altos, costuma sair muito mais barato." },
+      { "question": "Preciso de servidor próprio?", "answer": "Um servidor na nuvem simples atende a maioria dos casos, com custo mensal baixo. Cuidamos da configuração, segurança e backups." },
+      { "question": "Minha equipe consegue mexer nos fluxos depois?", "answer": "Sim. O editor é visual e treinamos a equipe. Para mudanças mais complexas, oferecemos suporte sob demanda." },
+      { "question": "O N8N é seguro?", "answer": "Instalado no seu servidor, os dados não passam por terceiros. Configuramos acesso com senha forte, HTTPS e credenciais criptografadas." }
+    ]
+  },
+  "automacao-de-marketing": {
+    "intro": [
+      "Automação de marketing é nutrir e converter leads sem depender de alguém lembrando de mandar cada mensagem. O sistema identifica o comportamento de cada contato — o que baixou, o que clicou, em que página voltou — e envia a comunicação certa no momento certo, por e-mail, WhatsApp ou anúncio.",
+      "Construímos automações sob medida integradas ao seu CRM, ao site e às plataformas de anúncio, com pontuação de leads que avisa o time comercial quando alguém está pronto para comprar."
+    ],
+    "funcionalidades": [
+      { "titulo": "Captura e segmentação", "desc": "Formulários, landing pages e origem de cada lead registrados e usados para segmentar." },
+      { "titulo": "Fluxos de nutrição", "desc": "Sequências de e-mail e WhatsApp que educam o lead até ele estar pronto para conversar com vendas." },
+      { "titulo": "Lead scoring", "desc": "Pontuação por perfil e comportamento, com alerta para o vendedor quando o lead esquenta." },
+      { "titulo": "Recuperação de carrinho e reativação", "desc": "Mensagens para quem abandonou a compra ou está há muito tempo sem comprar." },
+      { "titulo": "Públicos para anúncios", "desc": "Listas sincronizadas com Meta Ads e Google Ads para remarketing e exclusão de clientes." },
+      { "titulo": "Atribuição de vendas", "desc": "Relatório de quais campanhas e canais geraram vendas de verdade, não apenas cliques." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: escola de cursos profissionalizantes",
+      "texto": "Uma escola gera muitos leads com anúncios, mas a equipe comercial só consegue ligar para uma parte deles. A automação envia no mesmo minuto uma mensagem de boas-vindas no WhatsApp com a grade do curso, segue com conteúdos por alguns dias e pontua quem abre, responde e visita a página de preços. Os vendedores passam a ligar primeiro para os leads mais quentes."
+    },
+    "integracoes": ["Meta Ads e Google Ads (Conversions API)", "RD Station, HubSpot, ActiveCampaign", "WhatsApp Business API", "Google Analytics 4", "CRMs e e-commerce", "E-mail transacional"],
+    "precos": [
+      { "label": "Fluxos essenciais", "valor": "R$ 997 – R$ 3.997", "desc": "Boas-vindas, nutrição simples e recuperação de carrinho." },
+      { "label": "Marketing automatizado", "valor": "R$ 4.000 – R$ 10.000", "desc": "Lead scoring, WhatsApp, públicos de anúncio e integração com CRM." },
+      { "label": "Plataforma própria", "valor": "R$ 10.000+", "desc": "Automação e atribuição sob medida, sem mensalidade por contato." }
+    ],
+    "prazo": "10 a 45 dias.",
+    "faqs": [
+      { "question": "Preciso ter RD Station ou HubSpot?", "answer": "Não necessariamente. Podemos automatizar sobre a ferramenta que você já usa ou criar uma solução própria, que evita mensalidades crescentes por número de contatos." },
+      { "question": "A automação funciona para WhatsApp?", "answer": "Sim, pela API oficial e com consentimento do contato. WhatsApp costuma ter taxa de leitura muito superior ao e-mail." },
+      { "question": "Como sei se a automação está dando resultado?", "answer": "Medimos a conversão de cada fluxo e a receita atribuída a cada campanha, comparando com o período anterior." },
+      { "question": "Isso está de acordo com a LGPD?", "answer": "Sim. Registramos a base legal e o consentimento de cada contato e todas as mensagens têm opção de descadastro." }
+    ]
+  }
+}

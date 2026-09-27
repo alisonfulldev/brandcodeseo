@@ -3,16 +3,15 @@ import Link from "next/link";
 import { buildMetadata } from "@/lib/seo/metadata";
 import nichos from "@/data/nichos.json";
 import tiposSoftware from "@/data/tipos-software.json";
-import cidades from "@/data/cidades.json";
+import { hrefSistemaPara } from "@/lib/rotas";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Mapa do Site | BrandCode Solutions",
+  title: "Mapa do Site",
   description:
-    "Navegue por todas as páginas da BrandCode Solutions: serviços, sistemas por segmento, tipos de software, cidades atendidas e muito mais.",
+    "Navegue por todas as páginas da BrandCode Solutions: serviços, sistemas por segmento, tipos de software e muito mais.",
   slug: "mapa-do-site",
 });
 
-const topCidades = [...cidades].sort((a, b) => b.populacao - a.populacao).slice(0, 20);
 const topNichos = nichos.slice(0, 20);
 const topTipos = tiposSoftware.slice(0, 20);
 
@@ -33,14 +32,13 @@ const secoes = [
     links: [
       { href: "/segmentos", label: "Software por Segmento" },
       { href: "/tipos-de-software", label: "Tipos de Software" },
-      { href: "/cidades", label: "Cidades Atendidas" },
       { href: "/mapa-do-site", label: "Mapa do Site" },
     ],
   },
   {
     titulo: "Software por Segmento (Top 20)",
     links: topNichos.map((n) => ({
-      href: `/sistema-para/${n.slug}`,
+      href: hrefSistemaPara(n.slug),
       label: `Sistema para ${n.nome}`,
     })),
   },
@@ -49,13 +47,6 @@ const secoes = [
     links: topTipos.map((t) => ({
       href: `/desenvolvimento-de/${t.slug}`,
       label: `Desenvolvimento de ${t.nome}`,
-    })),
-  },
-  {
-    titulo: "Cidades (Top 20)",
-    links: topCidades.map((c) => ({
-      href: `/desenvolvimento-de-software-em/${c.slug}`,
-      label: `Software em ${c.nome}`,
     })),
   },
 ];

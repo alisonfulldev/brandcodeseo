@@ -203,6 +203,19 @@ export default function RootLayout({
                 });
               `}
             </Script>
+            {/* Conversão: todo clique em link de WhatsApp vira generate_lead (importado no Google Ads) */}
+            <Script id="ga4-whatsapp-lead" strategy="afterInteractive">
+              {`
+                document.addEventListener('click', function (e) {
+                  var a = e.target.closest && e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]');
+                  if (!a || typeof gtag !== 'function') return;
+                  gtag('event', 'generate_lead', {
+                    method: 'whatsapp',
+                    page_path: window.location.pathname,
+                  });
+                }, true);
+              `}
+            </Script>
           </>
         )}
 

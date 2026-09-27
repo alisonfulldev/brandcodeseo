@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { serviceSchema, faqSchema, breadcrumbSchema } from "@/lib/seo/schema";
-import { SITE_URL, PRICES } from "@/lib/constants";
+import { SITE_URL } from "@/lib/constants";
+import { getConteudoTipo, tipoIndexavel, nichoIndexavel, hrefSistemaPara } from "@/lib/conteudo";
 import tiposSoftware from "@/data/tipos-software.json";
-import cidades from "@/data/cidades.json";
+import nichos from "@/data/nichos.json";
 import Hero from "@/components/sections/Hero";
 import FAQ from "@/components/sections/FAQ";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
-import Link from "next/link";
 import RelatedLinksSection from "@/components/seo/RelatedLinksSection";
+import { ConteudoIntro, ConteudoDetalhes } from "@/components/seo/ConteudoSections";
 
 type Params = { tipo: string };
 
@@ -23,13 +24,14 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   if (!software) return {};
 
   return buildMetadata({
-    title: `Desenvolvimento de ${software.nome} | Software Sob Medida`,
-    description: `${software.descricao} Desenvolvimento personalizado, código-fonte entregue e suporte real. Solicite um orçamento gratuito.`,
+    title: `Desenvolvimento de ${software.nome} Sob Medida | Preços e Prazos`,
+    description: `${software.descricao} Veja funcionalidades, exemplo prático, faixas de preço e prazo. Orçamento gratuito.`,
     slug: `desenvolvimento-de/${software.slug}`,
+    noindex: !tipoIndexavel(software.slug),
     keywords: [
       ...software.palavrasChave,
       `desenvolvimento de ${software.nome.toLowerCase()}`,
-      `${software.nome.toLowerCase()} personalizado`,
+      `quanto custa ${software.nome.toLowerCase()}`,
     ],
   });
 }
@@ -38,72 +40,55 @@ export default async function DesenvolvimentoDeTipoPage({ params }: { params: Pr
   const { tipo } = await params;
   const software = tiposSoftware.find((t) => t.slug === tipo);
   if (!software) notFound();
-
-  const cidadesDestaque = [...cidades].sort((a, b) => b.populacao - a.populacao).slice(0, 16);
-
-  const preco = software.categoria === "mobile" ? PRICES.appMobile
-    : software.categoria === "ia" || software.categoria === "automacao" ? PRICES.automacao
-    : PRICES.sistemaWeb;
+  const conteudo = getConteudoTipo(software.slug);
 
   const faqs = [
+    ...(conteudo?.faqs ?? []),
     {
-      question: `Quanto custa o desenvolvimento de ${software.nome.toLowerCase()}?`,
-      answer: `O desenvolvimento de ${software.nome.toLowerCase()} parte de ${preco}. O valor final depende das funcionalidades e integrações necessárias. Oferecemos diagnóstico e orçamento gratuito sem compromisso.`,
-    },
-    {
-      question: `Qual o prazo para desenvolver ${software.nome.toLowerCase()}?`,
-      answer: `Depende da complexidade. Soluções simples de automação: 5 a 15 dias. Sistemas web completos: 30 a 90 dias. Apps mobile: 60 a 120 dias. Trabalhamos com entregas incrementais.`,
-    },
-    {
-      question: `Vocês entregam o código-fonte?`,
-      answer: `Sim. O código-fonte é seu desde o primeiro dia. Você recebe o repositório completo, documentação técnica e 3 meses de suporte incluso.`,
-    },
-    {
-      question: `${software.nome} integra com outros sistemas?`,
-      answer: `Sim. Integramos com qualquer sistema via API: WhatsApp, ERPs, CRMs, marketplaces, gateways de pagamento, sistemas fiscais e qualquer ferramenta que você já use.`,
-    },
-    {
-      question: `A solução escala conforme meu negócio cresce?`,
-      answer: `Sim. Desenvolvemos com arquitetura pensada para escala. Seu sistema começa pequeno e suporta o crescimento sem precisar de refatoração completa.`,
+      question: `O código-fonte do ${software.nome.toLowerCase()} fica comigo?`,
+      answer: `Sim. Você recebe o repositório completo, documentação técnica e 3 meses de suporte incluso. Sem mensalidade de licença e sem dependência de fornecedor.`,
     },
   ];
 
   const whatsappMsg = `Olá! Preciso de desenvolvimento de ${software.nome.toLowerCase()}. Pode me passar um orçamento?`;
+  const precoInicial = conteudo?.precos[0]?.valor.match(/[\d.]+/)?.[0]?.replace(/\./g, "") ?? "2997";
 
+  const indice = tiposSoftware.findIndex((t) => t.slug === software.slug);
   const tiposRelacionados = tiposSoftware
     .filter((t) => t.slug !== software.slug && t.categoria === software.categoria)
     .slice(0, 8);
   const grupoTipos = tiposRelacionados.length >= 3
     ? tiposRelacionados
-    : tiposSoftware.filter((t) => t.slug !== software.slug).slice(0, 8);
-  const outrosTiposQC = tiposSoftware.filter((t) => t.slug !== software.slug).slice(0, 5);
+    : tiposSoftware.filter((t) => t.slug !== software.slug).slice(indice % 10, (indice % 10) + 8);
+  const nichosIndexaveis = nichos.filter((n) => nichoIndexavel(n.slug));
+  const inicioNichos = (indice * 3) % nichosIndexaveis.length;
+  const grupoNichos = [...nichosIndexaveis.slice(inicioNichos), ...nichosIndexaveis].slice(0, 8);
   const relatedGroups = [
     {
       titulo: "Tipos relacionados de software",
       links: grupoTipos.map((t) => ({ href: `/desenvolvimento-de/${t.slug}`, label: t.nome })),
     },
     {
-      titulo: "Preços e custo de desenvolvimento",
-      links: [
-        { href: `/quanto-custa/${software.slug}`, label: `Quanto custa ${software.nome}?` },
-        ...outrosTiposQC.map((t) => ({ href: `/quanto-custa/${t.slug}`, label: `Preço: ${t.nome}` })),
-      ],
+      titulo: "Sistemas por segmento",
+      links: grupoNichos.map((n) => ({ href: hrefSistemaPara(n.slug), label: `Sistema para ${n.nome}` })),
     },
   ];
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema({ name: `Desenvolvimento de ${software.nome}`, description: software.descricao, price: preco.replace(/\D/g, "") || "2997", slug: `desenvolvimento-de/${software.slug}` })) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema({ name: `Desenvolvimento de ${software.nome}`, description: software.descricao, price: precoInicial, slug: `desenvolvimento-de/${software.slug}` })) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: "Início", url: SITE_URL }, { name: `Desenvolvimento de ${software.nome}`, url: `${SITE_URL}/desenvolvimento-de/${software.slug}` }])) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }} />
 
       <Hero
         titulo={`Desenvolvimento de ${software.nome} Sob Medida`}
-        subtitulo={`${software.descricao} Código-fonte entregue, arquitetura escalável e suporte real. ${preco}.`}
+        subtitulo={`${software.descricao} Código-fonte entregue, arquitetura escalável e suporte real.${conteudo ? ` A partir de ${conteudo.precos[0].valor.split(" – ")[0]}.` : ""}`}
         badge={`Desenvolvimento de ${software.nome}`}
         whatsappMsg={whatsappMsg}
         ctaHref="/software-sob-medida"
       />
+
+      {conteudo && <ConteudoIntro conteudo={conteudo} nome={software.nome} />}
 
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -145,25 +130,7 @@ export default async function DesenvolvimentoDeTipoPage({ params }: { params: Pr
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#0A1628] mb-6 text-center">
-            Desenvolvimento de {software.nome} por cidade
-          </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-            {cidadesDestaque.map((cidade) => (
-              <Link
-                key={cidade.slug}
-                href={`/desenvolvimento-de/${software.slug}/${cidade.slug}`}
-                className="bg-white border border-gray-200 rounded-lg px-3 py-2 text-xs text-center text-gray-700 hover:bg-blue-50 hover:border-blue-300 transition-all"
-              >
-                {cidade.nome}
-                <span className="block text-gray-400 text-xs">{cidade.estado}</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      {conteudo && <ConteudoDetalhes conteudo={conteudo} nome={software.nome} whatsappMsg={whatsappMsg} />}
 
       <FAQ items={faqs} title={`Dúvidas sobre desenvolvimento de ${software.nome}`} />
       <RelatedLinksSection groups={relatedGroups} />

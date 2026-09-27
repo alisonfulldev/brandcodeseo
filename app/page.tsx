@@ -6,7 +6,6 @@ import Hero from "@/components/sections/Hero";
 import Diferenciais from "@/components/sections/Diferenciais";
 import Precos from "@/components/sections/Precos";
 import FAQ from "@/components/sections/FAQ";
-import CidadesGrid from "@/components/sections/CidadesGrid";
 import NichosGrid from "@/components/sections/NichosGrid";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import Link from "next/link";
@@ -130,7 +129,7 @@ const servicos = [
     destaque: false,
   },
   {
-    href: "/desenvolvimento-de-app-mobile",
+    href: "/desenvolvimento-de/app-mobile",
     titulo: "App Mobile",
     preco: PRICES.appMobile,
     desc: "Aplicativos iOS e Android sob medida. Do app de gestão interno ao produto digital voltado ao consumidor final.",
@@ -138,7 +137,7 @@ const servicos = [
     destaque: true,
   },
   {
-    href: "/chatbot-whatsapp",
+    href: "/desenvolvimento-de/chatbot-whatsapp",
     titulo: "Chatbot e IA",
     preco: PRICES.automacao,
     desc: "Chatbot com IA para WhatsApp, atendimento automatizado 24h e agentes inteligentes que resolvem sem humano.",
@@ -146,7 +145,7 @@ const servicos = [
     destaque: false,
   },
   {
-    href: "/automacao-de-processos",
+    href: "/desenvolvimento-de/automacao-de-processos",
     titulo: "Automação",
     preco: PRICES.automacao,
     desc: "Elimine processos manuais com N8N, RPA e integrações. Conectamos qualquer ferramenta que você já usa.",
@@ -154,7 +153,7 @@ const servicos = [
     destaque: false,
   },
   {
-    href: "/api-e-integracoes",
+    href: "/desenvolvimento-de/api-e-integracoes",
     titulo: "APIs e Integrações",
     preco: PRICES.automacao,
     desc: "Conectamos seus sistemas, ERPs, marketplaces e ferramentas com APIs robustas. Zero importação manual.",
@@ -360,11 +359,6 @@ export default function HomePage() {
 
       <NichosGrid />
 
-      <CidadesGrid
-        prefixo="desenvolvimento-de-software-em"
-        titulo="Desenvolvimento de Software por Cidade"
-      />
-
       {/* Hubs de navegação SEO */}
       <section className="py-16" style={{ background: "#0A0F1E" }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -375,9 +369,9 @@ export default function HomePage() {
             Explore todas as nossas soluções
           </h2>
           <p className="mb-10 text-sm" style={{ color: "#94A3B8" }}>
-            Navegue por segmento, tipo de software ou cidade e encontre a solução certa para o seu negócio.
+            Navegue por segmento ou tipo de software e encontre a solução certa para o seu negócio.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
               {
                 href: "/segmentos",
@@ -388,11 +382,6 @@ export default function HomePage() {
                 href: "/tipos-de-software",
                 titulo: "Por Tipo de Software",
                 desc: "95+ tipos — ERP, app, chatbot, automação e muito mais",
-              },
-              {
-                href: "/cidades",
-                titulo: "Por Cidade",
-                desc: "276+ cidades — todo o Brasil atendido remotamente",
               },
             ].map((hub) => (
               <Link

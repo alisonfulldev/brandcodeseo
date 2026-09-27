@@ -1,0 +1,219 @@
+{
+  "chatbot-com-ia": {
+    "intro": [
+      "Um chatbot com inteligência artificial conversa com seus clientes em linguagem natural, entende a pergunta mesmo quando escrita de forma confusa e responde com base nas informações reais da sua empresa. Ele pode ficar no site, no aplicativo, no Instagram ou no WhatsApp, e atende centenas de pessoas ao mesmo tempo.",
+      "A diferença para os chatbots antigos de menu é enorme: o cliente não precisa escolher entre opções numeradas. E a diferença para usar o ChatGPT diretamente é o controle — o chatbot responde apenas sobre o seu negócio, segue o seu tom de voz e sabe a hora de chamar um humano."
+    ],
+    "funcionalidades": [
+      { "titulo": "Treinado com seus conteúdos", "desc": "Políticas, catálogo, perguntas frequentes e manuais viram a base de conhecimento do chatbot." },
+      { "titulo": "Tom de voz da marca", "desc": "Personalidade, formalidade e limites de assunto definidos por você e testados antes do lançamento." },
+      { "titulo": "Multicanal", "desc": "O mesmo cérebro atende no site, WhatsApp, Instagram e dentro do seu sistema." },
+      { "titulo": "Coleta de dados e leads", "desc": "Durante a conversa, o chatbot coleta nome, contato e necessidade e registra no CRM." },
+      { "titulo": "Limites de segurança", "desc": "Proteções contra respostas fora do escopo, tentativas de manipulação e vazamento de dados." },
+      { "titulo": "Análise de conversas", "desc": "Relatório dos assuntos mais perguntados, perguntas sem resposta e satisfação do cliente." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: operadora de turismo",
+      "texto": "Uma operadora de turismo recebe muitas perguntas sobre documentação, bagagem, roteiros e formas de pagamento. O chatbot com IA foi alimentado com os roteiros e as políticas da empresa, responde essas dúvidas a qualquer hora no site e no WhatsApp, sugere pacotes conforme o perfil do viajante e passa para um consultor quando o cliente quer fechar a reserva."
+    },
+    "integracoes": ["OpenAI (GPT) e Anthropic (Claude)", "WhatsApp, Instagram e widget de site", "CRMs", "Bases de conhecimento (Notion, Google Drive, Confluence)", "Sistemas internos via API"],
+    "precos": [
+      { "label": "Chatbot de perguntas", "valor": "R$ 1.997 – R$ 4.997", "desc": "Responde dúvidas com base nos seus documentos, em um canal." },
+      { "label": "Chatbot de vendas", "valor": "R$ 5.000 – R$ 12.000", "desc": "Qualifica leads, integra CRM e atende em vários canais." },
+      { "label": "Assistente integrado", "valor": "R$ 12.000+", "desc": "Consulta e executa ações nos seus sistemas, com análise avançada." }
+    ],
+    "prazo": "10 a 40 dias.",
+    "faqs": [
+      { "question": "Qual o custo mensal de uso da IA?", "answer": "Os provedores cobram por volume de texto processado. Para a maioria das empresas, isso representa poucas centenas de reais por mês. Estimamos o custo com base no número de conversas esperado." },
+      { "question": "O chatbot pode dar informações erradas?", "answer": "Reduzimos esse risco limitando as respostas às informações fornecidas por você, instruindo o chatbot a admitir quando não sabe e testando com perguntas reais antes do lançamento." },
+      { "question": "Os dados dos meus clientes são usados para treinar a IA?", "answer": "Não. Usamos as versões empresariais das APIs, que por contrato não usam os dados enviados para treinar modelos." },
+      { "question": "Consigo atualizar o que o chatbot sabe?", "answer": "Sim. Ao atualizar um documento ou uma pergunta frequente no painel, o chatbot passa a usar a nova informação." }
+    ]
+  },
+  "ia-para-negocios": {
+    "intro": [
+      "Inteligência artificial para negócios é aplicar IA onde ela gera resultado mensurável na sua empresa: menos tempo em tarefas repetitivas, respostas mais rápidas aos clientes, melhores decisões com os dados que você já tem. Não é sobre seguir a moda, é sobre encontrar os pontos da operação em que a IA se paga.",
+      "Começamos com um diagnóstico: entendemos seus processos, identificamos oportunidades e estimamos o retorno de cada uma. Depois implementamos em etapas, começando pelo caso de uso com maior impacto e menor risco."
+    ],
+    "funcionalidades": [
+      { "titulo": "Diagnóstico de oportunidades", "desc": "Mapeamento dos processos com potencial de IA e estimativa de horas e custo economizados." },
+      { "titulo": "Análise de documentos", "desc": "Leitura e extração de dados de contratos, notas, currículos e laudos em segundos." },
+      { "titulo": "Assistentes internos", "desc": "IA que responde dúvidas da equipe sobre processos, políticas e produtos da empresa." },
+      { "titulo": "Geração de conteúdo", "desc": "Descrições de produtos, propostas, e-mails e relatórios criados a partir dos seus dados." },
+      { "titulo": "Classificação e triagem", "desc": "Tickets, e-mails e leads classificados e encaminhados automaticamente para a pessoa certa." },
+      { "titulo": "Previsões com seus dados", "desc": "Modelos de previsão de demanda, churn ou inadimplência a partir do histórico da empresa." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: escritório de engenharia",
+      "texto": "Um escritório de engenharia gasta horas lendo editais para decidir de quais licitações participar. Com IA, cada edital publicado é lido automaticamente, os requisitos técnicos e documentais são extraídos, comparados com o perfil do escritório e resumidos em uma página com a recomendação. A equipe analisa apenas os editais com maior chance."
+    },
+    "integracoes": ["OpenAI, Anthropic e Google Gemini", "Google Workspace e Microsoft 365", "ERPs e CRMs", "Bancos de dados", "N8N e automações", "Power BI"],
+    "precos": [
+      { "label": "Diagnóstico + piloto", "valor": "R$ 1.997 – R$ 5.997", "desc": "Mapeamento das oportunidades e um caso de uso implantado." },
+      { "label": "IA em um departamento", "valor": "R$ 6.000 – R$ 18.000", "desc": "Vários casos de uso integrados aos sistemas de uma área." },
+      { "label": "Programa de IA", "valor": "R$ 18.000+", "desc": "IA em vários departamentos, modelos preditivos e governança." }
+    ],
+    "prazo": "15 a 60 dias para o primeiro caso de uso em produção.",
+    "faqs": [
+      { "question": "Por onde minha empresa deve começar com IA?", "answer": "Pelo processo mais repetitivo, com regras claras e alto volume — como leitura de documentos ou triagem de atendimento. Esses casos têm retorno rápido e baixo risco." },
+      { "question": "Preciso ter muitos dados?", "answer": "Para usar modelos de linguagem como GPT e Claude, não. Eles já vêm treinados. Modelos de previsão, por outro lado, precisam de histórico. O diagnóstico mostra o que é viável com o que você tem." },
+      { "question": "A IA vai tomar decisões sozinha?", "answer": "Depende do caso. Em tarefas de alto impacto, recomendamos que a IA prepare e sugira e uma pessoa aprove. Em tarefas de baixo risco, ela pode agir sozinha." },
+      { "question": "Meus dados ficam seguros?", "answer": "Sim. Usamos APIs empresariais que não treinam modelos com seus dados, controlamos o acesso e, quando necessário, usamos modelos rodando na sua própria infraestrutura." }
+    ]
+  },
+  "agente-de-ia": {
+    "intro": [
+      "Um agente de IA vai além de responder perguntas: ele executa tarefas. Recebe um objetivo, decide os passos, consulta sistemas, preenche formulários, envia mensagens e só pede ajuda humana quando precisa. É como ter um assistente digital que opera as ferramentas da empresa.",
+      "Agentes funcionam melhor em tarefas com começo, meio e fim bem definidos, como qualificar e agendar leads, montar propostas, conferir pedidos ou fazer a primeira análise de um chamado. Construímos agentes com limites claros de ação e registro de tudo o que fazem."
+    ],
+    "funcionalidades": [
+      { "titulo": "Uso de ferramentas", "desc": "O agente consulta o CRM, cria pedidos no ERP, agenda no calendário e envia e-mails por conta própria." },
+      { "titulo": "Planejamento em etapas", "desc": "Divide objetivos em passos, verifica os resultados de cada um e corrige o rumo quando algo dá errado." },
+      { "titulo": "Memória de contexto", "desc": "Lembra conversas e decisões anteriores com cada cliente ou processo." },
+      { "titulo": "Aprovação humana", "desc": "Ações sensíveis, como descontos ou pagamentos, exigem confirmação de uma pessoa antes de executar." },
+      { "titulo": "Registro de ações", "desc": "Cada decisão e ação do agente fica registrada para auditoria e melhoria." },
+      { "titulo": "Vários agentes coordenados", "desc": "Agentes especializados que trabalham em conjunto, como um de triagem e outro de execução." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: agente SDR para uma empresa B2B",
+      "texto": "Uma empresa de software B2B recebe leads do site que esperam dias por um contato. O agente de IA pesquisa a empresa do lead, avalia se ela tem o perfil ideal, envia uma mensagem personalizada, responde às primeiras dúvidas, oferece horários na agenda do vendedor e registra tudo no CRM. O vendedor entra apenas na reunião, com o resumo pronto."
+    },
+    "integracoes": ["OpenAI e Anthropic (tool use e agentes)", "CRMs e ERPs", "Google Agenda e Outlook", "WhatsApp e e-mail", "Navegação web e APIs de pesquisa", "N8N e LangGraph"],
+    "precos": [
+      { "label": "Agente de tarefa única", "valor": "R$ 2.997 – R$ 7.997", "desc": "Um agente com poucas ferramentas e um objetivo bem definido." },
+      { "label": "Agente integrado", "valor": "R$ 8.000 – R$ 20.000", "desc": "Acesso a vários sistemas, memória e aprovação humana." },
+      { "label": "Sistema de agentes", "valor": "R$ 20.000+", "desc": "Vários agentes coordenados, monitoramento e avaliação contínua." }
+    ],
+    "prazo": "20 a 60 dias.",
+    "faqs": [
+      { "question": "Qual a diferença entre chatbot e agente de IA?", "answer": "O chatbot conversa e responde. O agente age: consulta sistemas, toma decisões dentro de regras e executa tarefas do começo ao fim." },
+      { "question": "É seguro deixar uma IA agir nos meus sistemas?", "answer": "Sim, com limites. O agente só tem acesso às ações que definimos, operações sensíveis exigem aprovação e tudo fica registrado. Começamos com permissões restritas e ampliamos conforme a confiança aumenta." },
+      { "question": "O agente pode errar?", "answer": "Pode, como qualquer pessoa. Por isso medimos a taxa de acerto em testes antes de colocar em produção e mantemos a revisão humana em decisões importantes." },
+      { "question": "Quanto custa rodar um agente?", "answer": "O custo das APIs de IA depende do número de tarefas e da complexidade. Estimamos o valor por tarefa e comparamos com o custo de fazê-la manualmente." }
+    ]
+  },
+  "rag-base-conhecimento": {
+    "intro": [
+      "RAG — geração aumentada por recuperação — é a técnica que permite a uma IA responder com base nos documentos da sua empresa: manuais, contratos, normas, procedimentos, histórico de atendimentos. Em vez de inventar, a IA primeiro busca os trechos relevantes e depois responde citando a fonte.",
+      "É a solução para empresas com muito conhecimento espalhado em PDFs, pastas e wikis, onde a equipe perde tempo procurando informação ou pergunta sempre às mesmas pessoas. A base de conhecimento com IA responde em segundos e mostra de onde tirou a resposta."
+    ],
+    "funcionalidades": [
+      { "titulo": "Ingestão de documentos", "desc": "PDFs, Word, planilhas, páginas do Notion, Confluence e Google Drive indexados automaticamente." },
+      { "titulo": "Respostas com fonte", "desc": "Cada resposta mostra o documento e o trecho de onde veio, para conferência." },
+      { "titulo": "Busca semântica", "desc": "Encontra a informação pelo significado, mesmo quando a pergunta usa palavras diferentes do documento." },
+      { "titulo": "Permissões por documento", "desc": "Cada usuário só recebe respostas baseadas nos documentos que tem permissão para ver." },
+      { "titulo": "Atualização contínua", "desc": "Documentos novos ou alterados são reindexados sem intervenção manual." },
+      { "titulo": "Lacunas de conhecimento", "desc": "Relatório das perguntas sem boa resposta, indicando o que precisa ser documentado." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: suporte técnico de uma fabricante de equipamentos",
+      "texto": "Técnicos de campo de uma fabricante precisam consultar centenas de manuais para diagnosticar falhas e ligam para a matriz quando não encontram. Com a base de conhecimento, o técnico descreve o sintoma no celular e recebe o procedimento com referência ao manual e à página, incluindo casos parecidos já resolvidos por colegas."
+    },
+    "integracoes": ["OpenAI, Anthropic e modelos locais", "Bancos vetoriais (pgvector, Pinecone, Qdrant)", "Google Drive, SharePoint, Notion, Confluence", "Sistemas de chamados", "Slack, Teams e WhatsApp"],
+    "precos": [
+      { "label": "Base de conhecimento", "valor": "R$ 2.997 – R$ 7.997", "desc": "Até alguns milhares de documentos, respostas com fonte e interface web." },
+      { "label": "RAG corporativo", "valor": "R$ 8.000 – R$ 20.000", "desc": "Várias fontes, permissões, atualização automática e integração com chat." },
+      { "label": "RAG avançado", "valor": "R$ 20.000+", "desc": "Grandes volumes, modelos locais, avaliação de qualidade e múltiplas bases." }
+    ],
+    "prazo": "15 a 45 dias.",
+    "faqs": [
+      { "question": "Por que não simplesmente enviar os documentos ao ChatGPT?", "answer": "Há limites de volume, os documentos precisariam ser enviados a cada pergunta e não há controle de permissão. O RAG indexa tudo uma vez, busca só o necessário e respeita quem pode ver o quê." },
+      { "question": "A IA pode responder algo que não está nos documentos?", "answer": "Configuramos o sistema para responder apenas com base nas fontes encontradas e informar quando não há informação suficiente." },
+      { "question": "Documentos escaneados funcionam?", "answer": "Sim. Aplicamos reconhecimento de texto (OCR) antes de indexar. A qualidade depende da legibilidade da digitalização." },
+      { "question": "Os documentos saem da minha empresa?", "answer": "Os trechos relevantes são enviados à API da IA para gerar a resposta, sob contrato que proíbe o uso para treinamento. Para dados muito sensíveis, podemos usar modelos rodando na sua infraestrutura." }
+    ]
+  },
+  "dashboard-bi": {
+    "intro": [
+      "Um dashboard de BI reúne os indicadores da empresa em painéis visuais atualizados automaticamente, cruzando dados de vendas, financeiro, estoque, marketing e operação. Ele acaba com as reuniões em que cada área traz um número diferente e com os relatórios montados à mão em planilhas no fim do mês.",
+      "O trabalho mais importante não é o gráfico, é o dado. Construímos a camada que coleta, limpa e organiza as informações dos seus sistemas para que o painel seja confiável — e só então desenhamos as visões para cada perfil: diretoria, gestores e operação."
+    ],
+    "funcionalidades": [
+      { "titulo": "Coleta automática de dados", "desc": "Conexão com ERP, CRM, e-commerce, planilhas e plataformas de anúncio, atualizando em horários definidos." },
+      { "titulo": "Modelo de dados confiável", "desc": "Regras de negócio aplicadas uma vez — o que é venda, o que é cliente ativo — para todos verem o mesmo número." },
+      { "titulo": "Painéis por perfil", "desc": "Visão executiva para a diretoria e visões detalhadas para cada gestor, com filtros por período e unidade." },
+      { "titulo": "Metas e alertas", "desc": "Indicadores comparados com as metas e alertas por e-mail ou WhatsApp quando algo sai da faixa." },
+      { "titulo": "Análise por drill-down", "desc": "Do total da empresa até a filial, o vendedor, o cliente e o pedido, com poucos cliques." },
+      { "titulo": "Acesso seguro", "desc": "Cada usuário vê apenas os dados da sua área ou unidade." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: rede de óticas com dez lojas",
+      "texto": "Uma rede de óticas recebe relatórios de cada loja em formatos diferentes e demora dias para consolidar os resultados. Com o BI, as vendas do PDV, o estoque do ERP e os leads das campanhas são atualizados toda noite. O dono vê faturamento, margem e conversão por loja e por vendedor, e os gerentes acompanham diariamente a meta das próprias equipes."
+    },
+    "integracoes": ["Power BI, Metabase e Looker Studio", "ERPs e PDVs", "CRMs", "Google Ads, Meta Ads e GA4", "Planilhas Google e Excel", "Bancos SQL e data warehouses"],
+    "precos": [
+      { "label": "Painel departamental", "valor": "R$ 2.997 – R$ 6.997", "desc": "Uma ou duas fontes de dados e painéis para uma área." },
+      { "label": "BI da empresa", "valor": "R$ 7.000 – R$ 18.000", "desc": "Várias fontes, modelo de dados, painéis por perfil e alertas." },
+      { "label": "Data warehouse", "valor": "R$ 18.000+", "desc": "Centralização completa dos dados, histórico e base para modelos preditivos." }
+    ],
+    "prazo": "20 a 60 dias.",
+    "faqs": [
+      { "question": "Preciso pagar Power BI?", "answer": "Não necessariamente. Podemos usar ferramentas gratuitas ou de código aberto, como Metabase e Looker Studio, ou o Power BI se a empresa já usa Microsoft 365. Recomendamos a opção com melhor custo para o seu caso." },
+      { "question": "Com que frequência os dados atualizam?", "answer": "Normalmente uma ou algumas vezes por dia. Para indicadores operacionais, é possível atualizar a cada poucos minutos." },
+      { "question": "E se meus dados estiverem bagunçados?", "answer": "Isso é comum. Parte do projeto é tratar duplicidades, padronizar cadastros e definir regras. O painel também mostra onde a qualidade do dado precisa melhorar na origem." },
+      { "question": "Qual a diferença entre dashboard e relatório?", "answer": "O relatório é uma fotografia de um período. O dashboard é interativo e atualizado continuamente, para acompanhar e investigar a qualquer momento." }
+    ]
+  },
+  "sistema-de-relatorios": {
+    "intro": [
+      "Um sistema de relatórios automatizados gera e envia os relatórios da empresa sozinho, no formato e no horário certos: o fechamento diário de vendas para a diretoria, o relatório mensal para cada cliente, o extrato de comissões para cada vendedor. É para quem ainda passa horas copiando números para planilhas e montando PDFs manualmente.",
+      "Diferente de um dashboard, que alguém precisa abrir, o relatório automatizado chega a quem precisa — por e-mail, WhatsApp ou portal — com o texto, os gráficos e a formatação que a sua empresa já usa."
+    ],
+    "funcionalidades": [
+      { "titulo": "Agendamento de envios", "desc": "Relatórios diários, semanais ou mensais enviados automaticamente para listas definidas." },
+      { "titulo": "Modelos com sua identidade", "desc": "PDF, Excel ou página web com logotipo, cores e estrutura dos seus relatórios atuais." },
+      { "titulo": "Relatório por destinatário", "desc": "Cada cliente, vendedor ou unidade recebe apenas os seus próprios números." },
+      { "titulo": "Comentários com IA", "desc": "Resumo escrito automaticamente destacando variações, tendências e pontos de atenção." },
+      { "titulo": "Várias fontes de dados", "desc": "Informações de ERP, CRM, planilhas e plataformas externas reunidas no mesmo documento." },
+      { "titulo": "Histórico e reenvio", "desc": "Arquivo de todos os relatórios enviados, com reenvio sob demanda." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: agência de marketing com 40 clientes",
+      "texto": "Uma agência gasta os primeiros dias de cada mês montando o relatório de resultados de cada cliente, copiando dados do Google Ads, Meta Ads e Analytics. O sistema coleta os dados automaticamente, gera um PDF com a marca da agência para cada cliente, escreve um resumo com as principais variações e envia no primeiro dia útil. A equipe apenas revisa os comentários estratégicos."
+    },
+    "integracoes": ["Google Ads, Meta Ads e GA4", "ERPs e CRMs", "Planilhas Google e Excel", "E-mail e WhatsApp", "Armazenamento em nuvem", "OpenAI e Claude para resumos"],
+    "precos": [
+      { "label": "Relatório automatizado", "valor": "R$ 1.997 – R$ 4.997", "desc": "Um modelo de relatório, uma fonte de dados e envio agendado." },
+      { "label": "Central de relatórios", "valor": "R$ 5.000 – R$ 12.000", "desc": "Vários modelos, fontes e destinatários, com resumo por IA." },
+      { "label": "Relatórios para clientes", "valor": "R$ 12.000+", "desc": "Portal com histórico, marca branca e relatórios personalizados por cliente." }
+    ],
+    "prazo": "10 a 40 dias.",
+    "faqs": [
+      { "question": "Qual a diferença para um dashboard de BI?", "answer": "O dashboard é consultado por quem quer analisar. O relatório automatizado chega pronto a quem precisa receber, sem que a pessoa precise acessar nada. Muitas empresas usam os dois." },
+      { "question": "Consigo manter o formato dos meus relatórios atuais?", "answer": "Sim. Reproduzimos a estrutura e o visual dos relatórios que você já envia, para que clientes e diretoria não estranhem a mudança." },
+      { "question": "O resumo feito por IA é confiável?", "answer": "A IA descreve os números calculados pelo sistema, não inventa dados. Ainda assim, recomendamos revisão humana nas primeiras semanas e em relatórios enviados a clientes." },
+      { "question": "Posso gerar um relatório fora do agendamento?", "answer": "Sim. Qualquer relatório pode ser gerado sob demanda para um período específico." }
+    ]
+  },
+  "reconhecimento-de-imagem": {
+    "intro": [
+      "Reconhecimento de imagem com IA permite que um sistema identifique objetos, leia textos, confira produtos, detecte defeitos e analise fotos automaticamente. Aplicações comuns incluem inspeção de qualidade na indústria, leitura de documentos e placas, contagem de itens em prateleiras e verificação de fotos enviadas por equipes de campo.",
+      "Com os modelos atuais de visão computacional, muitos casos de uso que antes exigiam meses de treinamento podem ser implementados em semanas. Para situações muito específicas, treinamos modelos próprios com fotos da sua operação."
+    ],
+    "funcionalidades": [
+      { "titulo": "Leitura de documentos", "desc": "Extração de dados de RG, CNH, notas fiscais, comprovantes e formulários fotografados." },
+      { "titulo": "Inspeção de qualidade", "desc": "Detecção de defeitos, riscos, falhas de montagem e embalagens incorretas na linha de produção." },
+      { "titulo": "Contagem e identificação", "desc": "Contagem de produtos, animais, veículos ou pessoas em imagens e vídeos." },
+      { "titulo": "Validação de fotos de campo", "desc": "Confirmação de que a foto enviada mostra o local, o produto ou o serviço esperado." },
+      { "titulo": "Leitura de placas e códigos", "desc": "Reconhecimento de placas de veículos, etiquetas, números de série e medidores." },
+      { "titulo": "Modelos treinados sob medida", "desc": "Treinamento com imagens da sua operação quando os modelos genéricos não bastam." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: auditoria de ponto de venda para uma marca de bebidas",
+      "texto": "Promotores de uma marca de bebidas fotografam as gôndolas de centenas de mercados, e a equipe confere as fotos manualmente para verificar exposição e preço. Com reconhecimento de imagem, cada foto é analisada ao ser enviada: o sistema identifica os produtos, conta as frentes, lê as etiquetas de preço e aponta as lojas fora do padrão combinado."
+    },
+    "integracoes": ["Modelos de visão (OpenAI, Claude, Google Vision)", "YOLO e modelos próprios", "Câmeras IP e sistemas de CFTV", "Apps mobile de campo", "ERPs e sistemas de qualidade"],
+    "precos": [
+      { "label": "Leitura de documentos", "valor": "R$ 1.997 – R$ 5.997", "desc": "Extração de dados de tipos de documento definidos." },
+      { "label": "Análise de imagens", "valor": "R$ 6.000 – R$ 18.000", "desc": "Identificação, contagem ou validação com modelos existentes e integração." },
+      { "label": "Modelo treinado", "valor": "R$ 18.000+", "desc": "Treinamento com imagens próprias, inspeção em tempo real e vídeo." }
+    ],
+    "prazo": "20 a 90 dias, conforme a necessidade de treinamento.",
+    "faqs": [
+      { "question": "Preciso de muitas fotos para treinar?", "answer": "Para leitura de documentos e identificação de objetos comuns, não — modelos prontos já resolvem. Para defeitos específicos, normalmente algumas centenas de imagens de exemplo são suficientes para começar." },
+      { "question": "Funciona em tempo real?", "answer": "Sim. Para inspeção em linha de produção ou câmeras, rodamos o modelo em computadores próximos ao local, com resposta em milissegundos." },
+      { "question": "Qual a precisão do reconhecimento?", "answer": "Depende do caso e da qualidade das imagens. Medimos a precisão com fotos reais antes de colocar em produção e definimos o que fazer quando o sistema tem baixa confiança." },
+      { "question": "E a privacidade das pessoas nas imagens?", "answer": "Quando há pessoas, aplicamos anonimização e respeitamos a LGPD, coletando e guardando apenas o necessário para a finalidade." }
+    ]
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "sistema-de-gestao": {
+    "intro": [
+      "Um sistema de gestão sob medida é o ponto de partida para empresas pequenas e médias que ainda controlam o negócio em planilhas, cadernos e grupos de WhatsApp. Em vez de contratar um ERP gigante com dezenas de módulos que ninguém usa, você começa pelo que dói hoje: pedidos, clientes, financeiro e equipe em um único lugar.",
+      "A diferença para um software de prateleira é que o sistema nasce do seu fluxo real. Se a sua empresa aprova orçamentos em duas etapas, trabalha com comissão por equipe ou precisa de um campo que nenhum sistema pronto tem, isso vira funcionalidade — e não gambiarra."
+    ],
+    "funcionalidades": [
+      { "titulo": "Cadastro central de clientes", "desc": "Histórico completo de compras, conversas, documentos e pendências de cada cliente em uma única tela." },
+      { "titulo": "Pedidos e ordens de serviço", "desc": "Fluxo de status configurável (orçado, aprovado, em execução, entregue) com responsável e prazo por etapa." },
+      { "titulo": "Contas a pagar e a receber", "desc": "Lançamentos vinculados aos pedidos, conciliação de Pix e boleto e visão de fluxo de caixa dos próximos 90 dias." },
+      { "titulo": "Permissões por perfil", "desc": "Vendedor vê só os próprios clientes, financeiro vê valores, dono vê tudo. Cada ação fica registrada em log." },
+      { "titulo": "Painel do dono", "desc": "Faturamento do mês, ticket médio, inadimplência e produtividade da equipe atualizados em tempo real." },
+      { "titulo": "Acesso pelo celular", "desc": "Interface responsiva para a equipe externa lançar pedidos e consultar clientes sem precisar de computador." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: distribuidora de 12 funcionários",
+      "texto": "Uma distribuidora que recebe pedidos por WhatsApp e digita tudo em planilha perde pedidos e não sabe quem está devendo. Com um sistema de gestão enxuto, o vendedor lança o pedido no celular, o estoque é reservado na hora, o financeiro gera o boleto automaticamente e o dono acompanha a margem de cada venda. O projeto começa com três módulos e cresce conforme a operação pede."
+    },
+    "integracoes": ["WhatsApp Business", "Emissão de NF-e e NFS-e", "Pix e boleto (Asaas, Inter, Mercado Pago)", "Google Planilhas para migração", "E-mail transacional"],
+    "precos": [
+      { "label": "Gestão essencial", "valor": "R$ 2.997 – R$ 6.997", "desc": "Clientes, pedidos e financeiro básico para até 10 usuários." },
+      { "label": "Gestão completa", "valor": "R$ 7.000 – R$ 15.000", "desc": "Inclui estoque, comissões, relatórios e emissão fiscal integrada." },
+      { "label": "Multiempresa", "valor": "R$ 15.000+", "desc": "Várias filiais ou CNPJs, consolidação de resultados e regras por unidade." }
+    ],
+    "prazo": "30 a 60 dias para a primeira versão em uso, com entregas quinzenais.",
+    "faqs": [
+      { "question": "Qual a diferença entre sistema de gestão e ERP?", "answer": "O sistema de gestão cobre o essencial de uma empresa pequena ou média — clientes, vendas, financeiro. O ERP integra todos os departamentos, inclusive produção, compras e RH, e faz sentido quando a operação já é maior. Muitos clientes começam pelo sistema de gestão e evoluem para ERP depois." },
+      { "question": "Consigo migrar os dados das minhas planilhas?", "answer": "Sim. Importamos clientes, produtos, contas e histórico de vendas de planilhas Excel ou Google Sheets. A migração faz parte do projeto e é validada com você antes de o sistema entrar em uso." },
+      { "question": "Minha equipe vai conseguir usar?", "answer": "O sistema é desenhado com base no que sua equipe já faz, com os mesmos nomes e etapas. Na entrega fazemos treinamento gravado por perfil de usuário, para que novos funcionários aprendam sozinhos." },
+      { "question": "Posso começar pequeno e adicionar módulos depois?", "answer": "É o caminho que recomendamos. A arquitetura é modular: você coloca em uso o que resolve a dor principal e adiciona estoque, comissões ou fiscal quando fizer sentido." }
+    ]
+  },
+  "erp": {
+    "intro": [
+      "Um ERP sob medida integra financeiro, compras, estoque, vendas, produção e RH em uma base única de dados. É indicado para empresas que já passaram da fase da planilha, têm vários departamentos e sofrem com retrabalho porque cada setor usa um sistema diferente que não conversa com os outros.",
+      "ERPs de mercado como SAP, TOTVS e Omie são robustos, mas cobram licença por usuário e obrigam a empresa a se adaptar a eles. Um ERP próprio segue o seu processo produtivo, suas regras fiscais e sua forma de apurar custo — e não tem mensalidade por usuário."
+    ],
+    "funcionalidades": [
+      { "titulo": "Compras e cotação", "desc": "Requisição interna, cotação com fornecedores, aprovação por alçada e entrada de nota com conferência automática." },
+      { "titulo": "Estoque multi-depósito", "desc": "Saldo por local, lote e validade, inventário rotativo e transferência entre filiais com rastreabilidade." },
+      { "titulo": "Produção e custo", "desc": "Ficha técnica, ordem de produção, apontamento de perdas e custo real por produto fabricado." },
+      { "titulo": "Faturamento e fiscal", "desc": "Emissão de NF-e, cálculo de ICMS, IPI, PIS e COFINS por regra da empresa e geração de arquivos para a contabilidade." },
+      { "titulo": "Financeiro integrado", "desc": "Cada venda, compra e folha gera lançamento automático. DRE gerencial e fluxo de caixa sem digitação dupla." },
+      { "titulo": "Indicadores por departamento", "desc": "Painéis de margem, giro de estoque, prazo médio de pagamento e recebimento e eficiência de produção." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: indústria de alimentos com duas unidades",
+      "texto": "Uma indústria que usa um sistema para fiscal, outro para estoque e planilhas para custo não sabe a margem real de cada produto. Com um ERP próprio, a ordem de produção consome a matéria-prima do estoque, calcula o custo com base nas compras reais, a venda emite a nota e o financeiro recebe o título automaticamente. O dono passa a ver margem por produto e por cliente no fim do dia, não no fim do mês."
+    },
+    "integracoes": ["SEFAZ (NF-e, NFC-e, MDF-e)", "Bancos via CNAB e API Pix", "Sistemas contábeis (Domínio, Alterdata)", "E-commerce e marketplaces", "Balanças e coletores de dados", "Power BI"],
+    "precos": [
+      { "label": "ERP inicial", "valor": "R$ 8.000 – R$ 20.000", "desc": "Três a quatro módulos integrados: compras, estoque, vendas e financeiro." },
+      { "label": "ERP completo", "valor": "R$ 20.000 – R$ 60.000", "desc": "Inclui produção, fiscal completo, multi-filial e relatórios gerenciais." },
+      { "label": "ERP enterprise", "valor": "R$ 60.000+", "desc": "Alto volume, integrações com sistemas legados e requisitos de auditoria." }
+    ],
+    "prazo": "60 a 120 dias, com implantação por módulo para a empresa não parar.",
+    "faqs": [
+      { "question": "Vale a pena desenvolver um ERP em vez de contratar um pronto?", "answer": "Vale quando o ERP pronto obriga a empresa a mudar processos que são diferenciais, quando a licença por usuário fica cara conforme a equipe cresce ou quando você já paga por customizações que nunca ficam boas. Em cinco anos, o custo total de um ERP próprio costuma ser menor." },
+      { "question": "Como é feita a implantação sem parar a operação?", "answer": "Implantamos um módulo por vez, rodando em paralelo com o sistema atual por algumas semanas. Só desligamos o antigo quando os números batem. Isso evita o famoso apagão de virada de ERP." },
+      { "question": "O ERP atende às obrigações fiscais?", "answer": "Sim. A emissão de notas segue os layouts da SEFAZ e as regras tributárias são configuradas com o seu contador. Quando a legislação muda, a atualização entra no suporte." },
+      { "question": "Quantos usuários o ERP suporta?", "answer": "Não há limite por licença. A infraestrutura é dimensionada para o volume da sua operação e cresce junto — de 10 a milhares de usuários." }
+    ]
+  },
+  "crm": {
+    "intro": [
+      "Um CRM sob medida organiza o funil de vendas do jeito que o seu time realmente vende. Ele registra cada contato, cada proposta e cada follow-up, para que nenhuma oportunidade morra esquecida no WhatsApp de um vendedor que saiu da empresa.",
+      "CRMs genéricos como RD Station, Pipedrive e HubSpot funcionam bem para vendas simples, mas travam quando a venda tem etapas técnicas, aprovação de crédito, visita, amostra ou contrato recorrente. Um CRM próprio modela exatamente essas etapas e se integra ao seu ERP e ao seu WhatsApp."
+    ],
+    "funcionalidades": [
+      { "titulo": "Funil com etapas próprias", "desc": "Etapas, campos obrigatórios e regras de avanço definidos pelo seu processo comercial, não por um modelo pronto." },
+      { "titulo": "WhatsApp dentro do CRM", "desc": "Conversas registradas no histórico do lead, com envio de mensagens e modelos direto da ficha do cliente." },
+      { "titulo": "Distribuição de leads", "desc": "Rodízio automático por região, produto ou carga de trabalho, com alerta quando o lead fica sem resposta." },
+      { "titulo": "Propostas em PDF", "desc": "Geração de proposta com tabela de preços, descontos por alçada e assinatura eletrônica do cliente." },
+      { "titulo": "Metas e comissões", "desc": "Acompanhamento de meta individual e da equipe, com cálculo automático de comissão por regra." },
+      { "titulo": "Previsão de receita", "desc": "Forecast ponderado pela probabilidade de cada etapa e relatório de motivos de perda." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: empresa de energia solar",
+      "texto": "Uma empresa de energia solar recebe leads de anúncios, faz visita técnica, dimensiona o sistema, aprova financiamento e só então fecha. Em um CRM genérico isso vira improviso. No CRM sob medida, cada etapa tem os campos certos — consumo, telhado, simulação de crédito —, o técnico recebe a visita no celular e o gestor vê quanto está parado em cada fase e por quê."
+    },
+    "integracoes": ["WhatsApp Business API", "Meta Ads e Google Ads (captura de leads)", "Formulários do site", "ERP e emissão de notas", "Assinatura eletrônica", "Google Agenda"],
+    "precos": [
+      { "label": "CRM de vendas", "valor": "R$ 3.997 – R$ 8.997", "desc": "Funil próprio, cadastro de leads, tarefas e relatórios de conversão." },
+      { "label": "CRM com WhatsApp", "valor": "R$ 9.000 – R$ 18.000", "desc": "Conversas integradas, distribuição automática, propostas e comissões." },
+      { "label": "CRM + automação", "valor": "R$ 18.000+", "desc": "Cadências automáticas, lead scoring com IA e integração completa com ERP." }
+    ],
+    "prazo": "30 a 75 dias, conforme o número de integrações.",
+    "faqs": [
+      { "question": "Por que não usar um CRM pronto como Pipedrive ou RD?", "answer": "Se o seu processo de vendas é simples, um CRM pronto resolve. O CRM sob medida compensa quando você paga por muitos usuários, precisa de etapas técnicas específicas ou quer o WhatsApp e o ERP integrados sem depender de conectores que quebram." },
+      { "question": "Dá para importar os leads do meu CRM atual?", "answer": "Sim. Exportamos contatos, negócios e histórico do CRM atual e importamos no novo, mantendo o vínculo entre leads, empresas e oportunidades." },
+      { "question": "O CRM funciona no celular do vendedor externo?", "answer": "Sim. A interface é responsiva e pode ganhar um app com modo offline para vendedores que visitam clientes em áreas sem sinal." },
+      { "question": "O CRM ajuda a medir o retorno dos anúncios?", "answer": "Sim. Cada lead guarda a origem, a campanha e o anúncio. No relatório você vê quanto cada campanha gerou de vendas fechadas, não só de cliques." }
+    ]
+  },
+  "sistema-de-agendamento": {
+    "intro": [
+      "Um sistema de agendamento online elimina o vai e vem de mensagens para marcar horário. O cliente escolhe o serviço, o profissional e o horário disponível em uma página com a sua marca, recebe a confirmação no WhatsApp e é lembrado antes do compromisso.",
+      "Ferramentas prontas cobram por profissional e limitam regras. Um sistema próprio respeita a sua lógica: intervalos diferentes por serviço, salas e equipamentos compartilhados, sinal via Pix para reduzir faltas e agenda de profissionais que trabalham em mais de uma unidade."
+    ],
+    "funcionalidades": [
+      { "titulo": "Página de agendamento com sua marca", "desc": "Link próprio para Instagram, Google e WhatsApp com serviços, preços e horários livres em tempo real." },
+      { "titulo": "Regras de disponibilidade", "desc": "Duração por serviço, intervalo entre atendimentos, bloqueio de feriados e agendas por unidade." },
+      { "titulo": "Sinal ou pagamento antecipado", "desc": "Cobrança via Pix ou cartão no momento da reserva, com política de cancelamento configurável." },
+      { "titulo": "Lembretes automáticos", "desc": "Confirmação e lembrete por WhatsApp 24 horas e 2 horas antes, com botão para confirmar ou remarcar." },
+      { "titulo": "Lista de espera", "desc": "Quando alguém cancela, o sistema oferece o horário automaticamente para quem estava esperando." },
+      { "titulo": "Relatório de ocupação", "desc": "Taxa de ocupação por profissional, horários ociosos e índice de faltas por cliente." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: estúdio com 6 profissionais",
+      "texto": "Um estúdio que marca horários pelo WhatsApp perde cerca de uma hora por dia só respondendo mensagens e tem alto índice de faltas. Com agendamento online, sinal de 30% via Pix e lembrete automático, a recepção passa a cuidar do atendimento presencial, as faltas caem e os horários cancelados são preenchidos pela lista de espera."
+    },
+    "integracoes": ["WhatsApp Business API", "Google Agenda e Outlook", "Pix e cartão (Asaas, Mercado Pago, Stripe)", "Google Meu Negócio (Reservar)", "Instagram (botão de agendamento)"],
+    "precos": [
+      { "label": "Agenda online", "valor": "R$ 2.997 – R$ 5.997", "desc": "Página de agendamento, regras de horário e lembretes por e-mail." },
+      { "label": "Agenda + WhatsApp e Pix", "valor": "R$ 6.000 – R$ 12.000", "desc": "Lembretes no WhatsApp, sinal antecipado e lista de espera." },
+      { "label": "Multiunidade", "valor": "R$ 12.000+", "desc": "Várias unidades, salas e equipamentos compartilhados e app para clientes." }
+    ],
+    "prazo": "20 a 45 dias.",
+    "faqs": [
+      { "question": "O sistema reduz as faltas dos clientes?", "answer": "Sim. A combinação de lembrete por WhatsApp com confirmação ativa e, quando faz sentido, cobrança de sinal é a forma mais eficaz de reduzir faltas. O relatório mostra quais clientes faltam com frequência." },
+      { "question": "Consigo bloquear horários manualmente?", "answer": "Sim. Cada profissional ou a recepção pode bloquear horários, cadastrar folgas e férias. Os bloqueios aparecem imediatamente na página pública." },
+      { "question": "Funciona para atendimento online?", "answer": "Sim. Para consultas e aulas online, o sistema gera o link da videochamada automaticamente e o envia junto com a confirmação." },
+      { "question": "Posso ter preços diferentes por profissional?", "answer": "Pode. O mesmo serviço pode ter valor e duração diferentes conforme o profissional, a unidade ou o dia da semana." }
+    ]
+  },
+  "sistema-pdv": {
+    "intro": [
+      "Um sistema PDV sob medida é o caixa da sua loja funcionando do jeito que o seu balcão funciona: venda rápida por código de barras ou atalho, vários meios de pagamento na mesma venda e emissão fiscal sem travar a fila.",
+      "Ele faz sentido para redes que querem um frente de caixa próprio, integrado ao estoque central e ao financeiro, sem pagar licença por terminal e sem depender de um fornecedor que não atende as regras da operação — como vendas por peso, fiado controlado ou comanda."
+    ],
+    "funcionalidades": [
+      { "titulo": "Venda rápida", "desc": "Leitura de código de barras, busca por nome, atalhos de teclado e produtos favoritos para vender em segundos." },
+      { "titulo": "Pagamento misto", "desc": "Dinheiro, Pix, débito, crédito e vale na mesma venda, com troco calculado e integração com a maquininha (TEF)." },
+      { "titulo": "Emissão de NFC-e", "desc": "Cupom fiscal eletrônico com contingência offline para a loja continuar vendendo se a internet cair." },
+      { "titulo": "Abertura e fechamento de caixa", "desc": "Sangria, suprimento, conferência por operador e relatório de diferenças ao fechar o turno." },
+      { "titulo": "Estoque em tempo real", "desc": "Cada venda baixa o estoque da loja, com alerta de ruptura e sugestão de reposição." },
+      { "titulo": "Balança e periféricos", "desc": "Integração com balança, impressora térmica, gaveta e leitor, sem configuração complicada." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: rede de três empórios",
+      "texto": "Uma rede de empórios usa um PDV diferente em cada loja e só descobre o que vendeu no dia seguinte. Com um PDV próprio, os três caixas vendem com NFC-e, o estoque é unificado, a venda por peso vem direto da balança e o dono vê o faturamento por loja em tempo real — inclusive quando a internet de uma unidade cai, porque o caixa continua operando offline e sincroniza depois."
+    },
+    "integracoes": ["SEFAZ (NFC-e e SAT onde aplicável)", "TEF e maquininhas (Stone, Cielo, PagSeguro)", "Pix com QR Code dinâmico", "Balanças Toledo e Filizola", "ERP e e-commerce"],
+    "precos": [
+      { "label": "PDV de loja única", "valor": "R$ 4.997 – R$ 9.997", "desc": "Frente de caixa com NFC-e, pagamento misto e controle de estoque." },
+      { "label": "PDV para rede", "valor": "R$ 10.000 – R$ 25.000", "desc": "Várias lojas, estoque central, TEF e modo offline." },
+      { "label": "PDV + retaguarda", "valor": "R$ 25.000+", "desc": "Compras, precificação, promoções e integração com e-commerce." }
+    ],
+    "prazo": "45 a 90 dias, incluindo homologação fiscal.",
+    "faqs": [
+      { "question": "O PDV funciona sem internet?", "answer": "Sim. O caixa opera em modo offline, emite NFC-e em contingência e sincroniza vendas e estoque quando a conexão volta. A loja não para." },
+      { "question": "Preciso trocar minha maquininha?", "answer": "Normalmente não. Integramos com as principais adquirentes via TEF ou com o app da maquininha. Se a sua não tiver integração, o valor é lançado manualmente com conferência no fechamento." },
+      { "question": "O sistema emite nota fiscal?", "answer": "Sim. Emite NFC-e e, onde a legislação exige, SAT. Para vendas a empresas, emite NF-e. As regras tributárias são configuradas com o seu contador." },
+      { "question": "Quantos caixas posso ter?", "answer": "Quantos precisar. Não cobramos licença por terminal. Cada novo caixa é só mais um computador ou tablet conectado." }
+    ]
+  },
+  "sistema-financeiro": {
+    "intro": [
+      "Um sistema financeiro sob medida dá ao gestor uma visão confiável do dinheiro da empresa: o que entra, o que sai, o que está atrasado e quanto vai sobrar no fim do mês. Ele substitui a planilha de fluxo de caixa que ninguém atualiza e o extrato bancário que só é conferido quando falta dinheiro.",
+      "O diferencial de um sistema próprio é a integração: vendas, compras, folha e contratos geram lançamentos automaticamente, a conciliação bancária é feita por API e o plano de contas segue o modelo que o seu contador e a sua diretoria usam."
+    ],
+    "funcionalidades": [
+      { "titulo": "Conciliação bancária automática", "desc": "Extratos importados por API ou OFX e casados com os lançamentos, destacando só o que precisa de atenção." },
+      { "titulo": "Cobrança recorrente", "desc": "Emissão de boletos e Pix em lote, régua de cobrança por WhatsApp e baixa automática do pagamento." },
+      { "titulo": "Fluxo de caixa projetado", "desc": "Previsão diária para 90 dias com base em contas agendadas, contratos e histórico de recebimento." },
+      { "titulo": "Centro de custo e rateio", "desc": "Despesas distribuídas por departamento, projeto ou unidade para mostrar o resultado real de cada área." },
+      { "titulo": "DRE gerencial", "desc": "Demonstrativo mensal por regime de caixa e de competência, comparando com orçamento e ano anterior." },
+      { "titulo": "Aprovação de pagamentos", "desc": "Contas acima de um valor exigem aprovação por alçada antes de serem liberadas para pagamento." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: empresa de serviços com contratos mensais",
+      "texto": "Uma empresa com 300 contratos mensais emite boletos à mão e passa dias conferindo quem pagou. Com o sistema financeiro, os boletos e Pix saem automaticamente no dia certo, o cliente recebe lembrete no WhatsApp, o pagamento é baixado sozinho e a inadimplência aparece em um painel com a lista de quem cobrar hoje."
+    },
+    "integracoes": ["Open Finance e APIs bancárias (Inter, Itaú, Bradesco, Sicoob)", "Asaas, Iugu e Pagar.me", "Arquivos CNAB 240/400", "Sistemas contábeis", "WhatsApp para régua de cobrança"],
+    "precos": [
+      { "label": "Financeiro essencial", "valor": "R$ 2.997 – R$ 6.997", "desc": "Contas a pagar e receber, fluxo de caixa e categorias." },
+      { "label": "Financeiro integrado", "valor": "R$ 7.000 – R$ 16.000", "desc": "Conciliação por API, cobrança recorrente e DRE gerencial." },
+      { "label": "Controladoria", "valor": "R$ 16.000+", "desc": "Multiempresa, orçamento versus realizado, rateios e aprovação por alçada." }
+    ],
+    "prazo": "30 a 60 dias.",
+    "faqs": [
+      { "question": "O sistema faz conciliação bancária sozinho?", "answer": "Faz a maior parte. Conectado ao banco por API ou Open Finance, ele casa automaticamente os pagamentos com os lançamentos e deixa para você só as divergências." },
+      { "question": "Substitui o trabalho do contador?", "answer": "Não. O sistema organiza a gestão financeira da empresa; a contabilidade fiscal continua com o contador. O que muda é que você envia informação organizada e o contador ganha tempo." },
+      { "question": "Consigo ver o resultado por filial ou projeto?", "answer": "Sim. Com centros de custo e rateio, cada receita e despesa é atribuída à unidade certa e você vê a margem de cada uma." },
+      { "question": "É seguro conectar a conta bancária?", "answer": "A conexão usa as APIs oficiais dos bancos, com credenciais criptografadas e acesso somente leitura quando o objetivo é conciliação. Pagamentos exigem aprovação de um usuário autorizado." }
+    ]
+  },
+  "controle-de-estoque": {
+    "intro": [
+      "Um sistema de controle de estoque sob medida responde às três perguntas que tiram o sono de quem vende produto físico: o que eu tenho, onde está e quando preciso comprar. Ele acaba com a diferença entre o sistema e a prateleira e com o capital parado em mercadoria que não gira.",
+      "Cada operação tem suas particularidades — lote e validade, número de série, grade de tamanho e cor, kits, consignação — e é justamente aí que os sistemas genéricos falham. Um controle próprio modela o seu produto do jeito certo desde o cadastro."
+    ],
+    "funcionalidades": [
+      { "titulo": "Endereçamento", "desc": "Localização por depósito, corredor e prateleira para o separador encontrar o item sem procurar." },
+      { "titulo": "Lote, validade e série", "desc": "Rastreamento completo de cada unidade, com alerta de vencimento e saída pelo método PEPS." },
+      { "titulo": "Coletor e código de barras", "desc": "Entrada, separação e inventário pelo celular com leitura de código, sem digitação." },
+      { "titulo": "Inventário rotativo", "desc": "Contagens parciais programadas que mantêm o estoque confiável sem fechar a loja para balanço." },
+      { "titulo": "Ponto de pedido", "desc": "Sugestão de compra baseada em giro, prazo do fornecedor e estoque de segurança por item." },
+      { "titulo": "Curva ABC", "desc": "Classificação dos produtos por faturamento e giro para priorizar compras e liquidar parados." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: loja de autopeças",
+      "texto": "Uma loja de autopeças com 8 mil itens vende pelo balcão, pelo telefone e por marketplace, e vive vendendo o que não tem. Com o controle de estoque, cada peça tem endereço na prateleira, o saldo é único para todos os canais, a separação é conferida por código de barras e o comprador recebe toda segunda uma lista do que repor, com base no giro real."
+    },
+    "integracoes": ["ERP e PDV", "Mercado Livre, Shopee e Amazon", "Leitores e coletores Android", "Emissão de NF-e de entrada (XML)", "Transportadoras e etiquetas"],
+    "precos": [
+      { "label": "Estoque básico", "valor": "R$ 2.997 – R$ 6.997", "desc": "Cadastro, entradas e saídas, saldo por depósito e alertas de mínimo." },
+      { "label": "Estoque com coletor", "valor": "R$ 7.000 – R$ 14.000", "desc": "Código de barras, endereçamento, lote e validade e inventário rotativo." },
+      { "label": "WMS sob medida", "valor": "R$ 14.000+", "desc": "Separação por onda, múltiplos armazéns e integração com marketplaces." }
+    ],
+    "prazo": "30 a 60 dias.",
+    "faqs": [
+      { "question": "O sistema funciona com vendas em marketplace?", "answer": "Sim. O saldo é sincronizado com Mercado Livre, Shopee e outros canais, evitando vender o mesmo item duas vezes." },
+      { "question": "Preciso comprar coletores caros?", "answer": "Não. Um celular Android com câmera ou um leitor Bluetooth barato já funciona. Coletores industriais só são necessários em volumes muito altos." },
+      { "question": "Como é feita a primeira contagem?", "answer": "Ajudamos a planejar o inventário inicial por setor, com etiquetas e leitura por código de barras. Depois disso, o inventário rotativo mantém o estoque correto." },
+      { "question": "O sistema controla produtos com grade?", "answer": "Sim. Tamanho, cor, voltagem e outras variações são tratadas como grade, com saldo por combinação e relatórios consolidados por produto." }
+    ]
+  },
+  "sistema-de-rh": {
+    "intro": [
+      "Um sistema de RH sob medida centraliza a vida do colaborador na empresa: admissão, documentos, ponto, férias, avaliações e desligamento. É para empresas que já não conseguem gerir pessoas por e-mail e pasta física e querem dar autonomia ao funcionário para resolver o simples sem passar pelo RH.",
+      "Soluções prontas cobram por colaborador ativo, o que pesa em empresas com muitos operacionais ou alta rotatividade. Um sistema próprio tem custo fixo e segue as políticas internas — escalas, bancos de horas, benefícios e ciclos de avaliação — da sua empresa."
+    ],
+    "funcionalidades": [
+      { "titulo": "Admissão digital", "desc": "O candidato envia documentos pelo celular, assina o contrato eletronicamente e já chega com cadastro completo." },
+      { "titulo": "Ponto e escalas", "desc": "Registro de ponto por app com geolocalização, escalas 12x36 e revezamento e banco de horas automático." },
+      { "titulo": "Férias e ausências", "desc": "Solicitação pelo colaborador, aprovação do gestor e controle de períodos aquisitivos e vencimentos." },
+      { "titulo": "Portal do colaborador", "desc": "Holerites, informes de rendimento, comunicados e atualização de dados sem abrir chamado." },
+      { "titulo": "Avaliação de desempenho", "desc": "Ciclos de avaliação 90 ou 360 graus, metas individuais e plano de desenvolvimento." },
+      { "titulo": "Indicadores de pessoas", "desc": "Turnover, absenteísmo, horas extras e custo de pessoal por área em tempo real." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: rede de lojas com 180 colaboradores",
+      "texto": "Uma rede com alta rotatividade gasta dias em cada admissão, perde documentos e recebe dezenas de pedidos de holerite por semana. Com o sistema de RH, a admissão é feita pelo celular do candidato, o ponto é batido no app, a folha recebe os dados já tratados e o colaborador consulta holerite e férias sozinho. O RH deixa de ser balcão de atendimento."
+    },
+    "integracoes": ["eSocial (via sistema de folha)", "Sistemas de folha (Domínio, Senior, Alterdata)", "Assinatura eletrônica", "Relógios de ponto REP", "Benefícios (VR, VA, plano de saúde)"],
+    "precos": [
+      { "label": "RH essencial", "valor": "R$ 4.997 – R$ 9.997", "desc": "Cadastro, documentos, férias e portal do colaborador." },
+      { "label": "RH + ponto", "valor": "R$ 10.000 – R$ 20.000", "desc": "Ponto por app, escalas, banco de horas e integração com a folha." },
+      { "label": "Gestão de pessoas", "valor": "R$ 20.000+", "desc": "Avaliação de desempenho, recrutamento e indicadores avançados." }
+    ],
+    "prazo": "45 a 90 dias.",
+    "faqs": [
+      { "question": "O sistema calcula a folha de pagamento?", "answer": "Normalmente integramos com o sistema de folha que o seu contador já usa, enviando ponto, faltas e eventos prontos. Assim você não assume o risco de manter cálculos trabalhistas e tributários." },
+      { "question": "O ponto por aplicativo é válido legalmente?", "answer": "O registro eletrônico de ponto por programa (REP-P) é previsto na Portaria 671 do MTE. O sistema é desenvolvido seguindo os requisitos dessa norma, como comprovante ao trabalhador e arquivos fiscais." },
+      { "question": "Os dados dos colaboradores ficam protegidos?", "answer": "Sim. Documentos e dados pessoais são criptografados, o acesso é restrito por perfil e cada consulta fica registrada, atendendo às exigências da LGPD." },
+      { "question": "Funciona para equipes externas?", "answer": "Sim. O app permite bater ponto com geolocalização e foto, e o gestor define áreas permitidas para cada equipe." }
+    ]
+  },
+  "assinatura-digital": {
+    "intro": [
+      "Um sistema de assinatura digital próprio permite que sua empresa envie contratos, termos e propostas para assinatura dentro da sua própria plataforma, com validade jurídica e trilha de auditoria. É ideal para quem assina dezenas ou centenas de documentos por mês e paga caro por envelope em ferramentas como DocuSign e Clicksign.",
+      "Além da economia, o sistema interno elimina etapas: o contrato é gerado automaticamente com os dados do cliente, enviado por WhatsApp ou e-mail, assinado pelo celular e arquivado junto ao cadastro — sem baixar, subir e renomear PDF."
+    ],
+    "funcionalidades": [
+      { "titulo": "Modelos com preenchimento automático", "desc": "Contratos gerados a partir do CRM ou ERP com os dados do cliente, valores e cláusulas variáveis." },
+      { "titulo": "Assinatura eletrônica com evidências", "desc": "Registro de IP, geolocalização, data e hora, selfie e código por SMS ou WhatsApp para cada assinante." },
+      { "titulo": "Certificado ICP-Brasil", "desc": "Opção de assinatura com certificado digital A1 ou A3 quando o documento exige esse nível de validade." },
+      { "titulo": "Fluxo com vários signatários", "desc": "Ordem de assinatura, testemunhas, aprovação interna antes do envio e lembretes automáticos." },
+      { "titulo": "Verificação pública", "desc": "Página de validação por código ou QR Code para qualquer pessoa conferir a autenticidade do documento." },
+      { "titulo": "Arquivo organizado", "desc": "Documentos assinados guardados por cliente, com busca, vencimentos e alertas de renovação." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: imobiliária com 400 contratos por mês",
+      "texto": "Uma imobiliária que paga por envelope em plataforma externa e monta cada contrato no Word gasta horas por dia e uma boa quantia por mês. Com assinatura própria, o contrato de locação é gerado a partir da ficha do imóvel, enviado a locador, locatário, fiadores e testemunhas pelo WhatsApp, assinado pelo celular e arquivado automaticamente."
+    },
+    "integracoes": ["CRM e ERP", "WhatsApp e e-mail", "Certificados ICP-Brasil (A1 e A3)", "Armazenamento em nuvem (S3, Google Drive)", "Validação facial"],
+    "precos": [
+      { "label": "Assinatura eletrônica", "valor": "R$ 3.997 – R$ 7.997", "desc": "Modelos, envio, assinatura com evidências e arquivo." },
+      { "label": "Assinatura integrada", "valor": "R$ 8.000 – R$ 15.000", "desc": "Geração automática a partir de outros sistemas e fluxos com aprovação." },
+      { "label": "Plataforma de documentos", "valor": "R$ 15.000+", "desc": "ICP-Brasil, validação facial, múltiplas empresas e API para parceiros." }
+    ],
+    "prazo": "30 a 60 dias.",
+    "faqs": [
+      { "question": "A assinatura eletrônica tem validade jurídica?", "answer": "Sim. A MP 2.200-2/2001 e a Lei 14.063/2020 reconhecem a assinatura eletrônica quando as partes a aceitam e há evidências de autoria e integridade. Para documentos que exigem assinatura qualificada, o sistema suporta certificado ICP-Brasil." },
+      { "question": "Compensa mais que pagar DocuSign ou Clicksign?", "answer": "Compensa quando o volume é alto ou quando a assinatura faz parte de um processo seu, como vendas ou locação. O custo por documento cai a praticamente zero e o fluxo fica dentro do seu sistema." },
+      { "question": "O assinante precisa criar conta?", "answer": "Não. Ele recebe um link, confirma a identidade por código e assina pelo celular em poucos segundos." },
+      { "question": "Como provo quem assinou em caso de disputa?", "answer": "Cada documento tem um relatório de auditoria com todas as evidências coletadas e um hash que comprova que o conteúdo não foi alterado após a assinatura." }
+    ]
+  },
+  "sistema-de-ticketing": {
+    "intro": [
+      "Um sistema de suporte com tickets organiza todas as solicitações de clientes em uma fila única, com prioridade, responsável e prazo. Chega de pedidos perdidos no e-mail de alguém, cliente cobrando pela terceira vez e ninguém sabendo quanto tempo a equipe leva para resolver.",
+      "Ferramentas como Zendesk e Freshdesk cobram por agente e em dólar. Um sistema próprio integra o suporte ao seu produto — o atendente vê o plano, os pedidos e o histórico técnico do cliente na mesma tela — e segue os seus acordos de nível de serviço."
+    ],
+    "funcionalidades": [
+      { "titulo": "Caixa de entrada unificada", "desc": "E-mail, WhatsApp, formulário do site e chat viram tickets na mesma fila, sem perder o histórico." },
+      { "titulo": "SLA por plano de cliente", "desc": "Prazos de primeira resposta e resolução diferentes por contrato, com alerta antes de estourar." },
+      { "titulo": "Roteamento automático", "desc": "Tickets distribuídos por assunto, produto ou nível técnico, com escalonamento para o segundo nível." },
+      { "titulo": "Base de conhecimento", "desc": "Artigos de ajuda que o cliente consulta antes de abrir chamado e que o atendente usa para responder." },
+      { "titulo": "Respostas com IA", "desc": "Sugestão de resposta baseada na base de conhecimento e em tickets anteriores semelhantes." },
+      { "titulo": "Satisfação e indicadores", "desc": "Pesquisa CSAT ao fechar, tempo médio de resolução e volume por categoria e por atendente." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: empresa de software com 2 mil clientes",
+      "texto": "Uma empresa de software recebe pedidos de suporte por e-mail, WhatsApp e telefone e não sabe quanto tempo leva para resolver cada um. Com o sistema de tickets, tudo cai na mesma fila, clientes do plano premium têm prioridade automática, a IA sugere a resposta com base em artigos existentes e o gestor enxerga quais funcionalidades geram mais chamados."
+    },
+    "integracoes": ["WhatsApp Business API", "E-mail (IMAP e SMTP)", "Chat do site", "CRM e sistema de cobrança", "Slack e Microsoft Teams", "OpenAI e Claude"],
+    "precos": [
+      { "label": "Helpdesk", "valor": "R$ 3.997 – R$ 7.997", "desc": "Tickets por e-mail e formulário, status, responsáveis e relatórios." },
+      { "label": "Suporte omnichannel", "valor": "R$ 8.000 – R$ 16.000", "desc": "WhatsApp, chat, SLA por plano e base de conhecimento." },
+      { "label": "Suporte com IA", "valor": "R$ 16.000+", "desc": "Respostas sugeridas, triagem automática e autoatendimento inteligente." }
+    ],
+    "prazo": "30 a 60 dias.",
+    "faqs": [
+      { "question": "Posso atender pelo WhatsApp dentro do sistema?", "answer": "Sim. As mensagens chegam como tickets e o atendente responde pelo sistema. Vários atendentes usam o mesmo número, sem compartilhar celular." },
+      { "question": "O cliente consegue acompanhar o chamado?", "answer": "Sim. Ele recebe atualizações por e-mail ou WhatsApp e pode consultar o andamento em um portal com login." },
+      { "question": "A IA responde sozinha?", "answer": "Pode, para dúvidas simples cobertas pela base de conhecimento. Para o resto, a IA sugere a resposta e o atendente revisa antes de enviar." },
+      { "question": "Consigo migrar do Zendesk ou Freshdesk?", "answer": "Sim. Importamos tickets, clientes e artigos da base de conhecimento pelas APIs dessas ferramentas." }
+    ]
+  }
+}

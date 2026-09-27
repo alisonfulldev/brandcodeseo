@@ -63,7 +63,7 @@ export default function ContatoPage() {
                 Preencha o briefing online e receba uma proposta personalizada em até 24 horas.
               </p>
               <a
-                href="/criacao-de-sites/orcamento"
+                href="/software-sob-medida"
                 className="block w-full bg-[#0A1628] hover:bg-[#0D1E3A] text-white font-semibold py-3 rounded-full text-sm transition-colors"
               >
                 Pedir orçamento online

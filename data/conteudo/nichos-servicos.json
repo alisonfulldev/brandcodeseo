@@ -1,0 +1,281 @@
+{
+  "salao-de-beleza": {
+    "intro": [
+      "Um sistema para salão de beleza e barbearia organiza agenda por profissional, comissões, pacotes, produtos e o relacionamento com os clientes. Ele libera a recepção do telefone e do WhatsApp e ajuda o salão a manter a cadeira ocupada com clientes que voltam no intervalo certo.",
+      "Salões trabalham com profissionais autônomos, comissões diferentes por serviço, cadeiras alugadas e produtos de revenda. O sistema sob medida calcula tudo isso automaticamente e deixa claro, no fim do dia, quanto é do salão e quanto é de cada profissional."
+    ],
+    "funcionalidades": [
+      { "titulo": "Agendamento online por profissional", "desc": "Cliente escolhe serviço, profissional e horário pelo Instagram ou WhatsApp, sem ligar." },
+      { "titulo": "Comissões e repasses", "desc": "Comissão por serviço e profissional, desconto de produtos usados e fechamento automático." },
+      { "titulo": "Pacotes e assinaturas", "desc": "Planos mensais de barba e cabelo ou pacotes de escova com cobrança recorrente." },
+      { "titulo": "Retorno no tempo certo", "desc": "Lembrete para retoque de raiz, corte ou manutenção de unhas no intervalo de cada cliente." },
+      { "titulo": "Ficha técnica da cliente", "desc": "Fórmulas de coloração, alergias e preferências registradas para qualquer profissional consultar." },
+      { "titulo": "Venda de produtos", "desc": "Revenda com estoque e comissão para o profissional que indicou." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: salão com dez profissionais",
+      "texto": "Um salão calcula as comissões à mão toda semana e perde clientes que esquecem de voltar para o retoque. Com o sistema, a cliente agenda pelo link no Instagram, a fórmula da coloração fica registrada, as comissões são calculadas a cada atendimento e, quatro semanas depois, a cliente recebe no WhatsApp o lembrete do retoque com os horários livres da sua cabeleireira."
+    },
+    "integracoes": ["Instagram e Google (reservas)", "WhatsApp Business API", "Pix, cartão e assinatura recorrente", "Emissão de NFS-e", "Estoque de produtos"],
+    "precos": [
+      { "label": "Barbearia ou estúdio", "valor": "R$ 2.997 – R$ 5.997", "desc": "Agenda online, clientes, caixa e comissões." },
+      { "label": "Salão completo", "valor": "R$ 6.000 – R$ 12.000", "desc": "Assinaturas, fichas técnicas, retorno programado e produtos." },
+      { "label": "Rede de salões", "valor": "R$ 12.000+", "desc": "Várias unidades, app com marca própria e fidelidade." }
+    ],
+    "prazo": "20 a 45 dias.",
+    "faqs": [
+      { "question": "Serve para barbearia com plano mensal?", "answer": "Sim. O cliente assina o plano, a cobrança é recorrente e o sistema controla quantos cortes ou barbas foram usados no mês." },
+      { "question": "Como são calculadas as comissões?", "answer": "Cada profissional tem percentuais por serviço e produto. O sistema desconta custos definidos, como produtos usados, e gera o extrato do período." },
+      { "question": "Funciona para profissionais que alugam cadeira?", "answer": "Sim. O sistema pode registrar o aluguel da cadeira e separar o faturamento do profissional do faturamento do salão." },
+      { "question": "A cliente pode agendar pelo Instagram?", "answer": "Sim. O link de agendamento vai no botão de reserva do perfil e nos stories, mostrando apenas os horários livres." }
+    ]
+  },
+  "contabilidade": {
+    "intro": [
+      "Um sistema para escritório de contabilidade organiza as tarefas recorrentes de cada cliente, o recebimento de documentos, a entrega de guias e a comunicação — o lado da gestão do escritório que os sistemas contábeis e fiscais não cobrem. É para escritórios que controlam obrigações em planilhas e cobram documentos dos clientes pelo WhatsApp um a um.",
+      "O escritório contábil vive de prazos. Saber o que falta entregar, de qual cliente, e quem da equipe está responsável é o que evita multas e noites viradas no fim do mês."
+    ],
+    "funcionalidades": [
+      { "titulo": "Agenda de obrigações", "desc": "Tarefas mensais e anuais geradas automaticamente por cliente e regime tributário, com responsável e prazo." },
+      { "titulo": "Portal do cliente", "desc": "Cliente envia documentos e recebe guias, folhas e balancetes em uma área logada." },
+      { "titulo": "Cobrança de documentos", "desc": "Lembretes automáticos por WhatsApp e e-mail para clientes que ainda não enviaram extratos e notas." },
+      { "titulo": "Entrega de guias com confirmação", "desc": "Guias enviadas com registro de visualização, reduzindo o famoso 'não recebi'." },
+      { "titulo": "Honorários", "desc": "Cobrança recorrente de honorários, reajuste anual e controle de inadimplência." },
+      { "titulo": "Produtividade da equipe", "desc": "Tarefas concluídas, atrasadas e tempo por cliente para precificar melhor os honorários." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: escritório com 250 clientes",
+      "texto": "Um escritório contábil passa a primeira semana de cada mês cobrando documentos e a última enviando guias pelo WhatsApp. Com o sistema, as tarefas de cada cliente são criadas automaticamente, o cliente recebe lembretes para enviar extratos no portal, as guias são entregues com registro de visualização e o sócio vê quais clientes consomem mais horas do que pagam."
+    },
+    "integracoes": ["Sistemas contábeis (Domínio, Alterdata, Questor)", "WhatsApp Business API", "E-mail", "Boleto e Pix", "Assinatura eletrônica", "Armazenamento em nuvem"],
+    "precos": [
+      { "label": "Gestão de tarefas", "valor": "R$ 3.997 – R$ 7.997", "desc": "Obrigações por cliente, responsáveis, prazos e alertas." },
+      { "label": "Escritório digital", "valor": "R$ 8.000 – R$ 16.000", "desc": "Portal do cliente, cobrança de documentos, entrega de guias e honorários." },
+      { "label": "Escritório integrado", "valor": "R$ 16.000+", "desc": "Integração com o sistema contábil, automação de extração e BI." }
+    ],
+    "prazo": "30 a 75 dias.",
+    "faqs": [
+      { "question": "O sistema substitui o sistema contábil?", "answer": "Não. Ele cuida da gestão do escritório e do relacionamento com o cliente. A escrituração continua no sistema contábil, e os dois podem ser integrados." },
+      { "question": "Os clientes vão usar o portal?", "answer": "A adoção aumenta quando o portal é o único lugar em que as guias são disponibilizadas e quando os lembretes chegam pelo WhatsApp com o link direto." },
+      { "question": "Consigo saber se um cliente é lucrativo?", "answer": "Sim. Registrando o tempo gasto por cliente, o sistema compara horas consumidas com o honorário cobrado." },
+      { "question": "As tarefas são criadas automaticamente?", "answer": "Sim. Com base no regime tributário e nos serviços contratados, as obrigações de cada competência são geradas com prazo e responsável." }
+    ]
+  },
+  "advocacia": {
+    "intro": [
+      "Um sistema para escritório de advocacia organiza processos, prazos, audiências, documentos, honorários e atendimento aos clientes. Ele reduz o risco de perder prazos, dá ao cliente acompanhamento sem que ele precise ligar e mostra ao sócio a rentabilidade de cada área e cada caso.",
+      "Escritórios têm modelos diferentes — contencioso de massa, consultivo, trabalhista, previdenciário — com fluxos e formas de cobrança próprias. O sistema sob medida segue o modelo do seu escritório e se integra aos tribunais e às ferramentas que a equipe já usa."
+    ],
+    "funcionalidades": [
+      { "titulo": "Controle de processos", "desc": "Cadastro de processos com partes, fases, andamentos e documentos, por cliente e por área." },
+      { "titulo": "Captura de publicações e prazos", "desc": "Intimações e publicações capturadas automaticamente e transformadas em tarefas com prazo e responsável." },
+      { "titulo": "Agenda de audiências", "desc": "Audiências e compromissos com alertas e distribuição entre advogados e correspondentes." },
+      { "titulo": "Geração de peças", "desc": "Modelos de petições e contratos preenchidos com dados do processo, com apoio de IA." },
+      { "titulo": "Honorários e timesheet", "desc": "Honorários fixos, por êxito e por hora, com registro de horas e faturamento por cliente." },
+      { "titulo": "Portal do cliente", "desc": "Cliente acompanha andamentos em linguagem simples, documentos e pagamentos." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: escritório previdenciário com 1.500 processos",
+      "texto": "Um escritório previdenciário atende muitos clientes que ligam com frequência para saber do processo e controla prazos em uma planilha compartilhada. Com o sistema, as publicações viram tarefas com prazo automaticamente, o cliente recebe no WhatsApp um resumo em linguagem simples a cada movimentação e os honorários de êxito são calculados quando o benefício é concedido."
+    },
+    "integracoes": ["Tribunais (PJe, e-SAJ, Projudi)", "Serviços de captura de publicações", "WhatsApp Business API", "Assinatura eletrônica", "OpenAI e Claude", "Boleto e Pix"],
+    "precos": [
+      { "label": "Escritório pequeno", "valor": "R$ 3.997 – R$ 8.997", "desc": "Processos, prazos, agenda, documentos e clientes." },
+      { "label": "Escritório estruturado", "valor": "R$ 9.000 – R$ 20.000", "desc": "Captura de publicações, honorários, portal do cliente e IA." },
+      { "label": "Contencioso de massa", "valor": "R$ 20.000+", "desc": "Alto volume, automação de peças, correspondentes e BI." }
+    ],
+    "prazo": "45 a 90 dias.",
+    "faqs": [
+      { "question": "O sistema captura as publicações automaticamente?", "answer": "Sim, por integração com serviços de captura de publicações e consulta aos tribunais. Cada publicação é vinculada ao processo e gera uma tarefa com prazo." },
+      { "question": "A IA pode redigir petições?", "answer": "A IA pode gerar minutas a partir dos modelos do escritório e dos dados do processo. A revisão do advogado é sempre necessária." },
+      { "question": "O cliente consegue acompanhar o processo?", "answer": "Sim. O portal e as mensagens traduzem os andamentos para linguagem simples, reduzindo ligações e aumentando a satisfação." },
+      { "question": "Os dados ficam protegidos pelo sigilo profissional?", "answer": "Sim. Acesso por perfil, criptografia, registro de acessos e hospedagem segura, atendendo à LGPD e ao dever de sigilo." }
+    ]
+  },
+  "agencia-de-marketing": {
+    "intro": [
+      "Um sistema para agência de marketing organiza a operação de vários clientes ao mesmo tempo: briefings, pautas, produção, aprovações, entregas, horas trabalhadas e relatórios de resultado. Ele tira a agência do caos de grupos de WhatsApp por cliente e aprovações perdidas no e-mail.",
+      "A rentabilidade de uma agência depende de saber quanto tempo cada cliente consome. Com as horas registradas por tarefa, o sistema mostra quais contratos dão lucro e quais precisam ser renegociados."
+    ],
+    "funcionalidades": [
+      { "titulo": "Fluxo de produção", "desc": "Demandas por cliente com etapas de briefing, criação, revisão, aprovação e publicação." },
+      { "titulo": "Aprovação pelo cliente", "desc": "Cliente aprova peças e calendários por link, com comentários direto na imagem." },
+      { "titulo": "Calendário editorial", "desc": "Planejamento de posts por cliente e rede, com status de produção." },
+      { "titulo": "Registro de horas", "desc": "Horas por tarefa e cliente, comparadas com o que o contrato prevê." },
+      { "titulo": "Relatórios automáticos", "desc": "Resultados de anúncios e redes sociais consolidados em relatórios com a marca da agência." },
+      { "titulo": "Contratos e faturamento", "desc": "Fee mensal, projetos avulsos e mídia, com cobrança recorrente e controle de repasses." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: agência com 30 clientes de redes sociais",
+      "texto": "Uma agência aprova posts por WhatsApp, perde versões e não sabe quais clientes são deficitários. Com o sistema, cada cliente aprova o calendário do mês por link, os designers registram as horas por tarefa, os relatórios de resultado são gerados automaticamente e o sócio descobre que alguns clientes consomem bem mais horas do que o contrato cobre."
+    },
+    "integracoes": ["Meta Business Suite e Google Ads", "Google Analytics 4", "Google Drive e Figma", "Slack e WhatsApp", "Boleto e Pix", "OpenAI e Claude"],
+    "precos": [
+      { "label": "Operação da agência", "valor": "R$ 3.997 – R$ 8.997", "desc": "Demandas, fluxo de produção, aprovações e calendário." },
+      { "label": "Agência completa", "valor": "R$ 9.000 – R$ 18.000", "desc": "Horas, rentabilidade por cliente, relatórios e faturamento." },
+      { "label": "Plataforma white label", "valor": "R$ 18.000+", "desc": "Portal para clientes com a marca da agência e dados em tempo real." }
+    ],
+    "prazo": "30 a 60 dias.",
+    "faqs": [
+      { "question": "O cliente consegue aprovar as peças pelo sistema?", "answer": "Sim. Ele recebe um link, vê as peças no formato final, comenta e aprova. Tudo fica registrado com data e versão." },
+      { "question": "Os relatórios puxam os dados das plataformas?", "answer": "Sim. Integramos com Meta, Google Ads e Analytics e geramos relatórios com a marca da agência automaticamente." },
+      { "question": "A equipe vai registrar as horas?", "answer": "O registro é feito ao iniciar e concluir cada tarefa, com poucos cliques. Sem isso, não há como medir a rentabilidade por cliente." },
+      { "question": "Por que não usar Trello ou ClickUp?", "answer": "Para organizar tarefas, funcionam bem. O sistema sob medida junta tarefas, aprovações do cliente, horas, relatórios e financeiro em um só lugar, com a sua forma de trabalhar." }
+    ]
+  },
+  "eventos": {
+    "intro": [
+      "Um sistema para empresas de eventos gerencia inscrições, venda de ingressos, credenciamento, fornecedores, orçamentos e o dia do evento. Serve para organizadores de congressos, feiras, casamentos, festas corporativas e eventos esportivos que ainda controlam listas em planilhas e cobram participantes manualmente.",
+      "Cada evento é um projeto com prazo fixo e muitas partes móveis. O sistema dá visibilidade do que está contratado, do que foi pago e de quem está confirmado — e evita a correria na porta com uma lista impressa."
+    ],
+    "funcionalidades": [
+      { "titulo": "Inscrições e ingressos", "desc": "Página do evento com lotes, cupons, meia-entrada e pagamento por Pix ou cartão." },
+      { "titulo": "Credenciamento com QR Code", "desc": "Check-in rápido pelo celular, impressão de crachás e controle de acesso por área." },
+      { "titulo": "Gestão de fornecedores", "desc": "Contratos, orçamentos, pagamentos e cronograma de cada fornecedor por evento." },
+      { "titulo": "Orçamento e margem por evento", "desc": "Custos previstos e realizados, receita e margem de cada evento." },
+      { "titulo": "Comunicação com participantes", "desc": "Confirmações, lembretes, informações de acesso e certificados por e-mail e WhatsApp." },
+      { "titulo": "Programação e palestrantes", "desc": "Agenda de atividades, salas, palestrantes e inscrições por atividade." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: organizadora de congressos médicos",
+      "texto": "Uma organizadora vende inscrições por formulário, confere pagamentos no extrato e forma filas enormes no credenciamento. Com o sistema, as inscrições são pagas online com confirmação imediata, cada participante recebe um QR Code, o check-in leva segundos, a presença em cada palestra é registrada e os certificados com carga horária são enviados automaticamente ao final."
+    },
+    "integracoes": ["Pix, cartão e boleto", "WhatsApp e e-mail", "Impressoras de crachá", "Plataformas de transmissão", "Emissão de NFS-e"],
+    "precos": [
+      { "label": "Inscrições e check-in", "valor": "R$ 2.997 – R$ 6.997", "desc": "Página do evento, pagamentos, QR Code e credenciamento." },
+      { "label": "Gestão de eventos", "valor": "R$ 7.000 – R$ 15.000", "desc": "Fornecedores, orçamento por evento, programação e certificados." },
+      { "label": "Plataforma de eventos", "valor": "R$ 15.000+", "desc": "Vários organizadores, eventos híbridos e aplicativo do evento." }
+    ],
+    "prazo": "30 a 60 dias.",
+    "faqs": [
+      { "question": "Compensa ter sistema próprio em vez de usar Sympla?", "answer": "Compensa para quem organiza eventos com frequência e volume, pela economia nas taxas e pelo controle dos dados dos participantes. Para eventos esporádicos, plataformas prontas costumam bastar." },
+      { "question": "O check-in funciona sem internet?", "answer": "Sim. O app de credenciamento baixa a lista antes do evento e sincroniza os check-ins quando a conexão voltar." },
+      { "question": "O sistema emite certificados?", "answer": "Sim, com base na presença registrada, incluindo carga horária por atividade e código de validação." },
+      { "question": "Serve para eventos sociais, como casamentos?", "answer": "Sim. Nesse caso o foco é gestão de fornecedores, orçamento, cronograma e lista de convidados com confirmação de presença." }
+    ]
+  },
+  "financeiro": {
+    "intro": [
+      "Desenvolvemos sistemas para empresas do setor financeiro: correspondentes bancários, fintechs, securitizadoras, factorings, cooperativas de crédito e consultorias de investimento. São operações que exigem cálculos precisos, trilha de auditoria e segurança da informação acima da média.",
+      "A diferença de um sistema sob medida nesse setor está nas regras: esteiras de crédito com etapas próprias, políticas de risco, cálculos de taxas e parcelas e integrações com bancos e birôs que produtos prontos raramente atendem por completo."
+    ],
+    "funcionalidades": [
+      { "titulo": "Esteira de crédito", "desc": "Proposta, análise documental, consulta a birôs, aprovação por alçada e formalização digital." },
+      { "titulo": "Motor de regras e risco", "desc": "Políticas de crédito configuráveis, score próprio e decisões automáticas ou assistidas." },
+      { "titulo": "Cálculo financeiro", "desc": "Simulações, tabelas Price e SAC, IOF, juros, multa e antecipação calculados com precisão." },
+      { "titulo": "Onboarding digital (KYC)", "desc": "Validação de identidade, prova de vida e verificação de documentos." },
+      { "titulo": "Carteira e cobrança", "desc": "Acompanhamento de contratos, parcelas, renegociação e régua de cobrança." },
+      { "titulo": "Auditoria e compliance", "desc": "Registro imutável de ações, relatórios regulatórios e controles de prevenção à lavagem de dinheiro." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: correspondente bancário de crédito consignado",
+      "texto": "Um correspondente com dezenas de digitadores registra propostas em planilhas e acompanha o status acessando o portal de cada banco. Com o sistema, a proposta é cadastrada uma única vez, os documentos são validados automaticamente, o status de cada banco é consultado por integração e as comissões de cada digitador e promotor são calculadas assim que o contrato é pago."
+    },
+    "integracoes": ["Birôs de crédito (Serasa, Boa Vista, SCR)", "APIs bancárias e Open Finance", "Validação de identidade e biometria", "Assinatura eletrônica", "Pix e boletos", "Registro de contratos"],
+    "precos": [
+      { "label": "Operação de crédito", "valor": "R$ 9.997 – R$ 25.000", "desc": "Esteira de propostas, documentos, comissões e acompanhamento." },
+      { "label": "Plataforma financeira", "valor": "R$ 25.000 – R$ 70.000", "desc": "Motor de risco, onboarding digital, carteira e cobrança." },
+      { "label": "Fintech", "valor": "R$ 70.000+", "desc": "Produto financeiro completo com app, contas e requisitos regulatórios." }
+    ],
+    "prazo": "60 a 180 dias.",
+    "faqs": [
+      { "question": "O sistema atende às exigências regulatórias?", "answer": "Construímos com trilhas de auditoria, segregação de funções, criptografia e controles de PLD. Os requisitos específicos da sua licença ou parceria são mapeados junto com o seu time de compliance." },
+      { "question": "Os cálculos financeiros são confiáveis?", "answer": "Sim. Cada fórmula é validada com planilhas de referência e casos de teste automatizados antes de ir para produção." },
+      { "question": "Integra com os bancos parceiros?", "answer": "Sim, por APIs quando disponíveis ou por automação dos portais quando não há API." },
+      { "question": "Como é garantida a segurança dos dados?", "answer": "Criptografia em trânsito e em repouso, autenticação forte, controle de acesso por função, monitoramento e testes de segurança periódicos." }
+    ]
+  },
+  "consultoria": {
+    "intro": [
+      "Um sistema para empresas de consultoria organiza projetos, horas, entregas, propostas e o relacionamento com os clientes. Ele é pensado para consultorias de gestão, TI, engenharia, RH e financeira, que vendem conhecimento por hora ou por projeto e precisam saber se cada contrato está dando lucro.",
+      "Além da gestão interna, muitas consultorias transformam sua metodologia em software: diagnósticos, avaliações e painéis que o cliente acessa. Isso gera valor percebido, receita recorrente e diferenciação frente à concorrência."
+    ],
+    "funcionalidades": [
+      { "titulo": "Propostas e contratos", "desc": "Propostas com escopo, cronograma e valores geradas a partir de modelos e assinadas digitalmente." },
+      { "titulo": "Gestão de projetos", "desc": "Fases, entregas, responsáveis e status de cada projeto, visíveis para a equipe e o cliente." },
+      { "titulo": "Timesheet e rentabilidade", "desc": "Horas por projeto e consultor, comparadas com o orçado, e margem de cada contrato." },
+      { "titulo": "Metodologia em software", "desc": "Diagnósticos e avaliações da sua metodologia aplicados online, com relatórios automáticos." },
+      { "titulo": "Portal do cliente", "desc": "Cliente acompanha entregas, documentos, reuniões e indicadores do projeto." },
+      { "titulo": "Alocação da equipe", "desc": "Capacidade e disponibilidade de cada consultor para planejar novos projetos." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: consultoria de gestão para pequenas empresas",
+      "texto": "Uma consultoria aplica seu diagnóstico em planilhas, monta relatórios à mão e não sabe quais projetos estouram as horas. Com o sistema, o diagnóstico é respondido online pelo cliente e gera automaticamente um relatório com a pontuação por área, o projeto é acompanhado pelo portal e o sócio vê a margem de cada contrato em tempo real."
+    },
+    "integracoes": ["Google Workspace e Microsoft 365", "Assinatura eletrônica", "CRM", "Boleto, Pix e NFS-e", "Power BI", "OpenAI e Claude"],
+    "precos": [
+      { "label": "Gestão da consultoria", "valor": "R$ 3.997 – R$ 8.997", "desc": "Projetos, horas, propostas e faturamento." },
+      { "label": "Consultoria + portal", "valor": "R$ 9.000 – R$ 18.000", "desc": "Portal do cliente, rentabilidade e alocação da equipe." },
+      { "label": "Metodologia como produto", "valor": "R$ 18.000+", "desc": "Plataforma SaaS com a sua metodologia, para vender por assinatura." }
+    ],
+    "prazo": "30 a 90 dias.",
+    "faqs": [
+      { "question": "Posso transformar minha metodologia em um software?", "answer": "Sim. Diagnósticos, avaliações e painéis podem virar uma plataforma para os seus clientes, inclusive vendida por assinatura como um produto." },
+      { "question": "Como o sistema mostra a rentabilidade?", "answer": "Comparando as horas registradas e seus custos com o valor do contrato, por projeto, cliente e consultor." },
+      { "question": "O cliente acompanha o projeto?", "answer": "Sim, por um portal com entregas, documentos, próximos passos e indicadores definidos por você." },
+      { "question": "Serve para consultor independente?", "answer": "Sim. Para consultores individuais, o foco costuma ser propostas, contratos, horas e a aplicação do diagnóstico online." }
+    ]
+  },
+  "hotel": {
+    "intro": [
+      "Um sistema para hotéis e pousadas gerencia reservas, mapa de ocupação, check-in, consumo, governança e tarifas, integrado aos canais de venda como Booking.com e Airbnb. Ele elimina o risco de overbooking e ajuda a vender mais pelo site próprio, onde não há comissão.",
+      "Pousadas e hotéis independentes competem com grandes redes pela experiência. Check-in rápido, comunicação no WhatsApp antes da chegada e ofertas personalizadas durante a estadia são diferenciais que o sistema torna possíveis sem aumentar a equipe."
+    ],
+    "funcionalidades": [
+      { "titulo": "Mapa de reservas", "desc": "Ocupação por quarto e data em uma visão visual, com arrastar para remanejar reservas." },
+      { "titulo": "Channel manager", "desc": "Disponibilidade e tarifas sincronizadas com Booking.com, Airbnb e Expedia para evitar overbooking." },
+      { "titulo": "Motor de reservas próprio", "desc": "Reservas diretas pelo site com pagamento online e sem comissão para intermediários." },
+      { "titulo": "Check-in digital", "desc": "Hóspede preenche a ficha antes da chegada e recebe as instruções pelo WhatsApp." },
+      { "titulo": "Consumo e conta do hóspede", "desc": "Lançamentos do restaurante, frigobar e serviços na conta do quarto, com fechamento no checkout." },
+      { "titulo": "Governança", "desc": "Status de limpeza e manutenção dos quartos atualizado pela camareira no celular." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: pousada com 22 quartos",
+      "texto": "Uma pousada vende pelo Booking, pelo Airbnb e pelo WhatsApp, atualiza a disponibilidade manualmente e já teve overbooking em feriados. Com o sistema, a disponibilidade é sincronizada automaticamente, o site próprio oferece um preço melhor para reserva direta, o hóspede faz o check-in pelo celular e a recepção vê em tempo real quais quartos já estão limpos."
+    },
+    "integracoes": ["Booking.com, Airbnb e Expedia", "Pix e cartão online", "WhatsApp Business API", "Fechaduras eletrônicas", "Emissão de NFS-e e NFC-e", "FNRH digital"],
+    "precos": [
+      { "label": "Pousada", "valor": "R$ 3.997 – R$ 8.997", "desc": "Mapa de reservas, check-in, conta do hóspede e financeiro." },
+      { "label": "Hotel", "valor": "R$ 9.000 – R$ 20.000", "desc": "Channel manager, motor de reservas, governança e tarifas dinâmicas." },
+      { "label": "Rede hoteleira", "valor": "R$ 20.000+", "desc": "Várias propriedades, central de reservas e BI." }
+    ],
+    "prazo": "45 a 90 dias.",
+    "faqs": [
+      { "question": "O sistema evita overbooking?", "answer": "Sim. Quando uma reserva entra por qualquer canal, a disponibilidade é atualizada nos demais em poucos minutos." },
+      { "question": "Como aumentar as reservas diretas?", "answer": "Com um motor de reservas no site próprio, pagamento online e vantagens para quem reserva direto, como café incluso ou desconto. O sistema mostra quanto você economiza em comissões." },
+      { "question": "O check-in pode ser feito pelo celular?", "answer": "Sim. O hóspede recebe um link antes da chegada, preenche os dados e, em alguns casos, recebe o acesso ao quarto sem passar pela recepção." },
+      { "question": "Serve para aluguel por temporada?", "answer": "Sim. Administradoras de imóveis de temporada usam o mesmo modelo, com gestão de limpeza entre estadias e repasse aos proprietários." }
+    ]
+  },
+  "coworking": {
+    "intro": [
+      "Um sistema para coworking e escritórios compartilhados gerencia planos de membros, reserva de salas e estações, controle de acesso, recepção de correspondência e cobrança recorrente. Ele permite operar o espaço com equipe enxuta e dá aos membros autonomia para resolver tudo pelo celular.",
+      "Espaços compartilhados vendem flexibilidade: planos por hora, diária, mesa fixa, sala privativa e endereço fiscal. O sistema sob medida trata cada modelo de cobrança e o consumo de créditos de salas sem planilhas paralelas."
+    ],
+    "funcionalidades": [
+      { "titulo": "Planos e contratos", "desc": "Mesa flexível, fixa, sala privativa e endereço fiscal, com cobrança recorrente e reajuste." },
+      { "titulo": "Reserva de salas", "desc": "Membros reservam salas de reunião pelo app, consumindo créditos do plano ou pagando avulso." },
+      { "titulo": "Controle de acesso", "desc": "Entrada por QR Code, biometria ou cartão, liberada conforme o plano e o horário." },
+      { "titulo": "Visitantes e recepção", "desc": "Cadastro prévio de visitantes, aviso ao membro na chegada e registro de correspondências." },
+      { "titulo": "Venda de day use", "desc": "Diárias e horas vendidas online para quem não é membro, com acesso liberado automaticamente." },
+      { "titulo": "Comunidade", "desc": "Mural, eventos e diretório de membros para estimular conexões e negócios entre eles." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: coworking com 150 membros",
+      "texto": "Um coworking controla reservas de salas em um calendário compartilhado, cobra os membros por boleto manual e mantém um recepcionista só para liberar a porta. Com o sistema, o membro reserva salas pelo app usando os créditos do plano, entra com QR Code, recebe aviso quando chega uma correspondência e a cobrança recorrente inclui automaticamente as horas extras de sala."
+    },
+    "integracoes": ["Controle de acesso (Control iD, fechaduras inteligentes)", "Cartão recorrente, Pix e boleto", "Google Agenda e Outlook", "WhatsApp", "Emissão de NFS-e"],
+    "precos": [
+      { "label": "Coworking pequeno", "valor": "R$ 3.997 – R$ 7.997", "desc": "Membros, planos, reservas de salas e cobrança recorrente." },
+      { "label": "Coworking completo", "valor": "R$ 8.000 – R$ 16.000", "desc": "Controle de acesso, visitantes, correspondência, day use e app." },
+      { "label": "Rede de espaços", "valor": "R$ 16.000+", "desc": "Várias unidades, acesso compartilhado entre elas e BI." }
+    ],
+    "prazo": "30 a 75 dias.",
+    "faqs": [
+      { "question": "Os membros conseguem reservar salas sozinhos?", "answer": "Sim, pelo app ou navegador. O sistema desconta os créditos do plano e cobra o excedente automaticamente." },
+      { "question": "Funciona com a fechadura que já tenho?", "answer": "Muitos controles de acesso e fechaduras inteligentes têm integração. Verificamos o seu modelo antes do orçamento." },
+      { "question": "Posso vender diárias para não membros?", "answer": "Sim. A diária é comprada online e o acesso é liberado apenas na data e horário contratados." },
+      { "question": "Serve para escritórios de salas privativas?", "answer": "Sim. Centros de negócios com salas privativas usam os mesmos recursos de contratos, recepção, correspondência e reserva de salas de reunião." }
+    ]
+  }
+}

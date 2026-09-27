@@ -56,6 +56,27 @@ const nextConfig: NextConfig = {
       { source: "/loja-virtual/:path*", destination: "/desenvolvimento-de/e-commerce", permanent: true },
       { source: "/landing-page", destination: "/software-sob-medida", permanent: true },
       { source: "/landing-page/:path*", destination: "/software-sob-medida", permanent: true },
+      // Páginas por cidade removidas (conteúdo duplicado) → página equivalente sem cidade
+      { source: "/desenvolvimento-de/:tipo/:cidade", destination: "/desenvolvimento-de/:tipo", permanent: true },
+      { source: "/software-para/:segmento/:cidade", destination: "/sistema-para/:segmento", permanent: true },
+      { source: "/software-para/:segmento", destination: "/sistema-para/:segmento", permanent: true },
+      { source: "/desenvolvimento-de-software-em/:cidade", destination: "/software-sob-medida", permanent: true },
+      { source: "/cidades", destination: "/segmentos", permanent: true },
+      // Páginas que disputavam a mesma busca → uma página forte por assunto
+      { source: "/sob-medida/:tipo", destination: "/desenvolvimento-de/:tipo", permanent: true },
+      { source: "/quanto-custa/:tipo", destination: "/desenvolvimento-de/:tipo#precos", permanent: true },
+      { source: "/automacao-de/:processo", destination: "/desenvolvimento-de/:processo", permanent: true },
+      // URLs que a home linkava por engano (davam 404)
+      { source: "/desenvolvimento-de-app-mobile", destination: "/desenvolvimento-de/app-mobile", permanent: true },
+      { source: "/chatbot-whatsapp", destination: "/desenvolvimento-de/chatbot-whatsapp", permanent: true },
+      { source: "/automacao-de-processos", destination: "/desenvolvimento-de/automacao-de-processos", permanent: true },
+      { source: "/api-e-integracoes", destination: "/desenvolvimento-de/api-e-integracoes", permanent: true },
+      { source: "/ia-para-negocios", destination: "/desenvolvimento-de/ia-para-negocios", permanent: true },
+      // Segmentos fundidos na página de tipo (manter em sincronia com NICHOS_FUNDIDOS em lib/conteudo.ts)
+      { source: "/sistema-para/escola", destination: "/desenvolvimento-de/sistema-de-gestao-escolar", permanent: true },
+      { source: "/sistema-para/imobiliaria", destination: "/desenvolvimento-de/sistema-imobiliario", permanent: true },
+      { source: "/sistema-para/construtora", destination: "/desenvolvimento-de/sistema-de-gestao-de-obras", permanent: true },
+      { source: "/sistema-para/e-commerce", destination: "/desenvolvimento-de/e-commerce", permanent: true },
     ];
   },
 };

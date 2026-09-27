@@ -8,6 +8,7 @@ import Hero from "@/components/sections/Hero";
 import FAQ from "@/components/sections/FAQ";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import RelatedLinksSection from "@/components/seo/RelatedLinksSection";
+import { hrefSistemaPara } from "@/lib/rotas";
 
 type Params = { segmento: string };
 
@@ -24,6 +25,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     title: `IA para ${nicho.nome} | Inteligência Artificial Personalizada`,
     description: `Implementamos inteligência artificial para ${nicho.nome.toLowerCase()}: chatbots, automação de atendimento, análise de dados e agentes autônomos. ${PRICES.ia}.`,
     slug: `ia-para/${nicho.slug}`,
+    // Template sem conteúdo próprio por segmento: fora do índice até ser enriquecido
+    noindex: true,
     keywords: [
       `ia para ${nicho.nome.toLowerCase()}`,
       `inteligência artificial ${nicho.nome.toLowerCase()}`,
@@ -76,7 +79,7 @@ export default async function IaParaSegmentoPage({ params }: { params: Promise<P
       titulo: `Outras soluções para ${nicho.nome}`,
       links: [
         { href: `/chatbot-para/${nicho.slug}`, label: `Chatbot para ${nicho.nome}` },
-        { href: `/sistema-para/${nicho.slug}`, label: `Sistema para ${nicho.nome}` },
+        { href: hrefSistemaPara(nicho.slug), label: `Sistema para ${nicho.nome}` },
         { href: `/segmentos/${nicho.slug}`, label: `Hub: ${nicho.nome}` },
         { href: `/segmentos`, label: "Todos os segmentos" },
         { href: `/tipos-de-software`, label: "Tipos de software" },
@@ -95,7 +98,7 @@ export default async function IaParaSegmentoPage({ params }: { params: Promise<P
         subtitulo={`Chatbots com IA, agentes autônomos e automações inteligentes para ${nicho.nomeCompleto}. Atendimento 24h, análise de dados e decisões automáticas. ${PRICES.ia}.`}
         badge={`IA para ${nicho.nome}`}
         whatsappMsg={whatsappMsg}
-        ctaHref="/ia-para-negocios"
+        ctaHref="/desenvolvimento-de/ia-para-negocios"
       />
 
       <section className="py-20 bg-white">

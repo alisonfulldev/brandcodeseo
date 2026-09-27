@@ -1,0 +1,281 @@
+{
+  "clinica": {
+    "intro": [
+      "Um sistema para clínica médica organiza a jornada do paciente do agendamento ao pagamento: marcação online, confirmação por WhatsApp, recepção, atendimento, faturamento de convênios e repasse aos médicos. É para clínicas que usam agenda de papel, planilha de repasse e sistemas que não conversam entre si.",
+      "Clínicas com vários médicos têm uma complexidade que sistemas de consultório não resolvem: cada profissional com regras de agenda e percentual de repasse diferentes, salas compartilhadas, convênios com tabelas próprias e glosas para controlar."
+    ],
+    "funcionalidades": [
+      { "titulo": "Agenda multiprofissional", "desc": "Agenda por médico, sala e procedimento, com encaixes, bloqueios e marcação online pelo paciente." },
+      { "titulo": "Confirmação automática", "desc": "Lembrete por WhatsApp com confirmação ou remarcação, reduzindo faltas e horários vazios." },
+      { "titulo": "Faturamento TISS", "desc": "Guias de consulta e SP/SADT no padrão da ANS, lotes para convênios e controle de glosas." },
+      { "titulo": "Repasse médico", "desc": "Cálculo automático do repasse por profissional, procedimento e convênio, com extrato para cada médico." },
+      { "titulo": "Recepção e check-in", "desc": "Chegada do paciente, fila de espera, pagamento particular e emissão de recibo ou nota." },
+      { "titulo": "Indicadores da clínica", "desc": "Ocupação da agenda, faturamento por convênio, ticket médio e taxa de retorno de pacientes." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: clínica com 12 médicos e 8 convênios",
+      "texto": "A recepção de uma clínica passa o dia confirmando consultas por telefone e, no fim do mês, o financeiro leva dias montando os lotes dos convênios e calculando o repasse de cada médico em planilha. Com o sistema, as confirmações são automáticas, as guias TISS são geradas a partir dos atendimentos, as glosas são controladas por convênio e cada médico recebe seu extrato de repasse pronto."
+    },
+    "integracoes": ["Padrão TISS (ANS) e portais de convênios", "WhatsApp Business API", "Prontuário eletrônico", "Memed", "Pix e maquininhas", "Emissão de NFS-e"],
+    "precos": [
+      { "label": "Agenda e recepção", "valor": "R$ 3.997 – R$ 7.997", "desc": "Agenda multiprofissional, agendamento online e confirmações." },
+      { "label": "Clínica completa", "valor": "R$ 8.000 – R$ 18.000", "desc": "Faturamento TISS, repasse médico, financeiro e prontuário." },
+      { "label": "Rede de clínicas", "valor": "R$ 18.000+", "desc": "Várias unidades, central de agendamento e indicadores consolidados." }
+    ],
+    "prazo": "45 a 90 dias.",
+    "faqs": [
+      { "question": "O sistema gera as guias dos convênios?", "answer": "Sim. As guias são geradas no padrão TISS da ANS a partir dos atendimentos e agrupadas em lotes por convênio. O sistema também registra as glosas para que a clínica recorra ou ajuste o processo." },
+      { "question": "Como funciona o cálculo de repasse?", "answer": "Cada médico tem regras de repasse por procedimento e convênio. O sistema aplica as regras sobre o que foi efetivamente recebido e gera o extrato de cada profissional." },
+      { "question": "Os pacientes podem marcar consulta sozinhos?", "answer": "Sim, por uma página com a marca da clínica, integrada ao Google e ao Instagram. Você decide quais médicos e horários ficam disponíveis online." },
+      { "question": "Qual a diferença para um prontuário eletrônico?", "answer": "O prontuário registra o atendimento clínico. O sistema para clínica cuida da gestão: agenda, recepção, convênios, repasses e financeiro. Os dois podem ser integrados." }
+    ]
+  },
+  "clinica-odontologica": {
+    "intro": [
+      "Um sistema para clínica odontológica acompanha o paciente em todas as etapas de um tratamento que costuma durar meses: avaliação, orçamento, aprovação, sessões, pagamentos parcelados e retornos. Ele ajuda a converter mais orçamentos e a reduzir tratamentos abandonados no meio do caminho.",
+      "A odontologia tem necessidades específicas que sistemas médicos genéricos ignoram: odontograma por dente e face, planos de tratamento com várias etapas, controle de próteses em laboratório e comissão de dentistas por procedimento executado."
+    ],
+    "funcionalidades": [
+      { "titulo": "Odontograma digital", "desc": "Registro visual por dente e face, com situação atual, procedimentos planejados e executados." },
+      { "titulo": "Orçamento e plano de tratamento", "desc": "Orçamentos com etapas, opções de tratamento e parcelamento, enviados ao paciente por WhatsApp." },
+      { "titulo": "Follow-up de orçamentos", "desc": "Lembretes para orçamentos não aprovados e relatório de taxa de conversão por dentista." },
+      { "titulo": "Controle de laboratório", "desc": "Envio e retorno de próteses e aparelhos, com prazos e custo por trabalho." },
+      { "titulo": "Recorrência de ortodontia", "desc": "Manutenções mensais agendadas e cobradas automaticamente durante todo o tratamento." },
+      { "titulo": "Comissão por produção", "desc": "Cálculo da comissão de cada dentista pelos procedimentos realizados e recebidos." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: clínica com implantodontia e ortodontia",
+      "texto": "Uma clínica faz muitos orçamentos de implante que não são aprovados e perde pacientes de ortodontia que param de ir às manutenções. Com o sistema, cada orçamento pendente recebe acompanhamento automático, o paciente vê o plano de tratamento em um link com as opções de parcelamento e as manutenções de ortodontia são agendadas e cobradas mês a mês, com aviso quando alguém falta."
+    },
+    "integracoes": ["WhatsApp Business API", "Convênios odontológicos (TISS)", "Radiografias e imagens digitais", "Pix, cartão recorrente e boleto", "Laboratórios de prótese"],
+    "precos": [
+      { "label": "Consultório", "valor": "R$ 3.997 – R$ 7.997", "desc": "Agenda, odontograma, orçamentos e financeiro." },
+      { "label": "Clínica odontológica", "valor": "R$ 8.000 – R$ 16.000", "desc": "Vários dentistas, comissões, laboratório, ortodontia recorrente." },
+      { "label": "Rede odontológica", "valor": "R$ 16.000+", "desc": "Franquias ou unidades, central de vendas e indicadores por unidade." }
+    ],
+    "prazo": "45 a 75 dias.",
+    "faqs": [
+      { "question": "O sistema ajuda a aprovar mais orçamentos?", "answer": "Sim. Orçamentos claros enviados por link, com opções de parcelamento e acompanhamento automático dos pendentes, costumam aumentar a taxa de aprovação. O relatório mostra a conversão por dentista e por procedimento." },
+      { "question": "Consigo anexar radiografias ao prontuário?", "answer": "Sim. Radiografias, fotos intraorais e documentos ficam na linha do tempo do paciente." },
+      { "question": "Funciona com convênios odontológicos?", "answer": "Sim. O sistema gera guias no padrão exigido e controla a tabela de cada convênio, separando atendimentos particulares e conveniados." },
+      { "question": "Como é cobrada a manutenção da ortodontia?", "answer": "Por cartão recorrente, Pix ou boleto mensal, vinculado ao agendamento. Se o paciente falta ou atrasa, a clínica é avisada." }
+    ]
+  },
+  "clinica-estetica": {
+    "intro": [
+      "Um sistema para clínica de estética gerencia agenda, pacotes de sessões, prontuário com fotos de antes e depois e as vendas recorrentes que sustentam o negócio. Ele é feito para a realidade da estética, em que o paciente compra um pacote, faz várias sessões e volta para novos procedimentos.",
+      "O faturamento de uma clínica de estética depende de recorrência e de indicação. O sistema identifica quando cada cliente deve voltar, lembra automaticamente e mostra quem são os clientes mais valiosos, para a equipe cuidar melhor deles."
+    ],
+    "funcionalidades": [
+      { "titulo": "Pacotes de sessões", "desc": "Venda de pacotes com controle de sessões usadas, saldo e validade por cliente." },
+      { "titulo": "Fotos de antes e depois", "desc": "Registro fotográfico por sessão, com comparação lado a lado e autorização de uso de imagem." },
+      { "titulo": "Fichas de anamnese e termos", "desc": "Formulários por procedimento e termos de consentimento assinados digitalmente." },
+      { "titulo": "Agenda por sala e equipamento", "desc": "Controle de salas e aparelhos compartilhados, como laser e ultrassom, evitando conflitos." },
+      { "titulo": "Retorno programado", "desc": "Aviso automático quando é hora de reaplicar toxina, fazer manutenção ou nova sessão." },
+      { "titulo": "Comissão de profissionais", "desc": "Comissão por procedimento executado e por venda de pacotes e produtos." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: clínica com biomédicas e esteticistas",
+      "texto": "Uma clínica vende pacotes de depilação a laser e harmonização facial, mas controla as sessões em fichas e esquece de chamar clientes para retorno. Com o sistema, cada pacote mostra o saldo de sessões, as fotos são comparadas a cada visita, a cliente recebe no WhatsApp o lembrete do retorno da toxina após o intervalo definido e a gestora vê quais procedimentos trazem mais recorrência."
+    },
+    "integracoes": ["WhatsApp Business API", "Instagram (agendamento)", "Pix, cartão e link de pagamento", "Assinatura eletrônica", "Estoque de produtos"],
+    "precos": [
+      { "label": "Estúdio de estética", "valor": "R$ 2.997 – R$ 6.997", "desc": "Agenda, fichas, pacotes e lembretes." },
+      { "label": "Clínica de estética", "valor": "R$ 7.000 – R$ 15.000", "desc": "Fotos, termos digitais, salas e equipamentos, comissões e retorno programado." },
+      { "label": "Rede ou franquia", "valor": "R$ 15.000+", "desc": "Várias unidades, app para clientes e programa de fidelidade." }
+    ],
+    "prazo": "30 a 60 dias.",
+    "faqs": [
+      { "question": "Como o sistema controla os pacotes?", "answer": "Cada venda de pacote gera um saldo de sessões. A cada atendimento, uma sessão é consumida e o cliente vê quantas restam. Pacotes vencidos ou quase vencidos geram alerta." },
+      { "question": "As fotos dos pacientes ficam seguras?", "answer": "Sim. Ficam armazenadas com criptografia, acessíveis apenas aos profissionais autorizados, e o uso para divulgação só é permitido com autorização assinada." },
+      { "question": "Consigo vender produtos junto com procedimentos?", "answer": "Sim. Produtos de home care podem ser vendidos no mesmo atendimento, com baixa no estoque e comissão para quem vendeu." },
+      { "question": "O sistema ajuda a trazer clientes de volta?", "answer": "Sim. Com base no procedimento e no intervalo recomendado, o sistema avisa o cliente automaticamente e lista para a equipe quem está atrasado para retornar." }
+    ]
+  },
+  "hospital": {
+    "intro": [
+      "Sistemas para hospitais e unidades de saúde de médio porte precisam integrar pronto atendimento, internação, centro cirúrgico, farmácia, faturamento e gestão de leitos. Desenvolvemos módulos sob medida que complementam ou substituem partes do sistema atual onde ele falha, sem exigir a troca de tudo de uma vez.",
+      "Em hospitais, o problema raramente é a falta de sistema; é a falta de integração. Informações redigitadas entre setores geram atraso, erro e glosa. Nosso trabalho costuma começar pelos pontos em que essa perda é maior."
+    ],
+    "funcionalidades": [
+      { "titulo": "Gestão de leitos", "desc": "Mapa de leitos em tempo real, com status de ocupação, limpeza, reserva e previsão de alta." },
+      { "titulo": "Classificação de risco", "desc": "Triagem no pronto atendimento com protocolo de classificação e painel de chamada." },
+      { "titulo": "Prescrição e checagem", "desc": "Prescrição eletrônica com checagem à beira do leito e rastreabilidade de medicamentos." },
+      { "titulo": "Centro cirúrgico", "desc": "Agenda de salas, kits cirúrgicos, OPME e registro de consumo por procedimento." },
+      { "titulo": "Faturamento hospitalar", "desc": "Conta do paciente montada a partir dos registros assistenciais, auditoria prévia e redução de glosas." },
+      { "titulo": "Indicadores assistenciais", "desc": "Taxa de ocupação, tempo médio de permanência, tempo de porta e indicadores de qualidade." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: hospital com 80 leitos",
+      "texto": "Um hospital perde tempo e receita porque a conta do paciente é montada manualmente a partir de papéis de enfermagem, e muitos itens consumidos não são cobrados. Integramos a checagem de medicamentos e materiais à beira do leito com o faturamento: tudo o que é administrado entra automaticamente na conta, a auditoria interna revisa antes do envio e as glosas por falta de registro diminuem."
+    },
+    "integracoes": ["Padrão TISS e operadoras", "HL7 e FHIR", "Sistemas hospitalares existentes (MV, Tasy)", "Laboratório e imagem (PACS)", "Estoque e farmácia"],
+    "precos": [
+      { "label": "Módulo específico", "valor": "R$ 12.000 – R$ 30.000", "desc": "Um módulo integrado ao sistema atual, como leitos ou centro cirúrgico." },
+      { "label": "Integração hospitalar", "valor": "R$ 30.000 – R$ 80.000", "desc": "Vários módulos conectados e barramento de integração entre sistemas." },
+      { "label": "Plataforma hospitalar", "valor": "R$ 80.000+", "desc": "Solução ampla para hospitais de pequeno e médio porte." }
+    ],
+    "prazo": "90 a 240 dias, implantado por módulo.",
+    "faqs": [
+      { "question": "Preciso trocar o sistema hospitalar atual?", "answer": "Não. Na maioria dos projetos, desenvolvemos módulos que complementam o sistema existente e se integram a ele por HL7, FHIR ou banco de dados." },
+      { "question": "O sistema atende às exigências de segurança da saúde?", "answer": "Sim. Dados de pacientes são tratados como sensíveis pela LGPD, com criptografia, controle de acesso por perfil, auditoria e hospedagem em nuvem no Brasil." },
+      { "question": "Funciona em hospitais públicos?", "answer": "Sim. Para unidades públicas, consideramos integrações com os sistemas do SUS e os requisitos de contratação do órgão." },
+      { "question": "Como é a implantação sem afetar o atendimento?", "answer": "Implantamos por setor, com treinamento prévio, equipe presente na virada e período de uso paralelo quando necessário." }
+    ]
+  },
+  "psicologo": {
+    "intro": [
+      "Um sistema para psicólogos e clínicas de psicologia organiza agenda, sessões, prontuário, cobranças e atendimentos online com o sigilo que a profissão exige. Ele é pensado para uma rotina de atendimentos recorrentes, geralmente semanais, pagos por sessão ou por pacote mensal.",
+      "A psicologia tem regras próprias de registro documental e sigilo profissional. O sistema separa o registro obrigatório das anotações pessoais do psicólogo e garante que nem a recepção nem outros profissionais tenham acesso ao conteúdo das sessões."
+    ],
+    "funcionalidades": [
+      { "titulo": "Agenda recorrente", "desc": "Sessões semanais ou quinzenais criadas automaticamente, com remarcação simples e controle de faltas." },
+      { "titulo": "Prontuário com sigilo", "desc": "Registro documental separado das anotações privadas, com acesso exclusivo do psicólogo responsável." },
+      { "titulo": "Atendimento online", "desc": "Link de videochamada gerado para cada sessão e enviado ao paciente automaticamente." },
+      { "titulo": "Cobrança mensal", "desc": "Fechamento automático das sessões do mês, envio de Pix ou boleto e recibo para reembolso do plano." },
+      { "titulo": "Recibos e declarações", "desc": "Emissão de recibos com CRP e declarações de comparecimento em segundos." },
+      { "titulo": "Clínica com vários profissionais", "desc": "Agenda por psicólogo, salas, repasses e visão do gestor sem acesso ao conteúdo clínico." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: clínica com oito psicólogos",
+      "texto": "Uma clínica de psicologia controla as sessões em agenda de papel, cobra os pacientes manualmente no fim do mês e emite recibos um a um para reembolso. Com o sistema, as sessões recorrentes se criam sozinhas, o paciente recebe o link da sessão online, a cobrança mensal é enviada automaticamente e o recibo para o plano de saúde chega junto com o pagamento."
+    },
+    "integracoes": ["Google Meet, Zoom ou sala de vídeo própria", "Pix e cartão recorrente", "WhatsApp para lembretes", "Emissão de NFS-e", "Google Agenda"],
+    "precos": [
+      { "label": "Consultório individual", "valor": "R$ 2.997 – R$ 5.997", "desc": "Agenda recorrente, prontuário sigiloso, recibos e cobrança." },
+      { "label": "Clínica de psicologia", "valor": "R$ 6.000 – R$ 12.000", "desc": "Vários profissionais, salas, repasses e atendimento online." },
+      { "label": "Plataforma de terapia online", "valor": "R$ 12.000+", "desc": "Marketplace de psicólogos, triagem e pagamentos com split." }
+    ],
+    "prazo": "30 a 60 dias.",
+    "faqs": [
+      { "question": "O sistema atende às normas do Conselho de Psicologia?", "answer": "O sistema é estruturado para o registro documental e a guarda sigilosa previstos pelo conselho, com acesso restrito ao profissional. Recomendamos validar os modelos de registro com a sua orientação técnica." },
+      { "question": "A recepção consegue ver as anotações?", "answer": "Não. A recepção acessa agenda, cadastro e financeiro. O conteúdo das sessões é visível apenas para o psicólogo responsável." },
+      { "question": "Consigo atender online pelo sistema?", "answer": "Sim. Cada sessão online tem um link próprio enviado ao paciente, e o atendimento é registrado no prontuário normalmente." },
+      { "question": "O paciente consegue pedir reembolso ao plano?", "answer": "Sim. O sistema emite recibos com os dados exigidos pelas operadoras, incluindo CRP, datas das sessões e valores." }
+    ]
+  },
+  "clinica-psiquiatrica": {
+    "intro": [
+      "Sistemas para clínicas psiquiátricas precisam lidar com prescrição de medicamentos controlados, acompanhamento de longo prazo, equipes multidisciplinares e, em alguns casos, internação ou hospital-dia. É um contexto em que segurança da informação e rastreabilidade são obrigatórias.",
+      "Desenvolvemos soluções que integram psiquiatras, psicólogos, terapeutas ocupacionais e enfermagem em torno do mesmo paciente, com níveis de acesso distintos e registro de cada intervenção."
+    ],
+    "funcionalidades": [
+      { "titulo": "Prescrição de controlados", "desc": "Receituários especiais para medicamentos controlados, com histórico de dosagens e ajustes." },
+      { "titulo": "Evolução multidisciplinar", "desc": "Registros de psiquiatria, psicologia, terapia ocupacional e enfermagem na mesma linha do tempo." },
+      { "titulo": "Escalas clínicas", "desc": "Aplicação de escalas e questionários padronizados com gráficos de evolução ao longo do tratamento." },
+      { "titulo": "Hospital-dia e internação", "desc": "Controle de presença, atividades terapêuticas, leitos e administração de medicamentos." },
+      { "titulo": "Acesso por função", "desc": "Cada profissional vê apenas o que é necessário para a sua atuação, com trilha de auditoria completa." },
+      { "titulo": "Contato com família", "desc": "Comunicação registrada com responsáveis e controle de autorizações de compartilhamento." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: clínica com hospital-dia",
+      "texto": "Uma clínica psiquiátrica mantém prontuários em papel separados por especialidade e perde informação entre o psiquiatra e a equipe do hospital-dia. Com o sistema, as evoluções de todos os profissionais ficam na mesma linha do tempo, as escalas mostram a evolução do paciente em gráficos, a enfermagem checa as medicações administradas e as receitas de controlados são emitidas com histórico completo."
+    },
+    "integracoes": ["Prescrição digital com certificado ICP-Brasil", "Convênios (TISS)", "Farmácia e estoque de medicamentos", "Teleconsulta", "Emissão de NFS-e"],
+    "precos": [
+      { "label": "Consultório psiquiátrico", "valor": "R$ 3.997 – R$ 7.997", "desc": "Agenda, prontuário, prescrição e escalas." },
+      { "label": "Clínica multidisciplinar", "valor": "R$ 8.000 – R$ 18.000", "desc": "Equipe integrada, permissões por função e convênios." },
+      { "label": "Hospital-dia e internação", "valor": "R$ 18.000+", "desc": "Leitos, atividades terapêuticas, administração de medicamentos e farmácia." }
+    ],
+    "prazo": "45 a 120 dias.",
+    "faqs": [
+      { "question": "O sistema emite receita de controlados?", "answer": "Sim, com os modelos exigidos para cada tipo de receituário. A assinatura digital com certificado ICP-Brasil é suportada quando aplicável." },
+      { "question": "Como é garantido o sigilo?", "answer": "Os dados são criptografados, o acesso é definido por função e cada consulta ao prontuário fica registrada com usuário, data e hora." },
+      { "question": "Posso aplicar escalas pelo sistema?", "answer": "Sim. O paciente pode responder questionários antes da consulta pelo celular, e os resultados aparecem em gráficos de evolução." },
+      { "question": "Serve para clínica de dependência química?", "answer": "Sim. O controle de internação, atividades, visitas e evolução multidisciplinar atende também a esse tipo de serviço." }
+    ]
+  },
+  "nutricionista": {
+    "intro": [
+      "Um sistema para nutricionistas reúne consulta, avaliação antropométrica, montagem de planos alimentares e acompanhamento do paciente entre as consultas. Ele reduz o tempo gasto montando dietas e deixa o profissional livre para o que gera resultado: a orientação e o vínculo com o paciente.",
+      "Com um aplicativo para o paciente, o plano alimentar, as receitas, as listas de compras e os lembretes de água e refeição ficam no celular, e o nutricionista acompanha registros e fotos entre os retornos."
+    ],
+    "funcionalidades": [
+      { "titulo": "Avaliação antropométrica", "desc": "Medidas, dobras e bioimpedância com cálculos automáticos e gráficos de evolução." },
+      { "titulo": "Plano alimentar rápido", "desc": "Montagem com tabela de composição de alimentos, substituições e cálculo de macros em tempo real." },
+      { "titulo": "Modelos reutilizáveis", "desc": "Planos e orientações salvos como modelos e ajustados para cada paciente em minutos." },
+      { "titulo": "App do paciente", "desc": "Plano alimentar, receitas, lista de compras, diário alimentar com fotos e lembretes." },
+      { "titulo": "Acompanhamento entre consultas", "desc": "Check-ins semanais, registro de peso e mensagens para manter a adesão." },
+      { "titulo": "Pacotes e consultas online", "desc": "Venda de planos de acompanhamento com consultas online e cobrança recorrente." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: nutricionista esportiva com atendimento online",
+      "texto": "Uma nutricionista atende atletas amadores em várias cidades e envia planos por PDF que se perdem no WhatsApp. Com o sistema, ela monta o plano em minutos a partir de modelos, o paciente acompanha tudo no app, registra refeições com foto e peso semanal, e ela ajusta o plano entre as consultas. Os pacotes trimestrais são cobrados no cartão automaticamente."
+    },
+    "integracoes": ["Tabela TACO e bases de alimentos", "Balanças de bioimpedância", "Apple Saúde e Google Fit", "Pix e cartão recorrente", "Videochamada"],
+    "precos": [
+      { "label": "Consultório", "valor": "R$ 2.997 – R$ 5.997", "desc": "Avaliação, plano alimentar, modelos e agenda." },
+      { "label": "Consultório + app", "valor": "R$ 6.000 – R$ 14.000", "desc": "App do paciente, diário alimentar, check-ins e pacotes online." },
+      { "label": "Plataforma de nutrição", "valor": "R$ 14.000+", "desc": "Vários nutricionistas, marca própria e programas em grupo." }
+    ],
+    "prazo": "30 a 75 dias.",
+    "faqs": [
+      { "question": "O sistema calcula as necessidades nutricionais?", "answer": "Sim. Calcula gasto energético pelas principais fórmulas e mostra calorias e macronutrientes do plano em tempo real enquanto você monta." },
+      { "question": "O paciente precisa de aplicativo?", "answer": "Não é obrigatório — o plano pode ser enviado em PDF. Mas o app melhora a adesão, porque o paciente consulta o plano, registra refeições e recebe lembretes." },
+      { "question": "Posso usar minhas próprias receitas?", "answer": "Sim. Você cadastra receitas com ingredientes e modo de preparo, e elas passam a fazer parte dos planos e do app do paciente." },
+      { "question": "Serve para atendimento em grupo?", "answer": "Sim. É possível criar programas com conteúdo, desafios e acompanhamento para turmas de pacientes." }
+    ]
+  },
+  "farmacia": {
+    "intro": [
+      "Um sistema para farmácia precisa controlar lotes, validades, medicamentos controlados, convênios e programas de desconto, tudo com agilidade no balcão. É para farmácias independentes e pequenas redes que querem competir com as grandes em atendimento e fidelização, sem pagar caro por sistemas engessados.",
+      "Além da operação, a farmácia de bairro tem uma vantagem que o sistema pode potencializar: o relacionamento. Saber quando o cliente de uso contínuo vai precisar do medicamento de novo e avisá-lo antes é o tipo de serviço que fideliza."
+    ],
+    "funcionalidades": [
+      { "titulo": "Balcão ágil", "desc": "Venda por código de barras ou princípio ativo, genéricos equivalentes e consulta rápida de preço e estoque." },
+      { "titulo": "Lote e validade", "desc": "Controle por lote com alerta de vencimento e saída pelo prazo de validade mais próximo." },
+      { "titulo": "Medicamentos controlados", "desc": "Registro de receitas e movimentação de controlados para a escrituração exigida pela Anvisa." },
+      { "titulo": "Convênios e PBMs", "desc": "Vendas para convênios de empresas e integração com programas de benefício de laboratórios." },
+      { "titulo": "Uso contínuo", "desc": "Aviso por WhatsApp quando o medicamento de uso contínuo do cliente está para acabar." },
+      { "titulo": "Delivery e televendas", "desc": "Pedidos por WhatsApp e site com entrega e pagamento na porta ou online." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: rede com cinco farmácias de bairro",
+      "texto": "Uma rede de farmácias perde clientes de uso contínuo para as grandes redes e descarta medicamentos vencidos todo mês. Com o sistema, cada cliente de uso contínuo recebe aviso antes de o remédio acabar, com opção de entrega em casa, os lotes próximos do vencimento são transferidos para lojas com maior saída e o estoque entre as unidades é equilibrado."
+    },
+    "integracoes": ["SNGPC (Anvisa)", "PBMs e programas de laboratórios", "SEFAZ (NFC-e)", "TEF e Pix", "WhatsApp Business", "Distribuidoras (pedido eletrônico)"],
+    "precos": [
+      { "label": "Farmácia independente", "valor": "R$ 4.997 – R$ 9.997", "desc": "Balcão, estoque com lote e validade, controlados e NFC-e." },
+      { "label": "Farmácia com fidelização", "valor": "R$ 10.000 – R$ 20.000", "desc": "Convênios, PBMs, uso contínuo, delivery e televendas." },
+      { "label": "Rede de farmácias", "valor": "R$ 20.000+", "desc": "Várias lojas, compras centralizadas e transferências entre unidades." }
+    ],
+    "prazo": "60 a 120 dias, incluindo homologações.",
+    "faqs": [
+      { "question": "O sistema faz a escrituração de controlados?", "answer": "Sim. Registra as movimentações de medicamentos controlados e gera as informações no formato exigido pela Anvisa para envio." },
+      { "question": "Consigo integrar com os programas de desconto dos laboratórios?", "answer": "Sim, por meio das PBMs que gerenciam esses programas. A integração é feita no momento da venda, aplicando o desconto automaticamente." },
+      { "question": "Serve para farmácia de manipulação?", "answer": "A manipulação tem requisitos específicos, como fórmulas, pesagem e controle de insumos. Desenvolvemos esses módulos quando necessário, mas é um escopo diferente da farmácia comercial." },
+      { "question": "Como funciona o aviso de uso contínuo?", "answer": "Ao vender um medicamento de uso contínuo, o sistema calcula a duração pela posologia e envia uma mensagem ao cliente alguns dias antes de acabar." }
+    ]
+  },
+  "academia": {
+    "intro": [
+      "Um sistema para academia controla matrículas, planos, cobranças recorrentes, acesso por catraca e treinos dos alunos, com um aplicativo que mantém o aluno engajado. A maior dor das academias é a evasão, e o sistema certo ajuda a identificar quem está deixando de ir antes que cancele.",
+      "Academias, estúdios de pilates, boxes de crossfit e escolas de luta têm modelos diferentes — mensalidade livre, aulas com vagas limitadas, pacotes de aulas — e o sistema sob medida atende ao modelo do seu negócio, não o contrário."
+    ],
+    "funcionalidades": [
+      { "titulo": "Planos e cobrança recorrente", "desc": "Mensal, trimestral e anual no cartão recorrente, Pix ou boleto, com bloqueio automático por inadimplência." },
+      { "titulo": "Controle de acesso", "desc": "Integração com catracas, reconhecimento facial ou QR Code, liberando apenas alunos em dia." },
+      { "titulo": "Aulas com reserva de vaga", "desc": "Grade de aulas coletivas com reserva pelo app, lista de espera e limite por turma." },
+      { "titulo": "App de treino", "desc": "Fichas de treino montadas pelo professor, com vídeos dos exercícios e registro de cargas." },
+      { "titulo": "Alerta de evasão", "desc": "Lista de alunos com queda de frequência para a equipe entrar em contato antes do cancelamento." },
+      { "titulo": "Agregadores", "desc": "Controle de check-ins de Wellhub e TotalPass junto com os alunos diretos." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: academia com 1.200 alunos",
+      "texto": "Uma academia perde muitos alunos todo mês e só descobre quando o cancelamento chega. Com o sistema, a frequência de cada aluno é monitorada pela catraca, quem fica duas semanas sem ir recebe mensagem do professor, as mensalidades são cobradas no cartão recorrente e o aluno reserva aulas coletivas pelo app. A gestão passa a ver a evasão por plano e por horário."
+    },
+    "integracoes": ["Catracas (Henry, Topdata, Control iD)", "Wellhub e TotalPass", "Cartão recorrente, Pix e boleto", "WhatsApp Business", "Apple Saúde e Google Fit"],
+    "precos": [
+      { "label": "Estúdio", "valor": "R$ 2.997 – R$ 6.997", "desc": "Alunos, planos, cobrança recorrente e agenda de aulas." },
+      { "label": "Academia", "valor": "R$ 7.000 – R$ 16.000", "desc": "Catraca, app de treino, reservas, evasão e agregadores." },
+      { "label": "Rede de academias", "valor": "R$ 16.000+", "desc": "Várias unidades, acesso compartilhado e indicadores consolidados." }
+    ],
+    "prazo": "30 a 75 dias.",
+    "faqs": [
+      { "question": "O sistema funciona com a minha catraca?", "answer": "As principais catracas do mercado oferecem integração. Verificamos o modelo da sua antes do orçamento e, se necessário, indicamos a opção de melhor custo." },
+      { "question": "Como o sistema ajuda a reduzir a evasão?", "answer": "Monitorando a frequência e avisando a equipe quando um aluno começa a faltar. Um contato no momento certo é uma das formas mais eficazes de retenção." },
+      { "question": "Serve para pilates e crossfit?", "answer": "Sim. Aulas com vagas limitadas, pacotes de aulas, reposições e WOD do dia são configurados conforme o modelo do estúdio ou box." },
+      { "question": "Como ficam os alunos de Wellhub e TotalPass?", "answer": "Os check-ins desses agregadores são registrados junto com os alunos diretos, para você ter a frequência real e conferir os repasses." }
+    ]
+  }
+}

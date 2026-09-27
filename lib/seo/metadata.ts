@@ -27,14 +27,15 @@ export function buildMetadata({
   const fullTitle = `${title} | ${SITE_NAME}`;
 
   return {
-    title: fullTitle,
+    // absolute: o template do layout ("%s | SITE_NAME") duplicaria o nome do site
+    title: { absolute: fullTitle },
     description,
     keywords: keywords.join(", "),
     authors: [{ name: SITE_NAME, url: SITE_URL }],
     creator: SITE_NAME,
     publisher: SITE_NAME,
     robots: noindex
-      ? { index: false, follow: false }
+      ? { index: false, follow: true } // follow: links de páginas fora do índice ainda passam relevância
       : {
           index: true,
           follow: true,

@@ -4,6 +4,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbSchema } from "@/lib/seo/schema";
 import { SITE_URL } from "@/lib/constants";
 import nichos from "@/data/nichos.json";
+import { hrefSistemaPara } from "@/lib/rotas";
 
 export const metadata: Metadata = buildMetadata({
   title: "Software por Segmento | Sistemas para Todo Tipo de Negócio",
@@ -72,7 +73,7 @@ export default function SegmentosPage() {
                     {nichosDoSetor.map((nicho) => (
                       <Link
                         key={nicho.slug}
-                        href={`/sistema-para/${nicho.slug}`}
+                        href={hrefSistemaPara(nicho.slug)}
                         className="bg-gray-50 border border-gray-200 rounded-xl px-4 py-2.5 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:border-blue-300 hover:text-blue-700 transition-all"
                       >
                         {nicho.nome}

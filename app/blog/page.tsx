@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbSchema } from "@/lib/seo/schema";
 import { SITE_URL } from "@/lib/constants";
-import Link from "next/link";
 
 export const metadata: Metadata = buildMetadata({
   title: "Blog — Dicas de Sites, SEO e Marketing Digital",
   description:
     "Blog da BrandCode Solutions com dicas práticas de criação de sites, SEO técnico, marketing digital e como vender mais pela internet.",
   slug: "blog",
+  // Os artigos listados ainda não foram escritos: fora do índice até haver posts reais
+  noindex: true,
 });
 
 const posts = [
@@ -91,9 +92,7 @@ export default function BlogPage() {
                     {post.categoria}
                   </span>
                   <h2 className="font-bold text-[#0A1628] mt-3 mb-2 text-base leading-snug">
-                    <Link href={`/blog/${post.slug}`} className="hover:text-blue-700 transition-colors">
-                      {post.titulo}
-                    </Link>
+                    {post.titulo}
                   </h2>
                   <p className="text-gray-500 text-sm mb-3">{post.resumo}</p>
                   <time className="text-xs text-gray-400" dateTime={post.data}>

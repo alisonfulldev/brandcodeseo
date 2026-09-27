@@ -2,19 +2,21 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { serviceSchema, faqSchema, breadcrumbSchema } from "@/lib/seo/schema";
-import { SITE_URL, PRICES } from "@/lib/constants";
+import { SITE_URL } from "@/lib/constants";
+import { getConteudoNicho, nichoIndexavel, hrefSistemaPara, NICHOS_FUNDIDOS } from "@/lib/conteudo";
 import nichos from "@/data/nichos.json";
-import cidades from "@/data/cidades.json";
+import tiposSoftware from "@/data/tipos-software.json";
 import Hero from "@/components/sections/Hero";
 import FAQ from "@/components/sections/FAQ";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
-import Link from "next/link";
 import RelatedLinksSection from "@/components/seo/RelatedLinksSection";
+import { ConteudoIntro, ConteudoDetalhes } from "@/components/seo/ConteudoSections";
 
 type Params = { segmento: string };
 
 export async function generateStaticParams() {
-  return nichos.map((n) => ({ segmento: n.slug }));
+  // Segmentos fundidos redirecionam para a página de tipo (next.config.ts)
+  return nichos.filter((n) => !(n.slug in NICHOS_FUNDIDOS)).map((n) => ({ segmento: n.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
@@ -23,14 +25,14 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   if (!nicho) return {};
 
   return buildMetadata({
-    title: `Sistema para ${nicho.nome} | Software de Gestão Personalizado`,
-    description: `${nicho.descricao} Sistema 100% sob medida, código-fonte incluso e suporte real. Solicite um orçamento gratuito.`,
+    title: `Sistema para ${nicho.nome} Sob Medida | Funcionalidades e Preços`,
+    description: `${nicho.descricao} Veja funcionalidades, exemplo prático, integrações e faixas de preço. Orçamento gratuito.`,
     slug: `sistema-para/${nicho.slug}`,
+    noindex: !nichoIndexavel(nicho.slug),
     keywords: [
       ...nicho.palavrasChave,
       `sistema para ${nicho.nome.toLowerCase()}`,
       `software para ${nicho.nome.toLowerCase()}`,
-      `sistema de gestão ${nicho.nome.toLowerCase()}`,
     ],
   });
 }
@@ -39,67 +41,51 @@ export default async function SistemaParaSegmentoPage({ params }: { params: Prom
   const { segmento } = await params;
   const nicho = nichos.find((n) => n.slug === segmento);
   if (!nicho) notFound();
-
-  const cidadesDestaque = [...cidades]
-    .sort((a, b) => b.populacao - a.populacao)
-    .slice(0, 16);
+  const conteudo = getConteudoNicho(nicho.slug);
 
   const faqs = [
+    ...(conteudo?.faqs ?? []),
     {
-      question: `Quanto custa desenvolver um sistema para ${nicho.nome.toLowerCase()}?`,
-      answer: `Sistemas para ${nicho.nome.toLowerCase()} variam conforme a complexidade. Sistemas web partem de ${PRICES.sistemaWeb} e apps mobile de ${PRICES.appMobile}. Fale pelo WhatsApp para um orçamento personalizado sem compromisso.`,
-    },
-    {
-      question: `O sistema para ${nicho.nome.toLowerCase()} vai atender o meu processo exato?`,
-      answer: `Sim. Desenvolvemos 100% sob medida. Antes de escrever qualquer código, mapeamos o seu processo atual, suas dores e o que precisa ser automatizado. O sistema entregue reflete exatamente o jeito que seu negócio funciona.`,
-    },
-    {
-      question: `Qual é o prazo de entrega?`,
-      answer: `Sistemas web: 30 a 90 dias. Apps mobile: 60 a 120 dias. Trabalhamos com sprints curtos e entregas incrementais — você usa partes do sistema antes da entrega final.`,
-    },
-    {
-      question: `Recebo o código-fonte do sistema?`,
+      question: `Recebo o código-fonte do sistema para ${nicho.nome.toLowerCase()}?`,
       answer: `Sim. O código-fonte é seu. Entregamos o repositório completo, documentação técnica e 3 meses de suporte incluso. Sem dependência de fornecedor.`,
-    },
-    {
-      question: `O sistema integra com outros sistemas que já uso?`,
-      answer: `Sim. Integramos com qualquer ferramenta via API: WhatsApp Business, gateways de pagamento, ERPs existentes, marketplaces, sistemas fiscais e muito mais.`,
     },
   ];
 
   const whatsappMsg = `Olá! Preciso de um sistema para ${nicho.nome.toLowerCase()}. Pode me passar um orçamento?`;
+  const precoInicial = conteudo?.precos[0]?.valor.match(/[\d.]+/)?.[0]?.replace(/\./g, "") ?? "2997";
 
-  const outrosNichos = nichos.filter((n) => n.slug !== nicho.slug).slice(0, 8);
+  const nichosIndexaveis = nichos.filter((n) => nichoIndexavel(n.slug) && n.slug !== nicho.slug);
+  const indice = nichos.findIndex((n) => n.slug === nicho.slug);
+  const inicio = (indice * 3) % nichosIndexaveis.length;
+  const outrosNichos = [...nichosIndexaveis.slice(inicio), ...nichosIndexaveis].slice(0, 8);
+  const inicioTipos = (indice * 5) % tiposSoftware.length;
+  const tiposSugeridos = [...tiposSoftware.slice(inicioTipos), ...tiposSoftware].slice(0, 6);
   const relatedGroups = [
     {
-      titulo: `Outras soluções para ${nicho.nome}`,
-      links: [
-        { href: `/ia-para/${nicho.slug}`, label: `IA para ${nicho.nome}` },
-        { href: `/chatbot-para/${nicho.slug}`, label: `Chatbot para ${nicho.nome}` },
-        { href: `/segmentos/${nicho.slug}`, label: `Hub: ${nicho.nome}` },
-        { href: `/quanto-custa/sistema-de-gestao`, label: "Quanto custa um sistema?" },
-        { href: `/software-sob-medida`, label: "Software Sob Medida" },
-      ],
+      titulo: `Soluções que também atendem ${nicho.nome.toLowerCase()}`,
+      links: tiposSugeridos.map((t) => ({ href: `/desenvolvimento-de/${t.slug}`, label: t.nome })),
     },
     {
       titulo: "Outros segmentos atendidos",
-      links: outrosNichos.map((n) => ({ href: `/sistema-para/${n.slug}`, label: n.nome })),
+      links: outrosNichos.map((n) => ({ href: hrefSistemaPara(n.slug), label: n.nome })),
     },
   ];
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema({ name: `Sistema para ${nicho.nome}`, description: nicho.descricao, price: "2997", slug: `sistema-para/${nicho.slug}` })) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema({ name: `Sistema para ${nicho.nome}`, description: nicho.descricao, price: precoInicial, slug: `sistema-para/${nicho.slug}` })) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: "Início", url: SITE_URL }, { name: `Sistema para ${nicho.nome}`, url: `${SITE_URL}/sistema-para/${nicho.slug}` }])) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }} />
 
       <Hero
         titulo={`Sistema para ${nicho.nome} — 100% Personalizado`}
-        subtitulo={`${nicho.descricao} Software sob medida que resolve o seu processo real. Código-fonte entregue, suporte incluso e sem dependência de fornecedor.`}
+        subtitulo={`${nicho.descricao} Código-fonte entregue, suporte incluso e sem dependência de fornecedor.`}
         badge={`Sistema para ${nicho.nome}`}
         whatsappMsg={whatsappMsg}
         ctaHref="/software-sob-medida"
       />
+
+      {conteudo && <ConteudoIntro conteudo={conteudo} nome={`Sistema para ${nicho.nome}`} />}
 
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -141,25 +127,7 @@ export default async function SistemaParaSegmentoPage({ params }: { params: Prom
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#0A1628] mb-6 text-center">
-            Sistema para {nicho.nome} por cidade
-          </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-            {cidadesDestaque.map((cidade) => (
-              <Link
-                key={cidade.slug}
-                href={`/software-para/${nicho.slug}/${cidade.slug}`}
-                className="bg-white border border-gray-200 rounded-lg px-3 py-2 text-xs text-center text-gray-700 hover:bg-blue-50 hover:border-blue-300 transition-all"
-              >
-                {cidade.nome}
-                <span className="block text-gray-400 text-xs">{cidade.estado}</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      {conteudo && <ConteudoDetalhes conteudo={conteudo} nome={`um sistema para ${nicho.nome}`} whatsappMsg={whatsappMsg} />}
 
       <FAQ items={faqs} title={`Dúvidas sobre sistema para ${nicho.nome}`} />
       <RelatedLinksSection groups={relatedGroups} />

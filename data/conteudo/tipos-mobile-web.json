@@ -1,0 +1,219 @@
+{
+  "app-mobile": {
+    "intro": [
+      "Desenvolvemos aplicativos para iOS e Android a partir de um único código, com desempenho de app nativo e publicação nas duas lojas. É o caminho para empresas que querem estar no celular do cliente com notificações, login, pagamento e funcionalidades que um site não consegue oferecer.",
+      "Antes de escrever código, definimos com você o que o app precisa fazer na primeira versão para gerar resultado. Um MVP bem recortado chega às lojas em semanas, valida o uso real e evita gastar meses construindo funcionalidades que ninguém vai usar."
+    ],
+    "funcionalidades": [
+      { "titulo": "iOS e Android com um código", "desc": "Desenvolvimento em React Native ou Flutter, reduzindo custo e prazo sem perder a experiência nativa." },
+      { "titulo": "Notificações push", "desc": "Mensagens segmentadas para reativar usuários, avisar sobre pedidos e divulgar promoções." },
+      { "titulo": "Login e perfis", "desc": "Cadastro por e-mail, Google ou Apple, recuperação de senha e perfis com permissões diferentes." },
+      { "titulo": "Pagamentos dentro do app", "desc": "Pix, cartão salvo e assinaturas, respeitando as regras das lojas da Apple e do Google." },
+      { "titulo": "Recursos do aparelho", "desc": "Câmera, GPS, biometria, leitura de QR Code e funcionamento offline quando o caso pede." },
+      { "titulo": "Painel administrativo web", "desc": "Gestão de usuários, conteúdo, pedidos e métricas do app pelo navegador." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: app de fidelidade para rede de cafeterias",
+      "texto": "Uma rede de cafeterias quer que o cliente peça pelo celular e retire no balcão, acumule pontos e receba ofertas no horário em que costuma comprar. O MVP inclui cardápio, pedido com pagamento por Pix ou cartão, cartão de fidelidade digital e notificações. Depois do lançamento, os dados de uso orientam a segunda versão."
+    },
+    "integracoes": ["Apple App Store e Google Play", "Firebase (push e analytics)", "Gateways de pagamento", "APIs do seu sistema atual", "Google Maps", "Login social"],
+    "precos": [
+      { "label": "MVP", "valor": "R$ 4.997 – R$ 12.000", "desc": "Funcionalidades essenciais, login, painel simples e publicação nas lojas." },
+      { "label": "App completo", "valor": "R$ 12.000 – R$ 35.000", "desc": "Pagamentos, push segmentado, integrações e painel administrativo completo." },
+      { "label": "Plataforma mobile", "valor": "R$ 35.000+", "desc": "Múltiplos perfis de usuário, tempo real, alta escala e recursos avançados do aparelho." }
+    ],
+    "prazo": "45 a 120 dias, com versões de teste liberadas a cada duas semanas.",
+    "faqs": [
+      { "question": "O app é nativo ou híbrido?", "answer": "Usamos frameworks multiplataforma modernos, que geram apps nativos para iOS e Android a partir do mesmo código. Para a maioria dos casos, o usuário não percebe diferença de desempenho, e o custo cai quase pela metade." },
+      { "question": "Vocês publicam o app nas lojas?", "answer": "Sim. Preparamos ícones, telas, descrições e cuidamos do processo de revisão da Apple e do Google, publicando na conta da sua empresa." },
+      { "question": "Quanto custa manter um app?", "answer": "Além das contas de desenvolvedor das lojas, há custos de servidor proporcionais ao uso e atualizações periódicas para novas versões de iOS e Android. Explicamos essa estimativa na proposta." },
+      { "question": "Preciso de um app ou um site resolve?", "answer": "Se o cliente usa o serviço com frequência, precisa de notificações, câmera, localização ou modo offline, o app faz sentido. Para uso eventual, um site bem feito costuma ser suficiente — e dizemos isso quando é o caso." }
+    ]
+  },
+  "app-android": {
+    "intro": [
+      "Um app Android é a escolha certa quando o público está concentrado nessa plataforma — que é a maior parte dos celulares no Brasil — ou quando o aplicativo é para uso interno, em aparelhos que a própria empresa fornece para equipes de campo, entregadores, técnicos e vendedores.",
+      "Apps corporativos Android permitem recursos que não existem no iPhone ou que seriam barrados pela loja da Apple: modo quiosque, distribuição sem loja, integração com impressoras e leitores industriais e controle total do aparelho pela empresa."
+    ],
+    "funcionalidades": [
+      { "titulo": "Modo offline completo", "desc": "O app funciona sem sinal e sincroniza os dados quando encontra conexão, ideal para campo e zona rural." },
+      { "titulo": "Distribuição sem loja", "desc": "Instalação direta nos aparelhos da empresa ou pela Google Play privada, sem expor o app ao público." },
+      { "titulo": "Periféricos", "desc": "Impressoras térmicas Bluetooth, leitores de código de barras, NFC e maquininhas de cartão Android." },
+      { "titulo": "Modo quiosque", "desc": "Aparelho travado no app, para totens de autoatendimento, tablets de balcão e coletores." },
+      { "titulo": "Geolocalização e rotas", "desc": "Check-in no cliente, rastreamento de rota e comprovação de visita com foto e localização." },
+      { "titulo": "Gestão remota dos aparelhos", "desc": "Atualização do app, bloqueio e controle dos dispositivos pela empresa." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: app de pré-venda para equipe de representantes",
+      "texto": "Uma distribuidora com 40 representantes que anotam pedidos em talão e digitam no fim do dia. Com um app Android offline, o representante consulta estoque e preço, tira o pedido na loja do cliente mesmo sem sinal, imprime o comprovante em uma impressora Bluetooth e o pedido chega ao ERP assim que o celular se conecta."
+    },
+    "integracoes": ["ERP e sistemas internos", "Impressoras Bluetooth", "Leitores de código de barras e NFC", "Google Maps", "Android Enterprise"],
+    "precos": [
+      { "label": "App interno simples", "valor": "R$ 4.997 – R$ 9.997", "desc": "Formulários, consultas e sincronização com o sistema da empresa." },
+      { "label": "App de campo", "valor": "R$ 10.000 – R$ 22.000", "desc": "Modo offline, periféricos, geolocalização e integração com ERP." },
+      { "label": "App Android + iOS", "valor": "R$ 22.000+", "desc": "Versão para as duas plataformas quando o público exige." }
+    ],
+    "prazo": "30 a 90 dias.",
+    "faqs": [
+      { "question": "Por que fazer só Android?", "answer": "Quando o app é para a equipe da empresa, você escolhe os aparelhos, e Android é mais barato e flexível. Para o público geral, avaliamos a divisão entre Android e iPhone dos seus clientes antes de decidir." },
+      { "question": "Depois dá para lançar no iPhone?", "answer": "Sim. Usando tecnologia multiplataforma desde o início, a versão iOS aproveita a maior parte do código." },
+      { "question": "O app funciona em celulares mais simples?", "answer": "Sim. Otimizamos para aparelhos intermediários e de entrada, que são comuns em equipes de campo." },
+      { "question": "Posso instalar sem publicar na Play Store?", "answer": "Sim. Apps internos podem ser distribuídos por arquivo de instalação, por gerenciamento de dispositivos ou pela loja privada do Google, sem ficar público." }
+    ]
+  },
+  "e-commerce": {
+    "intro": [
+      "Uma loja virtual sob medida é para marcas que já venderam o suficiente para esbarrar nos limites das plataformas prontas: taxas sobre cada venda, regras de frete e preço que não são possíveis, desempenho lento e integrações que não conversam com o estoque e o ERP.",
+      "Com e-commerce próprio, você controla a experiência de compra, a velocidade do site — que afeta diretamente a conversão e o Google — e as regras de negócio, como venda B2B com tabela por cliente, personalização de produto ou assinatura."
+    ],
+    "funcionalidades": [
+      { "titulo": "Catálogo com variações", "desc": "Produtos com grade, kits, personalização e busca com filtros rápidos." },
+      { "titulo": "Checkout otimizado", "desc": "Compra em poucos passos com Pix, cartão, boleto e carteiras digitais, com recuperação de carrinho." },
+      { "titulo": "Frete inteligente", "desc": "Cotação em várias transportadoras, frete grátis por região ou valor e retirada na loja." },
+      { "titulo": "Venda B2B", "desc": "Tabela de preço por cliente, pedido mínimo, faturamento a prazo e aprovação de cadastro." },
+      { "titulo": "Estoque integrado", "desc": "Saldo sincronizado com ERP, loja física e marketplaces para não vender o que não tem." },
+      { "titulo": "SEO e desempenho", "desc": "Páginas rápidas, dados estruturados de produto e URLs amigáveis para aparecer no Google Shopping." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: marca de cosméticos que vende no varejo e no atacado",
+      "texto": "Uma marca de cosméticos vende para consumidor final e para revendedoras, cada uma com preço e pedido mínimo diferentes, e hoje mantém duas lojas separadas. Com um e-commerce próprio, a mesma loja reconhece a revendedora ao fazer login, aplica a tabela de atacado, permite pagamento a prazo e baixa o estoque em um único lugar."
+    },
+    "integracoes": ["ERPs (Bling, Tiny, Omie)", "Melhor Envio, Correios e Frenet", "Mercado Pago, Pagar.me, Stripe", "Google Shopping e Meta Catalog", "Marketplaces", "Emissão de NF-e"],
+    "precos": [
+      { "label": "Loja essencial", "valor": "R$ 4.997 – R$ 12.000", "desc": "Catálogo, checkout, frete e painel administrativo." },
+      { "label": "Loja completa", "valor": "R$ 12.000 – R$ 30.000", "desc": "B2B, ERP integrado, promoções avançadas e alta performance." },
+      { "label": "Omnichannel", "valor": "R$ 30.000+", "desc": "Loja física, marketplaces e aplicativo integrados em uma só operação." }
+    ],
+    "prazo": "45 a 100 dias.",
+    "faqs": [
+      { "question": "Por que não usar Shopify, Nuvemshop ou VTEX?", "answer": "Para começar, essas plataformas são ótimas. O sob medida faz sentido quando as taxas pesam, quando você precisa de regras que elas não suportam ou quando o desempenho e as integrações começam a limitar o crescimento." },
+      { "question": "A loja fica rápida?", "answer": "Sim. Usamos renderização no servidor e imagens otimizadas para que as páginas carreguem rápido no celular, o que melhora a conversão e o posicionamento no Google." },
+      { "question": "Consigo vender no atacado e no varejo na mesma loja?", "answer": "Sim. A loja identifica o tipo de cliente no login e aplica preços, pedido mínimo e condições de pagamento específicos." },
+      { "question": "Dá para migrar os produtos e clientes da minha loja atual?", "answer": "Sim. Migramos produtos, clientes e pedidos e criamos redirecionamentos das URLs antigas para não perder posicionamento no Google." }
+    ]
+  },
+  "marketplace": {
+    "intro": [
+      "Um marketplace conecta vários vendedores ou prestadores de serviço a compradores em uma única plataforma, com a sua empresa cobrando comissão ou mensalidade. É o modelo de negócios de plataformas de nicho: produtores locais, profissionais autônomos, fornecedores de uma indústria ou serviços de uma região.",
+      "O desafio técnico de um marketplace está no que o comprador não vê: cadastro e aprovação de vendedores, divisão do pagamento entre as partes, repasses, disputas e reputação. Construímos essa estrutura com split de pagamento automático para que você não precise receber e repassar dinheiro manualmente."
+    ],
+    "funcionalidades": [
+      { "titulo": "Painel do vendedor", "desc": "Cada vendedor cadastra produtos ou serviços, gerencia pedidos e acompanha seus recebimentos." },
+      { "titulo": "Split de pagamento", "desc": "O valor da venda é dividido automaticamente entre vendedor e plataforma no momento do pagamento." },
+      { "titulo": "Aprovação e onboarding", "desc": "Cadastro de vendedores com documentos, verificação e regras de aprovação." },
+      { "titulo": "Avaliações e reputação", "desc": "Notas e comentários após cada compra, com moderação e ranking de vendedores." },
+      { "titulo": "Mediação de disputas", "desc": "Abertura de reclamações, prazos de resposta e decisão da plataforma com estorno quando necessário." },
+      { "titulo": "Comissões configuráveis", "desc": "Taxa por categoria, por vendedor ou por plano de assinatura do vendedor." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: marketplace de serviços residenciais",
+      "texto": "Uma empresa quer conectar moradores a eletricistas, encanadores e diaristas avaliados na sua região. No marketplace, o profissional cria o perfil e define a área de atendimento, o cliente pede orçamento e paga pela plataforma, o valor fica retido até a conclusão do serviço e é liberado ao profissional descontada a comissão. As avaliações constroem confiança dos dois lados."
+    },
+    "integracoes": ["Split de pagamento (Pagar.me, Asaas, Stripe Connect, Mercado Pago)", "Verificação de identidade", "WhatsApp e e-mail", "Emissão de nota da comissão", "Google Maps"],
+    "precos": [
+      { "label": "MVP de marketplace", "valor": "R$ 12.000 – R$ 25.000", "desc": "Vendedores, catálogo, checkout com split e avaliações." },
+      { "label": "Marketplace completo", "valor": "R$ 25.000 – R$ 60.000", "desc": "Disputas, comissões flexíveis, app e painéis avançados." },
+      { "label": "Plataforma em escala", "valor": "R$ 60.000+", "desc": "Alto volume, logística integrada e múltiplas categorias de negócio." }
+    ],
+    "prazo": "60 a 150 dias.",
+    "faqs": [
+      { "question": "Preciso receber o dinheiro e repassar aos vendedores?", "answer": "Não. Com split de pagamento, o gateway divide o valor automaticamente e cada vendedor recebe direto na conta dele. Isso reduz risco fiscal e operacional para a plataforma." },
+      { "question": "Como atrair os primeiros vendedores e compradores?", "answer": "Esse é o maior desafio de todo marketplace. Recomendamos começar por um nicho e uma região pequenos e construir o MVP para validar rápido antes de investir em escala." },
+      { "question": "O marketplace pode ter app?", "answer": "Sim. É comum lançar primeiro na web e criar os apps de comprador e vendedor depois que o modelo se provar." },
+      { "question": "Quem emite a nota fiscal?", "answer": "Normalmente cada vendedor emite a nota do produto ou serviço, e a plataforma emite nota apenas da comissão. Validamos esse modelo com o seu contador." }
+    ]
+  },
+  "sistema-de-assinaturas": {
+    "intro": [
+      "Um sistema de assinaturas transforma vendas avulsas em receita recorrente previsível. Serve para clubes de produtos, planos de serviço, mensalidades de academias, softwares e qualquer negócio que cobre o cliente todo mês, trimestre ou ano.",
+      "O ponto crítico da recorrência é a cobrança: cartões recusados, boletos esquecidos e cancelamentos silenciosos corroem a receita. Um sistema próprio automatiza a cobrança, tenta novamente de forma inteligente e mostra os indicadores que importam — receita recorrente, churn e valor do cliente."
+    ],
+    "funcionalidades": [
+      { "titulo": "Planos flexíveis", "desc": "Mensal, trimestral e anual, período de teste, taxa de adesão e cobrança por uso." },
+      { "titulo": "Cobrança automática", "desc": "Cartão recorrente, Pix automático e boleto, com nova tentativa e troca de cartão pelo próprio cliente." },
+      { "titulo": "Upgrade e downgrade", "desc": "Mudança de plano com cálculo proporcional do valor, sem intervenção manual." },
+      { "titulo": "Área do assinante", "desc": "O cliente vê faturas, altera dados, pausa ou cancela seguindo as regras que você definir." },
+      { "titulo": "Recuperação de churn", "desc": "Oferta de retenção no cancelamento e campanhas para assinantes com pagamento falho." },
+      { "titulo": "Métricas de recorrência", "desc": "MRR, churn, LTV e cohort de retenção atualizados diariamente." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: clube de assinatura de café",
+      "texto": "Um clube de café cobra os assinantes manualmente e perde parte da base todo mês por cartão recusado. Com o sistema de assinaturas, a cobrança é automática, cartões recusados recebem novas tentativas e um link para atualização, o assinante pode pausar em vez de cancelar e o envio de cada mês é gerado para a logística com base nos pagamentos aprovados."
+    },
+    "integracoes": ["Asaas, Iugu, Pagar.me, Stripe", "Pix Automático", "Emissão de NFS-e e NF-e", "Plataformas de envio", "E-mail e WhatsApp"],
+    "precos": [
+      { "label": "Recorrência simples", "valor": "R$ 3.997 – R$ 8.997", "desc": "Planos, cobrança automática e área do assinante." },
+      { "label": "Assinaturas completas", "valor": "R$ 9.000 – R$ 18.000", "desc": "Upgrades, recuperação de churn, métricas e emissão de notas." },
+      { "label": "Billing avançado", "valor": "R$ 18.000+", "desc": "Cobrança por uso, múltiplas moedas e integração com produto SaaS." }
+    ],
+    "prazo": "30 a 60 dias.",
+    "faqs": [
+      { "question": "Qual forma de pagamento reduz a inadimplência?", "answer": "O cartão de crédito recorrente costuma ter a menor inadimplência, seguido do Pix Automático. O boleto exige mais lembretes. O sistema suporta os três e permite incentivar o cartão com desconto." },
+      { "question": "O que acontece quando o cartão é recusado?", "answer": "O sistema tenta novamente em datas estratégicas, avisa o cliente por e-mail e WhatsApp com link para trocar o cartão e só suspende o acesso depois do prazo que você definir." },
+      { "question": "O assinante consegue cancelar sozinho?", "answer": "Sim, conforme o Código de Defesa do Consumidor. Antes de concluir, o sistema pode oferecer pausa ou desconto para tentar reter." },
+      { "question": "Serve para cobrar mensalidade de serviços?", "answer": "Sim. Academias, escolas, consultorias e prestadores de serviço usam o mesmo modelo, com emissão automática de nota fiscal de serviço." }
+    ]
+  },
+  "saas": {
+    "intro": [
+      "Desenvolvemos produtos SaaS — software vendido como serviço por assinatura — para empreendedores e empresas que querem transformar um conhecimento de mercado em um produto digital escalável. Cuidamos da arquitetura multiempresa, da cobrança recorrente e da infraestrutura para que você foque em vender e ouvir os clientes.",
+      "Um SaaS bem construído começa enxuto. Ajudamos a definir o MVP que resolve a dor principal do seu cliente ideal, colocamos no ar rápido e evoluímos com base em uso real, em vez de passar um ano construindo antes de ter o primeiro assinante."
+    ],
+    "funcionalidades": [
+      { "titulo": "Arquitetura multi-tenant", "desc": "Cada cliente tem seus dados isolados em uma única aplicação, reduzindo custo de infraestrutura." },
+      { "titulo": "Cadastro self-service", "desc": "O cliente cria a conta, testa grátis e assina sem precisar falar com vendas." },
+      { "titulo": "Planos e limites", "desc": "Funcionalidades e limites de uso por plano, com upgrade dentro do produto." },
+      { "titulo": "Gestão de equipes", "desc": "Convite de usuários, papéis e permissões dentro de cada conta cliente." },
+      { "titulo": "Painel do fundador", "desc": "MRR, churn, ativação e uso por funcionalidade para decidir o que construir a seguir." },
+      { "titulo": "API e integrações", "desc": "API pública e webhooks para clientes integrarem o seu produto aos sistemas deles." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: SaaS de gestão para estúdios de pilates",
+      "texto": "Uma fisioterapeuta que criou uma planilha de gestão usada por colegas quer transformá-la em produto. O MVP inclui cadastro do estúdio, agenda de aulas, controle de pacotes e cobrança mensal dos alunos, com teste grátis de 14 dias. Com os primeiros estúdios pagantes, as próximas funcionalidades são decididas com base no uso e nos pedidos reais."
+    },
+    "integracoes": ["Stripe, Asaas, Iugu (billing)", "Autenticação com Google e Microsoft", "E-mail transacional", "Analytics de produto", "Webhooks e API pública"],
+    "precos": [
+      { "label": "MVP SaaS", "valor": "R$ 9.997 – R$ 25.000", "desc": "Multiempresa, assinatura, funcionalidade principal e painel admin." },
+      { "label": "SaaS em crescimento", "valor": "R$ 25.000 – R$ 60.000", "desc": "Planos, equipes, API, integrações e onboarding guiado." },
+      { "label": "SaaS enterprise", "valor": "R$ 60.000+", "desc": "SSO, auditoria, alta disponibilidade e requisitos de grandes clientes." }
+    ],
+    "prazo": "60 a 120 dias para o MVP em produção.",
+    "faqs": [
+      { "question": "Vocês podem ser sócios do meu SaaS?", "answer": "Trabalhamos no modelo de desenvolvimento contratado, com o código e o produto 100% seus. Isso garante que você mantenha o controle total da empresa e da propriedade intelectual." },
+      { "question": "Quanto custa a infraestrutura de um SaaS?", "answer": "No início, poucas centenas de reais por mês. A arquitetura multi-tenant faz o custo crescer de forma proporcional ao número de clientes, não à quantidade de instâncias." },
+      { "question": "Como validar a ideia antes de investir muito?", "answer": "Recomendamos um MVP com a menor quantidade de funcionalidades capaz de fazer alguém pagar. Às vezes, validamos até com um protótipo navegável antes de desenvolver." },
+      { "question": "O SaaS fica preparado para crescer?", "answer": "Sim. Usamos arquitetura em nuvem que escala conforme a demanda, com banco de dados e filas preparados para aumento de volume sem reescrever o sistema." }
+    ]
+  },
+  "portal-do-cliente": {
+    "intro": [
+      "Um portal do cliente é a área logada onde seus clientes resolvem sozinhos o que hoje exige ligação, e-mail ou WhatsApp: segunda via de boleto, status de pedido, documentos, contratos, abertura de solicitações e relatórios. Ele reduz o volume de atendimento e aumenta a percepção de profissionalismo da empresa.",
+      "O portal se conecta aos sistemas que você já usa — ERP, financeiro, CRM — e mostra ao cliente apenas o que é dele, com a sua marca e no seu domínio."
+    ],
+    "funcionalidades": [
+      { "titulo": "Financeiro do cliente", "desc": "Faturas, segunda via de boleto, Pix, notas fiscais e histórico de pagamentos." },
+      { "titulo": "Acompanhamento de pedidos e projetos", "desc": "Status em tempo real, etapas concluídas, próximos passos e prazos previstos." },
+      { "titulo": "Documentos e contratos", "desc": "Contratos, laudos, relatórios e arquivos compartilhados de forma segura." },
+      { "titulo": "Solicitações e chamados", "desc": "Abertura de pedidos com acompanhamento e histórico de conversas com a equipe." },
+      { "titulo": "Múltiplos usuários por empresa", "desc": "O cliente cadastra seus próprios colaboradores com permissões diferentes." },
+      { "titulo": "Relatórios personalizados", "desc": "Indicadores do serviço prestado, como consumo, entregas ou resultados, com exportação." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: escritório de contabilidade com 300 clientes",
+      "texto": "Um escritório contábil recebe todo mês dezenas de pedidos de guias e documentos pelo WhatsApp. Com o portal do cliente, as guias, balancetes e folhas de pagamento ficam disponíveis assim que são geradas, o cliente é avisado automaticamente, envia seus documentos pelo próprio portal e a equipe deixa de perder tempo procurando arquivos."
+    },
+    "integracoes": ["ERP e sistema financeiro", "Boleto e Pix", "Armazenamento de documentos", "Assinatura eletrônica", "WhatsApp e e-mail", "Login único (SSO)"],
+    "precos": [
+      { "label": "Portal essencial", "valor": "R$ 3.997 – R$ 8.997", "desc": "Login, financeiro, documentos e solicitações." },
+      { "label": "Portal integrado", "valor": "R$ 9.000 – R$ 18.000", "desc": "Integração com ERP e CRM, projetos e usuários por empresa." },
+      { "label": "Portal + app", "valor": "R$ 18.000+", "desc": "Aplicativo com notificações, relatórios avançados e SSO." }
+    ],
+    "prazo": "30 a 60 dias.",
+    "faqs": [
+      { "question": "O portal reduz o atendimento da equipe?", "answer": "Sim. Perguntas repetitivas como segunda via, status e documentos passam a ser resolvidas pelo próprio cliente, a qualquer hora." },
+      { "question": "O portal fica no domínio da minha empresa?", "answer": "Sim, por exemplo em cliente.suaempresa.com.br, com sua marca e suas cores." },
+      { "question": "Preciso trocar meus sistemas atuais?", "answer": "Não. O portal consome os dados dos sistemas que você já usa por integração. Onde não há API, usamos importação automática de arquivos." },
+      { "question": "É seguro disponibilizar documentos online?", "answer": "Sim. O acesso é por login com senha forte e opção de dois fatores, cada cliente vê apenas os seus dados e todos os acessos ficam registrados." }
+    ]
+  }
+}

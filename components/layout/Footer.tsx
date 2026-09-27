@@ -5,23 +5,23 @@ import { SITE_NAME, WHATSAPP_LINK, PRICES } from "@/lib/constants";
 const servicos = [
   { href: "/software-sob-medida", label: "Software Sob Medida" },
   { href: "/desenvolvimento-de/app-mobile", label: "App Mobile" },
-  { href: "/automacao-de/chatbot-whatsapp", label: "Chatbot e Automação WhatsApp" },
+  { href: "/desenvolvimento-de/chatbot-whatsapp", label: "Chatbot e Automação WhatsApp" },
   { href: "/desenvolvimento-de/ia-para-negocios", label: "Inteligência Artificial" },
-  { href: "/automacao-de/automacao-de-processos", label: "Automação de Processos" },
+  { href: "/desenvolvimento-de/automacao-de-processos", label: "Automação de Processos" },
   { href: "/desenvolvimento-de/erp", label: "Desenvolvimento de ERP" },
   { href: "/desenvolvimento-de/crm", label: "Desenvolvimento de CRM" },
-  { href: "/quanto-custa/sistema-de-gestao", label: "Quanto custa um software?" },
+  { href: "/desenvolvimento-de/sistema-de-gestao#precos", label: "Quanto custa um software?" },
 ] as const;
 
 const top15Segmentos = [
   { href: "/sistema-para/restaurante", label: "Sistema para Restaurante" },
   { href: "/sistema-para/clinica", label: "Sistema para Clínica" },
   { href: "/sistema-para/academia", label: "Sistema para Academia" },
-  { href: "/sistema-para/escola", label: "Sistema para Escola" },
-  { href: "/sistema-para/imobiliaria", label: "Sistema para Imobiliária" },
+  { href: "/desenvolvimento-de/sistema-de-gestao-escolar", label: "Sistema para Escola" },
+  { href: "/desenvolvimento-de/sistema-imobiliario", label: "Sistema para Imobiliária" },
   { href: "/sistema-para/salao-de-beleza", label: "Sistema para Salão" },
   { href: "/sistema-para/farmacia", label: "Sistema para Farmácia" },
-  { href: "/sistema-para/construtora", label: "Sistema para Construtora" },
+  { href: "/desenvolvimento-de/sistema-de-gestao-de-obras", label: "Sistema para Construtora" },
   { href: "/sistema-para/hotel", label: "Sistema para Hotel" },
   { href: "/sistema-para/advocacia", label: "Sistema para Advocacia" },
   { href: "/sistema-para/contabilidade", label: "Sistema para Contabilidade" },
@@ -29,29 +29,6 @@ const top15Segmentos = [
   { href: "/sistema-para/industria", label: "Sistema para Indústria" },
   { href: "/sistema-para/transportadora", label: "Sistema para Transportadora" },
   { href: "/sistema-para/pet-shop", label: "Sistema para Pet Shop" },
-] as const;
-
-const top20Cidades = [
-  { href: "/desenvolvimento-de-software-em/sao-paulo", label: "São Paulo" },
-  { href: "/desenvolvimento-de-software-em/rio-de-janeiro", label: "Rio de Janeiro" },
-  { href: "/desenvolvimento-de-software-em/brasilia", label: "Brasília" },
-  { href: "/desenvolvimento-de-software-em/belo-horizonte", label: "Belo Horizonte" },
-  { href: "/desenvolvimento-de-software-em/curitiba", label: "Curitiba" },
-  { href: "/desenvolvimento-de-software-em/fortaleza", label: "Fortaleza" },
-  { href: "/desenvolvimento-de-software-em/salvador", label: "Salvador" },
-  { href: "/desenvolvimento-de-software-em/recife", label: "Recife" },
-  { href: "/desenvolvimento-de-software-em/manaus", label: "Manaus" },
-  { href: "/desenvolvimento-de-software-em/porto-alegre", label: "Porto Alegre" },
-  { href: "/desenvolvimento-de-software-em/goiania", label: "Goiânia" },
-  { href: "/desenvolvimento-de-software-em/belem", label: "Belém" },
-  { href: "/desenvolvimento-de-software-em/campinas", label: "Campinas" },
-  { href: "/desenvolvimento-de-software-em/guarulhos", label: "Guarulhos" },
-  { href: "/desenvolvimento-de-software-em/natal", label: "Natal" },
-  { href: "/desenvolvimento-de-software-em/maceio", label: "Maceió" },
-  { href: "/desenvolvimento-de-software-em/teresina", label: "Teresina" },
-  { href: "/desenvolvimento-de-software-em/campo-grande", label: "Campo Grande" },
-  { href: "/desenvolvimento-de-software-em/sao-luis", label: "São Luís" },
-  { href: "/desenvolvimento-de-software-em/joao-pessoa", label: "João Pessoa" },
 ] as const;
 
 const WA_ICON = (
@@ -70,7 +47,7 @@ export default function Footer() {
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
         style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
           {/* Coluna 1 — Brand */}
           <div>
@@ -178,31 +155,6 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </nav>
-
-          {/* Coluna 4 — Cidades Atendidas */}
-          <nav aria-label="Desenvolvimento de software por cidade">
-            <h3
-              className="font-semibold text-sm uppercase tracking-wider mb-4"
-              style={{ color: "#94A3B8" }}
-            >
-              Cidades Atendidas
-            </h3>
-            <ul className="grid grid-cols-2 gap-x-3 gap-y-2">
-              {top20Cidades.map((c) => (
-                <li key={c.href}>
-                  <Link href={c.href} className="footer-link block">
-                    {c.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <p className="mt-4 text-xs leading-relaxed" style={{ color: "#64748B" }}>
-              Atendemos todo o Brasil de forma remota.{" "}
-              <Link href="/sobre" className="footer-link underline">
-                Saiba mais
-              </Link>
-            </p>
           </nav>
         </div>
       </div>

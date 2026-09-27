@@ -1,5 +1,6 @@
 import Link from "next/link";
 import nichos from "@/data/nichos.json";
+import { hrefSistemaPara } from "@/lib/rotas";
 
 export default function NichosGrid() {
   return (
@@ -30,7 +31,7 @@ export default function NichosGrid() {
           {nichos.map((nicho) => (
             <Link
               key={nicho.slug}
-              href={`/sistema-para/${nicho.slug}`}
+              href={hrefSistemaPara(nicho.slug)}
               className="dark-pill px-3 py-2.5 text-sm text-center font-medium block"
             >
               {nicho.nome}

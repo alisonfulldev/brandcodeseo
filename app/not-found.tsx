@@ -3,7 +3,7 @@ import Link from "next/link";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Página não encontrada | BrandCode Solutions",
+  title: "Página não encontrada",
   robots: { index: false, follow: false },
 };
 

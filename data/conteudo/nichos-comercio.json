@@ -1,0 +1,250 @@
+{
+  "restaurante": {
+    "intro": [
+      "Um sistema para restaurante conecta salão, cozinha, delivery e financeiro para que nenhum pedido se perca e o dono saiba a margem real de cada prato. Serve para restaurantes, bares, lanchonetes e hamburguerias que trabalham com comandas de papel, pedidos anotados à mão e ficha técnica que nunca saiu da cabeça do chef.",
+      "O que mais pesa no resultado de um restaurante é o custo da mercadoria e o desperdício. Com ficha técnica ligada ao estoque, cada prato vendido baixa os insumos e o sistema mostra o CMV do dia, não só o do fim do mês."
+    ],
+    "funcionalidades": [
+      { "titulo": "Comanda digital", "desc": "Garçom lança pedidos no celular por mesa, e cada item vai direto para o setor certo da cozinha ou do bar." },
+      { "titulo": "Tela da cozinha (KDS)", "desc": "Pedidos exibidos por ordem e tempo de preparo, com alerta para pratos atrasados." },
+      { "titulo": "Ficha técnica e CMV", "desc": "Custo de cada prato calculado pelos insumos, com baixa automática no estoque a cada venda." },
+      { "titulo": "Cardápio QR Code", "desc": "Cliente pede e paga pela mesa, liberando a equipe nos horários de pico." },
+      { "titulo": "Delivery integrado", "desc": "Pedidos do iFood, do WhatsApp e do cardápio próprio no mesmo painel da cozinha." },
+      { "titulo": "Fechamento de caixa", "desc": "Divisão de conta, taxa de serviço, gorjeta por garçom e fechamento conferido por forma de pagamento." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: restaurante com salão e delivery",
+      "texto": "Um restaurante com 30 mesas e delivery perde pedidos entre o salão e a cozinha nos horários de pico e não sabe por que a margem caiu. Com o sistema, o garçom lança pelo celular, a cozinha vê os pedidos do salão e do iFood na mesma tela, a ficha técnica mostra que o preço de um insumo subiu e que três pratos passaram a dar prejuízo, e o cardápio é ajustado na mesma semana."
+    },
+    "integracoes": ["iFood e outros apps de delivery", "SEFAZ (NFC-e)", "TEF, Pix e maquininhas", "Impressoras de cozinha", "WhatsApp Business", "Contabilidade"],
+    "precos": [
+      { "label": "Lanchonete ou bar", "valor": "R$ 2.997 – R$ 6.997", "desc": "Comanda, caixa, NFC-e e cardápio digital." },
+      { "label": "Restaurante completo", "valor": "R$ 7.000 – R$ 16.000", "desc": "KDS, ficha técnica, estoque, delivery integrado e pedidos na mesa." },
+      { "label": "Rede ou franquia", "valor": "R$ 16.000+", "desc": "Várias unidades, cozinha central e padronização de fichas técnicas." }
+    ],
+    "prazo": "30 a 75 dias.",
+    "faqs": [
+      { "question": "O sistema funciona sem internet?", "answer": "Sim. Comandas e cozinha continuam funcionando na rede local se a internet cair, e o sistema sincroniza depois." },
+      { "question": "Como a ficha técnica ajuda no lucro?", "answer": "Ela calcula o custo de cada prato pelos preços atuais dos insumos. Quando um fornecedor aumenta o preço, você vê imediatamente quais pratos perderam margem." },
+      { "question": "Recebo os pedidos do iFood no sistema?", "answer": "Sim. Os pedidos do iFood aparecem junto com os do salão e do delivery próprio, e são impressos ou exibidos na cozinha da mesma forma." },
+      { "question": "O cliente pode pedir pelo celular na mesa?", "answer": "Sim, pelo QR Code na mesa. O pedido vai direto para a cozinha e o cliente pode pagar pelo celular sem esperar a conta." }
+    ]
+  },
+  "pet-shop": {
+    "intro": [
+      "Um sistema para pet shop e clínica veterinária organiza banho e tosa, consultas, vacinas, vendas de produtos e planos de assinatura, com o histórico de cada animal em um só lugar. Ele é pensado para negócios que atendem o mesmo pet por anos e que dependem da recorrência para crescer.",
+      "O diferencial de um pet shop está no cuidado. Lembrar a vacina, avisar que o banho está pronto, mandar fotos do pet durante o atendimento — o sistema automatiza esses toques que fazem o tutor voltar."
+    ],
+    "funcionalidades": [
+      { "titulo": "Ficha do pet", "desc": "Espécie, raça, porte, temperamento, alergias, vacinas e histórico de serviços de cada animal." },
+      { "titulo": "Agenda de banho e tosa", "desc": "Agendamento por porte e serviço, com tempo estimado, leva e traz e controle por profissional." },
+      { "titulo": "Lembrete de vacinas e vermífugos", "desc": "Aviso automático ao tutor quando a próxima dose estiver próxima." },
+      { "titulo": "Planos de assinatura", "desc": "Pacotes mensais de banho com cobrança recorrente e controle de uso." },
+      { "titulo": "Status com foto", "desc": "Tutor recebe no WhatsApp o aviso de que o pet está pronto, com foto do resultado." },
+      { "titulo": "Loja e estoque", "desc": "Venda de rações e acessórios com estoque, validade e sugestão de recompra." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: pet shop com banho e tosa e consultório",
+      "texto": "Um pet shop agenda banhos pelo WhatsApp, perde o controle dos horários e esquece de avisar os tutores sobre vacinas. Com o sistema, o tutor agenda online, o banho é cobrado no plano mensal, a equipe envia a foto do pet pronto pelo sistema e, alguns dias antes do vencimento da vacina, o tutor recebe um lembrete com o link para agendar."
+    },
+    "integracoes": ["WhatsApp Business API", "Pix, cartão e cobrança recorrente", "SEFAZ (NFC-e e NFS-e)", "E-commerce de produtos", "Google Maps (leva e traz)"],
+    "precos": [
+      { "label": "Banho e tosa", "valor": "R$ 2.997 – R$ 5.997", "desc": "Agenda, fichas dos pets, avisos e caixa." },
+      { "label": "Pet shop completo", "valor": "R$ 6.000 – R$ 13.000", "desc": "Planos recorrentes, loja com estoque, vacinas e leva e traz." },
+      { "label": "Pet shop + veterinária", "valor": "R$ 13.000+", "desc": "Prontuário veterinário, internação e várias unidades." }
+    ],
+    "prazo": "30 a 60 dias.",
+    "faqs": [
+      { "question": "O sistema serve para clínica veterinária?", "answer": "Sim. O módulo veterinário inclui prontuário, prescrições, exames, vacinas e internação, integrado ao banho e tosa e à loja." },
+      { "question": "Como funcionam os planos de banho?", "answer": "O tutor assina um plano mensal com um número de banhos. A cobrança é automática e o sistema controla quantos banhos foram usados." },
+      { "question": "O tutor consegue agendar sozinho?", "answer": "Sim, por um link com a marca do pet shop. O sistema considera porte e serviço para calcular o tempo e só mostra horários disponíveis." },
+      { "question": "Consigo lembrar o tutor de comprar ração?", "answer": "Sim. Com base no tamanho do pacote e no consumo do pet, o sistema estima quando a ração vai acabar e envia uma oferta de recompra." }
+    ]
+  },
+  "loja-de-varejo": {
+    "intro": [
+      "Um sistema para loja de varejo integra caixa, estoque, compras, crediário e vendas online para que a loja física e a virtual funcionem como uma só. É para lojas de roupas, calçados, presentes, eletrônicos e utilidades que vendem em vários canais e precisam de números confiáveis para comprar melhor.",
+      "No varejo, o dinheiro está no estoque. Comprar a grade certa, na quantidade certa, e liquidar o que não gira faz mais diferença no resultado do que qualquer outra decisão — e isso só é possível com dados de venda por produto, tamanho e cor."
+    ],
+    "funcionalidades": [
+      { "titulo": "PDV rápido", "desc": "Venda por código de barras, troca e devolução, vale-troca e emissão de NFC-e." },
+      { "titulo": "Estoque por grade", "desc": "Saldo por tamanho e cor, em cada loja, com transferências entre unidades." },
+      { "titulo": "Compras inteligentes", "desc": "Sugestão de reposição com base na venda por grade e relatório de itens parados." },
+      { "titulo": "Crediário próprio", "desc": "Venda parcelada no carnê ou Pix, análise de crédito e cobrança automatizada." },
+      { "titulo": "Venda online integrada", "desc": "Estoque único para loja física, e-commerce e marketplaces, com retirada na loja." },
+      { "titulo": "Metas e comissões", "desc": "Meta por vendedora e por loja, com acompanhamento diário e comissão automática." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: loja de moda com três unidades",
+      "texto": "Uma loja de moda compra por intuição e termina cada estação com muitas peças de tamanhos que não vendem. Com o sistema, a venda por tamanho e cor de cada loja orienta a compra da próxima coleção, as peças paradas em uma unidade são transferidas para onde vendem mais e o estoque da loja física aparece no Instagram Shopping e no site."
+    },
+    "integracoes": ["SEFAZ (NFC-e e NF-e)", "TEF e Pix", "E-commerce e marketplaces", "Instagram Shopping", "Birôs de crédito", "WhatsApp"],
+    "precos": [
+      { "label": "Loja única", "valor": "R$ 3.997 – R$ 8.997", "desc": "PDV, estoque por grade, trocas e financeiro." },
+      { "label": "Loja multicanal", "valor": "R$ 9.000 – R$ 18.000", "desc": "E-commerce integrado, crediário, compras e comissões." },
+      { "label": "Rede de lojas", "valor": "R$ 18.000+", "desc": "Várias lojas, transferências, centro de distribuição e BI." }
+    ],
+    "prazo": "45 a 90 dias.",
+    "faqs": [
+      { "question": "O sistema controla estoque por tamanho e cor?", "answer": "Sim. Cada produto tem sua grade, com saldo e vendas por combinação, e os relatórios mostram quais tamanhos e cores giram mais." },
+      { "question": "Consigo vender no Instagram com o mesmo estoque?", "answer": "Sim. O catálogo é sincronizado com Instagram e Facebook, e as vendas online baixam o mesmo estoque da loja física." },
+      { "question": "O crediário tem análise de crédito?", "answer": "Sim. É possível consultar birôs de crédito, definir limites por cliente e acompanhar a inadimplência do crediário." },
+      { "question": "Serve para loja com poucas vendedoras?", "answer": "Sim. O sistema cresce com a loja. Uma loja única começa com PDV e estoque e adiciona módulos quando precisar." }
+    ]
+  },
+  "supermercado": {
+    "intro": [
+      "Um sistema para supermercado precisa ser rápido no caixa e preciso na retaguarda: milhares de produtos, preços que mudam toda semana, perecíveis, pesáveis, promoções e margens apertadas. É para mercados de bairro, minimercados e pequenas redes que querem controle de loja grande sem custo de loja grande.",
+      "Em um supermercado, um ponto percentual de perda ou de margem representa muito dinheiro no fim do ano. O sistema sob medida ataca justamente esses pontos: precificação, quebra de perecíveis, ruptura na gôndola e compras mal dimensionadas."
+    ],
+    "funcionalidades": [
+      { "titulo": "Frente de caixa de alto volume", "desc": "PDV rápido com balança, leitura de etiquetas de pesáveis e contingência offline." },
+      { "titulo": "Precificação e etiquetas", "desc": "Formação de preço por margem, alteração em lote e impressão de etiquetas de gôndola." },
+      { "titulo": "Controle de perecíveis", "desc": "Registro de quebras por motivo, validade próxima e remarcação automática de preço." },
+      { "titulo": "Promoções e ofertas", "desc": "Ofertas por período, leve mais pague menos, preço para clientes cadastrados e cupons." },
+      { "titulo": "Compras e reposição", "desc": "Sugestão de pedido por giro e dias de estoque, integrada a fornecedores." },
+      { "titulo": "Delivery e televendas", "desc": "Pedidos por WhatsApp e site com separação e entrega agendada." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: mercado de bairro com 6 caixas",
+      "texto": "Um mercado perde muito com hortifrúti e padaria que vencem na prateleira e demora para atualizar os preços quando o fornecedor reajusta. Com o sistema, as quebras são registradas por motivo, produtos perto do vencimento recebem desconto automático, as notas de entrada atualizam o custo e sugerem novos preços pela margem definida, e as etiquetas são impressas só para o que mudou."
+    },
+    "integracoes": ["SEFAZ (NFC-e, NF-e)", "Balanças Toledo e Filizola", "TEF e Pix", "Fornecedores (EDI e XML)", "WhatsApp e delivery", "Programas de fidelidade"],
+    "precos": [
+      { "label": "Minimercado", "valor": "R$ 4.997 – R$ 9.997", "desc": "PDV, balança, estoque, precificação e NFC-e." },
+      { "label": "Supermercado", "valor": "R$ 10.000 – R$ 25.000", "desc": "Perecíveis, promoções, compras, vários caixas e delivery." },
+      { "label": "Rede de supermercados", "valor": "R$ 25.000+", "desc": "Várias lojas, central de compras, fidelidade e BI." }
+    ],
+    "prazo": "60 a 120 dias.",
+    "faqs": [
+      { "question": "O caixa aguenta o movimento de sábado?", "answer": "Sim. O PDV é otimizado para alto volume, funciona na rede local e emite NFC-e em contingência se a internet cair." },
+      { "question": "Como o sistema reduz perdas com perecíveis?", "answer": "Registrando quebras por motivo, alertando sobre produtos perto do vencimento e aplicando descontos automáticos para vender antes de perder." },
+      { "question": "Consigo atualizar preços em lote?", "answer": "Sim. Ao dar entrada na nota, o sistema calcula o novo preço pela margem, você aprova em lote e imprime apenas as etiquetas alteradas." },
+      { "question": "Tem programa de fidelidade?", "answer": "Sim. Clientes cadastrados pelo CPF podem ter preços exclusivos, pontos ou cashback, e você passa a conhecer o que cada um compra." }
+    ]
+  },
+  "industria": {
+    "intro": [
+      "Um sistema para indústria controla o chão de fábrica: ordens de produção, consumo de matéria-prima, apontamento de produção e perdas, qualidade e custo real de cada produto. É para indústrias de pequeno e médio porte que planejam a produção em planilha e só conhecem o custo e a eficiência quando o mês fecha.",
+      "Cada processo produtivo é único — produção sob encomenda ou para estoque, fabricação por lote ou contínua, montagem ou transformação — e é por isso que sistemas industriais genéricos exigem tantas adaptações. O sistema sob medida parte do seu fluxo de fábrica."
+    ],
+    "funcionalidades": [
+      { "titulo": "Planejamento da produção", "desc": "Sequenciamento das ordens por máquina e prazo, com cálculo da necessidade de materiais." },
+      { "titulo": "Apontamento no chão de fábrica", "desc": "Operador registra início, fim, quantidade produzida, refugo e paradas em tablet ou coletor." },
+      { "titulo": "Estrutura de produto e custo", "desc": "Lista de materiais e roteiro de fabricação para calcular o custo padrão e o custo real." },
+      { "titulo": "Eficiência (OEE)", "desc": "Disponibilidade, desempenho e qualidade por máquina e turno, com motivos de parada." },
+      { "titulo": "Controle de qualidade", "desc": "Inspeções por etapa, não conformidades e rastreabilidade de lote da matéria-prima ao produto final." },
+      { "titulo": "Manutenção industrial", "desc": "Manutenção preventiva por horas de máquina e ordens de serviço corretivas." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: indústria metalúrgica sob encomenda",
+      "texto": "Uma metalúrgica aceita pedidos sem saber se tem capacidade, atrasa entregas e não sabe se cada encomenda deu lucro. Com o sistema, cada pedido gera ordens de produção com o roteiro nas máquinas, o comercial consulta a capacidade antes de prometer prazo, os operadores apontam horas e refugo no tablet e, ao final, a diretoria compara o custo orçado com o real de cada encomenda."
+    },
+    "integracoes": ["ERPs (TOTVS, Sankhya, Omie)", "CLPs e sensores (IoT)", "Coletores e tablets industriais", "Balanças", "Power BI", "SEFAZ"],
+    "precos": [
+      { "label": "Controle de produção", "valor": "R$ 6.997 – R$ 15.000", "desc": "Ordens de produção, apontamento e consumo de materiais." },
+      { "label": "MES sob medida", "valor": "R$ 15.000 – R$ 40.000", "desc": "Planejamento, custo real, OEE, qualidade e rastreabilidade." },
+      { "label": "Indústria 4.0", "valor": "R$ 40.000+", "desc": "Integração com máquinas, sensores e dados em tempo real." }
+    ],
+    "prazo": "60 a 150 dias.",
+    "faqs": [
+      { "question": "Preciso trocar meu ERP?", "answer": "Não necessariamente. O sistema de produção pode se integrar ao ERP existente, que continua cuidando do fiscal e financeiro." },
+      { "question": "Os operadores conseguem usar?", "answer": "Sim. As telas de apontamento são simples, com botões grandes e poucas informações, pensadas para uso no chão de fábrica." },
+      { "question": "O sistema se conecta às máquinas?", "answer": "Quando as máquinas têm CLP ou saídas digitais, podemos coletar contagens e paradas automaticamente. Caso contrário, o apontamento é manual e ainda assim muito mais preciso que a planilha." },
+      { "question": "Como é calculado o custo real?", "answer": "Somando os materiais efetivamente consumidos, as horas de máquina e mão de obra apontadas e o rateio dos custos indiretos, comparados com o custo padrão." }
+    ]
+  },
+  "transportadora": {
+    "intro": [
+      "Um sistema para transportadora gerencia coletas, emissão de CT-e e MDF-e, roteirização, rastreamento de entregas, comprovantes e faturamento de fretes. É para transportadoras e operadores logísticos que emitem documentos em sistemas separados, conferem canhotos em papel e demoram para faturar os clientes.",
+      "Na logística, informação atrasada custa caro: cliente ligando para saber da carga, canhoto que não volta e frete faturado semanas depois. O sistema sob medida dá visibilidade em tempo real para a sua equipe e para os seus clientes."
+    ],
+    "funcionalidades": [
+      { "titulo": "Emissão de CT-e e MDF-e", "desc": "Documentos fiscais de transporte emitidos a partir das notas dos clientes, com importação de XML." },
+      { "titulo": "Cotação e tabela de frete", "desc": "Tabelas por cliente, região e peso cubado, com cotação rápida para o comercial." },
+      { "titulo": "Roteirização", "desc": "Montagem de rotas e cargas por região, capacidade do veículo e janela de entrega." },
+      { "titulo": "App do motorista", "desc": "Lista de entregas, navegação, foto do canhoto, assinatura digital e registro de ocorrências." },
+      { "titulo": "Rastreamento para o cliente", "desc": "Portal e link de rastreio com status atualizado e comprovante de entrega." },
+      { "titulo": "Faturamento de fretes", "desc": "Faturas por período e cliente, com conferência de CT-e e envio automático." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: transportadora regional com 25 veículos",
+      "texto": "Uma transportadora recebe ligações o dia todo de clientes perguntando pelas cargas e só fatura quando os canhotos em papel voltam. Com o sistema, o motorista fotografa o canhoto no app no momento da entrega, o cliente acompanha o status pelo link, o comprovante fica disponível no portal e o faturamento é feito semanalmente com todos os documentos anexados."
+    },
+    "integracoes": ["SEFAZ (CT-e, MDF-e)", "Averbação de seguro", "Rastreadores veiculares", "EDI com embarcadores (PROCEDA/OCOREN)", "Google Maps", "ERPs de clientes"],
+    "precos": [
+      { "label": "Operação de entregas", "valor": "R$ 4.997 – R$ 10.000", "desc": "App do motorista, comprovantes e rastreio para clientes." },
+      { "label": "TMS sob medida", "valor": "R$ 10.000 – R$ 28.000", "desc": "CT-e, MDF-e, tabelas de frete, roteirização e faturamento." },
+      { "label": "Operador logístico", "valor": "R$ 28.000+", "desc": "Armazenagem, EDI com embarcadores, filiais e BI." }
+    ],
+    "prazo": "60 a 120 dias.",
+    "faqs": [
+      { "question": "O sistema emite CT-e e MDF-e?", "answer": "Sim. Os documentos são emitidos a partir dos XMLs das notas dos clientes, com averbação do seguro e encerramento do MDF-e ao fim da viagem." },
+      { "question": "O motorista precisa de celular com internet?", "answer": "O app funciona offline e envia fotos e comprovantes quando encontra sinal, o que é essencial em rotas com cobertura ruim." },
+      { "question": "Meus clientes conseguem rastrear as cargas?", "answer": "Sim, por um link de rastreio ou por um portal com todas as suas cargas, comprovantes e faturas." },
+      { "question": "Atende a última milha e entregas urbanas?", "answer": "Sim. Para entregas urbanas com muitas paradas, o foco é roteirização otimizada, app do entregador e aviso ao destinatário." }
+    ]
+  },
+  "franquia": {
+    "intro": [
+      "Um sistema para franquia conecta franqueadora e franqueados: padrões de operação, indicadores de cada unidade, cobrança de royalties, comunicação, treinamento e auditoria. É para redes que querem crescer sem perder o controle da qualidade e sem gerir dezenas de unidades por planilhas enviadas por e-mail.",
+      "A franqueadora precisa enxergar a rede inteira; o franqueado precisa de ferramentas que simplifiquem a sua operação. O sistema sob medida atende os dois lados, com dados que fluem automaticamente das unidades para a central."
+    ],
+    "funcionalidades": [
+      { "titulo": "Painel da rede", "desc": "Faturamento, ticket médio e indicadores de cada unidade, comparados com a média da rede." },
+      { "titulo": "Royalties e taxas", "desc": "Cálculo automático de royalties e fundo de marketing sobre o faturamento, com cobrança e conciliação." },
+      { "titulo": "Checklists e auditorias", "desc": "Visitas de campo com checklist por celular, fotos, nota por unidade e plano de ação." },
+      { "titulo": "Comunicação oficial", "desc": "Comunicados, campanhas e materiais com confirmação de leitura por unidade." },
+      { "titulo": "Universidade da franquia", "desc": "Treinamentos por função para a equipe de cada franqueado, com certificação." },
+      { "titulo": "Expansão", "desc": "Funil de candidatos a franqueado, da captação à assinatura do contrato e inauguração." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: rede de franquias de alimentação com 40 unidades",
+      "texto": "Uma franqueadora calcula os royalties com base em relatórios enviados pelos franqueados, sem conseguir conferir, e faz auditorias em papel. Com o sistema, o faturamento de cada unidade vem direto dos PDVs, os royalties são calculados e cobrados automaticamente, os consultores de campo fazem auditorias pelo celular e a rede compara o desempenho de cada loja com as melhores."
+    },
+    "integracoes": ["PDVs e ERPs das unidades", "Boleto e Pix", "Plataforma EAD", "WhatsApp Business", "Assinatura eletrônica", "Power BI"],
+    "precos": [
+      { "label": "Gestão da rede", "valor": "R$ 6.997 – R$ 15.000", "desc": "Indicadores por unidade, royalties e comunicação." },
+      { "label": "Franqueadora completa", "valor": "R$ 15.000 – R$ 35.000", "desc": "Auditorias, treinamento, expansão e integração com PDVs." },
+      { "label": "Plataforma de franquia", "valor": "R$ 35.000+", "desc": "Sistema operacional único para todas as unidades e a central." }
+    ],
+    "prazo": "60 a 120 dias.",
+    "faqs": [
+      { "question": "Os franqueados precisam usar o mesmo PDV?", "answer": "Não necessariamente. Podemos integrar diferentes PDVs, mas padronizar o sistema das unidades torna os dados mais confiáveis e a gestão mais simples." },
+      { "question": "Como é garantido que o faturamento informado é real?", "answer": "Coletando os dados diretamente do PDV ou das notas fiscais emitidas, sem depender de informação digitada pelo franqueado." },
+      { "question": "O franqueado vê os dados das outras unidades?", "answer": "Não. Ele vê a própria unidade e, se a franqueadora quiser, rankings e médias da rede sem identificação das outras lojas." },
+      { "question": "Serve para rede que está começando a franquear?", "answer": "Sim. Uma rede pequena começa com royalties, comunicação e checklists, e adiciona módulos conforme cresce." }
+    ]
+  },
+  "oficina-mecanica": {
+    "intro": [
+      "Um sistema para oficina mecânica organiza a entrada dos veículos, orçamentos, aprovação do cliente, ordens de serviço, peças e o histórico de cada carro. Ele acaba com o orçamento no papel, com o cliente ligando para saber se o carro está pronto e com as peças compradas e não cobradas.",
+      "A confiança é o que faz o cliente voltar para a mesma oficina. Enviar o orçamento com fotos do problema, pedir a aprovação por WhatsApp e lembrar a próxima revisão são pequenas atitudes que o sistema automatiza e que diferenciam a oficina."
+    ],
+    "funcionalidades": [
+      { "titulo": "Checklist de entrada com fotos", "desc": "Registro do estado do veículo, quilometragem e combustível na chegada, protegendo oficina e cliente." },
+      { "titulo": "Orçamento com fotos", "desc": "Orçamento com peças, mão de obra e fotos do problema, enviado para aprovação pelo WhatsApp." },
+      { "titulo": "Ordem de serviço por mecânico", "desc": "Serviços distribuídos por mecânico, com tempo previsto e realizado." },
+      { "titulo": "Estoque de peças", "desc": "Peças vinculadas à OS, cotação com fornecedores e alerta de itens em falta." },
+      { "titulo": "Histórico do veículo", "desc": "Todos os serviços por placa, consultáveis na próxima visita." },
+      { "titulo": "Lembrete de revisão", "desc": "Aviso automático de troca de óleo e revisões pela data ou quilometragem estimada." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: oficina com seis mecânicos",
+      "texto": "Uma oficina faz orçamentos à mão, liga para cada cliente para aprovar e às vezes esquece de cobrar peças usadas. Com o sistema, o consultor faz o checklist com fotos na entrada, o orçamento com imagens do problema chega ao cliente no WhatsApp, a aprovação libera a OS para o mecânico, as peças são baixadas do estoque e seis meses depois o cliente recebe o lembrete da troca de óleo."
+    },
+    "integracoes": ["WhatsApp Business API", "Catálogos de peças", "Emissão de NF-e e NFS-e", "Pix e maquininhas", "Consulta de placa"],
+    "precos": [
+      { "label": "Oficina pequena", "valor": "R$ 2.997 – R$ 5.997", "desc": "OS, orçamento, clientes, veículos e caixa." },
+      { "label": "Oficina completa", "valor": "R$ 6.000 – R$ 13.000", "desc": "Checklist com fotos, aprovação por WhatsApp, estoque e lembretes." },
+      { "label": "Centro automotivo", "valor": "R$ 13.000+", "desc": "Várias unidades, frotas de empresas e agendamento online." }
+    ],
+    "prazo": "30 a 60 dias.",
+    "faqs": [
+      { "question": "O cliente aprova o orçamento pelo celular?", "answer": "Sim. Ele recebe um link com o orçamento detalhado e as fotos, pode aprovar tudo ou parte dos itens, e a aprovação fica registrada." },
+      { "question": "O sistema emite nota fiscal?", "answer": "Sim. Emite nota de produto para as peças e nota de serviço para a mão de obra, conforme a regra do seu município." },
+      { "question": "Consigo atender frotas de empresas?", "answer": "Sim. Frotas podem ter tabela de preços própria, aprovação por gestor e faturamento mensal consolidado." },
+      { "question": "Como funcionam os lembretes de revisão?", "answer": "Com base na data e na quilometragem do último serviço, o sistema estima a próxima revisão e envia um lembrete ao cliente com opção de agendar." }
+    ]
+  }
+}

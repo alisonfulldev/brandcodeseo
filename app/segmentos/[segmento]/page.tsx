@@ -4,8 +4,8 @@ import Link from "next/link";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbSchema } from "@/lib/seo/schema";
 import { SITE_URL } from "@/lib/constants";
+import { hrefSistemaPara } from "@/lib/rotas";
 import nichos from "@/data/nichos.json";
-import cidades from "@/data/cidades.json";
 
 type Params = { segmento: string };
 
@@ -21,6 +21,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     title: `Tecnologia para ${nicho.nome} | Software, IA e Automação`,
     description: `Sistemas, IA, chatbots e automações para ${nicho.nomeCompleto}. Soluções 100% sob medida que resolvem os desafios reais do seu negócio.`,
     slug: `segmentos/${nicho.slug}`,
+    // Hub de navegação quase sem texto: não indexar, mas seguir os links
+    noindex: true,
     keywords: [
       `software para ${nicho.nome.toLowerCase()}`,
       `sistema para ${nicho.nome.toLowerCase()}`,
@@ -33,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
 const solucoes = [
   {
     label: "Sistema de Gestão",
-    path: (slug: string) => `/sistema-para/${slug}`,
+    path: hrefSistemaPara,
     desc: "Software de gestão 100% sob medida com código-fonte entregue.",
   },
   {
@@ -53,7 +55,6 @@ export default async function SegmentoHubPage({ params }: { params: Promise<Para
   const nicho = nichos.find((n) => n.slug === segmento);
   if (!nicho) notFound();
 
-  const topCidades = [...cidades].sort((a, b) => b.populacao - a.populacao).slice(0, 20);
   const outrosNichos = nichos.filter((n) => n.slug !== nicho.slug).slice(0, 12);
 
   return (
@@ -102,22 +103,6 @@ export default async function SegmentoHubPage({ params }: { params: Promise<Para
             ))}
           </div>
 
-          <h2 className="text-2xl font-bold text-[#0A1628] mb-6 text-center">
-            {nicho.nome} por cidade
-          </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 mb-16">
-            {topCidades.map((cidade) => (
-              <Link
-                key={cidade.slug}
-                href={`/software-para/${nicho.slug}/${cidade.slug}`}
-                className="bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 text-xs text-center text-gray-700 hover:bg-blue-50 hover:border-blue-300 transition-all"
-              >
-                {cidade.nome}
-                <span className="block text-gray-400">{cidade.estado}</span>
-              </Link>
-            ))}
-          </div>
-
           <h2 className="text-xl font-bold text-[#0A1628] mb-5">
             Outros segmentos atendidos
           </h2>
@@ -125,7 +110,7 @@ export default async function SegmentoHubPage({ params }: { params: Promise<Para
             {outrosNichos.map((n) => (
               <Link
                 key={n.slug}
-                href={`/sistema-para/${n.slug}`}
+                href={hrefSistemaPara(n.slug)}
                 className="text-xs text-gray-600 bg-white border border-gray-200 rounded-md px-3 py-1.5 hover:border-blue-300 hover:text-blue-700 transition-colors"
               >
                 {n.nome}

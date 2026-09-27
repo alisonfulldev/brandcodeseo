@@ -6,6 +6,7 @@ import Hero from "@/components/sections/Hero";
 import FAQ from "@/components/sections/FAQ";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import Link from "next/link";
+import { hrefSistemaPara } from "@/lib/rotas";
 
 export const metadata: Metadata = buildMetadata({
   title: "Software Sob Medida para Empresas | BrandCode Solutions",
@@ -30,28 +31,28 @@ const servicos = [
     titulo: "Sistemas de Gestão (ERP)",
     preco: PRICES.sistemaWeb,
     desc: "ERP, CRM e sistemas de gestão integrados com todos os módulos que o seu processo precisa. Sem limitações de plataforma genérica.",
-    href: "/sob-medida/erp",
+    href: "/desenvolvimento-de/erp",
   },
   {
     slug: "app-mobile",
     titulo: "App Mobile iOS e Android",
     preco: PRICES.appMobile,
     desc: "Aplicativos nativos e híbridos para iOS e Android. Da ideia à publicação na App Store e Google Play.",
-    href: "/sob-medida/app-mobile",
+    href: "/desenvolvimento-de/app-mobile",
   },
   {
     slug: "chatbot-com-ia",
     titulo: "Chatbot com IA e Automações",
     preco: PRICES.automacao,
     desc: "Chatbots com IA para WhatsApp e site, automações de processos com N8N, Make e desenvolvimento custom.",
-    href: "/sob-medida/chatbot-com-ia",
+    href: "/desenvolvimento-de/chatbot-com-ia",
   },
   {
     slug: "saas",
     titulo: "Plataformas SaaS e Marketplaces",
     preco: PRICES.sistemaWeb,
     desc: "Produtos digitais completos: SaaS multi-tenant, marketplaces, plataformas EAD e sistemas de assinaturas.",
-    href: "/sob-medida/saas",
+    href: "/desenvolvimento-de/saas",
   },
   {
     slug: "ia-para-negocios",
@@ -247,7 +248,7 @@ export default function SoftwareSobMedidaPage() {
             {segmentos.map((s) => (
               <Link
                 key={s.slug}
-                href={`/sistema-para/${s.slug}`}
+                href={hrefSistemaPara(s.slug)}
                 className="bg-white border border-gray-200 rounded-lg px-3 py-2 text-xs text-center text-gray-700 hover:bg-blue-50 hover:border-blue-300 transition-all"
               >
                 {s.nome}

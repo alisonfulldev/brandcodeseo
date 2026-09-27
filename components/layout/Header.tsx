@@ -24,7 +24,7 @@ const servicos = [
     preco: PRICES.appMobile,
   },
   {
-    href: "/automacao-de/chatbot-whatsapp",
+    href: "/desenvolvimento-de/chatbot-whatsapp",
     label: "Automação de Atendimento",
     desc: "Chatbot e automação de WhatsApp com IA",
     preco: PRICES.automacao,
@@ -36,7 +36,7 @@ const servicos = [
     preco: PRICES.ia,
   },
   {
-    href: "/automacao-de/automacao-de-processos",
+    href: "/desenvolvimento-de/automacao-de-processos",
     label: "Automação de Processos",
     desc: "RPA, N8N e integração entre sistemas",
     preco: PRICES.automacao,
@@ -178,7 +178,7 @@ export default function Header() {
                     style={{ borderTop: "1px solid rgba(59,130,246,0.15)" }}
                   >
                     <Link
-                      href="/quanto-custa/sistema-de-gestao"
+                      href="/desenvolvimento-de/sistema-de-gestao#precos"
                       role="menuitem"
                       onClick={closeDropdown}
                       className="block text-xs py-1 transition-colors"

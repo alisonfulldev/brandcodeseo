@@ -1,0 +1,219 @@
+{
+  "sistema-de-delivery": {
+    "intro": [
+      "Um sistema de delivery próprio permite que restaurantes, mercados e lojas recebam pedidos diretamente, sem pagar a comissão de 12% a 27% dos aplicativos em cada venda. O cliente pede por um cardápio digital com a sua marca, paga por Pix ou cartão e acompanha o pedido até a porta.",
+      "Os aplicativos continuam úteis para atrair clientes novos. O sistema próprio serve para transformar quem já comprou em cliente recorrente, com programa de fidelidade, cupons e contato direto pelo WhatsApp — dados que o aplicativo nunca repassa para você."
+    ],
+    "funcionalidades": [
+      { "titulo": "Cardápio digital com sua marca", "desc": "Link próprio com fotos, adicionais, combos e horários de funcionamento, pronto para Instagram e WhatsApp." },
+      { "titulo": "Pedidos centralizados", "desc": "Pedidos do site, do WhatsApp e do iFood em uma tela só, impressos automaticamente na cozinha." },
+      { "titulo": "Taxa por bairro ou distância", "desc": "Cálculo automático da entrega por raio, bairro ou CEP, com pedido mínimo por região." },
+      { "titulo": "Gestão de entregadores", "desc": "Despacho por rota, acompanhamento em tempo real e acerto de corridas no fim do turno." },
+      { "titulo": "Fidelidade e cupons", "desc": "Pontos por pedido, cashback e cupons para clientes inativos, disparados automaticamente." },
+      { "titulo": "Status pelo WhatsApp", "desc": "O cliente recebe confirmação, aviso de saída e previsão de chegada sem precisar ligar." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: pizzaria com 70% dos pedidos no iFood",
+      "texto": "Uma pizzaria que vende a maior parte pelo iFood entrega uma fatia grande do faturamento em comissões. Com um delivery próprio, cada pizza entregue passa a levar um cupom para o próximo pedido pelo canal direto. Em poucos meses, os clientes recorrentes migram para o cardápio próprio, onde a margem é maior e o relacionamento é da pizzaria."
+    },
+    "integracoes": ["iFood (API de pedidos)", "WhatsApp Business", "Pix e cartão online", "Impressoras térmicas de cozinha", "Google Maps (rotas e distância)", "PDV e emissão de NFC-e"],
+    "precos": [
+      { "label": "Cardápio e pedidos", "valor": "R$ 2.997 – R$ 6.997", "desc": "Cardápio digital, carrinho, pagamento online e painel de pedidos." },
+      { "label": "Delivery completo", "valor": "R$ 7.000 – R$ 15.000", "desc": "Entregadores, taxa por região, fidelidade e integração com iFood." },
+      { "label": "App próprio", "valor": "R$ 15.000+", "desc": "Aplicativo na loja com notificações push e várias unidades." }
+    ],
+    "prazo": "20 a 60 dias.",
+    "faqs": [
+      { "question": "Vale a pena ter delivery próprio se já estou no iFood?", "answer": "Sim, como complemento. O iFood traz clientes novos; o canal próprio fideliza os que já compraram, sem comissão. A estratégia mais comum é usar o pedido do app para convidar o cliente para o canal direto." },
+      { "question": "Recebo os pedidos do iFood no mesmo sistema?", "answer": "Sim. Integrando com a API do iFood, os pedidos dos dois canais aparecem no mesmo painel e são impressos na cozinha da mesma forma." },
+      { "question": "Funciona para mais de uma loja?", "answer": "Sim. O cliente é direcionado para a unidade mais próxima e cada loja tem cardápio, horários e área de entrega próprios." },
+      { "question": "E se eu não tiver entregadores próprios?", "answer": "O sistema pode chamar entregadores terceirizados por integração com plataformas de logística, ou você usa só retirada no balcão." }
+    ]
+  },
+  "prontuario-eletronico": {
+    "intro": [
+      "Um prontuário eletrônico sob medida registra consultas, evoluções, prescrições e exames de forma segura e organizada, acessível ao profissional em qualquer consultório. Ele substitui fichas de papel e arquivos soltos no computador e garante que a história clínica do paciente esteja completa em cada atendimento.",
+      "Cada especialidade registra de um jeito: o odontologista usa odontograma, o psicólogo precisa de sigilo reforçado nas anotações, o dermatologista compara fotos ao longo do tratamento. O prontuário próprio tem os campos e modelos da sua especialidade, não um formulário genérico."
+    ],
+    "funcionalidades": [
+      { "titulo": "Modelos por especialidade", "desc": "Anamnese, evolução e exame físico com os campos que a sua especialidade usa, prontos para preencher." },
+      { "titulo": "Prescrição digital", "desc": "Receitas e atestados com assinatura digital, enviados ao paciente por WhatsApp ou e-mail." },
+      { "titulo": "Anexos e imagens", "desc": "Exames, laudos e fotos comparativas organizados na linha do tempo do paciente." },
+      { "titulo": "Sigilo por nível de acesso", "desc": "Recepção vê agenda e cadastro; apenas o profissional responsável lê as anotações clínicas." },
+      { "titulo": "Trilha de auditoria", "desc": "Registro de quem acessou ou alterou cada prontuário, com data e hora, para segurança e conformidade." },
+      { "titulo": "Teleconsulta", "desc": "Atendimento por vídeo com registro no próprio prontuário e envio de documentos ao final." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: clínica com cinco especialidades",
+      "texto": "Uma clínica com cardiologia, dermatologia, nutrição, psicologia e fisioterapia usa fichas de papel e um sistema de agenda separado. Com o prontuário eletrônico, cada profissional tem seu modelo de atendimento, o cardiologista vê os exames anexados pela recepção, a psicóloga tem notas protegidas e a receita sai assinada digitalmente no fim da consulta."
+    },
+    "integracoes": ["Memed e prescrição digital", "Certificado digital ICP-Brasil", "Laboratórios (resultados em PDF ou HL7)", "Agenda e faturamento TISS", "Videochamada"],
+    "precos": [
+      { "label": "Prontuário individual", "valor": "R$ 3.997 – R$ 7.997", "desc": "Consultório com um ou dois profissionais, modelos e prescrição." },
+      { "label": "Prontuário para clínica", "valor": "R$ 8.000 – R$ 18.000", "desc": "Várias especialidades, permissões, anexos e teleconsulta." },
+      { "label": "Prontuário hospitalar", "valor": "R$ 18.000+", "desc": "Internação, prescrição de enfermagem e integração com laboratório e faturamento." }
+    ],
+    "prazo": "45 a 90 dias.",
+    "faqs": [
+      { "question": "Posso eliminar o prontuário em papel?", "answer": "Sim. O Conselho Federal de Medicina admite prontuário exclusivamente eletrônico quando há assinatura digital com certificado ICP-Brasil e requisitos de segurança adequados. O sistema é construído seguindo esses requisitos." },
+      { "question": "Os dados dos pacientes ficam seguros?", "answer": "Dados de saúde são dados sensíveis pela LGPD. O prontuário usa criptografia, acesso por perfil, autenticação em dois fatores e backups diários em servidores no Brasil." },
+      { "question": "Consigo importar os prontuários antigos?", "answer": "Registros de outros sistemas podem ser importados quando exportáveis. Prontuários em papel podem ser digitalizados e anexados à ficha de cada paciente." },
+      { "question": "Funciona para psicólogos?", "answer": "Sim. Há modelos específicos para sessões, com anotações sigilosas que ficam separadas do registro documental exigido pelo conselho." }
+    ]
+  },
+  "sistema-de-gestao-de-obras": {
+    "intro": [
+      "Um sistema de gestão de obras controla orçamento, cronograma, compras e diário de obra de todas as frentes ao mesmo tempo. É para construtoras, incorporadoras e empreiteiras que descobrem o estouro de custo só quando a obra acaba e que dependem de planilhas enviadas pelo mestre de obras no fim da semana.",
+      "Na construção, a margem se perde nos detalhes: material comprado a mais, medição de empreiteiro sem conferência, retrabalho não registrado. O sistema sob medida conecta o canteiro ao escritório para que o engenheiro, o comprador e o financeiro vejam os mesmos números."
+    ],
+    "funcionalidades": [
+      { "titulo": "Orçamento por etapa", "desc": "Orçamento analítico com composições, comparado em tempo real com o custo realizado de cada etapa." },
+      { "titulo": "Cronograma físico-financeiro", "desc": "Planejamento em Gantt com percentual executado e curva S de desembolso previsto e realizado." },
+      { "titulo": "Diário de obra pelo celular", "desc": "Mestre registra clima, equipe, atividades, fotos e ocorrências no canteiro, mesmo sem internet." },
+      { "titulo": "Compras vinculadas à obra", "desc": "Requisição do canteiro, cotação, aprovação e entrega de material com conferência por nota." },
+      { "titulo": "Medição de empreiteiros", "desc": "Medições por serviço executado, retenções contratuais e liberação de pagamento com aprovação do engenheiro." },
+      { "titulo": "Portal do cliente", "desc": "Comprador do imóvel acompanha fotos e andamento da obra, reduzindo ligações para o comercial." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: construtora com quatro obras simultâneas",
+      "texto": "Uma construtora de médio porte controla cada obra em uma planilha diferente e só fecha o custo real meses depois. Com o sistema de obras, o diário é preenchido no canteiro pelo celular, cada requisição de material é vinculada à etapa, as medições de empreiteiros só são pagas depois de aprovadas e a diretoria vê o desvio de orçamento de cada obra semanalmente."
+    },
+    "integracoes": ["ERP e financeiro", "Tabela SINAPI", "Emissão de NF-e de entrada", "Assinatura eletrônica de contratos", "Google Drive para projetos"],
+    "precos": [
+      { "label": "Controle de obra", "valor": "R$ 4.997 – R$ 9.997", "desc": "Orçamento versus realizado, diário de obra e compras por obra." },
+      { "label": "Gestão de construtora", "valor": "R$ 10.000 – R$ 25.000", "desc": "Cronograma, medições, várias obras e aplicativo de canteiro offline." },
+      { "label": "Incorporação completa", "valor": "R$ 25.000+", "desc": "Vendas de unidades, portal do cliente, repasses e integração bancária." }
+    ],
+    "prazo": "45 a 90 dias.",
+    "faqs": [
+      { "question": "O aplicativo funciona no canteiro sem internet?", "answer": "Sim. O diário de obra e as requisições são registrados offline e sincronizados quando o celular encontra sinal." },
+      { "question": "Consigo usar composições do SINAPI no orçamento?", "answer": "Sim. A base do SINAPI pode ser importada e usada junto com composições próprias da construtora." },
+      { "question": "O sistema serve para obras públicas?", "answer": "Sim. Medições, boletins e relatórios podem seguir os modelos exigidos por órgãos contratantes." },
+      { "question": "Serve para construtora pequena?", "answer": "Sim. Começamos com orçamento, compras e diário de obra, que resolvem a maior parte do problema, e adicionamos módulos conforme a empresa cresce." }
+    ]
+  },
+  "sistema-imobiliario": {
+    "intro": [
+      "Um sistema imobiliário sob medida reúne em um só lugar a captação de imóveis, o atendimento de leads, as visitas, os contratos e a administração de locações. Ele serve para imobiliárias que querem sair de CRMs genéricos e planilhas de repasse e ter controle de toda a jornada, do anúncio ao aluguel pago em dia.",
+      "Os portais trazem leads, mas quem converte é o processo. Com um sistema próprio, cada lead chega no WhatsApp do corretor certo em segundos, a agenda de visitas é organizada, o contrato é gerado e assinado digitalmente e o repasse ao proprietário acontece sem conta manual."
+    ],
+    "funcionalidades": [
+      { "titulo": "Cadastro de imóveis e site", "desc": "Imóveis com fotos, características e status publicados automaticamente no site e nos portais." },
+      { "titulo": "Distribuição de leads", "desc": "Leads de ZAP, Viva Real, OLX e do site entregues ao corretor por rodízio, com alerta de resposta atrasada." },
+      { "titulo": "Agenda de visitas", "desc": "Marcação de visitas com confirmação ao cliente e ao proprietário e registro da impressão de cada visita." },
+      { "titulo": "Contratos de venda e locação", "desc": "Geração automática com dados do imóvel e das partes e assinatura eletrônica com todos os envolvidos." },
+      { "titulo": "Administração de locação", "desc": "Boletos mensais, reajuste por índice, repasse ao proprietário, IPTU e condomínio controlados." },
+      { "titulo": "Painel por corretor", "desc": "Leads recebidos, visitas, propostas e vendas por corretor e por origem." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: imobiliária com 600 contratos de locação",
+      "texto": "Uma imobiliária que administra 600 aluguéis gasta a primeira semana de cada mês emitindo boletos, conferindo pagamentos e calculando repasses. Com o sistema, os boletos saem automaticamente, o reajuste pelo IGP-M ou IPCA é aplicado no aniversário do contrato, o repasse é calculado com taxa de administração descontada e o proprietário recebe o demonstrativo por e-mail."
+    },
+    "integracoes": ["Portais (ZAP, Viva Real, OLX, Imovelweb)", "WhatsApp Business", "Boleto e Pix", "Assinatura eletrônica", "Índices IGP-M e IPCA", "Site da imobiliária"],
+    "precos": [
+      { "label": "CRM imobiliário", "valor": "R$ 3.997 – R$ 8.997", "desc": "Imóveis, leads dos portais, distribuição e agenda de visitas." },
+      { "label": "Vendas e locação", "valor": "R$ 9.000 – R$ 20.000", "desc": "Contratos, assinatura digital, cobrança de aluguel e repasses." },
+      { "label": "Imobiliária completa", "valor": "R$ 20.000+", "desc": "Site próprio integrado, portal do proprietário e do inquilino e várias unidades." }
+    ],
+    "prazo": "45 a 90 dias.",
+    "faqs": [
+      { "question": "O sistema publica os imóveis nos portais?", "answer": "Sim, pelo feed XML aceito pelos principais portais. Alterou o preço ou marcou como vendido no sistema, o portal é atualizado na próxima sincronização." },
+      { "question": "Serve para imobiliária só de vendas?", "answer": "Sim. O módulo de administração de locação é opcional. Imobiliárias de vendas usam o CRM, agenda de visitas e contratos." },
+      { "question": "Como funciona o repasse ao proprietário?", "answer": "Quando o inquilino paga, o sistema calcula a taxa de administração e outras deduções e gera o repasse com demonstrativo, que pode ser pago por Pix em lote." },
+      { "question": "Consigo migrar do meu sistema atual?", "answer": "Sim. Importamos imóveis, proprietários, inquilinos e contratos ativos para que a administração continue sem interrupção." }
+    ]
+  },
+  "sistema-de-gestao-escolar": {
+    "intro": [
+      "Um sistema escolar sob medida organiza a secretaria, o pedagógico e o financeiro da escola em um só lugar e aproxima as famílias com um aplicativo de comunicação. É indicado para escolas de educação infantil, ensino fundamental e médio, cursos livres e escolas de idiomas que querem parar de controlar matrículas, notas e mensalidades em sistemas separados.",
+      "Cada escola tem sua proposta pedagógica: avaliação por conceito ou por nota, relatórios descritivos na educação infantil, turmas por nível em escolas de idiomas. Um sistema próprio respeita esse modelo em vez de encaixar a escola em um padrão que não é o dela."
+    ],
+    "funcionalidades": [
+      { "titulo": "Matrícula e rematrícula online", "desc": "Família preenche a ficha, envia documentos e assina o contrato pelo celular, sem fila na secretaria." },
+      { "titulo": "Diário de classe digital", "desc": "Professor lança frequência, conteúdo e notas pelo celular ou computador, com fechamento automático do boletim." },
+      { "titulo": "Boletim e relatórios pedagógicos", "desc": "Boletins por nota ou conceito e relatórios descritivos para a educação infantil." },
+      { "titulo": "Mensalidades e inadimplência", "desc": "Boletos e Pix recorrentes, descontos por irmão ou pontualidade e régua de cobrança educada." },
+      { "titulo": "App da família", "desc": "Comunicados, agenda, cardápio, fotos de atividades e autorização de saída direto no celular dos responsáveis." },
+      { "titulo": "Portal do aluno", "desc": "Notas, tarefas, materiais e horários acessíveis ao aluno com login próprio." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: escola com 450 alunos",
+      "texto": "Uma escola que faz rematrícula em papel, envia comunicados em grupos de WhatsApp e controla mensalidades em um sistema bancário separado passa semanas no fim do ano organizando documentos. Com o sistema escolar, a rematrícula é feita online em dias, os comunicados chegam com confirmação de leitura, o professor fecha notas pelo celular e a secretaria acompanha a inadimplência por turma."
+    },
+    "integracoes": ["Boleto e Pix recorrente", "Assinatura eletrônica de contratos", "Google Workspace for Education e Microsoft 365", "Catracas e controle de acesso", "WhatsApp para avisos"],
+    "precos": [
+      { "label": "Secretaria e financeiro", "valor": "R$ 4.997 – R$ 9.997", "desc": "Matrícula online, cadastro de alunos, mensalidades e contratos." },
+      { "label": "Escola completa", "valor": "R$ 10.000 – R$ 22.000", "desc": "Diário de classe, boletins, portal do aluno e app da família." },
+      { "label": "Rede de escolas", "valor": "R$ 22.000+", "desc": "Várias unidades, relatórios consolidados e integrações de acesso." }
+    ],
+    "prazo": "45 a 90 dias, planejado para entrar em uso antes do período de matrículas.",
+    "faqs": [
+      { "question": "O sistema serve para escola de idiomas ou curso livre?", "answer": "Sim. Turmas por nível, aulas avulsas, reposições e matrícula contínua ao longo do ano são configuradas conforme o modelo do curso." },
+      { "question": "Os pais precisam instalar um aplicativo?", "answer": "Podem usar pelo navegador do celular ou instalar o app. Os avisos também podem chegar por WhatsApp para quem não usa o app." },
+      { "question": "Como fica o histórico dos alunos antigos?", "answer": "Importamos cadastros, notas e histórico financeiro do sistema atual ou de planilhas, para que a secretaria emita históricos e declarações sem retrabalho." },
+      { "question": "O sistema ajuda a reduzir a inadimplência?", "answer": "Sim. Boletos e Pix recorrentes, lembretes antes do vencimento e régua de cobrança automática costumam reduzir bastante os atrasos, sem exigir que a secretaria ligue para cada família." }
+    ]
+  },
+  "sistema-de-gestao-de-frota": {
+    "intro": [
+      "Um sistema de gestão de frota controla veículos, motoristas, combustível, manutenção e custos por quilômetro rodado. É para transportadoras, distribuidoras, prestadoras de serviço e empresas com equipes de campo que querem saber quanto cada veículo realmente custa e parar de ser surpreendidas por multas e quebras.",
+      "A frota é um dos maiores custos de uma operação logística e, sem dados, vira caixa-preta. O sistema sob medida junta rastreador, cartão combustível e oficina em uma visão só e automatiza os alertas que evitam prejuízo."
+    ],
+    "funcionalidades": [
+      { "titulo": "Cadastro de veículos e documentos", "desc": "Licenciamento, seguro, tacógrafo e laudos com alerta de vencimento para cada placa." },
+      { "titulo": "Manutenção preventiva", "desc": "Planos por quilometragem ou tempo, ordens de serviço e histórico de peças por veículo." },
+      { "titulo": "Controle de combustível", "desc": "Abastecimentos importados do cartão combustível, consumo médio e alerta de desvio por veículo e motorista." },
+      { "titulo": "Checklist do motorista", "desc": "Inspeção de saída e retorno pelo celular com fotos, avarias e assinatura do motorista." },
+      { "titulo": "Multas e infrações", "desc": "Registro de multas, identificação do condutor e controle de prazos de indicação." },
+      { "titulo": "Custo por quilômetro", "desc": "Combustível, manutenção, pneus, seguro e depreciação somados para mostrar o custo real de cada veículo." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: distribuidora com 35 caminhões",
+      "texto": "Uma distribuidora descobre que alguns caminhões consomem muito mais que outros do mesmo modelo, mas não sabe por quê. Com o sistema de frota, os abastecimentos do cartão combustível são cruzados com a quilometragem do rastreador, os desvios aparecem por motorista, as revisões deixam de atrasar e a diretoria decide com base em dados quais veículos renovar."
+    },
+    "integracoes": ["Rastreadores (Sascar, Omnilink, Cobli)", "Cartões combustível (Ticket Log, ValeCard)", "Consulta de multas e documentos", "ERP e financeiro", "Sistemas de roteirização"],
+    "precos": [
+      { "label": "Controle de frota", "valor": "R$ 3.997 – R$ 8.997", "desc": "Veículos, documentos, manutenção e abastecimentos." },
+      { "label": "Frota integrada", "valor": "R$ 9.000 – R$ 18.000", "desc": "Rastreador, cartão combustível, checklist por app e custo por quilômetro." },
+      { "label": "Logística completa", "valor": "R$ 18.000+", "desc": "Roteirização, entregas com comprovante e integração com ERP e TMS." }
+    ],
+    "prazo": "30 a 75 dias.",
+    "faqs": [
+      { "question": "O sistema funciona com o rastreador que já tenho?", "answer": "Na maioria dos casos, sim. Os principais rastreadores oferecem API para posição e quilometragem. Validamos a integração antes de fechar o escopo." },
+      { "question": "Serve para frota leve de vendedores?", "answer": "Sim. Para carros de equipe comercial ou técnica, o foco costuma ser combustível, reembolso de quilometragem, multas e manutenção." },
+      { "question": "Como o sistema identifica fraude em combustível?", "answer": "Comparando litros abastecidos com a quilometragem rodada e o consumo médio do modelo. Abastecimentos fora do padrão, horário ou rota geram alerta." },
+      { "question": "O motorista precisa de um app?", "answer": "Para o checklist e o registro de ocorrências, sim — um app simples, que funciona offline e envia fotos quando há sinal." }
+    ]
+  },
+  "plataforma-ead": {
+    "intro": [
+      "Uma plataforma EAD própria permite vender e entregar cursos online com a sua marca, sem pagar taxa por venda a marketplaces de cursos e sem as limitações de ferramentas genéricas. É indicada para infoprodutores, escolas, empresas que treinam equipes e instituições que emitem certificados.",
+      "Com plataforma própria, você controla a experiência do aluno, os dados, a precificação e as regras de acesso — assinatura, trilhas, turmas com data, liberação por etapa — e integra o ensino a outros sistemas, como CRM ou RH."
+    ],
+    "funcionalidades": [
+      { "titulo": "Área de membros com sua marca", "desc": "Cursos, módulos e aulas em vídeo com player protegido e retomada de onde o aluno parou." },
+      { "titulo": "Venda e assinatura", "desc": "Checkout próprio com Pix, cartão e boleto, planos de assinatura e cupons de desconto." },
+      { "titulo": "Avaliações e certificados", "desc": "Provas com banco de questões, nota mínima e certificado com código de validação." },
+      { "titulo": "Trilhas e liberação gradual", "desc": "Conteúdo liberado por data, por conclusão de etapa ou por turma." },
+      { "titulo": "Comunidade e suporte", "desc": "Comentários por aula, fórum e canal de dúvidas com o professor." },
+      { "titulo": "Relatórios de engajamento", "desc": "Progresso por aluno, taxa de conclusão e aulas com maior abandono." }
+    ],
+    "exemplo": {
+      "titulo": "Exemplo: treinamento de equipes de uma rede de franquias",
+      "texto": "Uma rede de franquias treina cada novo funcionário presencialmente e não sabe quem concluiu o quê. Com uma plataforma EAD própria, o colaborador acessa trilhas por função, faz provas ao final de cada módulo, recebe certificado e o franqueado acompanha o progresso da equipe. O conteúdo é atualizado uma vez e chega a todas as unidades."
+    },
+    "integracoes": ["Vimeo, Panda Video e YouTube", "Pix, cartão e boleto", "Hotmart e Eduzz (migração de alunos)", "CRM e e-mail marketing", "Zoom e Google Meet para aulas ao vivo"],
+    "precos": [
+      { "label": "Área de membros", "valor": "R$ 3.997 – R$ 8.997", "desc": "Cursos, aulas, progresso e certificado básico." },
+      { "label": "EAD com vendas", "valor": "R$ 9.000 – R$ 18.000", "desc": "Checkout próprio, assinaturas, avaliações e comunidade." },
+      { "label": "Universidade corporativa", "valor": "R$ 18.000+", "desc": "Trilhas por cargo, integração com RH, várias empresas e app." }
+    ],
+    "prazo": "30 a 75 dias.",
+    "faqs": [
+      { "question": "Compensa sair da Hotmart ou de outra plataforma?", "answer": "Compensa quando o volume de vendas torna as taxas significativas ou quando você precisa de funcionalidades que a plataforma não oferece. Muitos produtores mantêm o marketplace para afiliados e usam a plataforma própria para a base de alunos." },
+      { "question": "Os vídeos ficam protegidos contra download?", "answer": "Usamos hospedagem com proteção de domínio, links temporários e marca d'água com os dados do aluno. Nenhuma solução impede 100% de gravação de tela, mas essas medidas desestimulam o compartilhamento." },
+      { "question": "Consigo migrar meus alunos?", "answer": "Sim. Importamos alunos e matrículas ativas, e eles recebem acesso à nova plataforma sem precisar comprar novamente." },
+      { "question": "Serve para treinamento interno de empresas?", "answer": "Sim. Nesse caso o foco é trilhas por cargo, controle de conclusão obrigatória e relatórios para o RH, sem checkout de vendas." }
+    ]
+  }
+}
