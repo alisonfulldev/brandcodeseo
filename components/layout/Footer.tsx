@@ -128,6 +128,7 @@ export default function Footer() {
                 { href: "/sobre", label: "Sobre Nós" },
                 { href: "/contato", label: "Contato" },
                 { href: "/portfolio", label: "Portfólio" },
+                { href: "/blog", label: "Blog" },
               ].map((l) => (
                 <li key={l.href}>
                   <Link href={l.href} className="footer-link">

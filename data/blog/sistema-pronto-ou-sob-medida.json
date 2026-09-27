@@ -1,0 +1,124 @@
+{
+  "slug": "sistema-pronto-ou-sob-medida",
+  "titulo": "Sistema pronto ou sob medida: quando cada um compensa",
+  "descricao": "Comparação honesta entre software pronto (SaaS) e sistema sob medida: quando cada um é a melhor escolha, custo total em 5 anos e um checklist para decidir.",
+  "resumo": "Nem sempre o sob medida é a melhor escolha. Veja quando o sistema pronto resolve, quando ele começa a custar caro e como comparar o custo real em 5 anos.",
+  "categoria": "Decisão",
+  "autor": "Equipe BrandCode Solutions",
+  "publicadoEm": "2026-09-26",
+  "atualizadoEm": "2026-09-26",
+  "palavrasChave": ["sistema pronto ou sob medida", "software pronto ou personalizado", "vale a pena desenvolver um sistema", "saas ou sistema próprio", "erp pronto ou sob medida"],
+  "secoes": [
+    {
+      "titulo": "A resposta curta",
+      "paragrafos": [
+        "**Use um sistema pronto quando o seu processo é igual ao de todo mundo** e você precisa resolver rápido com pouco investimento. **Desenvolva sob medida quando o processo é o seu diferencial**, quando você já paga caro em licenças e adaptações ou quando nenhum sistema do mercado faz o que a operação exige.",
+        "Somos uma empresa que desenvolve software sob medida e, mesmo assim, recomendamos sistemas prontos com frequência. Um projeto sob medida mal indicado sai caro para o cliente e frustra os dois lados. O objetivo deste artigo é ajudar você a decidir antes de gastar."
+      ]
+    },
+    {
+      "titulo": "O que é cada opção",
+      "paragrafos": [
+        "**Sistema pronto** — também chamado de software de prateleira ou SaaS — é um produto usado por milhares de empresas, pago por mensalidade, geralmente por usuário. Exemplos conhecidos são os ERPs para pequenas empresas, CRMs de vendas e sistemas de agenda para clínicas e salões. Você se adapta ao jeito que o sistema funciona.",
+        "**Sistema sob medida** é desenvolvido para a sua empresa, a partir do seu processo. Você paga pelo desenvolvimento, fica com o código-fonte e não paga licença por usuário. O sistema se adapta ao jeito que a sua empresa funciona."
+      ]
+    },
+    {
+      "titulo": "Quando o sistema pronto é a melhor escolha",
+      "lista": [
+        "**O processo é padrão.** Emitir nota, controlar contas a pagar, agendar horários: se você faz isso como qualquer outra empresa do seu setor, um produto pronto resolve bem.",
+        "**A empresa está começando.** Com poucos usuários e processos ainda mudando, é cedo para investir em um sistema próprio.",
+        "**O orçamento é curto.** Uma mensalidade de algumas centenas de reais é muito mais fácil de encaixar do que um investimento inicial.",
+        "**Você precisa usar amanhã.** Sistemas prontos funcionam no mesmo dia; um projeto sob medida leva semanas ou meses.",
+        "**Há exigências regulatórias que o fornecedor já resolve.** Em áreas como folha de pagamento e contabilidade fiscal, manter um cálculo próprio atualizado com a legislação raramente compensa."
+      ]
+    },
+    {
+      "titulo": "Quando o sob medida compensa",
+      "lista": [
+        "**O processo é o seu diferencial.** Se a forma como você orça, produz ou atende é o que faz os clientes escolherem a sua empresa, forçar esse processo dentro de um sistema genérico é abrir mão da vantagem.",
+        "**A conta de licenças cresceu.** Mensalidade por usuário é barata com três pessoas e cara com trinta. E ela sobe todo ano com os reajustes.",
+        "**Você usa três ou quatro sistemas que não conversam.** A equipe digita a mesma informação em lugares diferentes e ninguém confia nos números. Um sistema próprio — ou uma camada de integração — resolve isso na raiz.",
+        "**Você já paga por customizações que nunca ficam boas.** Adaptar um produto pronto costuma ser caro, lento e quebrar a cada atualização do fornecedor.",
+        "**Você quer transformar o processo em produto.** Empresas que desenvolvem a própria ferramenta às vezes descobrem que outras do setor pagariam para usá-la."
+      ]
+    },
+    {
+      "titulo": "Comparando o custo real em 5 anos",
+      "paragrafos": [
+        "A comparação justa não é mensalidade contra valor do projeto, e sim o custo total ao longo de alguns anos. Veja um exemplo hipotético de uma empresa com 15 usuários. Os números são ilustrativos; faça a conta com os seus."
+      ],
+      "tabela": {
+        "cabecalho": ["Item", "Sistema pronto", "Sistema sob medida"],
+        "linhas": [
+          ["Investimento inicial", "Implantação: R$ 3.000", "Desenvolvimento: R$ 40.000"],
+          ["Licenças", "15 usuários × R$ 150 = R$ 2.250 por mês", "Não há"],
+          ["Hospedagem", "Incluída na mensalidade", "Cerca de R$ 300 por mês"],
+          ["Manutenção e evolução", "Incluída (sem controle do que muda)", "Cerca de R$ 6.000 por ano"],
+          ["Customizações pagas à parte", "Cerca de R$ 5.000 por ano", "Incluídas na evolução"],
+          ["**Total em 5 anos (sem reajustes)**", "**Cerca de R$ 163.000**", "**Cerca de R$ 88.000**"]
+        ]
+      },
+      "paragrafosFinais": [
+        "Neste exemplo o sob medida fica mais barato a partir do segundo ou terceiro ano. Mas perceba o que muda a conta: com 4 usuários em vez de 15, o sistema pronto custaria cerca de R$ 36 mil em licenças no mesmo período e seria a melhor escolha. **O número de usuários e o quanto o seu processo foge do padrão decidem quem ganha.**"
+      ]
+    },
+    {
+      "titulo": "O caminho do meio",
+      "paragrafos": [
+        "A decisão não precisa ser tudo ou nada. Muitas empresas ficam com o melhor dos dois mundos:"
+      ],
+      "lista": [
+        "**Sistema pronto + integrações.** Mantenha o ERP ou CRM que funciona e automatize as tarefas manuais entre ele e as outras ferramentas. Veja o que é possível com [automação de processos](/desenvolvimento-de/automacao-de-processos) e [API e integrações](/desenvolvimento-de/api-e-integracoes).",
+        "**Núcleo pronto + módulo sob medida.** Use um sistema de mercado para o fiscal e o financeiro e desenvolva só a parte que é diferencial, como a produção, o orçamento técnico ou o portal do cliente.",
+        "**Começar pronto e migrar depois.** Use um produto pronto enquanto o processo amadurece e desenvolva o sistema próprio quando a conta de licenças e as limitações começarem a pesar."
+      ]
+    },
+    {
+      "titulo": "Checklist para decidir",
+      "paragrafos": [
+        "Responda sim ou não. Quanto mais respostas sim, mais o sob medida tende a compensar:"
+      ],
+      "lista": [
+        "Mais de 10 pessoas vão usar o sistema?",
+        "O jeito como a empresa trabalha é diferente do padrão do setor?",
+        "A equipe usa planilhas paralelas porque o sistema atual não atende?",
+        "Você digita a mesma informação em mais de um sistema?",
+        "Você já pagou por customizações que não ficaram boas?",
+        "O processo que o sistema vai controlar é o que diferencia a empresa dos concorrentes?",
+        "Você pretende usar esse sistema por mais de três anos?"
+      ],
+      "paragrafosFinais": [
+        "Com zero a duas respostas sim, fique com um sistema pronto. Com três ou quatro, considere o caminho do meio. Com cinco ou mais, vale a pena pedir um orçamento de sistema sob medida e comparar com o custo total do que você usa hoje."
+      ]
+    },
+    {
+      "titulo": "Riscos do sob medida e como se proteger",
+      "lista": [
+        "**O fornecedor sumir.** Exija o código-fonte e a documentação desde o início, em um repositório que seja da sua empresa.",
+        "**Escopo que não termina.** Defina por escrito o que entra na primeira versão e trate o resto como evolução.",
+        "**Sistema que ninguém mantém.** Combine antes como será o suporte depois da entrega e quanto custa.",
+        "**Tecnologia obscura.** Prefira tecnologias populares, para que outro time consiga dar continuidade se for preciso."
+      ]
+    },
+    {
+      "titulo": "Conclusão",
+      "paragrafos": [
+        "Sistema pronto é ótimo para processos padrão e empresas no começo. Sistema sob medida vale a pena quando o processo é diferencial, quando a conta de licenças e adaptações cresce ou quando vários sistemas desconectados atrapalham a operação. Faça a conta de cinco anos com os seus números — e, se quiser uma segunda opinião, conte para nós como a sua empresa funciona. Se o pronto resolver, dizemos isso. Para ter uma ideia dos valores, veja [quanto custa desenvolver um sistema sob medida](/blog/quanto-custa-desenvolver-sistema-sob-medida)."
+      ]
+    }
+  ],
+  "faqs": [
+    { "question": "Sistema sob medida é sempre mais caro?", "answer": "No investimento inicial, sim. No custo total ao longo dos anos, depende do número de usuários, das customizações que o sistema pronto exigiria e do tempo de uso. Com muitos usuários, o sob medida costuma ficar mais barato a partir do segundo ou terceiro ano." },
+    { "question": "Posso migrar do sistema pronto para um sob medida depois?", "answer": "Sim. A maioria dos sistemas prontos permite exportar os dados, que são importados no sistema novo. O ideal é rodar os dois em paralelo por algumas semanas antes de desligar o antigo." },
+    { "question": "E se o sistema pronto quase atende?", "answer": "Esse é o caso típico para o caminho do meio: manter o sistema pronto e desenvolver integrações ou um módulo complementar só para o que falta." },
+    { "question": "Quanto tempo leva para ter um sistema sob medida funcionando?", "answer": "Uma primeira versão enxuta costuma entrar em uso em 30 a 60 dias. Sistemas maiores, como um ERP completo, são implantados por módulos ao longo de alguns meses." }
+  ],
+  "relacionados": [
+    { "href": "/software-sob-medida", "label": "Software sob medida" },
+    { "href": "/desenvolvimento-de/erp", "label": "ERP sob medida" },
+    { "href": "/desenvolvimento-de/crm", "label": "CRM sob medida" },
+    { "href": "/desenvolvimento-de/automacao-de-processos", "label": "Automação de processos" },
+    { "href": "/blog/quanto-custa-desenvolver-sistema-sob-medida", "label": "Quanto custa um sistema sob medida?" }
+  ]
+}

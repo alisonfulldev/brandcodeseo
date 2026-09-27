@@ -121,6 +121,40 @@ export function localBusinessSchema({
   };
 }
 
+export function articleSchema({
+  titulo,
+  descricao,
+  slug,
+  autor,
+  publicadoEm,
+  atualizadoEm,
+}: {
+  titulo: string;
+  descricao: string;
+  slug: string;
+  autor: string;
+  publicadoEm: string;
+  atualizadoEm: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: titulo,
+    description: descricao,
+    url: `${SITE_URL}/blog/${slug}`,
+    mainEntityOfPage: `${SITE_URL}/blog/${slug}`,
+    datePublished: publicadoEm,
+    dateModified: atualizadoEm,
+    inLanguage: "pt-BR",
+    author: { "@type": "Organization", name: autor, url: SITE_URL },
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      logo: { "@type": "ImageObject", url: LOGO_URL },
+    },
+  };
+}
+
 export function faqSchema(faqs: { question: string; answer: string }[]) {
   return {
     "@context": "https://schema.org",

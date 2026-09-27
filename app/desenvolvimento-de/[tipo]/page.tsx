@@ -4,6 +4,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { serviceSchema, faqSchema, breadcrumbSchema } from "@/lib/seo/schema";
 import { SITE_URL } from "@/lib/constants";
 import { getConteudoTipo, tipoIndexavel, nichoIndexavel, hrefSistemaPara } from "@/lib/conteudo";
+import { artigosRelacionados } from "@/lib/blog";
 import tiposSoftware from "@/data/tipos-software.json";
 import nichos from "@/data/nichos.json";
 import Hero from "@/components/sections/Hero";
@@ -72,6 +73,7 @@ export default async function DesenvolvimentoDeTipoPage({ params }: { params: Pr
       titulo: "Sistemas por segmento",
       links: grupoNichos.map((n) => ({ href: hrefSistemaPara(n.slug), label: `Sistema para ${n.nome}` })),
     },
+    ...artigosRelacionados(`/desenvolvimento-de/${software.slug}`),
   ];
 
   return (

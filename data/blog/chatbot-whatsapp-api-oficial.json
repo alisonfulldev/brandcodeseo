@@ -1,0 +1,139 @@
+{
+  "slug": "chatbot-whatsapp-api-oficial",
+  "titulo": "Chatbot no WhatsApp: API oficial, custos e como evitar banimento",
+  "descricao": "Como funciona a API oficial do WhatsApp, por que números são banidos, quanto custa um chatbot (desenvolvimento e mensagens da Meta) e boas práticas para automatizar o atendimento com segurança.",
+  "resumo": "O que é a API oficial do WhatsApp, por que ferramentas não oficiais levam ao bloqueio do número, como a Meta cobra as mensagens e quanto custa colocar um chatbot no ar.",
+  "categoria": "WhatsApp e IA",
+  "autor": "Equipe BrandCode Solutions",
+  "publicadoEm": "2026-09-25",
+  "atualizadoEm": "2026-09-25",
+  "palavrasChave": ["chatbot whatsapp", "api oficial do whatsapp", "quanto custa chatbot whatsapp", "whatsapp business api preço", "número banido whatsapp automação"],
+  "secoes": [
+    {
+      "titulo": "As três formas de usar o WhatsApp na empresa",
+      "paragrafos": [
+        "Antes de falar de chatbot, é importante entender que existem três jeitos diferentes de uma empresa usar o WhatsApp — e só dois deles são permitidos pela Meta:"
+      ],
+      "lista": [
+        "**WhatsApp Business (aplicativo).** O app gratuito para pequenos negócios. Tem mensagens de ausência, respostas rápidas e catálogo, mas funciona em poucos aparelhos e não permite automação de verdade nem integração com sistemas.",
+        "**WhatsApp Business Platform (API oficial).** A versão para empresas que querem automatizar, integrar com CRM e ERP e atender com vários atendentes no mesmo número. É a base de qualquer chatbot sério.",
+        "**Ferramentas não oficiais.** Programas que simulam o WhatsApp Web para enviar e receber mensagens automaticamente. São baratos e fáceis de instalar, mas violam os termos de uso — e são a principal causa de números banidos."
+      ]
+    },
+    {
+      "titulo": "Por que números são banidos",
+      "paragrafos": [
+        "O WhatsApp monitora o comportamento dos números para combater spam. Os motivos mais comuns de bloqueio são:"
+      ],
+      "lista": [
+        "Uso de ferramentas não oficiais que automatizam o WhatsApp Web.",
+        "Envio em massa para pessoas que não pediram para receber mensagens, como listas compradas.",
+        "Muitas denúncias ou bloqueios feitos pelos destinatários.",
+        "Volume de envio que cresce de forma brusca em um número recente."
+      ],
+      "paragrafosFinais": [
+        "Quando o número é banido, a empresa perde o canal e, muitas vezes, o histórico de conversas com clientes. Para quem vende pelo WhatsApp, isso é parar a operação. Com a API oficial, a automação é permitida pelas regras da própria Meta — o que continua proibido é o spam."
+      ]
+    },
+    {
+      "titulo": "Como a Meta cobra as mensagens",
+      "paragrafos": [
+        "Na API oficial, a cobrança da Meta é feita por **mensagem de modelo** — as mensagens que a empresa envia a partir de modelos aprovados previamente, como confirmações, lembretes e campanhas. O valor depende da categoria da mensagem e do país do destinatário:"
+      ],
+      "lista": [
+        "**Marketing:** promoções, novidades, reativação de clientes. É a categoria mais cara.",
+        "**Utilidade:** confirmações de pedido, lembretes de consulta, avisos de pagamento. Mais barata que marketing.",
+        "**Autenticação:** códigos de verificação e login."
+      ],
+      "paragrafosFinais": [
+        "O mais importante para quem pensa em chatbot: **quando é o cliente que chama, as respostas enviadas dentro da janela de atendimento de 24 horas não são cobradas pela Meta**. Um chatbot que responde a quem entra em contato, portanto, tem custo de mensagens baixo. O custo cresce quando a empresa passa a iniciar conversas em volume, como em campanhas.",
+        "Os valores por categoria e país são publicados pela Meta e mudam periodicamente. Antes de um projeto, estimamos o custo mensal com base no volume esperado de cada tipo de mensagem."
+      ]
+    },
+    {
+      "titulo": "Chatbot de menu ou chatbot com IA?",
+      "paragrafos": [
+        "Os dois têm lugar. A escolha depende do tipo de conversa que a sua empresa recebe."
+      ],
+      "tabela": {
+        "cabecalho": ["", "Chatbot de menu", "Chatbot com IA"],
+        "linhas": [
+          ["Como funciona", "O cliente escolhe opções numeradas", "O cliente escreve do jeito que quiser"],
+          ["Melhor para", "Poucos assuntos e bem definidos", "Muitas dúvidas diferentes e perguntas abertas"],
+          ["Risco", "Cliente se irrita quando a opção não existe", "Responder algo impreciso se não for bem configurado"],
+          ["Custo mensal extra", "Nenhum além das mensagens", "Uso da API de IA (normalmente centenas de reais)"],
+          ["Faixa de desenvolvimento", "R$ 997 a R$ 2.997", "R$ 3.000 a R$ 8.000"]
+        ]
+      },
+      "paragrafosFinais": [
+        "Na prática, o formato que mais funciona é o híbrido: a IA entende a pergunta, responde o que sabe com base nas informações da empresa e oferece botões para as ações mais comuns, como falar com um atendente, ver um pedido ou agendar. Veja os detalhes de um [chatbot para WhatsApp](/desenvolvimento-de/chatbot-whatsapp) e de um [chatbot com IA](/desenvolvimento-de/chatbot-com-ia)."
+      ]
+    },
+    {
+      "titulo": "Como evitar que a IA invente respostas",
+      "lista": [
+        "**Base de conhecimento fechada.** A IA responde apenas com base em documentos fornecidos pela empresa: preços, políticas, horários, perguntas frequentes.",
+        "**Instrução para admitir que não sabe.** Quando a pergunta não está coberta, o chatbot diz que vai chamar um atendente, em vez de improvisar.",
+        "**Assuntos proibidos.** Descontos, prazos contratuais e diagnósticos, por exemplo, ficam sempre com uma pessoa.",
+        "**Revisão das primeiras semanas.** Ler as conversas reais logo após o lançamento é a forma mais rápida de corrigir falhas."
+      ]
+    },
+    {
+      "titulo": "Passo a passo para colocar um chatbot no ar",
+      "lista": [
+        "**Conta empresarial na Meta.** Criar ou usar o Gerenciador de Negócios da Meta; a verificação da empresa é recomendada e libera limites maiores de envio.",
+        "**Número dedicado.** O número usado na API sai do aplicativo comum do WhatsApp. Dá para migrar o número atual ou usar um novo.",
+        "**Mapeamento das conversas.** Levantar as perguntas mais frequentes, os pedidos que o bot pode resolver sozinho e o momento de transferir para um humano.",
+        "**Desenvolvimento e integrações.** Construir o fluxo ou a IA e conectar ao CRM, ERP ou agenda, para o bot consultar pedidos, marcar horários e registrar leads.",
+        "**Aprovação dos modelos de mensagem.** Confirmações, lembretes e campanhas precisam ser aprovados pela Meta antes do uso.",
+        "**Lançamento e ajustes.** Colocar no ar, acompanhar as conversas e ajustar nas primeiras semanas."
+      ],
+      "paragrafosFinais": [
+        "Um chatbot de menu costuma ficar pronto em 1 a 2 semanas. Um chatbot com IA integrado aos sistemas da empresa leva de 3 a 6 semanas."
+      ]
+    },
+    {
+      "titulo": "Boas práticas para manter o número saudável",
+      "lista": [
+        "Envie mensagens ativas apenas para quem aceitou recebê-las, e registre esse consentimento.",
+        "Ofereça sempre uma forma simples de parar de receber mensagens.",
+        "Prefira mensagens úteis e esperadas — confirmação, lembrete, status — a campanhas frequentes.",
+        "Nunca use listas compradas.",
+        "Acompanhe a classificação de qualidade do número no painel da Meta; ela cai quando muitas pessoas bloqueiam ou denunciam.",
+        "Aumente o volume de envios gradualmente em números novos."
+      ]
+    },
+    {
+      "titulo": "Quanto custa, somando tudo",
+      "paragrafos": [
+        "Para ter uma visão completa, separe o custo em duas partes:"
+      ],
+      "lista": [
+        "**Desenvolvimento (uma vez):** de R$ 997 a R$ 2.997 para um chatbot de menu; de R$ 3.000 a R$ 8.000 para um chatbot com IA; a partir de R$ 8.000 quando ele consulta e executa ações nos seus sistemas e inclui painel com vários atendentes.",
+        "**Operação (por mês):** mensagens de modelo cobradas pela Meta conforme o volume, uso da API de IA quando houver e hospedagem. Para uma empresa pequena ou média que usa o chatbot principalmente para responder clientes, o total costuma ficar em algumas centenas de reais."
+      ],
+      "paragrafosFinais": [
+        "Se a ideia é também enviar lembretes, confirmações e avisos de cobrança automaticamente, veja como funciona a [automação de WhatsApp](/desenvolvimento-de/automacao-whatsapp)."
+      ]
+    },
+    {
+      "titulo": "Conclusão",
+      "paragrafos": [
+        "Automatizar o WhatsApp vale a pena para quase toda empresa que recebe muitas mensagens repetidas — desde que seja feito pela API oficial. Ferramentas não oficiais parecem econômicas até o dia em que o número é banido. Com a API, um fluxo bem desenhado e, quando fizer sentido, inteligência artificial com limites claros, o chatbot atende 24 horas, qualifica os contatos e deixa a equipe livre para as conversas que realmente precisam de uma pessoa."
+      ]
+    }
+  ],
+  "faqs": [
+    { "question": "Posso usar meu número atual do WhatsApp no chatbot?", "answer": "Sim, migrando o número para a API oficial. Depois da migração, ele deixa de funcionar no aplicativo comum do celular e passa a ser usado pelo painel de atendimento, onde vários atendentes podem responder." },
+    { "question": "A API oficial do WhatsApp é paga?", "answer": "O acesso à API não tem mensalidade da Meta. A cobrança é feita por mensagem de modelo enviada, conforme a categoria e o país. Respostas a clientes dentro da janela de 24 horas de atendimento não são cobradas pela Meta." },
+    { "question": "O chatbot funciona no Instagram também?", "answer": "Sim. O mesmo chatbot pode atender no WhatsApp, no Direct do Instagram e no chat do site, com o histórico reunido em um só lugar." },
+    { "question": "Quanto tempo leva para aprovar um modelo de mensagem?", "answer": "Normalmente de minutos a algumas horas. Modelos com conteúdo promocional mal classificado ou que parecem spam podem ser recusados e precisam ser ajustados." }
+  ],
+  "relacionados": [
+    { "href": "/desenvolvimento-de/chatbot-whatsapp", "label": "Chatbot para WhatsApp" },
+    { "href": "/desenvolvimento-de/automacao-whatsapp", "label": "Automação de WhatsApp" },
+    { "href": "/desenvolvimento-de/chatbot-com-ia", "label": "Chatbot com IA" },
+    { "href": "/desenvolvimento-de/agente-de-ia", "label": "Agente de IA" },
+    { "href": "/blog/quanto-custa-desenvolver-sistema-sob-medida", "label": "Quanto custa um sistema sob medida?" }
+  ]
+}

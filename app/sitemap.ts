@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/constants";
 import { tipoIndexavel, nichoIndexavel } from "@/lib/conteudo";
+import { getPosts } from "@/lib/blog";
 import nichos from "@/data/nichos.json";
 import tiposSoftware from "@/data/tipos-software.json";
 
@@ -43,6 +44,17 @@ const sistemaSegmentoRoutes: MetadataRoute.Sitemap = nichos
     priority: 0.85,
   }));
 
+// /blog e artigos
+const blogRoutes: MetadataRoute.Sitemap = [
+  { url: `${SITE_URL}/blog`, lastModified: new Date(getPosts()[0]?.publicadoEm ?? now), changeFrequency: "weekly", priority: 0.7 },
+  ...getPosts().map((post) => ({
+    url: `${SITE_URL}/blog/${post.slug}`,
+    lastModified: new Date(post.atualizadoEm),
+    changeFrequency: "monthly" as const,
+    priority: 0.75,
+  })),
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [...staticRoutes, ...desenvolvimentoTipoRoutes, ...sistemaSegmentoRoutes];
+  return [...staticRoutes, ...desenvolvimentoTipoRoutes, ...sistemaSegmentoRoutes, ...blogRoutes];
 }

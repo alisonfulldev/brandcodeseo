@@ -4,6 +4,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { serviceSchema, faqSchema, breadcrumbSchema } from "@/lib/seo/schema";
 import { SITE_URL } from "@/lib/constants";
 import { getConteudoNicho, nichoIndexavel, hrefSistemaPara, NICHOS_FUNDIDOS } from "@/lib/conteudo";
+import { artigosRelacionados } from "@/lib/blog";
 import nichos from "@/data/nichos.json";
 import tiposSoftware from "@/data/tipos-software.json";
 import Hero from "@/components/sections/Hero";
@@ -69,6 +70,7 @@ export default async function SistemaParaSegmentoPage({ params }: { params: Prom
       titulo: "Outros segmentos atendidos",
       links: outrosNichos.map((n) => ({ href: hrefSistemaPara(n.slug), label: n.nome })),
     },
+    ...artigosRelacionados(`/sistema-para/${nicho.slug}`),
   ];
 
   return (

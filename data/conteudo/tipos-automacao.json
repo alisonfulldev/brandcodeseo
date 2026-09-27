@@ -26,7 +26,7 @@
     "faqs": [
       { "question": "Meu número pode ser bloqueado?", "answer": "Com a API oficial da Meta, não por usar automação. O bloqueio acontece com ferramentas não oficiais que simulam o WhatsApp Web. Seguimos as políticas da Meta, inclusive sobre mensagens ativas." },
       { "question": "Posso usar o número que já tenho?", "answer": "Sim, desde que ele seja migrado para a API. Durante a migração, o número deixa de funcionar no aplicativo comum do celular e passa a ser usado pelo painel de atendimento." },
-      { "question": "Existe custo por mensagem?", "answer": "A Meta cobra por conversa iniciada pela empresa e por algumas categorias de mensagem. Respostas a clientes dentro da janela de atendimento têm custo reduzido ou nulo. Estimamos esse valor antes do projeto." },
+      { "question": "Existe custo por mensagem?", "answer": "A Meta cobra por mensagem de modelo enviada pela empresa, com valores por categoria (marketing, utilidade e autenticação). Respostas a clientes dentro da janela de 24 horas de atendimento não são cobradas pela Meta. Estimamos o custo mensal antes do projeto." },
       { "question": "O chatbot com IA pode inventar respostas?", "answer": "Configuramos a IA para responder apenas com base nas informações fornecidas pela sua empresa e para transferir para um humano quando não souber. Também revisamos as conversas nas primeiras semanas para ajustar." }
     ]
   },
@@ -88,7 +88,7 @@
     "faqs": [
       { "question": "Posso mandar mensagem para qualquer contato?", "answer": "Não. A política do WhatsApp exige que o cliente tenha aceitado receber mensagens da empresa. O sistema registra esse consentimento e respeita pedidos de descadastro, o que também atende à LGPD." },
       { "question": "Qual a diferença para disparo em massa com ferramentas baratas?", "answer": "Ferramentas não oficiais usam o WhatsApp Web e frequentemente levam ao bloqueio do número. Com a API oficial, as mensagens têm entrega garantida e o número fica protegido." },
-      { "question": "Quanto custa cada mensagem?", "answer": "A Meta cobra por conversa conforme a categoria: utilidade, como confirmações, é mais barata que marketing. Estimamos o custo mensal com base no seu volume." },
+      { "question": "Quanto custa cada mensagem?", "answer": "A Meta cobra por mensagem de modelo enviada, conforme a categoria: utilidade, como confirmações e lembretes, é mais barata que marketing. Estimamos o custo mensal com base no seu volume." },
       { "question": "O cliente pode responder a mensagem?", "answer": "Sim. As respostas podem ser tratadas por um chatbot ou encaminhadas para a equipe no painel de atendimento." }
     ]
   },
