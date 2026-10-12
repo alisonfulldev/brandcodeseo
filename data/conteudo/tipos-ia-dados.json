@@ -18,9 +18,9 @@
     },
     "integracoes": ["OpenAI (GPT) e Anthropic (Claude)", "WhatsApp, Instagram e widget de site", "CRMs", "Bases de conhecimento (Notion, Google Drive, Confluence)", "Sistemas internos via API"],
     "precos": [
-      { "label": "Chatbot de perguntas", "valor": "R$ 1.997 – R$ 4.997", "desc": "Responde dúvidas com base nos seus documentos, em um canal." },
-      { "label": "Chatbot de vendas", "valor": "R$ 5.000 – R$ 12.000", "desc": "Qualifica leads, integra CRM e atende em vários canais." },
-      { "label": "Assistente integrado", "valor": "R$ 12.000+", "desc": "Consulta e executa ações nos seus sistemas, com análise avançada." }
+      { "label": "Chatbot de perguntas", "desc": "Responde dúvidas com base nos seus documentos, em um canal." },
+      { "label": "Chatbot de vendas", "desc": "Qualifica leads, integra CRM e atende em vários canais." },
+      { "label": "Assistente integrado", "desc": "Consulta e executa ações nos seus sistemas, com análise avançada." }
     ],
     "prazo": "10 a 40 dias.",
     "faqs": [
@@ -49,9 +49,9 @@
     },
     "integracoes": ["OpenAI, Anthropic e Google Gemini", "Google Workspace e Microsoft 365", "ERPs e CRMs", "Bancos de dados", "N8N e automações", "Power BI"],
     "precos": [
-      { "label": "Diagnóstico + piloto", "valor": "R$ 1.997 – R$ 5.997", "desc": "Mapeamento das oportunidades e um caso de uso implantado." },
-      { "label": "IA em um departamento", "valor": "R$ 6.000 – R$ 18.000", "desc": "Vários casos de uso integrados aos sistemas de uma área." },
-      { "label": "Programa de IA", "valor": "R$ 18.000+", "desc": "IA em vários departamentos, modelos preditivos e governança." }
+      { "label": "Diagnóstico + piloto", "desc": "Mapeamento das oportunidades e um caso de uso implantado." },
+      { "label": "IA em um departamento", "desc": "Vários casos de uso integrados aos sistemas de uma área." },
+      { "label": "Programa de IA", "desc": "IA em vários departamentos, modelos preditivos e governança." }
     ],
     "prazo": "15 a 60 dias para o primeiro caso de uso em produção.",
     "faqs": [
@@ -80,9 +80,9 @@
     },
     "integracoes": ["OpenAI e Anthropic (tool use e agentes)", "CRMs e ERPs", "Google Agenda e Outlook", "WhatsApp e e-mail", "Navegação web e APIs de pesquisa", "N8N e LangGraph"],
     "precos": [
-      { "label": "Agente de tarefa única", "valor": "R$ 2.997 – R$ 7.997", "desc": "Um agente com poucas ferramentas e um objetivo bem definido." },
-      { "label": "Agente integrado", "valor": "R$ 8.000 – R$ 20.000", "desc": "Acesso a vários sistemas, memória e aprovação humana." },
-      { "label": "Sistema de agentes", "valor": "R$ 20.000+", "desc": "Vários agentes coordenados, monitoramento e avaliação contínua." }
+      { "label": "Agente de tarefa única", "desc": "Um agente com poucas ferramentas e um objetivo bem definido." },
+      { "label": "Agente integrado", "desc": "Acesso a vários sistemas, memória e aprovação humana." },
+      { "label": "Sistema de agentes", "desc": "Vários agentes coordenados, monitoramento e avaliação contínua." }
     ],
     "prazo": "20 a 60 dias.",
     "faqs": [
@@ -111,9 +111,9 @@
     },
     "integracoes": ["OpenAI, Anthropic e modelos locais", "Bancos vetoriais (pgvector, Pinecone, Qdrant)", "Google Drive, SharePoint, Notion, Confluence", "Sistemas de chamados", "Slack, Teams e WhatsApp"],
     "precos": [
-      { "label": "Base de conhecimento", "valor": "R$ 2.997 – R$ 7.997", "desc": "Até alguns milhares de documentos, respostas com fonte e interface web." },
-      { "label": "RAG corporativo", "valor": "R$ 8.000 – R$ 20.000", "desc": "Várias fontes, permissões, atualização automática e integração com chat." },
-      { "label": "RAG avançado", "valor": "R$ 20.000+", "desc": "Grandes volumes, modelos locais, avaliação de qualidade e múltiplas bases." }
+      { "label": "Base de conhecimento", "desc": "Até alguns milhares de documentos, respostas com fonte e interface web." },
+      { "label": "RAG corporativo", "desc": "Várias fontes, permissões, atualização automática e integração com chat." },
+      { "label": "RAG avançado", "desc": "Grandes volumes, modelos locais, avaliação de qualidade e múltiplas bases." }
     ],
     "prazo": "15 a 45 dias.",
     "faqs": [
@@ -142,9 +142,9 @@
     },
     "integracoes": ["Power BI, Metabase e Looker Studio", "ERPs e PDVs", "CRMs", "Google Ads, Meta Ads e GA4", "Planilhas Google e Excel", "Bancos SQL e data warehouses"],
     "precos": [
-      { "label": "Painel departamental", "valor": "R$ 2.997 – R$ 6.997", "desc": "Uma ou duas fontes de dados e painéis para uma área." },
-      { "label": "BI da empresa", "valor": "R$ 7.000 – R$ 18.000", "desc": "Várias fontes, modelo de dados, painéis por perfil e alertas." },
-      { "label": "Data warehouse", "valor": "R$ 18.000+", "desc": "Centralização completa dos dados, histórico e base para modelos preditivos." }
+      { "label": "Painel departamental", "desc": "Uma ou duas fontes de dados e painéis para uma área." },
+      { "label": "BI da empresa", "desc": "Várias fontes, modelo de dados, painéis por perfil e alertas." },
+      { "label": "Data warehouse", "desc": "Centralização completa dos dados, histórico e base para modelos preditivos." }
     ],
     "prazo": "20 a 60 dias.",
     "faqs": [
@@ -173,9 +173,9 @@
     },
     "integracoes": ["Google Ads, Meta Ads e GA4", "ERPs e CRMs", "Planilhas Google e Excel", "E-mail e WhatsApp", "Armazenamento em nuvem", "OpenAI e Claude para resumos"],
     "precos": [
-      { "label": "Relatório automatizado", "valor": "R$ 1.997 – R$ 4.997", "desc": "Um modelo de relatório, uma fonte de dados e envio agendado." },
-      { "label": "Central de relatórios", "valor": "R$ 5.000 – R$ 12.000", "desc": "Vários modelos, fontes e destinatários, com resumo por IA." },
-      { "label": "Relatórios para clientes", "valor": "R$ 12.000+", "desc": "Portal com histórico, marca branca e relatórios personalizados por cliente." }
+      { "label": "Relatório automatizado", "desc": "Um modelo de relatório, uma fonte de dados e envio agendado." },
+      { "label": "Central de relatórios", "desc": "Vários modelos, fontes e destinatários, com resumo por IA." },
+      { "label": "Relatórios para clientes", "desc": "Portal com histórico, marca branca e relatórios personalizados por cliente." }
     ],
     "prazo": "10 a 40 dias.",
     "faqs": [
@@ -204,9 +204,9 @@
     },
     "integracoes": ["Modelos de visão (OpenAI, Claude, Google Vision)", "YOLO e modelos próprios", "Câmeras IP e sistemas de CFTV", "Apps mobile de campo", "ERPs e sistemas de qualidade"],
     "precos": [
-      { "label": "Leitura de documentos", "valor": "R$ 1.997 – R$ 5.997", "desc": "Extração de dados de tipos de documento definidos." },
-      { "label": "Análise de imagens", "valor": "R$ 6.000 – R$ 18.000", "desc": "Identificação, contagem ou validação com modelos existentes e integração." },
-      { "label": "Modelo treinado", "valor": "R$ 18.000+", "desc": "Treinamento com imagens próprias, inspeção em tempo real e vídeo." }
+      { "label": "Leitura de documentos", "desc": "Extração de dados de tipos de documento definidos." },
+      { "label": "Análise de imagens", "desc": "Identificação, contagem ou validação com modelos existentes e integração." },
+      { "label": "Modelo treinado", "desc": "Treinamento com imagens próprias, inspeção em tempo real e vídeo." }
     ],
     "prazo": "20 a 90 dias, conforme a necessidade de treinamento.",
     "faqs": [

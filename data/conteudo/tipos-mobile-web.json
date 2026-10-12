@@ -18,9 +18,9 @@
     },
     "integracoes": ["Apple App Store e Google Play", "Firebase (push e analytics)", "Gateways de pagamento", "APIs do seu sistema atual", "Google Maps", "Login social"],
     "precos": [
-      { "label": "MVP", "valor": "R$ 4.997 – R$ 12.000", "desc": "Funcionalidades essenciais, login, painel simples e publicação nas lojas." },
-      { "label": "App completo", "valor": "R$ 12.000 – R$ 35.000", "desc": "Pagamentos, push segmentado, integrações e painel administrativo completo." },
-      { "label": "Plataforma mobile", "valor": "R$ 35.000+", "desc": "Múltiplos perfis de usuário, tempo real, alta escala e recursos avançados do aparelho." }
+      { "label": "MVP", "desc": "Funcionalidades essenciais, login, painel simples e publicação nas lojas." },
+      { "label": "App completo", "desc": "Pagamentos, push segmentado, integrações e painel administrativo completo." },
+      { "label": "Plataforma mobile", "desc": "Múltiplos perfis de usuário, tempo real, alta escala e recursos avançados do aparelho." }
     ],
     "prazo": "45 a 120 dias, com versões de teste liberadas a cada duas semanas.",
     "faqs": [
@@ -49,9 +49,9 @@
     },
     "integracoes": ["ERP e sistemas internos", "Impressoras Bluetooth", "Leitores de código de barras e NFC", "Google Maps", "Android Enterprise"],
     "precos": [
-      { "label": "App interno simples", "valor": "R$ 4.997 – R$ 9.997", "desc": "Formulários, consultas e sincronização com o sistema da empresa." },
-      { "label": "App de campo", "valor": "R$ 10.000 – R$ 22.000", "desc": "Modo offline, periféricos, geolocalização e integração com ERP." },
-      { "label": "App Android + iOS", "valor": "R$ 22.000+", "desc": "Versão para as duas plataformas quando o público exige." }
+      { "label": "App interno simples", "desc": "Formulários, consultas e sincronização com o sistema da empresa." },
+      { "label": "App de campo", "desc": "Modo offline, periféricos, geolocalização e integração com ERP." },
+      { "label": "App Android + iOS", "desc": "Versão para as duas plataformas quando o público exige." }
     ],
     "prazo": "30 a 90 dias.",
     "faqs": [
@@ -80,9 +80,9 @@
     },
     "integracoes": ["ERPs (Bling, Tiny, Omie)", "Melhor Envio, Correios e Frenet", "Mercado Pago, Pagar.me, Stripe", "Google Shopping e Meta Catalog", "Marketplaces", "Emissão de NF-e"],
     "precos": [
-      { "label": "Loja essencial", "valor": "R$ 4.997 – R$ 12.000", "desc": "Catálogo, checkout, frete e painel administrativo." },
-      { "label": "Loja completa", "valor": "R$ 12.000 – R$ 30.000", "desc": "B2B, ERP integrado, promoções avançadas e alta performance." },
-      { "label": "Omnichannel", "valor": "R$ 30.000+", "desc": "Loja física, marketplaces e aplicativo integrados em uma só operação." }
+      { "label": "Loja essencial", "desc": "Catálogo, checkout, frete e painel administrativo." },
+      { "label": "Loja completa", "desc": "B2B, ERP integrado, promoções avançadas e alta performance." },
+      { "label": "Omnichannel", "desc": "Loja física, marketplaces e aplicativo integrados em uma só operação." }
     ],
     "prazo": "45 a 100 dias.",
     "faqs": [
@@ -111,9 +111,9 @@
     },
     "integracoes": ["Split de pagamento (Pagar.me, Asaas, Stripe Connect, Mercado Pago)", "Verificação de identidade", "WhatsApp e e-mail", "Emissão de nota da comissão", "Google Maps"],
     "precos": [
-      { "label": "MVP de marketplace", "valor": "R$ 12.000 – R$ 25.000", "desc": "Vendedores, catálogo, checkout com split e avaliações." },
-      { "label": "Marketplace completo", "valor": "R$ 25.000 – R$ 60.000", "desc": "Disputas, comissões flexíveis, app e painéis avançados." },
-      { "label": "Plataforma em escala", "valor": "R$ 60.000+", "desc": "Alto volume, logística integrada e múltiplas categorias de negócio." }
+      { "label": "MVP de marketplace", "desc": "Vendedores, catálogo, checkout com split e avaliações." },
+      { "label": "Marketplace completo", "desc": "Disputas, comissões flexíveis, app e painéis avançados." },
+      { "label": "Plataforma em escala", "desc": "Alto volume, logística integrada e múltiplas categorias de negócio." }
     ],
     "prazo": "60 a 150 dias.",
     "faqs": [
@@ -142,9 +142,9 @@
     },
     "integracoes": ["Asaas, Iugu, Pagar.me, Stripe", "Pix Automático", "Emissão de NFS-e e NF-e", "Plataformas de envio", "E-mail e WhatsApp"],
     "precos": [
-      { "label": "Recorrência simples", "valor": "R$ 3.997 – R$ 8.997", "desc": "Planos, cobrança automática e área do assinante." },
-      { "label": "Assinaturas completas", "valor": "R$ 9.000 – R$ 18.000", "desc": "Upgrades, recuperação de churn, métricas e emissão de notas." },
-      { "label": "Billing avançado", "valor": "R$ 18.000+", "desc": "Cobrança por uso, múltiplas moedas e integração com produto SaaS." }
+      { "label": "Recorrência simples", "desc": "Planos, cobrança automática e área do assinante." },
+      { "label": "Assinaturas completas", "desc": "Upgrades, recuperação de churn, métricas e emissão de notas." },
+      { "label": "Billing avançado", "desc": "Cobrança por uso, múltiplas moedas e integração com produto SaaS." }
     ],
     "prazo": "30 a 60 dias.",
     "faqs": [
@@ -173,9 +173,9 @@
     },
     "integracoes": ["Stripe, Asaas, Iugu (billing)", "Autenticação com Google e Microsoft", "E-mail transacional", "Analytics de produto", "Webhooks e API pública"],
     "precos": [
-      { "label": "MVP SaaS", "valor": "R$ 9.997 – R$ 25.000", "desc": "Multiempresa, assinatura, funcionalidade principal e painel admin." },
-      { "label": "SaaS em crescimento", "valor": "R$ 25.000 – R$ 60.000", "desc": "Planos, equipes, API, integrações e onboarding guiado." },
-      { "label": "SaaS enterprise", "valor": "R$ 60.000+", "desc": "SSO, auditoria, alta disponibilidade e requisitos de grandes clientes." }
+      { "label": "MVP SaaS", "desc": "Multiempresa, assinatura, funcionalidade principal e painel admin." },
+      { "label": "SaaS em crescimento", "desc": "Planos, equipes, API, integrações e onboarding guiado." },
+      { "label": "SaaS enterprise", "desc": "SSO, auditoria, alta disponibilidade e requisitos de grandes clientes." }
     ],
     "prazo": "60 a 120 dias para o MVP em produção.",
     "faqs": [
@@ -204,9 +204,9 @@
     },
     "integracoes": ["ERP e sistema financeiro", "Boleto e Pix", "Armazenamento de documentos", "Assinatura eletrônica", "WhatsApp e e-mail", "Login único (SSO)"],
     "precos": [
-      { "label": "Portal essencial", "valor": "R$ 3.997 – R$ 8.997", "desc": "Login, financeiro, documentos e solicitações." },
-      { "label": "Portal integrado", "valor": "R$ 9.000 – R$ 18.000", "desc": "Integração com ERP e CRM, projetos e usuários por empresa." },
-      { "label": "Portal + app", "valor": "R$ 18.000+", "desc": "Aplicativo com notificações, relatórios avançados e SSO." }
+      { "label": "Portal essencial", "desc": "Login, financeiro, documentos e solicitações." },
+      { "label": "Portal integrado", "desc": "Integração com ERP e CRM, projetos e usuários por empresa." },
+      { "label": "Portal + app", "desc": "Aplicativo com notificações, relatórios avançados e SSO." }
     ],
     "prazo": "30 a 60 dias.",
     "faqs": [

@@ -18,9 +18,9 @@
     },
     "integracoes": ["Padrão TISS (ANS) e portais de convênios", "WhatsApp Business API", "Prontuário eletrônico", "Memed", "Pix e maquininhas", "Emissão de NFS-e"],
     "precos": [
-      { "label": "Agenda e recepção", "valor": "R$ 3.997 – R$ 7.997", "desc": "Agenda multiprofissional, agendamento online e confirmações." },
-      { "label": "Clínica completa", "valor": "R$ 8.000 – R$ 18.000", "desc": "Faturamento TISS, repasse médico, financeiro e prontuário." },
-      { "label": "Rede de clínicas", "valor": "R$ 18.000+", "desc": "Várias unidades, central de agendamento e indicadores consolidados." }
+      { "label": "Agenda e recepção", "desc": "Agenda multiprofissional, agendamento online e confirmações." },
+      { "label": "Clínica completa", "desc": "Faturamento TISS, repasse médico, financeiro e prontuário." },
+      { "label": "Rede de clínicas", "desc": "Várias unidades, central de agendamento e indicadores consolidados." }
     ],
     "prazo": "45 a 90 dias.",
     "faqs": [
@@ -49,9 +49,9 @@
     },
     "integracoes": ["WhatsApp Business API", "Convênios odontológicos (TISS)", "Radiografias e imagens digitais", "Pix, cartão recorrente e boleto", "Laboratórios de prótese"],
     "precos": [
-      { "label": "Consultório", "valor": "R$ 3.997 – R$ 7.997", "desc": "Agenda, odontograma, orçamentos e financeiro." },
-      { "label": "Clínica odontológica", "valor": "R$ 8.000 – R$ 16.000", "desc": "Vários dentistas, comissões, laboratório, ortodontia recorrente." },
-      { "label": "Rede odontológica", "valor": "R$ 16.000+", "desc": "Franquias ou unidades, central de vendas e indicadores por unidade." }
+      { "label": "Consultório", "desc": "Agenda, odontograma, orçamentos e financeiro." },
+      { "label": "Clínica odontológica", "desc": "Vários dentistas, comissões, laboratório, ortodontia recorrente." },
+      { "label": "Rede odontológica", "desc": "Franquias ou unidades, central de vendas e indicadores por unidade." }
     ],
     "prazo": "45 a 75 dias.",
     "faqs": [
@@ -80,9 +80,9 @@
     },
     "integracoes": ["WhatsApp Business API", "Instagram (agendamento)", "Pix, cartão e link de pagamento", "Assinatura eletrônica", "Estoque de produtos"],
     "precos": [
-      { "label": "Estúdio de estética", "valor": "R$ 2.997 – R$ 6.997", "desc": "Agenda, fichas, pacotes e lembretes." },
-      { "label": "Clínica de estética", "valor": "R$ 7.000 – R$ 15.000", "desc": "Fotos, termos digitais, salas e equipamentos, comissões e retorno programado." },
-      { "label": "Rede ou franquia", "valor": "R$ 15.000+", "desc": "Várias unidades, app para clientes e programa de fidelidade." }
+      { "label": "Estúdio de estética", "desc": "Agenda, fichas, pacotes e lembretes." },
+      { "label": "Clínica de estética", "desc": "Fotos, termos digitais, salas e equipamentos, comissões e retorno programado." },
+      { "label": "Rede ou franquia", "desc": "Várias unidades, app para clientes e programa de fidelidade." }
     ],
     "prazo": "30 a 60 dias.",
     "faqs": [
@@ -111,9 +111,9 @@
     },
     "integracoes": ["Padrão TISS e operadoras", "HL7 e FHIR", "Sistemas hospitalares existentes (MV, Tasy)", "Laboratório e imagem (PACS)", "Estoque e farmácia"],
     "precos": [
-      { "label": "Módulo específico", "valor": "R$ 12.000 – R$ 30.000", "desc": "Um módulo integrado ao sistema atual, como leitos ou centro cirúrgico." },
-      { "label": "Integração hospitalar", "valor": "R$ 30.000 – R$ 80.000", "desc": "Vários módulos conectados e barramento de integração entre sistemas." },
-      { "label": "Plataforma hospitalar", "valor": "R$ 80.000+", "desc": "Solução ampla para hospitais de pequeno e médio porte." }
+      { "label": "Módulo específico", "desc": "Um módulo integrado ao sistema atual, como leitos ou centro cirúrgico." },
+      { "label": "Integração hospitalar", "desc": "Vários módulos conectados e barramento de integração entre sistemas." },
+      { "label": "Plataforma hospitalar", "desc": "Solução ampla para hospitais de pequeno e médio porte." }
     ],
     "prazo": "90 a 240 dias, implantado por módulo.",
     "faqs": [
@@ -142,9 +142,9 @@
     },
     "integracoes": ["Google Meet, Zoom ou sala de vídeo própria", "Pix e cartão recorrente", "WhatsApp para lembretes", "Emissão de NFS-e", "Google Agenda"],
     "precos": [
-      { "label": "Consultório individual", "valor": "R$ 2.997 – R$ 5.997", "desc": "Agenda recorrente, prontuário sigiloso, recibos e cobrança." },
-      { "label": "Clínica de psicologia", "valor": "R$ 6.000 – R$ 12.000", "desc": "Vários profissionais, salas, repasses e atendimento online." },
-      { "label": "Plataforma de terapia online", "valor": "R$ 12.000+", "desc": "Marketplace de psicólogos, triagem e pagamentos com split." }
+      { "label": "Consultório individual", "desc": "Agenda recorrente, prontuário sigiloso, recibos e cobrança." },
+      { "label": "Clínica de psicologia", "desc": "Vários profissionais, salas, repasses e atendimento online." },
+      { "label": "Plataforma de terapia online", "desc": "Marketplace de psicólogos, triagem e pagamentos com split." }
     ],
     "prazo": "30 a 60 dias.",
     "faqs": [
@@ -173,9 +173,9 @@
     },
     "integracoes": ["Prescrição digital com certificado ICP-Brasil", "Convênios (TISS)", "Farmácia e estoque de medicamentos", "Teleconsulta", "Emissão de NFS-e"],
     "precos": [
-      { "label": "Consultório psiquiátrico", "valor": "R$ 3.997 – R$ 7.997", "desc": "Agenda, prontuário, prescrição e escalas." },
-      { "label": "Clínica multidisciplinar", "valor": "R$ 8.000 – R$ 18.000", "desc": "Equipe integrada, permissões por função e convênios." },
-      { "label": "Hospital-dia e internação", "valor": "R$ 18.000+", "desc": "Leitos, atividades terapêuticas, administração de medicamentos e farmácia." }
+      { "label": "Consultório psiquiátrico", "desc": "Agenda, prontuário, prescrição e escalas." },
+      { "label": "Clínica multidisciplinar", "desc": "Equipe integrada, permissões por função e convênios." },
+      { "label": "Hospital-dia e internação", "desc": "Leitos, atividades terapêuticas, administração de medicamentos e farmácia." }
     ],
     "prazo": "45 a 120 dias.",
     "faqs": [
@@ -204,9 +204,9 @@
     },
     "integracoes": ["Tabela TACO e bases de alimentos", "Balanças de bioimpedância", "Apple Saúde e Google Fit", "Pix e cartão recorrente", "Videochamada"],
     "precos": [
-      { "label": "Consultório", "valor": "R$ 2.997 – R$ 5.997", "desc": "Avaliação, plano alimentar, modelos e agenda." },
-      { "label": "Consultório + app", "valor": "R$ 6.000 – R$ 14.000", "desc": "App do paciente, diário alimentar, check-ins e pacotes online." },
-      { "label": "Plataforma de nutrição", "valor": "R$ 14.000+", "desc": "Vários nutricionistas, marca própria e programas em grupo." }
+      { "label": "Consultório", "desc": "Avaliação, plano alimentar, modelos e agenda." },
+      { "label": "Consultório + app", "desc": "App do paciente, diário alimentar, check-ins e pacotes online." },
+      { "label": "Plataforma de nutrição", "desc": "Vários nutricionistas, marca própria e programas em grupo." }
     ],
     "prazo": "30 a 75 dias.",
     "faqs": [
@@ -235,9 +235,9 @@
     },
     "integracoes": ["SNGPC (Anvisa)", "PBMs e programas de laboratórios", "SEFAZ (NFC-e)", "TEF e Pix", "WhatsApp Business", "Distribuidoras (pedido eletrônico)"],
     "precos": [
-      { "label": "Farmácia independente", "valor": "R$ 4.997 – R$ 9.997", "desc": "Balcão, estoque com lote e validade, controlados e NFC-e." },
-      { "label": "Farmácia com fidelização", "valor": "R$ 10.000 – R$ 20.000", "desc": "Convênios, PBMs, uso contínuo, delivery e televendas." },
-      { "label": "Rede de farmácias", "valor": "R$ 20.000+", "desc": "Várias lojas, compras centralizadas e transferências entre unidades." }
+      { "label": "Farmácia independente", "desc": "Balcão, estoque com lote e validade, controlados e NFC-e." },
+      { "label": "Farmácia com fidelização", "desc": "Convênios, PBMs, uso contínuo, delivery e televendas." },
+      { "label": "Rede de farmácias", "desc": "Várias lojas, compras centralizadas e transferências entre unidades." }
     ],
     "prazo": "60 a 120 dias, incluindo homologações.",
     "faqs": [
@@ -266,9 +266,9 @@
     },
     "integracoes": ["Catracas (Henry, Topdata, Control iD)", "Wellhub e TotalPass", "Cartão recorrente, Pix e boleto", "WhatsApp Business", "Apple Saúde e Google Fit"],
     "precos": [
-      { "label": "Estúdio", "valor": "R$ 2.997 – R$ 6.997", "desc": "Alunos, planos, cobrança recorrente e agenda de aulas." },
-      { "label": "Academia", "valor": "R$ 7.000 – R$ 16.000", "desc": "Catraca, app de treino, reservas, evasão e agregadores." },
-      { "label": "Rede de academias", "valor": "R$ 16.000+", "desc": "Várias unidades, acesso compartilhado e indicadores consolidados." }
+      { "label": "Estúdio", "desc": "Alunos, planos, cobrança recorrente e agenda de aulas." },
+      { "label": "Academia", "desc": "Catraca, app de treino, reservas, evasão e agregadores." },
+      { "label": "Rede de academias", "desc": "Várias unidades, acesso compartilhado e indicadores consolidados." }
     ],
     "prazo": "30 a 75 dias.",
     "faqs": [

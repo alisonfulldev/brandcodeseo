@@ -18,9 +18,9 @@
     },
     "integracoes": ["Instagram e Google (reservas)", "WhatsApp Business API", "Pix, cartão e assinatura recorrente", "Emissão de NFS-e", "Estoque de produtos"],
     "precos": [
-      { "label": "Barbearia ou estúdio", "valor": "R$ 2.997 – R$ 5.997", "desc": "Agenda online, clientes, caixa e comissões." },
-      { "label": "Salão completo", "valor": "R$ 6.000 – R$ 12.000", "desc": "Assinaturas, fichas técnicas, retorno programado e produtos." },
-      { "label": "Rede de salões", "valor": "R$ 12.000+", "desc": "Várias unidades, app com marca própria e fidelidade." }
+      { "label": "Barbearia ou estúdio", "desc": "Agenda online, clientes, caixa e comissões." },
+      { "label": "Salão completo", "desc": "Assinaturas, fichas técnicas, retorno programado e produtos." },
+      { "label": "Rede de salões", "desc": "Várias unidades, app com marca própria e fidelidade." }
     ],
     "prazo": "20 a 45 dias.",
     "faqs": [
@@ -49,9 +49,9 @@
     },
     "integracoes": ["Sistemas contábeis (Domínio, Alterdata, Questor)", "WhatsApp Business API", "E-mail", "Boleto e Pix", "Assinatura eletrônica", "Armazenamento em nuvem"],
     "precos": [
-      { "label": "Gestão de tarefas", "valor": "R$ 3.997 – R$ 7.997", "desc": "Obrigações por cliente, responsáveis, prazos e alertas." },
-      { "label": "Escritório digital", "valor": "R$ 8.000 – R$ 16.000", "desc": "Portal do cliente, cobrança de documentos, entrega de guias e honorários." },
-      { "label": "Escritório integrado", "valor": "R$ 16.000+", "desc": "Integração com o sistema contábil, automação de extração e BI." }
+      { "label": "Gestão de tarefas", "desc": "Obrigações por cliente, responsáveis, prazos e alertas." },
+      { "label": "Escritório digital", "desc": "Portal do cliente, cobrança de documentos, entrega de guias e honorários." },
+      { "label": "Escritório integrado", "desc": "Integração com o sistema contábil, automação de extração e BI." }
     ],
     "prazo": "30 a 75 dias.",
     "faqs": [
@@ -80,9 +80,9 @@
     },
     "integracoes": ["Tribunais (PJe, e-SAJ, Projudi)", "Serviços de captura de publicações", "WhatsApp Business API", "Assinatura eletrônica", "OpenAI e Claude", "Boleto e Pix"],
     "precos": [
-      { "label": "Escritório pequeno", "valor": "R$ 3.997 – R$ 8.997", "desc": "Processos, prazos, agenda, documentos e clientes." },
-      { "label": "Escritório estruturado", "valor": "R$ 9.000 – R$ 20.000", "desc": "Captura de publicações, honorários, portal do cliente e IA." },
-      { "label": "Contencioso de massa", "valor": "R$ 20.000+", "desc": "Alto volume, automação de peças, correspondentes e BI." }
+      { "label": "Escritório pequeno", "desc": "Processos, prazos, agenda, documentos e clientes." },
+      { "label": "Escritório estruturado", "desc": "Captura de publicações, honorários, portal do cliente e IA." },
+      { "label": "Contencioso de massa", "desc": "Alto volume, automação de peças, correspondentes e BI." }
     ],
     "prazo": "45 a 90 dias.",
     "faqs": [
@@ -111,9 +111,9 @@
     },
     "integracoes": ["Meta Business Suite e Google Ads", "Google Analytics 4", "Google Drive e Figma", "Slack e WhatsApp", "Boleto e Pix", "OpenAI e Claude"],
     "precos": [
-      { "label": "Operação da agência", "valor": "R$ 3.997 – R$ 8.997", "desc": "Demandas, fluxo de produção, aprovações e calendário." },
-      { "label": "Agência completa", "valor": "R$ 9.000 – R$ 18.000", "desc": "Horas, rentabilidade por cliente, relatórios e faturamento." },
-      { "label": "Plataforma white label", "valor": "R$ 18.000+", "desc": "Portal para clientes com a marca da agência e dados em tempo real." }
+      { "label": "Operação da agência", "desc": "Demandas, fluxo de produção, aprovações e calendário." },
+      { "label": "Agência completa", "desc": "Horas, rentabilidade por cliente, relatórios e faturamento." },
+      { "label": "Plataforma white label", "desc": "Portal para clientes com a marca da agência e dados em tempo real." }
     ],
     "prazo": "30 a 60 dias.",
     "faqs": [
@@ -142,9 +142,9 @@
     },
     "integracoes": ["Pix, cartão e boleto", "WhatsApp e e-mail", "Impressoras de crachá", "Plataformas de transmissão", "Emissão de NFS-e"],
     "precos": [
-      { "label": "Inscrições e check-in", "valor": "R$ 2.997 – R$ 6.997", "desc": "Página do evento, pagamentos, QR Code e credenciamento." },
-      { "label": "Gestão de eventos", "valor": "R$ 7.000 – R$ 15.000", "desc": "Fornecedores, orçamento por evento, programação e certificados." },
-      { "label": "Plataforma de eventos", "valor": "R$ 15.000+", "desc": "Vários organizadores, eventos híbridos e aplicativo do evento." }
+      { "label": "Inscrições e check-in", "desc": "Página do evento, pagamentos, QR Code e credenciamento." },
+      { "label": "Gestão de eventos", "desc": "Fornecedores, orçamento por evento, programação e certificados." },
+      { "label": "Plataforma de eventos", "desc": "Vários organizadores, eventos híbridos e aplicativo do evento." }
     ],
     "prazo": "30 a 60 dias.",
     "faqs": [
@@ -173,9 +173,9 @@
     },
     "integracoes": ["Birôs de crédito (Serasa, Boa Vista, SCR)", "APIs bancárias e Open Finance", "Validação de identidade e biometria", "Assinatura eletrônica", "Pix e boletos", "Registro de contratos"],
     "precos": [
-      { "label": "Operação de crédito", "valor": "R$ 9.997 – R$ 25.000", "desc": "Esteira de propostas, documentos, comissões e acompanhamento." },
-      { "label": "Plataforma financeira", "valor": "R$ 25.000 – R$ 70.000", "desc": "Motor de risco, onboarding digital, carteira e cobrança." },
-      { "label": "Fintech", "valor": "R$ 70.000+", "desc": "Produto financeiro completo com app, contas e requisitos regulatórios." }
+      { "label": "Operação de crédito", "desc": "Esteira de propostas, documentos, comissões e acompanhamento." },
+      { "label": "Plataforma financeira", "desc": "Motor de risco, onboarding digital, carteira e cobrança." },
+      { "label": "Fintech", "desc": "Produto financeiro completo com app, contas e requisitos regulatórios." }
     ],
     "prazo": "60 a 180 dias.",
     "faqs": [
@@ -204,9 +204,9 @@
     },
     "integracoes": ["Google Workspace e Microsoft 365", "Assinatura eletrônica", "CRM", "Boleto, Pix e NFS-e", "Power BI", "OpenAI e Claude"],
     "precos": [
-      { "label": "Gestão da consultoria", "valor": "R$ 3.997 – R$ 8.997", "desc": "Projetos, horas, propostas e faturamento." },
-      { "label": "Consultoria + portal", "valor": "R$ 9.000 – R$ 18.000", "desc": "Portal do cliente, rentabilidade e alocação da equipe." },
-      { "label": "Metodologia como produto", "valor": "R$ 18.000+", "desc": "Plataforma SaaS com a sua metodologia, para vender por assinatura." }
+      { "label": "Gestão da consultoria", "desc": "Projetos, horas, propostas e faturamento." },
+      { "label": "Consultoria + portal", "desc": "Portal do cliente, rentabilidade e alocação da equipe." },
+      { "label": "Metodologia como produto", "desc": "Plataforma SaaS com a sua metodologia, para vender por assinatura." }
     ],
     "prazo": "30 a 90 dias.",
     "faqs": [
@@ -235,9 +235,9 @@
     },
     "integracoes": ["Booking.com, Airbnb e Expedia", "Pix e cartão online", "WhatsApp Business API", "Fechaduras eletrônicas", "Emissão de NFS-e e NFC-e", "FNRH digital"],
     "precos": [
-      { "label": "Pousada", "valor": "R$ 3.997 – R$ 8.997", "desc": "Mapa de reservas, check-in, conta do hóspede e financeiro." },
-      { "label": "Hotel", "valor": "R$ 9.000 – R$ 20.000", "desc": "Channel manager, motor de reservas, governança e tarifas dinâmicas." },
-      { "label": "Rede hoteleira", "valor": "R$ 20.000+", "desc": "Várias propriedades, central de reservas e BI." }
+      { "label": "Pousada", "desc": "Mapa de reservas, check-in, conta do hóspede e financeiro." },
+      { "label": "Hotel", "desc": "Channel manager, motor de reservas, governança e tarifas dinâmicas." },
+      { "label": "Rede hoteleira", "desc": "Várias propriedades, central de reservas e BI." }
     ],
     "prazo": "45 a 90 dias.",
     "faqs": [
@@ -266,9 +266,9 @@
     },
     "integracoes": ["Controle de acesso (Control iD, fechaduras inteligentes)", "Cartão recorrente, Pix e boleto", "Google Agenda e Outlook", "WhatsApp", "Emissão de NFS-e"],
     "precos": [
-      { "label": "Coworking pequeno", "valor": "R$ 3.997 – R$ 7.997", "desc": "Membros, planos, reservas de salas e cobrança recorrente." },
-      { "label": "Coworking completo", "valor": "R$ 8.000 – R$ 16.000", "desc": "Controle de acesso, visitantes, correspondência, day use e app." },
-      { "label": "Rede de espaços", "valor": "R$ 16.000+", "desc": "Várias unidades, acesso compartilhado entre elas e BI." }
+      { "label": "Coworking pequeno", "desc": "Membros, planos, reservas de salas e cobrança recorrente." },
+      { "label": "Coworking completo", "desc": "Controle de acesso, visitantes, correspondência, day use e app." },
+      { "label": "Rede de espaços", "desc": "Várias unidades, acesso compartilhado entre elas e BI." }
     ],
     "prazo": "30 a 75 dias.",
     "faqs": [

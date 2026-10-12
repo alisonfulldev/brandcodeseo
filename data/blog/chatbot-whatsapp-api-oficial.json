@@ -6,7 +6,7 @@
   "categoria": "WhatsApp e IA",
   "autor": "Equipe BrandCode Solutions",
   "publicadoEm": "2026-09-25",
-  "atualizadoEm": "2026-09-25",
+  "atualizadoEm": "2026-10-12",
   "palavrasChave": ["chatbot whatsapp", "api oficial do whatsapp", "quanto custa chatbot whatsapp", "whatsapp business api preço", "número banido whatsapp automação"],
   "secoes": [
     {
@@ -62,7 +62,7 @@
           ["Melhor para", "Poucos assuntos e bem definidos", "Muitas dúvidas diferentes e perguntas abertas"],
           ["Risco", "Cliente se irrita quando a opção não existe", "Responder algo impreciso se não for bem configurado"],
           ["Custo mensal extra", "Nenhum além das mensagens", "Uso da API de IA (normalmente centenas de reais)"],
-          ["Faixa de desenvolvimento", "R$ 997 a R$ 2.997", "R$ 3.000 a R$ 8.000"]
+          ["Desenvolvimento", "A partir de R$ 1.500", "A partir de R$ 1.500"]
         ]
       },
       "paragrafosFinais": [
@@ -109,7 +109,7 @@
         "Para ter uma visão completa, separe o custo em duas partes:"
       ],
       "lista": [
-        "**Desenvolvimento (uma vez):** de R$ 997 a R$ 2.997 para um chatbot de menu; de R$ 3.000 a R$ 8.000 para um chatbot com IA; a partir de R$ 8.000 quando ele consulta e executa ações nos seus sistemas e inclui painel com vários atendentes.",
+        "**Desenvolvimento (uma vez):** a partir de R$ 1.500. O valor final depende do formato (menu ou IA), das integrações com os seus sistemas e de incluir ou não um painel com vários atendentes.",
         "**Operação (por mês):** mensagens de modelo cobradas pela Meta conforme o volume, uso da API de IA quando houver e hospedagem. Para uma empresa pequena ou média que usa o chatbot principalmente para responder clientes, o total costuma ficar em algumas centenas de reais."
       ],
       "paragrafosFinais": [

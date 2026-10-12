@@ -10,9 +10,9 @@ import { NICHOS_FUNDIDOS } from "@/lib/rotas";
 
 export { NICHOS_FUNDIDOS, hrefSistemaPara } from "@/lib/rotas";
 
+/** Opção de escopo do projeto. Sem valor: o preço exibido é sempre o inicial (PRECO_INICIAL). */
 export interface FaixaPreco {
   label: string;
-  valor: string;
   desc: string;
 }
 

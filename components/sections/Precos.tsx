@@ -41,7 +41,7 @@ interface Plano {
 const planos: Plano[] = [
   {
     nome: "Automação e IA",
-    preco: "a partir de R$ 997",
+    preco: "a partir de R$ 1.500",
     precoDetalhe: "projeto único",
     tag: null,
     descricao:
@@ -59,7 +59,7 @@ const planos: Plano[] = [
   },
   {
     nome: "Sistema Web",
-    preco: "a partir de R$ 2.997",
+    preco: "a partir de R$ 1.500",
     precoDetalhe: "projeto único",
     tag: "Mais contratado",
     descricao:
@@ -78,7 +78,7 @@ const planos: Plano[] = [
   },
   {
     nome: "App Mobile + Sistema",
-    preco: "a partir de R$ 4.997",
+    preco: "a partir de R$ 1.500",
     precoDetalhe: "projeto único",
     tag: null,
     descricao:

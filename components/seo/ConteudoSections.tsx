@@ -1,5 +1,6 @@
 import type { ConteudoPagina } from "@/lib/conteudo";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import { PRECO_INICIAL } from "@/lib/constants";
 
 interface ConteudoSectionsProps {
   conteudo: ConteudoPagina;
@@ -66,17 +67,18 @@ export function ConteudoDetalhes({ conteudo, nome, whatsappMsg }: ConteudoSectio
           <h2 className="text-2xl font-extrabold text-[#0A1628] mb-3 text-center">
             Quanto custa {nome.toLowerCase()}?
           </h2>
-          <p className="text-gray-500 text-sm text-center mb-10">
-            Faixas de referência. O valor exato sai do diagnóstico gratuito. Prazo típico: {conteudo.prazo}
+          <p className="text-center mb-2">
+            <span className="text-sm text-gray-500">A partir de </span>
+            <span className="text-4xl font-extrabold text-[#0A1628]">{PRECO_INICIAL}</span>
           </p>
+          <p className="text-gray-500 text-sm text-center mb-10">
+            O valor final depende do escopo e é definido no diagnóstico gratuito. Prazo típico: {conteudo.prazo}
+          </p>
+          <h3 className="text-sm font-bold text-gray-500 uppercase tracking-wide text-center mb-4">Opções de projeto</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-            {conteudo.precos.map((f, i) => (
-              <div
-                key={f.label}
-                className={`bg-white rounded-2xl p-6 border ${i === 1 ? "border-blue-500 shadow-lg shadow-blue-100" : "border-gray-200"}`}
-              >
-                <p className="text-xs font-bold text-blue-600 uppercase tracking-wide mb-2">{f.label}</p>
-                <p className="text-2xl font-extrabold text-[#0A1628] mb-3">{f.valor}</p>
+            {conteudo.precos.map((f) => (
+              <div key={f.label} className="bg-white rounded-2xl p-6 border border-gray-200">
+                <p className="text-base font-bold text-[#0A1628] mb-2">{f.label}</p>
                 <p className="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
               </div>
             ))}

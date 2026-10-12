@@ -18,9 +18,9 @@
     },
     "integracoes": ["iFood (API de pedidos)", "WhatsApp Business", "Pix e cartão online", "Impressoras térmicas de cozinha", "Google Maps (rotas e distância)", "PDV e emissão de NFC-e"],
     "precos": [
-      { "label": "Cardápio e pedidos", "valor": "R$ 2.997 – R$ 6.997", "desc": "Cardápio digital, carrinho, pagamento online e painel de pedidos." },
-      { "label": "Delivery completo", "valor": "R$ 7.000 – R$ 15.000", "desc": "Entregadores, taxa por região, fidelidade e integração com iFood." },
-      { "label": "App próprio", "valor": "R$ 15.000+", "desc": "Aplicativo na loja com notificações push e várias unidades." }
+      { "label": "Cardápio e pedidos", "desc": "Cardápio digital, carrinho, pagamento online e painel de pedidos." },
+      { "label": "Delivery completo", "desc": "Entregadores, taxa por região, fidelidade e integração com iFood." },
+      { "label": "App próprio", "desc": "Aplicativo na loja com notificações push e várias unidades." }
     ],
     "prazo": "20 a 60 dias.",
     "faqs": [
@@ -49,9 +49,9 @@
     },
     "integracoes": ["Memed e prescrição digital", "Certificado digital ICP-Brasil", "Laboratórios (resultados em PDF ou HL7)", "Agenda e faturamento TISS", "Videochamada"],
     "precos": [
-      { "label": "Prontuário individual", "valor": "R$ 3.997 – R$ 7.997", "desc": "Consultório com um ou dois profissionais, modelos e prescrição." },
-      { "label": "Prontuário para clínica", "valor": "R$ 8.000 – R$ 18.000", "desc": "Várias especialidades, permissões, anexos e teleconsulta." },
-      { "label": "Prontuário hospitalar", "valor": "R$ 18.000+", "desc": "Internação, prescrição de enfermagem e integração com laboratório e faturamento." }
+      { "label": "Prontuário individual", "desc": "Consultório com um ou dois profissionais, modelos e prescrição." },
+      { "label": "Prontuário para clínica", "desc": "Várias especialidades, permissões, anexos e teleconsulta." },
+      { "label": "Prontuário hospitalar", "desc": "Internação, prescrição de enfermagem e integração com laboratório e faturamento." }
     ],
     "prazo": "45 a 90 dias.",
     "faqs": [
@@ -80,9 +80,9 @@
     },
     "integracoes": ["ERP e financeiro", "Tabela SINAPI", "Emissão de NF-e de entrada", "Assinatura eletrônica de contratos", "Google Drive para projetos"],
     "precos": [
-      { "label": "Controle de obra", "valor": "R$ 4.997 – R$ 9.997", "desc": "Orçamento versus realizado, diário de obra e compras por obra." },
-      { "label": "Gestão de construtora", "valor": "R$ 10.000 – R$ 25.000", "desc": "Cronograma, medições, várias obras e aplicativo de canteiro offline." },
-      { "label": "Incorporação completa", "valor": "R$ 25.000+", "desc": "Vendas de unidades, portal do cliente, repasses e integração bancária." }
+      { "label": "Controle de obra", "desc": "Orçamento versus realizado, diário de obra e compras por obra." },
+      { "label": "Gestão de construtora", "desc": "Cronograma, medições, várias obras e aplicativo de canteiro offline." },
+      { "label": "Incorporação completa", "desc": "Vendas de unidades, portal do cliente, repasses e integração bancária." }
     ],
     "prazo": "45 a 90 dias.",
     "faqs": [
@@ -111,9 +111,9 @@
     },
     "integracoes": ["Portais (ZAP, Viva Real, OLX, Imovelweb)", "WhatsApp Business", "Boleto e Pix", "Assinatura eletrônica", "Índices IGP-M e IPCA", "Site da imobiliária"],
     "precos": [
-      { "label": "CRM imobiliário", "valor": "R$ 3.997 – R$ 8.997", "desc": "Imóveis, leads dos portais, distribuição e agenda de visitas." },
-      { "label": "Vendas e locação", "valor": "R$ 9.000 – R$ 20.000", "desc": "Contratos, assinatura digital, cobrança de aluguel e repasses." },
-      { "label": "Imobiliária completa", "valor": "R$ 20.000+", "desc": "Site próprio integrado, portal do proprietário e do inquilino e várias unidades." }
+      { "label": "CRM imobiliário", "desc": "Imóveis, leads dos portais, distribuição e agenda de visitas." },
+      { "label": "Vendas e locação", "desc": "Contratos, assinatura digital, cobrança de aluguel e repasses." },
+      { "label": "Imobiliária completa", "desc": "Site próprio integrado, portal do proprietário e do inquilino e várias unidades." }
     ],
     "prazo": "45 a 90 dias.",
     "faqs": [
@@ -142,9 +142,9 @@
     },
     "integracoes": ["Boleto e Pix recorrente", "Assinatura eletrônica de contratos", "Google Workspace for Education e Microsoft 365", "Catracas e controle de acesso", "WhatsApp para avisos"],
     "precos": [
-      { "label": "Secretaria e financeiro", "valor": "R$ 4.997 – R$ 9.997", "desc": "Matrícula online, cadastro de alunos, mensalidades e contratos." },
-      { "label": "Escola completa", "valor": "R$ 10.000 – R$ 22.000", "desc": "Diário de classe, boletins, portal do aluno e app da família." },
-      { "label": "Rede de escolas", "valor": "R$ 22.000+", "desc": "Várias unidades, relatórios consolidados e integrações de acesso." }
+      { "label": "Secretaria e financeiro", "desc": "Matrícula online, cadastro de alunos, mensalidades e contratos." },
+      { "label": "Escola completa", "desc": "Diário de classe, boletins, portal do aluno e app da família." },
+      { "label": "Rede de escolas", "desc": "Várias unidades, relatórios consolidados e integrações de acesso." }
     ],
     "prazo": "45 a 90 dias, planejado para entrar em uso antes do período de matrículas.",
     "faqs": [
@@ -173,9 +173,9 @@
     },
     "integracoes": ["Rastreadores (Sascar, Omnilink, Cobli)", "Cartões combustível (Ticket Log, ValeCard)", "Consulta de multas e documentos", "ERP e financeiro", "Sistemas de roteirização"],
     "precos": [
-      { "label": "Controle de frota", "valor": "R$ 3.997 – R$ 8.997", "desc": "Veículos, documentos, manutenção e abastecimentos." },
-      { "label": "Frota integrada", "valor": "R$ 9.000 – R$ 18.000", "desc": "Rastreador, cartão combustível, checklist por app e custo por quilômetro." },
-      { "label": "Logística completa", "valor": "R$ 18.000+", "desc": "Roteirização, entregas com comprovante e integração com ERP e TMS." }
+      { "label": "Controle de frota", "desc": "Veículos, documentos, manutenção e abastecimentos." },
+      { "label": "Frota integrada", "desc": "Rastreador, cartão combustível, checklist por app e custo por quilômetro." },
+      { "label": "Logística completa", "desc": "Roteirização, entregas com comprovante e integração com ERP e TMS." }
     ],
     "prazo": "30 a 75 dias.",
     "faqs": [
@@ -204,9 +204,9 @@
     },
     "integracoes": ["Vimeo, Panda Video e YouTube", "Pix, cartão e boleto", "Hotmart e Eduzz (migração de alunos)", "CRM e e-mail marketing", "Zoom e Google Meet para aulas ao vivo"],
     "precos": [
-      { "label": "Área de membros", "valor": "R$ 3.997 – R$ 8.997", "desc": "Cursos, aulas, progresso e certificado básico." },
-      { "label": "EAD com vendas", "valor": "R$ 9.000 – R$ 18.000", "desc": "Checkout próprio, assinaturas, avaliações e comunidade." },
-      { "label": "Universidade corporativa", "valor": "R$ 18.000+", "desc": "Trilhas por cargo, integração com RH, várias empresas e app." }
+      { "label": "Área de membros", "desc": "Cursos, aulas, progresso e certificado básico." },
+      { "label": "EAD com vendas", "desc": "Checkout próprio, assinaturas, avaliações e comunidade." },
+      { "label": "Universidade corporativa", "desc": "Trilhas por cargo, integração com RH, várias empresas e app." }
     ],
     "prazo": "30 a 75 dias.",
     "faqs": [

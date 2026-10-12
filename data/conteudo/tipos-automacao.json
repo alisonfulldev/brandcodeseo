@@ -18,9 +18,9 @@
     },
     "integracoes": ["WhatsApp Business Platform (Cloud API)", "OpenAI e Anthropic Claude", "CRMs (RD, Pipedrive, HubSpot ou próprio)", "ERP e sistema de pedidos", "Google Agenda", "Instagram Direct"],
     "precos": [
-      { "label": "Chatbot de menu", "valor": "R$ 997 – R$ 2.997", "desc": "Fluxo de opções, respostas prontas e transferência para atendente." },
-      { "label": "Chatbot com IA", "valor": "R$ 3.000 – R$ 7.997", "desc": "Entende texto livre, responde com base na sua documentação e registra leads." },
-      { "label": "Atendimento integrado", "valor": "R$ 8.000+", "desc": "Consulta e ações no seu ERP ou CRM, painel multiatendente e relatórios." }
+      { "label": "Chatbot de menu", "desc": "Fluxo de opções, respostas prontas e transferência para atendente." },
+      { "label": "Chatbot com IA", "desc": "Entende texto livre, responde com base na sua documentação e registra leads." },
+      { "label": "Atendimento integrado", "desc": "Consulta e ações no seu ERP ou CRM, painel multiatendente e relatórios." }
     ],
     "prazo": "7 a 30 dias.",
     "faqs": [
@@ -49,9 +49,9 @@
     },
     "integracoes": ["ERPs (Omie, Bling, TOTVS, SAP)", "Google Workspace e Microsoft 365", "APIs bancárias", "Portais da SEFAZ e prefeituras", "N8N, Make e Zapier", "OpenAI e Claude"],
     "precos": [
-      { "label": "Automação pontual", "valor": "R$ 997 – R$ 3.997", "desc": "Um fluxo entre dois ou três sistemas, com monitoramento." },
-      { "label": "Automação de área", "valor": "R$ 4.000 – R$ 12.000", "desc": "Vários fluxos de um departamento, leitura de documentos e aprovações." },
-      { "label": "Transformação de processos", "valor": "R$ 12.000+", "desc": "Automação de ponta a ponta entre departamentos, RPA e IA." }
+      { "label": "Automação pontual", "desc": "Um fluxo entre dois ou três sistemas, com monitoramento." },
+      { "label": "Automação de área", "desc": "Vários fluxos de um departamento, leitura de documentos e aprovações." },
+      { "label": "Transformação de processos", "desc": "Automação de ponta a ponta entre departamentos, RPA e IA." }
     ],
     "prazo": "5 a 45 dias, conforme o número de fluxos.",
     "faqs": [
@@ -80,9 +80,9 @@
     },
     "integracoes": ["WhatsApp Business Platform", "Sistemas de agenda", "ERP e e-commerce", "Gateways de pagamento (links Pix)", "CRMs", "N8N"],
     "precos": [
-      { "label": "Notificações", "valor": "R$ 997 – R$ 2.997", "desc": "Até cinco tipos de mensagem automática disparadas pelo seu sistema." },
-      { "label": "Régua completa", "valor": "R$ 3.000 – R$ 7.997", "desc": "Lembretes com resposta, cobrança, pesquisas e relatórios." },
-      { "label": "Plataforma de comunicação", "valor": "R$ 8.000+", "desc": "Campanhas segmentadas, painel próprio e integração com vários sistemas." }
+      { "label": "Notificações", "desc": "Até cinco tipos de mensagem automática disparadas pelo seu sistema." },
+      { "label": "Régua completa", "desc": "Lembretes com resposta, cobrança, pesquisas e relatórios." },
+      { "label": "Plataforma de comunicação", "desc": "Campanhas segmentadas, painel próprio e integração com vários sistemas." }
     ],
     "prazo": "7 a 30 dias.",
     "faqs": [
@@ -111,9 +111,9 @@
     },
     "integracoes": ["ERPs (TOTVS, SAP, Omie, Bling, Sankhya)", "Bancos e gateways de pagamento", "Marketplaces", "Governo (SEFAZ, Receita, prefeituras)", "CRMs e plataformas de marketing", "Sistemas legados via banco de dados"],
     "precos": [
-      { "label": "Integração pontual", "valor": "R$ 1.997 – R$ 4.997", "desc": "Conexão entre dois sistemas com sincronização de um tipo de dado." },
-      { "label": "Camada de integração", "valor": "R$ 5.000 – R$ 15.000", "desc": "Vários sistemas, filas, reprocessamento e monitoramento." },
-      { "label": "API pública", "valor": "R$ 15.000+", "desc": "API para parceiros com autenticação, documentação e portal de desenvolvedores." }
+      { "label": "Integração pontual", "desc": "Conexão entre dois sistemas com sincronização de um tipo de dado." },
+      { "label": "Camada de integração", "desc": "Vários sistemas, filas, reprocessamento e monitoramento." },
+      { "label": "API pública", "desc": "API para parceiros com autenticação, documentação e portal de desenvolvedores." }
     ],
     "prazo": "10 a 60 dias.",
     "faqs": [
@@ -142,9 +142,9 @@
     },
     "integracoes": ["Bling, Tiny, Omie, TOTVS, Sankhya", "Shopify, Nuvemshop, VTEX, WooCommerce", "Mercado Livre, Shopee, Amazon, Magalu", "Melhor Envio e transportadoras", "SEFAZ"],
     "precos": [
-      { "label": "Um canal", "valor": "R$ 1.997 – R$ 4.997", "desc": "ERP com uma loja virtual: produtos, estoque e pedidos." },
-      { "label": "Multicanal", "valor": "R$ 5.000 – R$ 12.000", "desc": "ERP com loja e marketplaces, preço por canal e nota de volta." },
-      { "label": "Hub de integração", "valor": "R$ 12.000+", "desc": "Vários depósitos, kits, regras fiscais complexas e alto volume." }
+      { "label": "Um canal", "desc": "ERP com uma loja virtual: produtos, estoque e pedidos." },
+      { "label": "Multicanal", "desc": "ERP com loja e marketplaces, preço por canal e nota de volta." },
+      { "label": "Hub de integração", "desc": "Vários depósitos, kits, regras fiscais complexas e alto volume." }
     ],
     "prazo": "15 a 45 dias.",
     "faqs": [
@@ -173,9 +173,9 @@
     },
     "integracoes": ["Google Workspace e Microsoft 365", "WhatsApp, Telegram e e-mail", "CRMs e ERPs", "OpenAI, Anthropic e modelos locais", "Bancos de dados SQL", "Qualquer API REST"],
     "precos": [
-      { "label": "Implantação N8N", "valor": "R$ 997 – R$ 2.997", "desc": "Instalação, configuração e até três fluxos simples." },
-      { "label": "Automações com IA", "valor": "R$ 3.000 – R$ 8.000", "desc": "Fluxos complexos, agentes de IA e migração do Zapier ou Make." },
-      { "label": "Operação automatizada", "valor": "R$ 8.000+", "desc": "Dezenas de fluxos entre departamentos, monitoramento e treinamento." }
+      { "label": "Implantação N8N", "desc": "Instalação, configuração e até três fluxos simples." },
+      { "label": "Automações com IA", "desc": "Fluxos complexos, agentes de IA e migração do Zapier ou Make." },
+      { "label": "Operação automatizada", "desc": "Dezenas de fluxos entre departamentos, monitoramento e treinamento." }
     ],
     "prazo": "5 a 30 dias.",
     "faqs": [
@@ -204,9 +204,9 @@
     },
     "integracoes": ["Meta Ads e Google Ads (Conversions API)", "RD Station, HubSpot, ActiveCampaign", "WhatsApp Business API", "Google Analytics 4", "CRMs e e-commerce", "E-mail transacional"],
     "precos": [
-      { "label": "Fluxos essenciais", "valor": "R$ 997 – R$ 3.997", "desc": "Boas-vindas, nutrição simples e recuperação de carrinho." },
-      { "label": "Marketing automatizado", "valor": "R$ 4.000 – R$ 10.000", "desc": "Lead scoring, WhatsApp, públicos de anúncio e integração com CRM." },
-      { "label": "Plataforma própria", "valor": "R$ 10.000+", "desc": "Automação e atribuição sob medida, sem mensalidade por contato." }
+      { "label": "Fluxos essenciais", "desc": "Boas-vindas, nutrição simples e recuperação de carrinho." },
+      { "label": "Marketing automatizado", "desc": "Lead scoring, WhatsApp, públicos de anúncio e integração com CRM." },
+      { "label": "Plataforma própria", "desc": "Automação e atribuição sob medida, sem mensalidade por contato." }
     ],
     "prazo": "10 a 45 dias.",
     "faqs": [

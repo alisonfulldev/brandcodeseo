@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { serviceSchema, faqSchema, breadcrumbSchema } from "@/lib/seo/schema";
-import { SITE_URL } from "@/lib/constants";
+import { SITE_URL, PRECO_INICIAL, PRECO_INICIAL_NUM } from "@/lib/constants";
 import { getConteudoTipo, tipoIndexavel, nichoIndexavel, hrefSistemaPara } from "@/lib/conteudo";
 import { artigosRelacionados } from "@/lib/blog";
 import tiposSoftware from "@/data/tipos-software.json";
@@ -52,7 +52,7 @@ export default async function DesenvolvimentoDeTipoPage({ params }: { params: Pr
   ];
 
   const whatsappMsg = `Olá! Preciso de desenvolvimento de ${software.nome.toLowerCase()}. Pode me passar um orçamento?`;
-  const precoInicial = conteudo?.precos[0]?.valor.match(/[\d.]+/)?.[0]?.replace(/\./g, "") ?? "2997";
+  const precoInicial = PRECO_INICIAL_NUM;
 
   const indice = tiposSoftware.findIndex((t) => t.slug === software.slug);
   const tiposRelacionados = tiposSoftware
@@ -84,7 +84,7 @@ export default async function DesenvolvimentoDeTipoPage({ params }: { params: Pr
 
       <Hero
         titulo={`Desenvolvimento de ${software.nome} Sob Medida`}
-        subtitulo={`${software.descricao} Código-fonte entregue, arquitetura escalável e suporte real.${conteudo ? ` A partir de ${conteudo.precos[0].valor.split(" – ")[0]}.` : ""}`}
+        subtitulo={`${software.descricao} Código-fonte entregue, arquitetura escalável e suporte real. A partir de ${PRECO_INICIAL}.`}
         badge={`Desenvolvimento de ${software.nome}`}
         whatsappMsg={whatsappMsg}
         ctaHref="/software-sob-medida"

@@ -18,9 +18,9 @@
     },
     "integracoes": ["WhatsApp Business", "Emissão de NF-e e NFS-e", "Pix e boleto (Asaas, Inter, Mercado Pago)", "Google Planilhas para migração", "E-mail transacional"],
     "precos": [
-      { "label": "Gestão essencial", "valor": "R$ 2.997 – R$ 6.997", "desc": "Clientes, pedidos e financeiro básico para até 10 usuários." },
-      { "label": "Gestão completa", "valor": "R$ 7.000 – R$ 15.000", "desc": "Inclui estoque, comissões, relatórios e emissão fiscal integrada." },
-      { "label": "Multiempresa", "valor": "R$ 15.000+", "desc": "Várias filiais ou CNPJs, consolidação de resultados e regras por unidade." }
+      { "label": "Gestão essencial", "desc": "Clientes, pedidos e financeiro básico para até 10 usuários." },
+      { "label": "Gestão completa", "desc": "Inclui estoque, comissões, relatórios e emissão fiscal integrada." },
+      { "label": "Multiempresa", "desc": "Várias filiais ou CNPJs, consolidação de resultados e regras por unidade." }
     ],
     "prazo": "30 a 60 dias para a primeira versão em uso, com entregas quinzenais.",
     "faqs": [
@@ -49,9 +49,9 @@
     },
     "integracoes": ["SEFAZ (NF-e, NFC-e, MDF-e)", "Bancos via CNAB e API Pix", "Sistemas contábeis (Domínio, Alterdata)", "E-commerce e marketplaces", "Balanças e coletores de dados", "Power BI"],
     "precos": [
-      { "label": "ERP inicial", "valor": "R$ 8.000 – R$ 20.000", "desc": "Três a quatro módulos integrados: compras, estoque, vendas e financeiro." },
-      { "label": "ERP completo", "valor": "R$ 20.000 – R$ 60.000", "desc": "Inclui produção, fiscal completo, multi-filial e relatórios gerenciais." },
-      { "label": "ERP enterprise", "valor": "R$ 60.000+", "desc": "Alto volume, integrações com sistemas legados e requisitos de auditoria." }
+      { "label": "ERP inicial", "desc": "Três a quatro módulos integrados: compras, estoque, vendas e financeiro." },
+      { "label": "ERP completo", "desc": "Inclui produção, fiscal completo, multi-filial e relatórios gerenciais." },
+      { "label": "ERP enterprise", "desc": "Alto volume, integrações com sistemas legados e requisitos de auditoria." }
     ],
     "prazo": "60 a 120 dias, com implantação por módulo para a empresa não parar.",
     "faqs": [
@@ -80,9 +80,9 @@
     },
     "integracoes": ["WhatsApp Business API", "Meta Ads e Google Ads (captura de leads)", "Formulários do site", "ERP e emissão de notas", "Assinatura eletrônica", "Google Agenda"],
     "precos": [
-      { "label": "CRM de vendas", "valor": "R$ 3.997 – R$ 8.997", "desc": "Funil próprio, cadastro de leads, tarefas e relatórios de conversão." },
-      { "label": "CRM com WhatsApp", "valor": "R$ 9.000 – R$ 18.000", "desc": "Conversas integradas, distribuição automática, propostas e comissões." },
-      { "label": "CRM + automação", "valor": "R$ 18.000+", "desc": "Cadências automáticas, lead scoring com IA e integração completa com ERP." }
+      { "label": "CRM de vendas", "desc": "Funil próprio, cadastro de leads, tarefas e relatórios de conversão." },
+      { "label": "CRM com WhatsApp", "desc": "Conversas integradas, distribuição automática, propostas e comissões." },
+      { "label": "CRM + automação", "desc": "Cadências automáticas, lead scoring com IA e integração completa com ERP." }
     ],
     "prazo": "30 a 75 dias, conforme o número de integrações.",
     "faqs": [
@@ -111,9 +111,9 @@
     },
     "integracoes": ["WhatsApp Business API", "Google Agenda e Outlook", "Pix e cartão (Asaas, Mercado Pago, Stripe)", "Google Meu Negócio (Reservar)", "Instagram (botão de agendamento)"],
     "precos": [
-      { "label": "Agenda online", "valor": "R$ 2.997 – R$ 5.997", "desc": "Página de agendamento, regras de horário e lembretes por e-mail." },
-      { "label": "Agenda + WhatsApp e Pix", "valor": "R$ 6.000 – R$ 12.000", "desc": "Lembretes no WhatsApp, sinal antecipado e lista de espera." },
-      { "label": "Multiunidade", "valor": "R$ 12.000+", "desc": "Várias unidades, salas e equipamentos compartilhados e app para clientes." }
+      { "label": "Agenda online", "desc": "Página de agendamento, regras de horário e lembretes por e-mail." },
+      { "label": "Agenda + WhatsApp e Pix", "desc": "Lembretes no WhatsApp, sinal antecipado e lista de espera." },
+      { "label": "Multiunidade", "desc": "Várias unidades, salas e equipamentos compartilhados e app para clientes." }
     ],
     "prazo": "20 a 45 dias.",
     "faqs": [
@@ -142,9 +142,9 @@
     },
     "integracoes": ["SEFAZ (NFC-e e SAT onde aplicável)", "TEF e maquininhas (Stone, Cielo, PagSeguro)", "Pix com QR Code dinâmico", "Balanças Toledo e Filizola", "ERP e e-commerce"],
     "precos": [
-      { "label": "PDV de loja única", "valor": "R$ 4.997 – R$ 9.997", "desc": "Frente de caixa com NFC-e, pagamento misto e controle de estoque." },
-      { "label": "PDV para rede", "valor": "R$ 10.000 – R$ 25.000", "desc": "Várias lojas, estoque central, TEF e modo offline." },
-      { "label": "PDV + retaguarda", "valor": "R$ 25.000+", "desc": "Compras, precificação, promoções e integração com e-commerce." }
+      { "label": "PDV de loja única", "desc": "Frente de caixa com NFC-e, pagamento misto e controle de estoque." },
+      { "label": "PDV para rede", "desc": "Várias lojas, estoque central, TEF e modo offline." },
+      { "label": "PDV + retaguarda", "desc": "Compras, precificação, promoções e integração com e-commerce." }
     ],
     "prazo": "45 a 90 dias, incluindo homologação fiscal.",
     "faqs": [
@@ -173,9 +173,9 @@
     },
     "integracoes": ["Open Finance e APIs bancárias (Inter, Itaú, Bradesco, Sicoob)", "Asaas, Iugu e Pagar.me", "Arquivos CNAB 240/400", "Sistemas contábeis", "WhatsApp para régua de cobrança"],
     "precos": [
-      { "label": "Financeiro essencial", "valor": "R$ 2.997 – R$ 6.997", "desc": "Contas a pagar e receber, fluxo de caixa e categorias." },
-      { "label": "Financeiro integrado", "valor": "R$ 7.000 – R$ 16.000", "desc": "Conciliação por API, cobrança recorrente e DRE gerencial." },
-      { "label": "Controladoria", "valor": "R$ 16.000+", "desc": "Multiempresa, orçamento versus realizado, rateios e aprovação por alçada." }
+      { "label": "Financeiro essencial", "desc": "Contas a pagar e receber, fluxo de caixa e categorias." },
+      { "label": "Financeiro integrado", "desc": "Conciliação por API, cobrança recorrente e DRE gerencial." },
+      { "label": "Controladoria", "desc": "Multiempresa, orçamento versus realizado, rateios e aprovação por alçada." }
     ],
     "prazo": "30 a 60 dias.",
     "faqs": [
@@ -204,9 +204,9 @@
     },
     "integracoes": ["ERP e PDV", "Mercado Livre, Shopee e Amazon", "Leitores e coletores Android", "Emissão de NF-e de entrada (XML)", "Transportadoras e etiquetas"],
     "precos": [
-      { "label": "Estoque básico", "valor": "R$ 2.997 – R$ 6.997", "desc": "Cadastro, entradas e saídas, saldo por depósito e alertas de mínimo." },
-      { "label": "Estoque com coletor", "valor": "R$ 7.000 – R$ 14.000", "desc": "Código de barras, endereçamento, lote e validade e inventário rotativo." },
-      { "label": "WMS sob medida", "valor": "R$ 14.000+", "desc": "Separação por onda, múltiplos armazéns e integração com marketplaces." }
+      { "label": "Estoque básico", "desc": "Cadastro, entradas e saídas, saldo por depósito e alertas de mínimo." },
+      { "label": "Estoque com coletor", "desc": "Código de barras, endereçamento, lote e validade e inventário rotativo." },
+      { "label": "WMS sob medida", "desc": "Separação por onda, múltiplos armazéns e integração com marketplaces." }
     ],
     "prazo": "30 a 60 dias.",
     "faqs": [
@@ -235,9 +235,9 @@
     },
     "integracoes": ["eSocial (via sistema de folha)", "Sistemas de folha (Domínio, Senior, Alterdata)", "Assinatura eletrônica", "Relógios de ponto REP", "Benefícios (VR, VA, plano de saúde)"],
     "precos": [
-      { "label": "RH essencial", "valor": "R$ 4.997 – R$ 9.997", "desc": "Cadastro, documentos, férias e portal do colaborador." },
-      { "label": "RH + ponto", "valor": "R$ 10.000 – R$ 20.000", "desc": "Ponto por app, escalas, banco de horas e integração com a folha." },
-      { "label": "Gestão de pessoas", "valor": "R$ 20.000+", "desc": "Avaliação de desempenho, recrutamento e indicadores avançados." }
+      { "label": "RH essencial", "desc": "Cadastro, documentos, férias e portal do colaborador." },
+      { "label": "RH + ponto", "desc": "Ponto por app, escalas, banco de horas e integração com a folha." },
+      { "label": "Gestão de pessoas", "desc": "Avaliação de desempenho, recrutamento e indicadores avançados." }
     ],
     "prazo": "45 a 90 dias.",
     "faqs": [
@@ -266,9 +266,9 @@
     },
     "integracoes": ["CRM e ERP", "WhatsApp e e-mail", "Certificados ICP-Brasil (A1 e A3)", "Armazenamento em nuvem (S3, Google Drive)", "Validação facial"],
     "precos": [
-      { "label": "Assinatura eletrônica", "valor": "R$ 3.997 – R$ 7.997", "desc": "Modelos, envio, assinatura com evidências e arquivo." },
-      { "label": "Assinatura integrada", "valor": "R$ 8.000 – R$ 15.000", "desc": "Geração automática a partir de outros sistemas e fluxos com aprovação." },
-      { "label": "Plataforma de documentos", "valor": "R$ 15.000+", "desc": "ICP-Brasil, validação facial, múltiplas empresas e API para parceiros." }
+      { "label": "Assinatura eletrônica", "desc": "Modelos, envio, assinatura com evidências e arquivo." },
+      { "label": "Assinatura integrada", "desc": "Geração automática a partir de outros sistemas e fluxos com aprovação." },
+      { "label": "Plataforma de documentos", "desc": "ICP-Brasil, validação facial, múltiplas empresas e API para parceiros." }
     ],
     "prazo": "30 a 60 dias.",
     "faqs": [
@@ -297,9 +297,9 @@
     },
     "integracoes": ["WhatsApp Business API", "E-mail (IMAP e SMTP)", "Chat do site", "CRM e sistema de cobrança", "Slack e Microsoft Teams", "OpenAI e Claude"],
     "precos": [
-      { "label": "Helpdesk", "valor": "R$ 3.997 – R$ 7.997", "desc": "Tickets por e-mail e formulário, status, responsáveis e relatórios." },
-      { "label": "Suporte omnichannel", "valor": "R$ 8.000 – R$ 16.000", "desc": "WhatsApp, chat, SLA por plano e base de conhecimento." },
-      { "label": "Suporte com IA", "valor": "R$ 16.000+", "desc": "Respostas sugeridas, triagem automática e autoatendimento inteligente." }
+      { "label": "Helpdesk", "desc": "Tickets por e-mail e formulário, status, responsáveis e relatórios." },
+      { "label": "Suporte omnichannel", "desc": "WhatsApp, chat, SLA por plano e base de conhecimento." },
+      { "label": "Suporte com IA", "desc": "Respostas sugeridas, triagem automática e autoatendimento inteligente." }
     ],
     "prazo": "30 a 60 dias.",
     "faqs": [

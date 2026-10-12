@@ -18,9 +18,9 @@
     },
     "integracoes": ["iFood e outros apps de delivery", "SEFAZ (NFC-e)", "TEF, Pix e maquininhas", "Impressoras de cozinha", "WhatsApp Business", "Contabilidade"],
     "precos": [
-      { "label": "Lanchonete ou bar", "valor": "R$ 2.997 – R$ 6.997", "desc": "Comanda, caixa, NFC-e e cardápio digital." },
-      { "label": "Restaurante completo", "valor": "R$ 7.000 – R$ 16.000", "desc": "KDS, ficha técnica, estoque, delivery integrado e pedidos na mesa." },
-      { "label": "Rede ou franquia", "valor": "R$ 16.000+", "desc": "Várias unidades, cozinha central e padronização de fichas técnicas." }
+      { "label": "Lanchonete ou bar", "desc": "Comanda, caixa, NFC-e e cardápio digital." },
+      { "label": "Restaurante completo", "desc": "KDS, ficha técnica, estoque, delivery integrado e pedidos na mesa." },
+      { "label": "Rede ou franquia", "desc": "Várias unidades, cozinha central e padronização de fichas técnicas." }
     ],
     "prazo": "30 a 75 dias.",
     "faqs": [
@@ -49,9 +49,9 @@
     },
     "integracoes": ["WhatsApp Business API", "Pix, cartão e cobrança recorrente", "SEFAZ (NFC-e e NFS-e)", "E-commerce de produtos", "Google Maps (leva e traz)"],
     "precos": [
-      { "label": "Banho e tosa", "valor": "R$ 2.997 – R$ 5.997", "desc": "Agenda, fichas dos pets, avisos e caixa." },
-      { "label": "Pet shop completo", "valor": "R$ 6.000 – R$ 13.000", "desc": "Planos recorrentes, loja com estoque, vacinas e leva e traz." },
-      { "label": "Pet shop + veterinária", "valor": "R$ 13.000+", "desc": "Prontuário veterinário, internação e várias unidades." }
+      { "label": "Banho e tosa", "desc": "Agenda, fichas dos pets, avisos e caixa." },
+      { "label": "Pet shop completo", "desc": "Planos recorrentes, loja com estoque, vacinas e leva e traz." },
+      { "label": "Pet shop + veterinária", "desc": "Prontuário veterinário, internação e várias unidades." }
     ],
     "prazo": "30 a 60 dias.",
     "faqs": [
@@ -80,9 +80,9 @@
     },
     "integracoes": ["SEFAZ (NFC-e e NF-e)", "TEF e Pix", "E-commerce e marketplaces", "Instagram Shopping", "Birôs de crédito", "WhatsApp"],
     "precos": [
-      { "label": "Loja única", "valor": "R$ 3.997 – R$ 8.997", "desc": "PDV, estoque por grade, trocas e financeiro." },
-      { "label": "Loja multicanal", "valor": "R$ 9.000 – R$ 18.000", "desc": "E-commerce integrado, crediário, compras e comissões." },
-      { "label": "Rede de lojas", "valor": "R$ 18.000+", "desc": "Várias lojas, transferências, centro de distribuição e BI." }
+      { "label": "Loja única", "desc": "PDV, estoque por grade, trocas e financeiro." },
+      { "label": "Loja multicanal", "desc": "E-commerce integrado, crediário, compras e comissões." },
+      { "label": "Rede de lojas", "desc": "Várias lojas, transferências, centro de distribuição e BI." }
     ],
     "prazo": "45 a 90 dias.",
     "faqs": [
@@ -111,9 +111,9 @@
     },
     "integracoes": ["SEFAZ (NFC-e, NF-e)", "Balanças Toledo e Filizola", "TEF e Pix", "Fornecedores (EDI e XML)", "WhatsApp e delivery", "Programas de fidelidade"],
     "precos": [
-      { "label": "Minimercado", "valor": "R$ 4.997 – R$ 9.997", "desc": "PDV, balança, estoque, precificação e NFC-e." },
-      { "label": "Supermercado", "valor": "R$ 10.000 – R$ 25.000", "desc": "Perecíveis, promoções, compras, vários caixas e delivery." },
-      { "label": "Rede de supermercados", "valor": "R$ 25.000+", "desc": "Várias lojas, central de compras, fidelidade e BI." }
+      { "label": "Minimercado", "desc": "PDV, balança, estoque, precificação e NFC-e." },
+      { "label": "Supermercado", "desc": "Perecíveis, promoções, compras, vários caixas e delivery." },
+      { "label": "Rede de supermercados", "desc": "Várias lojas, central de compras, fidelidade e BI." }
     ],
     "prazo": "60 a 120 dias.",
     "faqs": [
@@ -142,9 +142,9 @@
     },
     "integracoes": ["ERPs (TOTVS, Sankhya, Omie)", "CLPs e sensores (IoT)", "Coletores e tablets industriais", "Balanças", "Power BI", "SEFAZ"],
     "precos": [
-      { "label": "Controle de produção", "valor": "R$ 6.997 – R$ 15.000", "desc": "Ordens de produção, apontamento e consumo de materiais." },
-      { "label": "MES sob medida", "valor": "R$ 15.000 – R$ 40.000", "desc": "Planejamento, custo real, OEE, qualidade e rastreabilidade." },
-      { "label": "Indústria 4.0", "valor": "R$ 40.000+", "desc": "Integração com máquinas, sensores e dados em tempo real." }
+      { "label": "Controle de produção", "desc": "Ordens de produção, apontamento e consumo de materiais." },
+      { "label": "MES sob medida", "desc": "Planejamento, custo real, OEE, qualidade e rastreabilidade." },
+      { "label": "Indústria 4.0", "desc": "Integração com máquinas, sensores e dados em tempo real." }
     ],
     "prazo": "60 a 150 dias.",
     "faqs": [
@@ -173,9 +173,9 @@
     },
     "integracoes": ["SEFAZ (CT-e, MDF-e)", "Averbação de seguro", "Rastreadores veiculares", "EDI com embarcadores (PROCEDA/OCOREN)", "Google Maps", "ERPs de clientes"],
     "precos": [
-      { "label": "Operação de entregas", "valor": "R$ 4.997 – R$ 10.000", "desc": "App do motorista, comprovantes e rastreio para clientes." },
-      { "label": "TMS sob medida", "valor": "R$ 10.000 – R$ 28.000", "desc": "CT-e, MDF-e, tabelas de frete, roteirização e faturamento." },
-      { "label": "Operador logístico", "valor": "R$ 28.000+", "desc": "Armazenagem, EDI com embarcadores, filiais e BI." }
+      { "label": "Operação de entregas", "desc": "App do motorista, comprovantes e rastreio para clientes." },
+      { "label": "TMS sob medida", "desc": "CT-e, MDF-e, tabelas de frete, roteirização e faturamento." },
+      { "label": "Operador logístico", "desc": "Armazenagem, EDI com embarcadores, filiais e BI." }
     ],
     "prazo": "60 a 120 dias.",
     "faqs": [
@@ -204,9 +204,9 @@
     },
     "integracoes": ["PDVs e ERPs das unidades", "Boleto e Pix", "Plataforma EAD", "WhatsApp Business", "Assinatura eletrônica", "Power BI"],
     "precos": [
-      { "label": "Gestão da rede", "valor": "R$ 6.997 – R$ 15.000", "desc": "Indicadores por unidade, royalties e comunicação." },
-      { "label": "Franqueadora completa", "valor": "R$ 15.000 – R$ 35.000", "desc": "Auditorias, treinamento, expansão e integração com PDVs." },
-      { "label": "Plataforma de franquia", "valor": "R$ 35.000+", "desc": "Sistema operacional único para todas as unidades e a central." }
+      { "label": "Gestão da rede", "desc": "Indicadores por unidade, royalties e comunicação." },
+      { "label": "Franqueadora completa", "desc": "Auditorias, treinamento, expansão e integração com PDVs." },
+      { "label": "Plataforma de franquia", "desc": "Sistema operacional único para todas as unidades e a central." }
     ],
     "prazo": "60 a 120 dias.",
     "faqs": [
@@ -235,9 +235,9 @@
     },
     "integracoes": ["WhatsApp Business API", "Catálogos de peças", "Emissão de NF-e e NFS-e", "Pix e maquininhas", "Consulta de placa"],
     "precos": [
-      { "label": "Oficina pequena", "valor": "R$ 2.997 – R$ 5.997", "desc": "OS, orçamento, clientes, veículos e caixa." },
-      { "label": "Oficina completa", "valor": "R$ 6.000 – R$ 13.000", "desc": "Checklist com fotos, aprovação por WhatsApp, estoque e lembretes." },
-      { "label": "Centro automotivo", "valor": "R$ 13.000+", "desc": "Várias unidades, frotas de empresas e agendamento online." }
+      { "label": "Oficina pequena", "desc": "OS, orçamento, clientes, veículos e caixa." },
+      { "label": "Oficina completa", "desc": "Checklist com fotos, aprovação por WhatsApp, estoque e lembretes." },
+      { "label": "Centro automotivo", "desc": "Várias unidades, frotas de empresas e agendamento online." }
     ],
     "prazo": "30 a 60 dias.",
     "faqs": [

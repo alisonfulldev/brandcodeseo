@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { serviceSchema, faqSchema, breadcrumbSchema } from "@/lib/seo/schema";
-import { SITE_URL } from "@/lib/constants";
+import { SITE_URL, PRECO_INICIAL, PRECO_INICIAL_NUM } from "@/lib/constants";
 import { getConteudoNicho, nichoIndexavel, hrefSistemaPara, NICHOS_FUNDIDOS } from "@/lib/conteudo";
 import { artigosRelacionados } from "@/lib/blog";
 import nichos from "@/data/nichos.json";
@@ -53,7 +53,7 @@ export default async function SistemaParaSegmentoPage({ params }: { params: Prom
   ];
 
   const whatsappMsg = `Olá! Preciso de um sistema para ${nicho.nome.toLowerCase()}. Pode me passar um orçamento?`;
-  const precoInicial = conteudo?.precos[0]?.valor.match(/[\d.]+/)?.[0]?.replace(/\./g, "") ?? "2997";
+  const precoInicial = PRECO_INICIAL_NUM;
 
   const nichosIndexaveis = nichos.filter((n) => nichoIndexavel(n.slug) && n.slug !== nicho.slug);
   const indice = nichos.findIndex((n) => n.slug === nicho.slug);
@@ -81,7 +81,7 @@ export default async function SistemaParaSegmentoPage({ params }: { params: Prom
 
       <Hero
         titulo={`Sistema para ${nicho.nome} — 100% Personalizado`}
-        subtitulo={`${nicho.descricao} Código-fonte entregue, suporte incluso e sem dependência de fornecedor.`}
+        subtitulo={`${nicho.descricao} Código-fonte entregue, suporte incluso e sem dependência de fornecedor. A partir de ${PRECO_INICIAL}.`}
         badge={`Sistema para ${nicho.nome}`}
         whatsappMsg={whatsappMsg}
         ctaHref="/software-sob-medida"

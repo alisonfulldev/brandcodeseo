@@ -9,11 +9,16 @@ export const WHATSAPP_MSG_DEFAULT = encodeURIComponent(
 );
 export const WHATSAPP_LINK = `${WHATSAPP_URL}?text=${WHATSAPP_MSG_DEFAULT}`;
 
+// Preço único de entrada para todos os serviços de software. Faixas com teto
+// afastavam leads; o valor final é definido no diagnóstico.
+export const PRECO_INICIAL = "R$ 1.500";
+export const PRECO_INICIAL_NUM = "1500";
+
 export const PRICES = {
-  sistemaWeb: "a partir de R$ 2.997",
-  appMobile: "a partir de R$ 4.997",
-  automacao: "a partir de R$ 997",
-  ia: "a partir de R$ 1.997",
+  sistemaWeb: `a partir de ${PRECO_INICIAL}`,
+  appMobile: `a partir de ${PRECO_INICIAL}`,
+  automacao: `a partir de ${PRECO_INICIAL}`,
+  ia: `a partir de ${PRECO_INICIAL}`,
 } as const;
 
 export const COLORS = {
