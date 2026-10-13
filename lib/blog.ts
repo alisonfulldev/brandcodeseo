@@ -1,6 +1,9 @@
 import quantoCustaSistema from "@/data/blog/quanto-custa-desenvolver-sistema-sob-medida.json";
 import sistemaProntoOuSobMedida from "@/data/blog/sistema-pronto-ou-sob-medida.json";
 import chatbotWhatsappApiOficial from "@/data/blog/chatbot-whatsapp-api-oficial.json";
+import erpParaPequenaEmpresa from "@/data/blog/erp-para-pequena-empresa.json";
+import comoReduzirFaltasNaClinica from "@/data/blog/como-reduzir-faltas-na-clinica.json";
+import integrarErpComMarketplaces from "@/data/blog/integrar-erp-com-marketplaces.json";
 
 export interface SecaoPost {
   titulo: string;
@@ -26,7 +29,14 @@ export interface Post {
 }
 
 // Para publicar um artigo novo: criar o JSON em data/blog/ e importá-lo aqui.
-const posts: Post[] = [quantoCustaSistema, sistemaProntoOuSobMedida, chatbotWhatsappApiOficial];
+const posts: Post[] = [
+  quantoCustaSistema,
+  sistemaProntoOuSobMedida,
+  chatbotWhatsappApiOficial,
+  erpParaPequenaEmpresa,
+  comoReduzirFaltasNaClinica,
+  integrarErpComMarketplaces,
+];
 
 export function getPosts(): Post[] {
   return [...posts].sort((a, b) => b.publicadoEm.localeCompare(a.publicadoEm));

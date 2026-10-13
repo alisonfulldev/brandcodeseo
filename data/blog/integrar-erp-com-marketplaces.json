@@ -1,0 +1,106 @@
+{
+  "slug": "integrar-erp-com-marketplaces",
+  "titulo": "Como integrar o ERP com Mercado Livre e Shopee sem digitar pedidos",
+  "descricao": "Como funciona a integração entre ERP, loja virtual e marketplaces como Mercado Livre e Shopee: estoque sincronizado, pedidos automáticos, nota fiscal e rastreio, e quando um integrador pronto não basta.",
+  "resumo": "O que sincronizar entre ERP e marketplaces, como evitar vender o que não tem e quando vale trocar o integrador pronto por uma integração sob medida.",
+  "categoria": "Integrações",
+  "autor": "Equipe BrandCode Solutions",
+  "publicadoEm": "2026-10-13",
+  "atualizadoEm": "2026-10-13",
+  "palavrasChave": ["integrar erp com mercado livre", "integração erp shopee", "integração erp marketplace", "sincronizar estoque mercado livre", "hub de integração marketplace"],
+  "secoes": [
+    {
+      "titulo": "O problema de vender em vários canais",
+      "paragrafos": [
+        "Vender no Mercado Livre, na Shopee, na Amazon e na loja própria multiplica as vendas — e também o trabalho. Sem integração, alguém precisa olhar cada canal, copiar os pedidos para o sistema, emitir a nota, gerar a etiqueta e atualizar o estoque de todos os outros canais. Basta um atraso para vender o mesmo produto duas vezes.",
+        "O resultado aparece onde dói: cancelamentos por falta de estoque derrubam a reputação nos marketplaces, e reputação baixa significa menos exposição e menos vendas."
+      ]
+    },
+    {
+      "titulo": "O que uma boa integração sincroniza",
+      "tabela": {
+        "cabecalho": ["Informação", "Direção", "Por que importa"],
+        "linhas": [
+          ["Estoque", "ERP → canais", "Evita vender o que já acabou"],
+          ["Preço", "ERP → canais", "Tabelas diferentes por canal, calculadas a partir de uma só fonte"],
+          ["Cadastro de produtos", "ERP → canais", "Produto cadastrado uma vez e publicado em todos"],
+          ["Pedidos", "Canais → ERP", "Entram prontos para faturar, sem digitação"],
+          ["Nota fiscal", "ERP → canais", "A nota emitida no ERP é enviada ao marketplace"],
+          ["Rastreio", "ERP → canais", "O comprador recebe o código sem ninguém copiar"]
+        ]
+      },
+      "paragrafosFinais": [
+        "Quando esses seis fluxos funcionam sozinhos, a operação passa a ser: separar, embalar e despachar. Todo o resto acontece em segundo plano."
+      ]
+    },
+    {
+      "titulo": "Os três caminhos possíveis",
+      "lista": [
+        "**Integração nativa do ERP.** Muitos ERPs para e-commerce já se conectam aos principais marketplaces. É o caminho mais simples quando o ERP atende bem a empresa e o catálogo é direto.",
+        "**Hub de integração pronto.** Ferramentas que ficam entre o ERP e os canais, cobradas por mensalidade ou por pedido. Resolvem quando o ERP não tem integração nativa com algum canal.",
+        "**Integração sob medida.** Desenvolvida para as regras da sua operação. Faz sentido quando os caminhos prontos não tratam o seu caso ou quando o custo por pedido começa a pesar."
+      ]
+    },
+    {
+      "titulo": "Quando o integrador pronto não basta",
+      "paragrafos": [
+        "Integradores prontos funcionam bem no caso padrão: um produto, um depósito, um preço. Os problemas aparecem quando a operação foge disso:"
+      ],
+      "lista": [
+        "**Kits e produtos compostos.** O kit precisa ter o saldo calculado a partir dos itens e, ao ser vendido, baixar cada componente.",
+        "**Vários depósitos.** Estoque em mais de um local, com regra de qual depósito atende cada canal.",
+        "**Grade de tamanho e cor.** Variações que precisam ser mapeadas corretamente em cada marketplace.",
+        "**Preço por canal com regras próprias.** Margem diferente por canal, considerando comissão e frete de cada marketplace.",
+        "**Regras fiscais específicas.** Operações que o integrador não sabe tratar e que geram notas com erro.",
+        "**Erros silenciosos.** Pedidos que não sincronizam e ninguém percebe até o cliente reclamar."
+      ],
+      "paragrafosFinais": [
+        "Se a sua equipe passa parte do dia corrigindo o que o integrador fez de errado, é sinal de que a integração precisa ser repensada."
+      ]
+    },
+    {
+      "titulo": "Como evitar vender o que não tem",
+      "lista": [
+        "**Estoque de segurança por canal.** Publicar nos marketplaces um pouco menos do que o saldo real nos itens de alto giro.",
+        "**Sincronização frequente.** Atualizar o estoque a cada venda, ou em intervalos de poucos minutos, em vez de uma vez por dia.",
+        "**Uma única fonte da verdade.** O saldo vive no ERP; os canais apenas recebem. Nunca ajustar estoque direto no marketplace.",
+        "**Painel de divergências.** Uma tela que mostra os itens que não sincronizaram e o motivo, para corrigir antes de virar cancelamento."
+      ]
+    },
+    {
+      "titulo": "Passo a passo para integrar",
+      "lista": [
+        "**Organize o cadastro.** Códigos (SKU) únicos e iguais em todos os canais são a base de qualquer integração.",
+        "**Defina a fonte da verdade.** Normalmente o ERP manda no estoque, no preço e no cadastro.",
+        "**Comece por um canal.** Integre o marketplace que mais vende, estabilize e depois adicione os outros.",
+        "**Teste com pedidos reais em volume baixo.** Confira estoque, nota e rastreio antes de ligar tudo.",
+        "**Monitore.** Configure alertas para falhas de sincronização desde o primeiro dia."
+      ]
+    },
+    {
+      "titulo": "Quanto custa",
+      "paragrafos": [
+        "Integrações nativas e hubs prontos são cobrados por mensalidade ou por pedido. Uma integração sob medida tem custo de desenvolvimento e depois apenas a hospedagem. Na BrandCode, projetos de integração começam **a partir de R$ 1.500**, e o escopo depende do número de canais, depósitos e regras como kits e preço por canal. Veja os detalhes de [integração ERP e e-commerce](/desenvolvimento-de/integracao-erp-ecommerce) e de [API e integrações](/desenvolvimento-de/api-e-integracoes)."
+      ]
+    },
+    {
+      "titulo": "Conclusão",
+      "paragrafos": [
+        "Vender em vários canais só é escalável quando estoque, pedidos, notas e rastreio fluem sozinhos entre o ERP e os marketplaces. Comece organizando o cadastro, escolha a fonte da verdade e integre um canal por vez. Se o integrador pronto já não dá conta das regras da sua operação, uma integração sob medida elimina o retrabalho e os cancelamentos."
+      ]
+    }
+  ],
+  "faqs": [
+    { "question": "Com que frequência o estoque é atualizado nos marketplaces?", "answer": "Depende das APIs de cada canal e da integração, mas o ideal é em poucos minutos ou a cada venda. Canais que aceitam notificações em tempo real permitem atualização quase imediata." },
+    { "question": "Preciso trocar meu ERP para integrar com marketplaces?", "answer": "Normalmente não. Desde que o ERP ofereça API ou acesso aos dados, é possível integrá-lo aos canais de venda sem substituí-lo." },
+    { "question": "A integração emite a nota fiscal automaticamente?", "answer": "A nota é emitida pelo ERP a partir do pedido que chegou do marketplace, podendo ser em lote. Depois de emitida, ela é enviada de volta ao canal junto com o código de rastreio." },
+    { "question": "Quanto tempo leva uma integração sob medida?", "answer": "Uma integração com um canal costuma ficar pronta em 2 a 4 semanas. Operações com vários canais, depósitos e kits levam mais, sendo implantadas canal por canal." }
+  ],
+  "relacionados": [
+    { "href": "/desenvolvimento-de/integracao-erp-ecommerce", "label": "Integração ERP e e-commerce" },
+    { "href": "/desenvolvimento-de/api-e-integracoes", "label": "API e integrações" },
+    { "href": "/desenvolvimento-de/controle-de-estoque", "label": "Controle de estoque" },
+    { "href": "/desenvolvimento-de/e-commerce", "label": "E-commerce sob medida" },
+    { "href": "/sistema-para/loja-de-varejo", "label": "Sistema para loja de varejo" }
+  ]
+}

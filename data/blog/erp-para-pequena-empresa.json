@@ -1,0 +1,95 @@
+{
+  "slug": "erp-para-pequena-empresa",
+  "titulo": "ERP para pequena empresa: quando vale a pena e por onde começar",
+  "descricao": "Sinais de que a sua pequena empresa precisa de um ERP, quais módulos implantar primeiro, ERP pronto ou sob medida e como fazer a transição das planilhas sem parar a operação.",
+  "resumo": "Os sinais de que a planilha ficou pequena, quais módulos implantar primeiro e como trocar de sistema sem parar a empresa.",
+  "categoria": "Gestão",
+  "autor": "Equipe BrandCode Solutions",
+  "publicadoEm": "2026-10-13",
+  "atualizadoEm": "2026-10-13",
+  "palavrasChave": ["erp para pequena empresa", "sistema de gestão para pequena empresa", "quando implantar um erp", "erp pequena empresa sob medida", "sair da planilha"],
+  "secoes": [
+    {
+      "titulo": "ERP não é coisa só de empresa grande",
+      "paragrafos": [
+        "ERP (do inglês Enterprise Resource Planning) é um sistema que junta em um só lugar as informações que hoje estão espalhadas pela empresa: vendas, estoque, compras, financeiro, notas fiscais. O nome assusta, porque lembra projetos milionários de multinacionais. Mas a ideia é simples: **cada informação é digitada uma vez e fica disponível para todos os setores**.",
+        "Para uma pequena empresa, isso significa parar de copiar o pedido do WhatsApp para a planilha, da planilha para o emissor de nota e da nota para o controle financeiro. Cada cópia é tempo perdido e uma chance de erro."
+      ]
+    },
+    {
+      "titulo": "7 sinais de que a sua empresa já precisa de um ERP",
+      "lista": [
+        "**Você não sabe o lucro do mês antes de o contador fechar.** O faturamento você até sabe, mas a margem real só aparece semanas depois.",
+        "**O estoque do sistema nunca bate com a prateleira.** Vende o que não tem ou descobre produto parado há meses.",
+        "**A mesma informação é digitada em mais de um lugar.** Pedido, nota, financeiro e estoque são controlados separadamente.",
+        "**Só uma pessoa sabe onde estão as coisas.** Quando ela tira férias, a operação trava.",
+        "**Você perde pedidos ou cobra errado.** Um item esquecido, um desconto não registrado, um boleto não emitido.",
+        "**A equipe cresceu e cada um tem a sua planilha.** Ninguém confia nos números do outro.",
+        "**Você toma decisões de compra no feeling.** Sem saber o que gira e o que encalha."
+      ],
+      "paragrafosFinais": [
+        "Se três ou mais desses sinais aparecem na sua rotina, o custo de continuar sem um sistema provavelmente já é maior do que o custo de implantar um."
+      ]
+    },
+    {
+      "titulo": "Por quais módulos começar",
+      "paragrafos": [
+        "O erro mais comum de pequenas empresas é tentar implantar tudo de uma vez. O caminho que funciona melhor é começar pelo que mais dói e expandir depois. Para a maioria das pequenas empresas, a ordem é:"
+      ],
+      "lista": [
+        "**1. Vendas e clientes.** Cadastro de clientes, pedidos e orçamentos em um só lugar. É onde o dinheiro entra, e onde mais se perde informação.",
+        "**2. Financeiro.** Contas a receber ligadas às vendas, contas a pagar e fluxo de caixa. Com isso você passa a saber quanto vai sobrar no fim do mês.",
+        "**3. Estoque.** Saldo atualizado a cada venda e compra, com alerta de reposição.",
+        "**4. Emissão fiscal.** Notas emitidas a partir do pedido, sem redigitar.",
+        "**5. Compras, produção, comissões e relatórios.** Entram quando a base já está funcionando."
+      ],
+      "paragrafosFinais": [
+        "Na prática, muitas empresas começam com um [sistema de gestão](/desenvolvimento-de/sistema-de-gestao) enxuto — vendas, financeiro e estoque — e só depois evoluem para um [ERP completo](/desenvolvimento-de/erp), com produção, fiscal e vários departamentos integrados."
+      ]
+    },
+    {
+      "titulo": "ERP pronto ou sob medida para pequena empresa?",
+      "paragrafos": [
+        "Existem bons ERPs prontos para pequenas empresas, cobrados por mensalidade. Eles são a melhor escolha quando o seu processo é parecido com o da maioria das empresas do setor e você precisa começar rápido.",
+        "O ERP sob medida passa a fazer sentido quando o sistema pronto obriga a equipe a manter planilhas paralelas, quando você precisa de uma regra que nenhum produto tem — preço por cliente, produção sob encomenda, comissão por equipe — ou quando a mensalidade por usuário começa a pesar. Explicamos essa comparação em detalhes no artigo [sistema pronto ou sob medida](/blog/sistema-pronto-ou-sob-medida).",
+        "Na BrandCode, projetos de sistema sob medida começam **a partir de R$ 1.500**, com a primeira versão focada no módulo que resolve a dor principal. O código-fonte é seu e não há mensalidade de licença."
+      ]
+    },
+    {
+      "titulo": "Como trocar de sistema sem parar a empresa",
+      "lista": [
+        "**Mapeie o processo atual.** Antes de qualquer sistema, desenhe como um pedido percorre a empresa hoje, do primeiro contato ao recebimento.",
+        "**Limpe os dados antes de migrar.** Clientes duplicados e produtos com nomes diferentes atrapalham qualquer sistema novo. Vale uma semana de organização das planilhas.",
+        "**Implante um módulo por vez.** Coloque vendas em uso, estabilize, e só então avance para o próximo.",
+        "**Rode em paralelo por algumas semanas.** Mantenha a planilha antiga enquanto confere se os números do sistema batem.",
+        "**Treine por função.** Vendedor aprende vendas, financeiro aprende financeiro. Treinamentos curtos e gravados funcionam melhor do que um dia inteiro de apresentação.",
+        "**Defina um responsável interno.** Alguém da equipe que conhece o processo e serve de ponte com quem desenvolve ou fornece o sistema."
+      ]
+    },
+    {
+      "titulo": "Quanto tempo leva para ver resultado",
+      "paragrafos": [
+        "Com uma implantação por módulos, a primeira parte do sistema costuma entrar em uso entre 30 e 60 dias. O primeiro resultado aparece rápido: menos tempo digitando e menos erros em pedidos. A visão de lucro e estoque confiáveis leva mais um ou dois meses, porque depende de o sistema acumular dados reais da operação."
+      ]
+    },
+    {
+      "titulo": "Conclusão",
+      "paragrafos": [
+        "Uma pequena empresa não precisa de um ERP gigante, precisa de um sistema que tire a informação das planilhas e faça os setores conversarem. Comece pelo módulo que mais dói, implante por etapas e evolua conforme a empresa cresce. Se quiser entender qual seria o primeiro passo no seu caso, a conversa de diagnóstico é gratuita."
+      ]
+    }
+  ],
+  "faqs": [
+    { "question": "Qual a diferença entre ERP e sistema de gestão?", "answer": "Na prática, os termos se sobrepõem. Costuma-se chamar de sistema de gestão uma solução mais enxuta, com vendas, financeiro e estoque, e de ERP um sistema que integra todos os departamentos, inclusive produção, compras e fiscal completo." },
+    { "question": "Empresa com 3 funcionários precisa de ERP?", "answer": "Normalmente precisa de um sistema simples de vendas e financeiro, não de um ERP completo. O mais importante é sair das planilhas soltas e ter as informações em um único lugar." },
+    { "question": "Consigo migrar minhas planilhas para o ERP?", "answer": "Sim. Clientes, produtos, saldos e contas em aberto são importados de planilhas. Vale organizar os dados antes, removendo duplicidades, para o sistema começar limpo." },
+    { "question": "Quanto custa um ERP sob medida para pequena empresa?", "answer": "Na BrandCode, projetos começam a partir de R$ 1.500. O valor final depende dos módulos e integrações que entram no escopo, definido no diagnóstico gratuito." }
+  ],
+  "relacionados": [
+    { "href": "/desenvolvimento-de/erp", "label": "ERP sob medida" },
+    { "href": "/desenvolvimento-de/sistema-de-gestao", "label": "Sistema de gestão" },
+    { "href": "/desenvolvimento-de/controle-de-estoque", "label": "Controle de estoque" },
+    { "href": "/desenvolvimento-de/sistema-financeiro", "label": "Sistema financeiro" },
+    { "href": "/blog/sistema-pronto-ou-sob-medida", "label": "Sistema pronto ou sob medida?" }
+  ]
+}
