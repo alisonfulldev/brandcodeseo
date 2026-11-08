@@ -11,9 +11,9 @@ import AnimatedSection from "@/components/ui/AnimatedSection";
 import Link from "next/link";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Software House | Sistemas, Apps, Automações e IA Sob Medida",
+  title: "Software House: Sistemas, Apps e IA",
   description:
-    "Desenvolvemos sistemas web, apps mobile, chatbots com IA e automações para empresas que querem crescer com tecnologia. Software 100% sob medida, entrega ágil e suporte real.",
+    "Software house que desenvolve sistemas web, apps, chatbots com IA e automações sob medida para empresas. Projetos a partir de R$ 1.500.",
   keywords: [
     "software house",
     "desenvolvimento de software",

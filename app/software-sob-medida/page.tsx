@@ -9,7 +9,7 @@ import Link from "next/link";
 import { hrefSistemaPara } from "@/lib/rotas";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Software Sob Medida para Empresas | BrandCode Solutions",
+  title: "Software Sob Medida para Empresas",
   description: `Desenvolvemos sistemas web, apps mobile, chatbots com IA e automações 100% personalizados. Código-fonte seu, sem mensalidade de licença. ${PRICES.sistemaWeb}.`,
   slug: "software-sob-medida",
   keywords: [
