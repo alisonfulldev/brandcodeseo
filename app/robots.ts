@@ -15,6 +15,12 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/admin/"],
         crawlDelay: 1,
       },
+      {
+        // OpenAI: busca do ChatGPT, acessos pedidos por usuários e treinamento
+        userAgent: ["OAI-SearchBot", "ChatGPT-User", "GPTBot"],
+        allow: "/",
+        disallow: ["/api/", "/admin/"],
+      },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,
     host: SITE_URL,
