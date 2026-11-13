@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { WHATSAPP_URL } from "@/lib/constants";
+import { trackLead } from "@/lib/analytics";
 
 const SEGMENTOS = [
   "Clínica / Saúde",
@@ -50,11 +51,13 @@ export default function LeadForm({
       "Pode me ajudar com um diagnóstico gratuito?",
     ].filter(Boolean);
     const url = `${WHATSAPP_URL}?text=${encodeURIComponent(partes.join("\n"))}`;
+    trackLead("form");
     window.open(url, "_blank", "noopener,noreferrer");
   }
 
   function handleFallback() {
     const url = `${WHATSAPP_URL}?text=${encodeURIComponent(fallbackMsg)}`;
+    trackLead("form_fallback");
     window.open(url, "_blank", "noopener,noreferrer");
   }
 

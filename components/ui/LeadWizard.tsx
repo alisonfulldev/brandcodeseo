@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { WHATSAPP_URL } from "@/lib/constants";
+import { trackLead } from "@/lib/analytics";
 
 const SEGMENTOS = [
   "Clínica / Saúde",
@@ -116,6 +117,7 @@ export default function LeadWizard({
       "Podem me ajudar com um diagnóstico gratuito?",
     ].filter(Boolean);
     const url = `${WHATSAPP_URL}?text=${encodeURIComponent(partes.join("\n"))}`;
+    trackLead("wizard");
     window.open(url, "_blank", "noopener,noreferrer");
     close();
   }
