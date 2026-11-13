@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { serviceSchema, faqSchema, breadcrumbSchema } from "@/lib/seo/schema";
-import { SITE_URL, PRICES } from "@/lib/constants";
+import { SITE_URL, PRICES, PRECO_INICIAL_NUM } from "@/lib/constants";
 import Hero from "@/components/sections/Hero";
 import FAQ from "@/components/sections/FAQ";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
@@ -149,7 +149,7 @@ const segmentos = [
 export default function SoftwareSobMedidaPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema({ name: "Software Sob Medida", description: "Desenvolvimento de sistemas, apps mobile, chatbots com IA e automações 100% personalizados para empresas.", price: "2997", slug: "software-sob-medida" })) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema({ name: "Software Sob Medida", description: "Desenvolvimento de sistemas, apps mobile, chatbots com IA e automações 100% personalizados para empresas.", price: PRECO_INICIAL_NUM, slug: "software-sob-medida" })) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: "Início", url: SITE_URL }, { name: "Software Sob Medida", url: `${SITE_URL}/software-sob-medida` }])) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }} />
 

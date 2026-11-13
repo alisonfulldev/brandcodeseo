@@ -1,6 +1,6 @@
 import type { ConteudoPagina } from "@/lib/conteudo";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
-import { PRECO_INICIAL } from "@/lib/constants";
+import { PRECO_INICIAL, SITE_NAME, CIDADE, ESTADO, CONTEUDO_ATUALIZADO_EM } from "@/lib/constants";
 
 interface ConteudoSectionsProps {
   conteudo: ConteudoPagina;
@@ -8,10 +8,33 @@ interface ConteudoSectionsProps {
   whatsappMsg: string;
 }
 
-export function ConteudoIntro({ conteudo, nome }: Omit<ConteudoSectionsProps, "whatsappMsg">) {
+const dataAtualizacao = new Date(`${CONTEUDO_ATUALIZADO_EM}T12:00:00Z`).toLocaleDateString("pt-BR", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
+
+// Resposta direta no topo da página: é o trecho que assistentes de IA mais citam.
+export function ConteudoIntro({
+  conteudo,
+  nome,
+  descricao,
+}: Omit<ConteudoSectionsProps, "whatsappMsg"> & { descricao: string }) {
+  const prazo = conteudo.prazo.replace(/\.$/, "");
   return (
     <section className="py-16 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <aside aria-label="Resposta rápida" className="mb-12 rounded-2xl border border-blue-100 bg-blue-50/60 p-6">
+          <p className="text-xs font-bold uppercase tracking-wide text-blue-700 mb-2">Resposta rápida</p>
+          <p className="text-gray-800 leading-relaxed">
+            {descricao} A {SITE_NAME}, de {CIDADE} ({ESTADO}), desenvolve {nome.toLowerCase()} sob medida
+            a partir de {PRECO_INICIAL}, com prazo típico de {prazo}. O código-fonte fica com o cliente e não há
+            mensalidade de licença.
+          </p>
+          <p className="mt-3 text-xs text-gray-500">
+            Atualizado em <time dateTime={CONTEUDO_ATUALIZADO_EM}>{dataAtualizacao}</time>
+          </p>
+        </aside>
         <h2 className="text-2xl font-extrabold text-[#0A1628] mb-6">
           O que é e para quem é {nome.toLowerCase()}
         </h2>

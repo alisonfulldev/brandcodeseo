@@ -1,13 +1,13 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL } from "@/lib/constants";
+import { SITE_URL, CONTEUDO_ATUALIZADO_EM } from "@/lib/constants";
 import { tipoIndexavel, nichoIndexavel } from "@/lib/conteudo";
 import { getPosts } from "@/lib/blog";
 import nichos from "@/data/nichos.json";
 import tiposSoftware from "@/data/tipos-software.json";
 
-// Data fixa: atualize ao mudar conteúdo de fato. `new Date()` marcava todas as URLs
-// como modificadas a cada deploy e o Google passa a ignorar o lastmod.
-const now = new Date("2026-09-26");
+// Data fixa (CONTEUDO_ATUALIZADO_EM): atualize ao mudar conteúdo de fato. `new Date()`
+// marcava todas as URLs como modificadas a cada deploy e o Google passa a ignorar o lastmod.
+const now = new Date(CONTEUDO_ATUALIZADO_EM);
 
 // Só entram no sitemap páginas com conteúdo próprio. Templates sem conteúdo
 // (chatbot-para, ia-para, hubs de segmento) ficam com noindex até serem enriquecidos.

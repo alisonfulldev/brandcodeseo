@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/seo/schema";
+import { articleSchema, breadcrumbSchema, faqSchema, membroEquipe } from "@/lib/seo/schema";
 import { SITE_URL } from "@/lib/constants";
 import { getPost, getPosts, tempoLeitura } from "@/lib/blog";
 import FAQ from "@/components/sections/FAQ";
@@ -37,6 +37,7 @@ export default async function BlogPostPage({ params }: { params: Promise<Params>
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) notFound();
+  const autor = membroEquipe(post.autor);
 
   const outros = getPosts().filter((p) => p.slug !== post.slug).slice(0, 3);
   const whatsappMsg = `Olá! Li o artigo "${post.titulo}" e quero conversar sobre um projeto.`;
@@ -58,7 +59,15 @@ export default async function BlogPostPage({ params }: { params: Promise<Params>
           <h1 className="mt-4 text-3xl sm:text-4xl font-extrabold text-white leading-tight">{post.titulo}</h1>
           <p className="mt-4 text-gray-300 text-lg">{post.resumo}</p>
           <p className="mt-6 text-sm text-gray-400">
-            Por {post.autor} · <time dateTime={post.publicadoEm}>{formatarData(post.publicadoEm)}</time>
+            Por{" "}
+            {autor ? (
+              <Link href={`/sobre#${autor.id}`} className="underline hover:text-white">
+                {post.autor}
+              </Link>
+            ) : (
+              post.autor
+            )}
+            {" · "}<time dateTime={post.publicadoEm}>{formatarData(post.publicadoEm)}</time>
             {post.atualizadoEm !== post.publicadoEm && <> · atualizado em <time dateTime={post.atualizadoEm}>{formatarData(post.atualizadoEm)}</time></>}
             {" · "}
             {tempoLeitura(post)} min de leitura

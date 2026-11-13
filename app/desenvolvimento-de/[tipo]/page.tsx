@@ -90,7 +90,7 @@ export default async function DesenvolvimentoDeTipoPage({ params }: { params: Pr
         ctaHref="/software-sob-medida"
       />
 
-      {conteudo && <ConteudoIntro conteudo={conteudo} nome={software.nome} />}
+      {conteudo && <ConteudoIntro conteudo={conteudo} nome={software.nome} descricao={software.descricao} />}
 
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

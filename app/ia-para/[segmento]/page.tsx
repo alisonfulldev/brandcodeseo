@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { serviceSchema, faqSchema, breadcrumbSchema } from "@/lib/seo/schema";
-import { SITE_URL, PRICES } from "@/lib/constants";
+import { SITE_URL, PRICES, PRECO_INICIAL_NUM } from "@/lib/constants";
 import nichos from "@/data/nichos.json";
 import Hero from "@/components/sections/Hero";
 import FAQ from "@/components/sections/FAQ";
@@ -89,7 +89,7 @@ export default async function IaParaSegmentoPage({ params }: { params: Promise<P
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema({ name: `IA para ${nicho.nome}`, description: `Inteligência artificial personalizada para ${nicho.nomeCompleto}`, price: "1997", slug: `ia-para/${nicho.slug}` })) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema({ name: `IA para ${nicho.nome}`, description: `Inteligência artificial personalizada para ${nicho.nomeCompleto}`, price: PRECO_INICIAL_NUM, slug: `ia-para/${nicho.slug}` })) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: "Início", url: SITE_URL }, { name: `IA para ${nicho.nome}`, url: `${SITE_URL}/ia-para/${nicho.slug}` }])) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }} />
 

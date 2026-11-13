@@ -5,48 +5,111 @@ import {
   WHATSAPP_NUMBER,
   LOGO_URL,
   PRICES,
+  PRECO_INICIAL,
+  PRECO_INICIAL_NUM,
+  CIDADE,
+  ESTADO,
+  ANO_FUNDACAO,
+  LINKEDIN_URL,
+  EQUIPE,
 } from "@/lib/constants";
+import type { Projeto } from "@/lib/projetos";
 
-export function organizationSchema() {
+// @id fixos para que todas as páginas apontem para a mesma entidade
+// em vez de descrever a empresa de novo (e de forma diferente) em cada schema.
+export const ORG_ID = `${SITE_URL}/#organization`;
+export const WEBSITE_ID = `${SITE_URL}/#website`;
+export const personId = (id: string) => `${SITE_URL}/sobre#${id}`;
+
+const ofertaServico = (name: string, description: string) => ({
+  "@type": "Offer",
+  itemOffered: { "@type": "Service", name, description },
+  priceCurrency: "BRL",
+  price: PRECO_INICIAL_NUM,
+  priceSpecification: {
+    "@type": "PriceSpecification",
+    minPrice: Number(PRECO_INICIAL_NUM),
+    priceCurrency: "BRL",
+  },
+  availability: "https://schema.org/InStock",
+});
+
+/** Empresa, site e equipe num único @graph — vai no layout, vale para todas as páginas. */
+export function siteGraphSchema() {
+  const [fundador, ...equipe] = EQUIPE;
+  const pessoa = (p: (typeof EQUIPE)[number]) => ({
+    "@type": "Person",
+    "@id": personId(p.id),
+    name: p.nome,
+    jobTitle: p.cargo,
+    description: p.bio,
+    worksFor: { "@id": ORG_ID },
+    url: `${SITE_URL}/sobre#${p.id}`,
+  });
+
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    name: SITE_NAME,
-    url: SITE_URL,
-    logo: LOGO_URL,
-    description: SITE_DESCRIPTION,
-    telephone: `+${WHATSAPP_NUMBER}`,
-    contactPoint: {
-      "@type": "ContactPoint",
-      telephone: `+${WHATSAPP_NUMBER}`,
-      contactType: "sales",
-      areaServed: "BR",
-      availableLanguage: "Portuguese",
-    },
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: "BR",
-      addressRegion: "SP",
-    },
-    sameAs: [`https://wa.me/${WHATSAPP_NUMBER}`],
-  };
-}
-
-export function webSiteSchema() {
-  return {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: SITE_NAME,
-    url: SITE_URL,
-    description: SITE_DESCRIPTION,
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${SITE_URL}/blog?q={search_term_string}`,
+    "@graph": [
+      {
+        "@type": ["Organization", "ProfessionalService"],
+        "@id": ORG_ID,
+        name: SITE_NAME,
+        url: SITE_URL,
+        logo: { "@type": "ImageObject", url: LOGO_URL },
+        image: LOGO_URL,
+        description: SITE_DESCRIPTION,
+        foundingDate: ANO_FUNDACAO,
+        foundingLocation: { "@type": "Place", name: `${CIDADE}, ${ESTADO}, Brasil` },
+        founder: { "@id": personId(fundador.id) },
+        employee: equipe.map((p) => ({ "@id": personId(p.id) })),
+        telephone: `+${WHATSAPP_NUMBER}`,
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: `+${WHATSAPP_NUMBER}`,
+          contactType: "sales",
+          areaServed: "BR",
+          availableLanguage: "Portuguese",
+        },
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: CIDADE,
+          addressRegion: ESTADO,
+          addressCountry: "BR",
+        },
+        areaServed: { "@type": "Country", name: "Brasil" },
+        priceRange: `A partir de ${PRECO_INICIAL}`,
+        currenciesAccepted: "BRL",
+        paymentAccepted: "PIX, Cartão de Crédito, Boleto Bancário",
+        knowsAbout: [
+          "Desenvolvimento de software sob medida",
+          "Sistemas web e ERP",
+          "Aplicativos mobile",
+          "Chatbots de WhatsApp com IA",
+          "Automação de processos",
+          "Inteligência artificial para empresas",
+        ],
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Serviços de Desenvolvimento de Software",
+          itemListElement: [
+            ofertaServico("Sistema Web e ERP Sob Medida", "Desenvolvimento de sistemas web, ERPs e CRMs personalizados para empresas"),
+            ofertaServico("App Mobile iOS e Android", "Aplicativos mobile nativos e híbridos para iOS e Android"),
+            ofertaServico("Automação com IA e Chatbot WhatsApp", "Chatbots com IA, automação de atendimento e processos empresariais"),
+          ],
+        },
+        sameAs: [LINKEDIN_URL],
       },
-      "query-input": "required name=search_term_string",
-    },
+      {
+        "@type": "WebSite",
+        "@id": WEBSITE_ID,
+        name: SITE_NAME,
+        url: SITE_URL,
+        description: SITE_DESCRIPTION,
+        inLanguage: "pt-BR",
+        publisher: { "@id": ORG_ID },
+      },
+      ...EQUIPE.map(pessoa),
+    ],
   };
 }
 
@@ -66,11 +129,7 @@ export function serviceSchema({
     "@type": "Service",
     name,
     description,
-    provider: {
-      "@type": "Organization",
-      name: SITE_NAME,
-      url: SITE_URL,
-    },
+    provider: { "@id": ORG_ID },
     areaServed: {
       "@type": "Country",
       name: "Brazil",
@@ -86,10 +145,7 @@ export function serviceSchema({
         priceCurrency: "BRL",
       },
       availability: "https://schema.org/InStock",
-      seller: {
-        "@type": "Organization",
-        name: SITE_NAME,
-      },
+      seller: { "@id": ORG_ID },
     },
   };
 }
@@ -121,6 +177,37 @@ export function localBusinessSchema({
   };
 }
 
+export function projetosSchema(projetos: Projeto[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `Produtos desenvolvidos pela ${SITE_NAME}`,
+    itemListElement: projetos.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "SoftwareApplication",
+        name: p.nome,
+        description: p.descricao,
+        applicationCategory: p.categoria,
+        operatingSystem: "Web",
+        ...(p.url && { url: p.url }),
+        creator: { "@id": ORG_ID },
+      },
+    })),
+  };
+}
+
+/** Membro da equipe vira referência à Person do @graph; outro nome cai na organização. */
+export function membroEquipe(nome: string) {
+  return EQUIPE.find((p) => p.nome === nome);
+}
+
+function autorRef(nome: string) {
+  const membro = membroEquipe(nome);
+  return membro ? { "@id": personId(membro.id) } : { "@id": ORG_ID };
+}
+
 export function articleSchema({
   titulo,
   descricao,
@@ -146,12 +233,8 @@ export function articleSchema({
     datePublished: publicadoEm,
     dateModified: atualizadoEm,
     inLanguage: "pt-BR",
-    author: { "@type": "Organization", name: autor, url: SITE_URL },
-    publisher: {
-      "@type": "Organization",
-      name: SITE_NAME,
-      logo: { "@type": "ImageObject", url: LOGO_URL },
-    },
+    author: autorRef(autor),
+    publisher: { "@id": ORG_ID },
   };
 }
 

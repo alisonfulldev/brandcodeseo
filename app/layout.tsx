@@ -5,8 +5,8 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
-import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, OG_IMAGE, WHATSAPP_NUMBER } from "@/lib/constants";
-import { organizationSchema, webSiteSchema } from "@/lib/seo/schema";
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, OG_IMAGE } from "@/lib/constants";
+import { siteGraphSchema } from "@/lib/seo/schema";
 
 // ─── Fontes ───────────────────────────────────────────────────────────────────
 
@@ -27,86 +27,6 @@ const sora = Sora({
 // ─── Google Analytics 4 ───────────────────────────────────────────────────────
 
 const GA_ID = "G-SSYB2EDFJY";
-
-// ─── Schema.org LocalBusiness (raiz = cobertura nacional) ────────────────────
-
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "ProfessionalService"],
-  name: SITE_NAME,
-  description: SITE_DESCRIPTION,
-  url: SITE_URL,
-  telephone: `+${WHATSAPP_NUMBER}`,
-  priceRange: "$$",
-  currenciesAccepted: "BRL",
-  paymentAccepted: "PIX, Cartão de Crédito, Boleto Bancário",
-  areaServed: {
-    "@type": "Country",
-    name: "Brazil",
-  },
-  address: {
-    "@type": "PostalAddress",
-    addressCountry: "BR",
-    addressRegion: "SP",
-  },
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Serviços de Desenvolvimento de Software",
-    itemListElement: [
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Sistema Web e ERP Sob Medida",
-          description: "Desenvolvimento de sistemas web, ERPs e CRMs personalizados para empresas",
-        },
-        priceCurrency: "BRL",
-        price: "1500",
-        priceSpecification: {
-          "@type": "PriceSpecification",
-          minPrice: 1500,
-          priceCurrency: "BRL",
-        },
-        availability: "https://schema.org/InStock",
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "App Mobile iOS e Android",
-          description: "Aplicativos mobile nativos e híbridos para iOS e Android",
-        },
-        priceCurrency: "BRL",
-        price: "1500",
-        priceSpecification: {
-          "@type": "PriceSpecification",
-          minPrice: 1500,
-          priceCurrency: "BRL",
-        },
-        availability: "https://schema.org/InStock",
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Automação com IA e Chatbot WhatsApp",
-          description: "Chatbots com IA, automação de atendimento e processos empresariais",
-        },
-        priceCurrency: "BRL",
-        price: "1500",
-        priceSpecification: {
-          "@type": "PriceSpecification",
-          minPrice: 1500,
-          priceCurrency: "BRL",
-        },
-        availability: "https://schema.org/InStock",
-      },
-    ],
-  },
-  sameAs: [
-    `https://wa.me/${WHATSAPP_NUMBER}`,
-  ],
-};
 
 // ─── Metadata base global ─────────────────────────────────────────────────────
 
@@ -168,20 +88,10 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${inter.variable} ${sora.variable} h-full`}>
       <head>
-        {/* Schema.org — Organization */}
+        {/* Schema.org — empresa, site e equipe (@graph com @id) */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }}
-        />
-        {/* Schema.org — WebSite (SearchAction) */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema()) }}
-        />
-        {/* Schema.org — LocalBusiness / ProfessionalService */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteGraphSchema()) }}
         />
       </head>
       <body className="min-h-full flex flex-col font-sans antialiased bg-white text-gray-900">

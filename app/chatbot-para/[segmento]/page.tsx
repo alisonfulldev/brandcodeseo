@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { serviceSchema, faqSchema, breadcrumbSchema } from "@/lib/seo/schema";
-import { SITE_URL, PRICES } from "@/lib/constants";
+import { SITE_URL, PRICES, PRECO_INICIAL_NUM } from "@/lib/constants";
 import nichos from "@/data/nichos.json";
 import Hero from "@/components/sections/Hero";
 import FAQ from "@/components/sections/FAQ";
@@ -98,7 +98,7 @@ export default async function ChatbotParaSegmentoPage({ params }: { params: Prom
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema({ name: `Chatbot com IA para ${nicho.nome}`, description: `Chatbot inteligente para atendimento automático em ${nicho.nomeCompleto}`, price: "997", slug: `chatbot-para/${nicho.slug}` })) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema({ name: `Chatbot com IA para ${nicho.nome}`, description: `Chatbot inteligente para atendimento automático em ${nicho.nomeCompleto}`, price: PRECO_INICIAL_NUM, slug: `chatbot-para/${nicho.slug}` })) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: "Início", url: SITE_URL }, { name: `Chatbot para ${nicho.nome}`, url: `${SITE_URL}/chatbot-para/${nicho.slug}` }])) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }} />
 

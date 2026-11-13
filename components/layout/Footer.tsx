@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { SITE_NAME, WHATSAPP_LINK, PRICES } from "@/lib/constants";
+import { SITE_NAME, WHATSAPP_LINK, PRICES, CIDADE, ESTADO, LINKEDIN_URL } from "@/lib/constants";
 
 const servicos = [
   { href: "/software-sob-medida", label: "Software Sob Medida" },
@@ -171,10 +171,11 @@ export default function Footer() {
             <Link href="/" className="footer-link">
               {SITE_NAME}
             </Link>
-            . Todos os direitos reservados.
+            . {CIDADE}, {ESTADO}. Todos os direitos reservados.
           </p>
           <div className="flex items-center gap-4">
             <Link href="/mapa-do-site" className="footer-link">Mapa do Site</Link>
+            <a href={LINKEDIN_URL} target="_blank" rel="noopener" className="footer-link">LinkedIn</a>
             <Link href="/contato" className="footer-link">Contato</Link>
             <a
               href={WHATSAPP_LINK}
